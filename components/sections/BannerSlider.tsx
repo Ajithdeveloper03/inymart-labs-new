@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
+import Fade from 'embla-carousel-fade';
 import { Play, ArrowRight, Instagram, Youtube, Phone, Facebook, ArrowUp } from 'lucide-react';
 import {
   Carousel,
@@ -19,6 +20,10 @@ const SLIDES = [
     titleAccent: 'Tamil Nadu',
     subtitle: 'Be Found Where Your Customers Are Searching',
     description: "Today's customers search online before choosing a product or service. Whether it's Google Search, Google Maps, AI-powered search platforms, or social media, your business needs to be visible where your customers are looking.",
+    list: [
+      'Get a Free Consultation',
+      'Talk to Our Experts',
+    ],
   },
   {
     image: '/banner 2.png',
@@ -26,6 +31,10 @@ const SLIDES = [
     titleAccent: 'Agency',
     subtitle: 'Result-Driven Strategies',
     description: 'With 10+ years of experience, serving businesses since 2016, and 50+ satisfied clients, we deliver customised solutions that create measurable business success.',
+    list: [
+      'Get a Free Consultation',
+      'Talk to Our Experts',
+    ],
   },
   {
     image: '/banner 3.png',
@@ -47,6 +56,9 @@ export function BannerSlider() {
   const [showScrollTop, setShowScrollTop] = React.useState(false);
   const plugin = React.useRef(
     Autoplay({ delay: 6000, stopOnInteraction: false })
+  );
+  const fadePlugin = React.useRef(
+    Fade()
   );
 
   React.useEffect(() => {
@@ -79,7 +91,7 @@ export function BannerSlider() {
     <section id="home" className="relative w-full overflow-hidden bg-background">
       <Carousel
         setApi={setApi}
-        plugins={[plugin.current]}
+        plugins={[plugin.current, fadePlugin.current]}
         className="w-full"
         opts={{
           align: 'start',
@@ -101,10 +113,13 @@ export function BannerSlider() {
                   />
                 </div>
 
-                {/* Main Dark Overlay Polygon - Matches Reference exactly */}
+                {/* Mobile Dark Overlay - Full Width */}
+                <div className="absolute inset-0 z-10 bg-[#1a1f24]/80 lg:hidden" />
+
+                {/* Desktop Dark Overlay - Diagonal Cut */}
                 <div 
-                  className="absolute inset-0 z-10 bg-[#1a1f24]/95" 
-                  style={{ clipPath: 'polygon(0 0, 62% 0, 48% 100%, 0 100%)' }}
+                  className="absolute inset-0 z-10 bg-[#1a1f24]/80 hidden lg:block" 
+                  style={{ clipPath: 'polygon(0 0, 70% 0, 55% 100%, 0 100%)' }}
                 />
 
                 {/* Right Edge Design Element (4% width, orange top with diagonal cut, white bottom) */}
@@ -116,8 +131,8 @@ export function BannerSlider() {
                 </div>
 
                 {/* Content Container */}
-                <div className="container-x relative z-30 w-full pl-12 lg:pl-20">
-                  <div className="max-w-2xl lg:max-w-3xl">
+                <div className="container-x relative z-30 w-full pl-6 pr-6 pt-20 lg:pl-20 lg:pr-0 lg:pt-24">
+                  <div className="max-w-[95%] md:max-w-[85%] lg:max-w-[48vw] xl:max-w-[45vw]">
                     
                     {slide.subtitle && (
                       <Reveal delay={0}>
@@ -140,7 +155,7 @@ export function BannerSlider() {
                     )}
                     
                     <Reveal delay={150}>
-                      <h1 className="font-display font-extrabold leading-[1.1] text-white tracking-tight uppercase text-5xl sm:text-6xl lg:text-[72px]">
+                      <h1 className="font-display font-extrabold leading-[1.1] text-white tracking-tight uppercase text-4xl sm:text-5xl lg:text-[64px]">
                         {slide.title} <span className="text-primary">{slide.titleAccent}</span>
                       </h1>
                     </Reveal>

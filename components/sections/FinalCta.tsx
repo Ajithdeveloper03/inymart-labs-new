@@ -36,7 +36,7 @@ export function FinalCta() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
+            <p className="mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
               Whether you&apos;re looking for a reliable Digital Marketing
               Agency in Tamil Nadu or an experienced Digital Marketing Agency in
               Tiruchirappalli, our team is ready to help you improve your online
