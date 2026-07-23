@@ -11,6 +11,7 @@ type CtaBannerProps = {
   className?: string;
   /** dark background variant */
   variant?: 'light' | 'dark' | 'accent';
+  stacked?: boolean;
 };
 
 const variantStyles: Record<NonNullable<CtaBannerProps['variant']>, string> = {
@@ -31,11 +32,13 @@ export function CtaBanner({
   ctaLabel = 'Book Your Free Consultation',
   className,
   variant = 'dark',
+  stacked = false,
 }: CtaBannerProps) {
   return (
     <Reveal
       className={cn(
-        'relative overflow-hidden rounded-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12',
+        'relative overflow-hidden rounded-2xl px-6 py-8',
+        stacked ? 'sm:px-10' : 'sm:px-10 sm:py-10 lg:px-14 lg:py-12',
         variantStyles[variant],
         className
       )}
@@ -43,16 +46,16 @@ export function CtaBanner({
       {variant !== 'light' && (
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
       )}
-      <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-        <div className="max-w-2xl">
-          <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+      <div className={cn("relative flex flex-col", !stacked ? "gap-8 lg:flex-row lg:items-center lg:justify-between" : "items-center text-center")}>
+        <div className={cn("max-w-2xl", stacked && "flex flex-col items-center")}>
+          <h3 className={cn("font-display font-bold tracking-tight", stacked ? "text-2xl leading-6" : "text-2xl sm:text-3xl lg:text-4xl")}>
             {title}
           </h3>
-          <ul className="mt-5 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+          <ul className={cn("mt-5 grid gap-x-6 gap-y-3", stacked ? "grid-cols-1" : "sm:grid-cols-2")}>
             {points.map((point) => (
               <li
                 key={point}
-                className="flex items-center gap-3 text-sm sm:text-base"
+                className={cn("flex items-center gap-3 text-sm sm:text-base", stacked && "justify-center")}
               >
                 <span
                   className={cn(
@@ -71,14 +74,16 @@ export function CtaBanner({
             ))}
           </ul>
         </div>
-        <div className="shrink-0">
+        <div className={cn("shrink-0", stacked && "mt-2")}>
           <a
             href={ctaHref}
             className={cn(
-              'group inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-all duration-300 hover:shadow-lg',
+              'group inline-flex items-center justify-center text-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold transition-all duration-300 hover:shadow-lg',
               variant === 'light'
                 ? 'bg-accent text-white hover:bg-accent/90 hover:shadow-accent/30'
-                : 'bg-white text-primary hover:bg-white/90 hover:shadow-black/20'
+                : variant === 'accent'
+                  ? 'bg-white text-accent hover:bg-white/90 hover:shadow-black/20'
+                  : 'bg-white text-primary hover:bg-white/90 hover:shadow-black/20'
             )}
           >
             {ctaLabel}

@@ -22,7 +22,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative scroll-mt-24 bg-secondary/20 py-20 lg:py-28"
+      className="relative scroll-mt-24 bg-secondary/20 py-14"
     >
       <div className="container-x max-w-[1600px]">
         <SectionHeading

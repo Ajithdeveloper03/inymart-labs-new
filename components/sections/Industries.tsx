@@ -19,7 +19,7 @@ export function Industries() {
   return (
     <section
       id="industries"
-      className="relative scroll-mt-24 overflow-hidden bg-background py-20 text-foreground lg:py-28"
+      className="relative scroll-mt-24 overflow-hidden bg-background py-14 text-foreground"
     >
       <div className="container-x relative">
         <SectionHeading

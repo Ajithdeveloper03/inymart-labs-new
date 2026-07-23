@@ -14,63 +14,33 @@ export function Faqs() {
   return (
     <section
       id="faqs"
-      className="relative scroll-mt-24 bg-white py-20 lg:py-28 overflow-hidden"
+      className="relative scroll-mt-24 bg-white py-14 overflow-hidden"
     >
-      <div className="container-x flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
-        
-        {/* Left Column: Image Area */}
-        <div className="relative w-full lg:w-1/2 h-[500px] lg:h-[650px] shrink-0 z-0">
-          {/* Orange Blob Background */}
-          <div className="absolute -bottom-10 -right-10 h-64 w-80 rounded-br-[60px] rounded-tl-[60px] bg-[#ff6b35] -z-10 hidden sm:block" />
+      <div className="container-x">
+        <div className="mx-auto flex w-full max-w-4xl flex-col">
           
-          {/* Main Image */}
-          <div className="relative h-full w-full overflow-hidden rounded-[40px] z-10 shadow-xl border border-slate-100">
-            <img 
-              src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&q=80" 
-              className="h-full w-full object-cover" 
-              alt="Coworking Space FAQs" 
-            />
-          </div>
-
-          {/* FAQ Overlay Box */}
-          <div className="absolute bottom-10 right-10 z-20 rounded-[32px] bg-white px-5 py-8 shadow-2xl">
-            <div 
-              className="font-display font-black text-[70px] leading-[0.8] tracking-widest bg-cover bg-center" 
-              style={{ 
-                writingMode: 'vertical-rl', 
-                transform: 'rotate(180deg)',
-                backgroundImage: 'url(https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=400&q=80)',
-                WebkitBackgroundClip: 'text',
-                color: 'transparent'
-              }}
-            >
-              FAQ
-            </div>
-          </div>
-        </div>
-
-        {/* Right Column: Content & Accordions */}
-        <div className="w-full lg:w-1/2 flex flex-col">
-          
+          {/* Section Heading */}
           <Reveal>
-            {/* Eyebrow */}
-            <div className="flex items-center gap-2 text-[#ff6b35] font-bold text-sm tracking-widest uppercase mb-4">
-              <div className="flex items-center">
-                <Circle className="h-3 w-3 fill-[#ff6b35] text-[#ff6b35]" />
-                <ArrowRight className="h-4 w-4 -ml-2 text-[#ff6b35]" strokeWidth={3} />
+            <div className="flex flex-col items-center text-center mb-10 mt-2">
+              {/* Eyebrow */}
+              <div className="flex items-center justify-center gap-2 text-[#ff6b35] font-bold text-sm tracking-widest uppercase mb-4">
+                <div className="flex items-center">
+                  <Circle className="h-3 w-3 fill-[#ff6b35] text-[#ff6b35]" />
+                  <ArrowRight className="h-4 w-4 -ml-2 text-[#ff6b35]" strokeWidth={3} />
+                </div>
+                <span>OUR FAQS</span>
               </div>
-              <span>OUR FAQS</span>
+              
+              {/* Heading */}
+              <h2 className="font-display text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-6">
+                Frequently Asked Questions
+              </h2>
+              
+              {/* Paragraph */}
+              <p className="text-slate-500 text-[15px] leading-relaxed max-w-lg mx-auto">
+                Answers to the questions businesses most often ask before partnering with Inymart Labs.
+              </p>
             </div>
-            
-            {/* Heading */}
-            <h2 className="font-display text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-6">
-              Frequently Asked Questions
-            </h2>
-            
-            {/* Paragraph */}
-            <p className="text-slate-500 mb-10 text-[15px] leading-relaxed max-w-lg">
-              Answers to the questions businesses most often ask before partnering with Inymart Labs.
-            </p>
           </Reveal>
 
           <Accordion type="single" collapsible className="flex flex-col gap-4">
@@ -80,7 +50,6 @@ export function Faqs() {
                   value={`item-${i}`}
                   className="group rounded-[14px] border border-slate-200 bg-white overflow-hidden shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
                 >
-                  {/* [&>svg]:hidden removes the default accordion ChevronDown icon so we can use our custom Plus/Minus */}
                   <AccordionTrigger className="flex items-center justify-between p-0 hover:no-underline w-full transition-colors duration-300 data-[state=open]:bg-[#0c1f28] [&>svg]:hidden">
                     <div className="flex items-center flex-1 py-3">
                       <div className="relative flex items-center justify-center shrink-0 w-16 h-14">

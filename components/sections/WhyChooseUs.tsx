@@ -13,7 +13,7 @@ export function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="relative scroll-mt-24 bg-secondary/30 py-10 lg:py-16"
+      className="relative scroll-mt-24 bg-secondary/30 py-14"
     >
       <div className="container-x">
         <div className="grid gap-6 lg:grid-cols-12 lg:gap-8 lg:items-stretch">

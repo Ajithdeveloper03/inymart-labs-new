@@ -8,8 +8,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-background">
-      <div className="container-x py-16">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+      <div className="container-x py-14">
+        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr]">
           {/* Brand */}
           <div>
             <Link href="#home" className="flex items-center gap-2.5">
@@ -78,27 +78,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* CTA card */}
-          <div className="rounded-2xl border border-border bg-secondary/50 p-6">
-            <h3 className="font-display text-base font-bold text-foreground">
-              Ready to Grow Your Business?
-            </h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Book your free consultation and get a customized digital marketing
-              strategy tailored to your goals.
-            </p>
-            <a
-              href="#contact"
-              className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90"
-            >
-              Free Consultation &rarr;
-            </a>
-            <p className="mt-4 text-xs text-muted-foreground">
-              Serving businesses since {SITE.established} · 10+ years of
-              experience · 50+ happy clients
-            </p>
           </div>
         </div>
 

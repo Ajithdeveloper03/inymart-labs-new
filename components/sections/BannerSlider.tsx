@@ -107,16 +107,13 @@ export function BannerSlider() {
                   style={{ clipPath: 'polygon(0 0, 62% 0, 48% 100%, 0 100%)' }}
                 />
 
-                {/* Right Edge Orange Block */}
-                <div 
-                  className="absolute right-0 top-0 bottom-0 z-10 w-[6%] bg-primary hidden lg:block"
-                />
-
-                {/* Right Edge Bottom White Triangle overlaying the orange */}
-                <div 
-                  className="absolute right-0 bottom-0 z-20 w-[15%] h-[35%] bg-background hidden lg:block"
-                  style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}
-                />
+                {/* Right Edge Design Element (4% width, orange top with diagonal cut, white bottom) */}
+                <div className="absolute right-0 top-0 bottom-0 z-10 w-[4%] hidden lg:block bg-background">
+                  <div 
+                    className="absolute top-0 left-0 right-0 h-[65%] bg-primary"
+                    style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)' }}
+                  />
+                </div>
 
                 {/* Content Container */}
                 <div className="container-x relative z-30 w-full pl-12 lg:pl-20">
@@ -183,19 +180,16 @@ export function BannerSlider() {
           ))}
         </CarouselContent>
         
-        {/* Right Edge Social Icons placed on top of the orange design element */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-40 w-[6%] hidden lg:flex flex-col items-center gap-8 py-8">
-          <a href="#" aria-label="Instagram" className="text-white hover:scale-125 transition-transform duration-300">
+        {/* Right Edge Social Icons placed in the white section at the bottom */}
+        <div className="absolute right-0 bottom-12 z-40 w-[4%] hidden lg:flex flex-col items-center gap-8 py-4">
+          <a href="#" aria-label="Instagram" className="text-[#E1306C] hover:scale-125 transition-transform duration-300">
             <Instagram className="h-5 w-5" strokeWidth={1.5} />
           </a>
-          <a href="#" aria-label="YouTube" className="text-white hover:scale-125 transition-transform duration-300">
-            <Youtube className="h-5 w-5" strokeWidth={1.5} />
-          </a>
-          <a href="#" aria-label="Call" className="text-white hover:scale-125 transition-transform duration-300">
+          <a href="#" aria-label="WhatsApp" className="text-[#25D366] hover:scale-125 transition-transform duration-300">
             <Phone className="h-5 w-5" strokeWidth={1.5} />
           </a>
-          <a href="#" aria-label="Facebook" className="text-white hover:scale-125 transition-transform duration-300">
-            <Facebook className="h-5 w-5" strokeWidth={1.5} />
+          <a href="#" aria-label="YouTube" className="text-[#FF0000] hover:scale-125 transition-transform duration-300">
+            <Youtube className="h-5 w-5" strokeWidth={1.5} />
           </a>
         </div>
         
