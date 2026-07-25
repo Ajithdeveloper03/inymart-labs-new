@@ -57,7 +57,7 @@ export function Portfolio() {
           {/* Main Description */}
           <Reveal delay={200}>
             <p className="text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl">
-              We're proud to partner with businesses that trust Inymart Labs for their digital growth, and customized digital marketing solutions. Our clients come from a wide range of industries, and we're committed to helping each one achieve measurable online success.
+              We&apos;re proud to partner with businesses that trust Inymart Labs for their digital growth, and customized digital marketing solutions. Our clients come from a wide range of industries, and we&apos;re committed to helping each one achieve measurable online success.
             </p>
           </Reveal>
 

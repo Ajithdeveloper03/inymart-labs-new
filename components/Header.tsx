@@ -32,7 +32,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        'fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-white text-foreground',
+        'fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-white/10 text-foreground',
         scrolled
           ? 'border-b border-border/70 py-3 shadow-sm bg-white/95 backdrop-blur-xl'
           : 'border-b border-transparent py-5'

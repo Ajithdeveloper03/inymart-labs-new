@@ -91,7 +91,7 @@ export function BannerSlider() {
     <section id="home" className="relative w-full overflow-hidden bg-background">
       <Carousel
         setApi={setApi}
-        plugins={[plugin.current, fadePlugin.current]}
+        plugins={[plugin.current, fadePlugin.current] as any}
         className="w-full"
         opts={{
           align: 'start',
