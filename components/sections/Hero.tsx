@@ -149,6 +149,11 @@ export function Hero() {
       {/* Grid Backdrop (top area) - subtle visible white grid lines on dark background */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[1] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)]" />
 
+      {/* Floating Glowing Gradient Blur Orbs/Blobs for Futuristic Aesthetics */}
+      <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] rounded-full bg-orange-600/20 blur-[110px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      <div className="absolute top-[35%] right-[5%] w-[400px] h-[400px] rounded-full bg-blue-600/15 blur-[120px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
+      <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-pink-600/15 blur-[90px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+
       {/* Curved Orangish Gradient Shape behind the image, placed starting high (above 40% of the bottom) */}
       <div className="absolute inset-x-0 bottom-0 h-[650px] z-0 pointer-events-none">
         <svg

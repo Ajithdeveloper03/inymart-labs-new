@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown, ArrowRight, Sparkles } from 'lucide-react';
-import { NAV_LINKS } from '@/lib/content';
+import { NAV_LINKS, SERVICES, slugify } from '@/lib/content';
 import { cn } from '@/lib/utils';
 
 export function Header() {
@@ -86,42 +86,65 @@ export function Header() {
                 <div key={link.label} className="group relative">
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 text-[14px] font-medium text-neutral-600 transition-colors duration-200 hover:text-neutral-900"
+                    className="flex items-center gap-1 text-[14px] font-medium text-neutral-600 transition-colors duration-200 hover:text-neutral-900 py-2"
                   >
                     {link.label}
                     <ChevronDown className="h-3.5 w-3.5 opacity-60 transition-transform duration-300 group-hover:rotate-180" />
                   </Link>
 
-                  {/* Dropdown / Mega panel */}
-                  <div className="invisible absolute left-1/2 top-full z-50 w-[600px] -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                    <div className="overflow-hidden rounded-2xl border border-neutral-200/80 bg-white p-5 shadow-xl shadow-neutral-900/5 backdrop-blur-xl">
-                      <div className="mb-3 flex items-center justify-between border-b border-neutral-100 pb-2.5">
-                        <span className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
-                          Digital Marketing Services
+                  {/* Dropdown / Mega panel - Visually stunning with large bold text and neat image containers */}
+                  <div className="invisible absolute left-1/2 top-full z-50 w-[780px] -translate-x-1/2 translate-y-2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                    <div className="overflow-hidden rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-2xl shadow-neutral-900/10 backdrop-blur-xl">
+                      <div className="mb-4 flex items-center justify-between border-b border-neutral-100 pb-3">
+                        <span className="text-xs font-extrabold uppercase tracking-wider text-neutral-400">
+                          Our Digital Marketing Services
                         </span>
                         <Link
                           href={link.href}
-                          className="inline-flex items-center gap-1 text-xs font-semibold text-neutral-900 hover:text-primary"
+                          className="inline-flex items-center gap-1 text-xs font-bold text-neutral-900 hover:text-orange-600 transition-colors"
                         >
-                          View all <ArrowRight className="h-3 w-3" />
+                          View all Services <ArrowRight className="h-3 w-3" />
                         </Link>
                       </div>
-                      <ul className="grid grid-cols-2 gap-1.5">
-                        {link.children.map((child, i) => (
-                          <li key={child.href}>
-                            <Link
-                              href={child.href}
-                              className="group/item flex items-center gap-3 rounded-xl border border-transparent px-3 py-2 transition-all duration-200 hover:border-neutral-200 hover:bg-neutral-50"
-                            >
-                              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-neutral-100 font-display text-[11px] font-bold text-neutral-700 transition-colors group-hover/item:bg-primary group-hover/item:text-white">
-                                {String(i + 1).padStart(2, '0')}
-                              </span>
-                              <span className="text-xs font-semibold text-neutral-800 transition-colors group-hover/item:text-neutral-900">
-                                {child.label}
-                              </span>
-                            </Link>
-                          </li>
-                        ))}
+                      
+                      <ul className="grid grid-cols-3 gap-4">
+                        {SERVICES.map((service) => {
+                          const href = `/services/${slugify(service.title)}`;
+                          // Map each service to a highly relevant free Unsplash image
+                          const serviceImages: Record<string, string> = {
+                            'SEO': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&h=120&fit=crop&q=80',
+                            'Local SEO': 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=120&h=120&fit=crop&q=80',
+                            'SMO': 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=120&h=120&fit=crop&q=80',
+                            'SMM': 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=120&h=120&fit=crop&q=80',
+                            'Web Analytics': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=120&fit=crop&q=80',
+                            'Web Development': 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=120&h=120&fit=crop&q=80',
+                            'Digital Marketing Consulting': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop&q=80',
+                            'Digital Marketing Service': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80',
+                            'PPC Service': 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=120&h=120&fit=crop&q=80',
+                            'AI SEO Services': 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=120&h=120&fit=crop&q=80'
+                          };
+                          const imgUrl = serviceImages[service.title] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80';
+
+                          return (
+                            <li key={service.title}>
+                              <Link
+                                href={href}
+                                className="group/item flex items-center gap-4 rounded-xl border border-transparent p-3 transition-all duration-200 hover:border-neutral-100 hover:bg-neutral-50/70"
+                              >
+                                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl overflow-hidden bg-neutral-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+                                  <img
+                                    src={imgUrl}
+                                    alt={service.title}
+                                    className="h-full w-full object-cover"
+                                  />
+                                </span>
+                                <span className="text-[14px] font-extrabold tracking-tight text-neutral-800 transition-colors group-hover/item:text-orange-600 leading-snug">
+                                  {service.title}
+                                </span>
+                              </Link>
+                            </li>
+                          );
+                        })}
                       </ul>
                     </div>
                   </div>
