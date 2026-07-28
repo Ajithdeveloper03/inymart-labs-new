@@ -1,11 +1,151 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
+interface StarParticle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  alpha: number;
+  decay: number;
+  color: string;
+  spikes: number;
+}
+
 export function Hero() {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const section = sectionRef.current;
+    if (!canvas || !section) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let particles: StarParticle[] = [];
+    const colors = [
+      '#FF8A00', // orange
+      '#FFA800', // gold
+      '#FFD600', // yellow
+      '#FFFFFF', // white
+      '#FF5C00', // dark orange
+    ];
+
+    const resizeCanvas = () => {
+      const rect = section.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      // Spawn 2-3 stars per mouse move event
+      for (let i = 0; i < 2; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 2 + 1;
+        particles.push({
+          x,
+          y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 0.5, // slight upward float
+          size: Math.random() * 8 + 4,
+          alpha: 1,
+          decay: Math.random() * 0.02 + 0.015,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          spikes: Math.random() > 0.5 ? 4 : 5,
+        });
+      }
+    };
+
+    section.addEventListener('mousemove', handleMouseMove);
+
+    const drawStar = (
+      c: CanvasRenderingContext2D,
+      cx: number,
+      cy: number,
+      spikes: number,
+      outerRadius: number,
+      innerRadius: number,
+      color: string,
+      alpha: number
+    ) => {
+      let rot = (Math.PI / 2) * 3;
+      let x = cx;
+      let y = cy;
+      const step = Math.PI / spikes;
+
+      c.save();
+      c.globalAlpha = alpha;
+      c.fillStyle = color;
+      c.beginPath();
+      c.moveTo(cx, cy - outerRadius);
+      for (let i = 0; i < spikes; i++) {
+        x = cx + Math.cos(rot) * outerRadius;
+        y = cy + Math.sin(rot) * outerRadius;
+        c.lineTo(x, y);
+        rot += step;
+
+        x = cx + Math.cos(rot) * innerRadius;
+        y = cy + Math.sin(rot) * innerRadius;
+        c.lineTo(x, y);
+        rot += step;
+      }
+      c.lineTo(cx, cy - outerRadius);
+      c.closePath();
+      c.fill();
+      c.restore();
+    };
+
+    const updateAndDraw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+          continue;
+        }
+
+        drawStar(ctx, p.x, p.y, p.spikes, p.size, p.size / 2, p.color, p.alpha);
+      }
+
+      animationFrameId = requestAnimationFrame(updateAndDraw);
+    };
+
+    updateAndDraw();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      section.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
   return (
-    <section id="home" className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-36 sm:pt-40 lg:pt-44 pb-0">
+    <section
+      id="home"
+      ref={sectionRef}
+      className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-36 sm:pt-40 lg:pt-44 pb-0"
+    >
+      {/* Canvas for Magical Star Splashes */}
+      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-30" />
       {/* Grid Backdrop (top area) - subtle visible white grid lines on dark background */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[1] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)]" />
 
@@ -38,8 +178,8 @@ export function Hero() {
         </svg>
       </div>
 
-      {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height) */}
-      <div className="hidden lg:block absolute -left-12 xl:-left-6 top-[45%] -translate-y-1/2 w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl -rotate-12 transform transition-all duration-500 hover:-rotate-6 hover:scale-105 z-20">
+      {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
+      <div className="hidden lg:block absolute -left-12 xl:-left-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
         <img
           src="/images/hero_left.png"
           alt="Digital Art Concept Left"
@@ -47,8 +187,8 @@ export function Hero() {
         />
       </div>
 
-      {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height) */}
-      <div className="hidden lg:block absolute -right-12 xl:-right-6 top-[45%] -translate-y-1/2 w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl rotate-12 transform transition-all duration-500 hover:rotate-6 hover:scale-105 z-20">
+      {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
+      <div className="hidden lg:block absolute -right-12 xl:-right-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
         <img
           src="/images/hero_right.png"
           alt="Digital Art Concept Right"
@@ -111,8 +251,8 @@ export function Hero() {
         <Reveal delay={400} className="relative mt-8 sm:mt-10 w-full flex justify-center">
           <div className="relative mx-auto w-full group flex justify-center items-end max-w-7xl px-4 sm:px-6 lg:px-8">
             
-            {/* Center Hand holding phone container (reduced height) */}
-            <div className="relative z-10 w-full max-w-3xl flex justify-center pb-0">
+            {/* Center Hand holding phone container (reduced height with float animation) */}
+            <div className="relative z-10 w-full max-w-3xl flex justify-center pb-0 animate-float-phone">
               <img
                 src="/images/hero_phone.png"
                 alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"

@@ -142,7 +142,7 @@ export function Header() {
           <div className="hidden lg:block">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2 text-[12px] font-bold uppercase tracking-wider text-neutral-800 shadow-sm transition-all duration-300 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white hover:shadow-md"
+              className="group inline-flex items-center gap-2 rounded-full border border-neutral-900 bg-neutral-950 px-5 py-2 text-[12px] font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-neutral-900 hover:border-neutral-800 hover:shadow-md"
             >
               FREE CONSULTATION
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
