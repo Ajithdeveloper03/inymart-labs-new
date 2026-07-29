@@ -153,6 +153,10 @@ export function Hero() {
       <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] rounded-full bg-orange-600/20 blur-[110px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
       <div className="absolute top-[35%] right-[5%] w-[400px] h-[400px] rounded-full bg-blue-600/15 blur-[120px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
       <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-pink-600/15 blur-[90px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      <div className="absolute top-[5%] right-[30%] w-[250px] h-[250px] rounded-full bg-rose-500/10 blur-[80px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      <div className="absolute top-[50%] right-[15%] w-[320px] h-[320px] rounded-full bg-orange-500/15 blur-[100px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      <div className="absolute bottom-[10%] right-[25%] w-[380px] h-[380px] rounded-full bg-amber-500/15 blur-[110px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
+      <div className="absolute bottom-[5%] left-[5%] w-[350px] h-[350px] rounded-full bg-violet-600/10 blur-[105px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
 
       {/* Curved Orangish Gradient Shape behind the image, placed starting high (above 40% of the bottom) */}
       <div className="absolute inset-x-0 bottom-0 h-[650px] z-0 pointer-events-none">
@@ -184,7 +188,7 @@ export function Hero() {
       </div>
 
       {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
-      <div className="hidden lg:block absolute -left-12 xl:-left-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
+      <div className="hidden xl:block absolute -left-16 2xl:-left-6 top-[45%] w-[260px] 2xl:w-[320px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
         <img
           src="/images/hero_left.png"
           alt="Digital Art Concept Left"
@@ -193,7 +197,7 @@ export function Hero() {
       </div>
 
       {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
-      <div className="hidden lg:block absolute -right-12 xl:-right-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
+      <div className="hidden xl:block absolute -right-16 2xl:-right-6 top-[45%] w-[260px] 2xl:w-[320px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
         <img
           src="/images/hero_right.png"
           alt="Digital Art Concept Right"
