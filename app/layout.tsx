@@ -1,7 +1,15 @@
 import './styles.css';
 import type { Metadata } from 'next';
+import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { CustomCursor } from '@/components/CustomCursor';
+
+const serif = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  style: ['italic', 'normal'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.inymartlabs.com'),
@@ -64,6 +72,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
+          serif.variable,
           'font-sans bg-background text-foreground'
         )}
       >

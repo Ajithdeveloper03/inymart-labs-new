@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { BannerSlider } from '@/components/sections/BannerSlider';
+import { ScrollToTop } from '@/components/ScrollToTop';
+import { Hero } from '@/components/sections/Hero';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Services } from '@/components/sections/Services';
 import { Portfolio } from '@/components/sections/Portfolio';
@@ -35,7 +36,7 @@ export default function Home() {
       />
       <Header />
       <main>
-        <BannerSlider />
+        <Hero />
         <WhyChooseUs />
         <Services />
         <Portfolio />
@@ -46,6 +47,7 @@ export default function Home() {
         <FinalCta />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
