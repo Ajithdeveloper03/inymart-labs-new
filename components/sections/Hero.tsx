@@ -1,159 +1,281 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { Reveal } from '@/components/Reveal';
-import { HERO_STATS, SITE } from '@/lib/content';
-import { ArrowRight, CheckCircle2, Search, Sparkles, Star } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
-const heroPoints = [
-  'Get a Free Consultation',
-  'Talk to Our Experts',
-  'Start Your Digital Growth Today',
-];
+interface StarParticle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  alpha: number;
+  decay: number;
+  color: string;
+  spikes: number;
+}
 
 export function Hero() {
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const section = sectionRef.current;
+    if (!canvas || !section) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let particles: StarParticle[] = [];
+    const colors = [
+      '#FF8A00', // orange
+      '#FFA800', // gold
+      '#FFD600', // yellow
+      '#FFFFFF', // white
+      '#FF5C00', // dark orange
+    ];
+
+    const resizeCanvas = () => {
+      const rect = section.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      // Spawn 2-3 stars per mouse move event
+      for (let i = 0; i < 2; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 2 + 1;
+        particles.push({
+          x,
+          y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 0.5, // slight upward float
+          size: Math.random() * 8 + 4,
+          alpha: 1,
+          decay: Math.random() * 0.02 + 0.015,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          spikes: Math.random() > 0.5 ? 4 : 5,
+        });
+      }
+    };
+
+    section.addEventListener('mousemove', handleMouseMove);
+
+    const drawStar = (
+      c: CanvasRenderingContext2D,
+      cx: number,
+      cy: number,
+      spikes: number,
+      outerRadius: number,
+      innerRadius: number,
+      color: string,
+      alpha: number
+    ) => {
+      let rot = (Math.PI / 2) * 3;
+      let x = cx;
+      let y = cy;
+      const step = Math.PI / spikes;
+
+      c.save();
+      c.globalAlpha = alpha;
+      c.fillStyle = color;
+      c.beginPath();
+      c.moveTo(cx, cy - outerRadius);
+      for (let i = 0; i < spikes; i++) {
+        x = cx + Math.cos(rot) * outerRadius;
+        y = cy + Math.sin(rot) * outerRadius;
+        c.lineTo(x, y);
+        rot += step;
+
+        x = cx + Math.cos(rot) * innerRadius;
+        y = cy + Math.sin(rot) * innerRadius;
+        c.lineTo(x, y);
+        rot += step;
+      }
+      c.lineTo(cx, cy - outerRadius);
+      c.closePath();
+      c.fill();
+      c.restore();
+    };
+
+    const updateAndDraw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+          continue;
+        }
+
+        drawStar(ctx, p.x, p.y, p.spikes, p.size, p.size / 2, p.color, p.alpha);
+      }
+
+      animationFrameId = requestAnimationFrame(updateAndDraw);
+    };
+
+    updateAndDraw();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      section.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-hero-glow pt-32 pb-20 sm:pt-36 lg:pt-44 lg:pb-28"
+      ref={sectionRef}
+      className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-36 sm:pt-40 lg:pt-44 pb-0"
     >
-      {/* Decorative floating orbs */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-24 top-32 h-72 w-72 rounded-full bg-accent/20 blur-3xl animate-float-slow"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-[-10%] top-20 h-80 w-80 rounded-full bg-chart-4/20 blur-3xl animate-float-slower"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-primary/10 blur-3xl"
-      />
+      {/* Canvas for Magical Star Splashes */}
+      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-30" />
+      {/* Grid Backdrop (top area) - subtle visible white grid lines on dark background */}
+      <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[1] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)]" />
 
-      <div className="container-x relative grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-        {/* Left: copy */}
-        <div className="flex flex-col items-start">
-          <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              <Sparkles className="h-3.5 w-3.5" />
-              {SITE.tagline}
+      {/* Floating Glowing Gradient Blur Orbs/Blobs for Futuristic Aesthetics */}
+      <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] rounded-full bg-orange-600/20 blur-[110px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      <div className="absolute top-[35%] right-[5%] w-[400px] h-[400px] rounded-full bg-blue-600/15 blur-[120px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
+      <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-pink-600/15 blur-[90px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+
+      {/* Curved Orangish Gradient Shape behind the image, placed starting high (above 40% of the bottom) */}
+      <div className="absolute inset-x-0 bottom-0 h-[650px] z-0 pointer-events-none">
+        <svg
+          viewBox="0 0 1440 600"
+          className="absolute bottom-0 w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="orangeFlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="rgba(255, 146, 60, 0)" />
+              <stop offset="35%" stopColor="rgba(254, 146, 60, 0.08)" />
+              <stop offset="75%" stopColor="rgba(253, 120, 50, 0.15)" />
+              <stop offset="100%" stopColor="rgba(249, 115, 22, 0.25)" />
+            </linearGradient>
+          </defs>
+          {/* Curve where left/right are at the same level, and the middle curves upward */}
+          <path
+      fill="url(#orangeFlowGrad)"
+      d="
+        M0 0
+        H1440
+        V520
+        Q720 250 0 520
+        Z
+      "
+    />
+        </svg>
+      </div>
+
+      {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
+      <div className="hidden lg:block absolute -left-12 xl:-left-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
+        <img
+          src="/images/hero_left.png"
+          alt="Digital Art Concept Left"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
+      <div className="hidden lg:block absolute -right-12 xl:-right-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
+        <img
+          src="/images/hero_right.png"
+          alt="Digital Art Concept Right"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="container-x relative z-10 text-center flex flex-col items-center">
+        {/* Top Accent Subtitle in Serif Italic */}
+        <Reveal delay={0}>
+          <p className="font-serif italic text-base sm:text-lg md:text-xl text-neutral-300 tracking-wide">
+            Be Found Where Your Customers Are Searching
+          </p>
+        </Reveal>
+
+        {/* Main Bold Headline */}
+        <Reveal delay={100}>
+          <h1 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1] max-w-5xl mx-auto">
+            Grow Your Business With Us <br className="hidden sm:block" />
+            <span className="text-orange-500">Your Trusted Agency in Tamil Nadu</span>
+          </h1>
+        </Reveal>
+
+        {/* Paragraph Description: Shortened to 4-5 lines with minimal text size */}
+        <Reveal delay={200}>
+          <p className="mt-4 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed text-neutral-300 font-normal">
+            Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
+          </p>
+        </Reveal>
+
+        {/* Centered Elegant Icons Badges */}
+        <Reveal delay={250}>
+          <div className="mt-5 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] sm:text-xs font-semibold text-neutral-200">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Get a Free Consultation
             </span>
-          </Reveal>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Talk to Our Experts
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-50/10 border border-orange-500/20 px-3 py-1 text-orange-200">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Start Your Digital Growth Today
+            </span>
+          </div>
+        </Reveal>
 
-          <Reveal delay={80}>
-            <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
-              Grow Your Business with{' '}
-              <span className="text-gradient">Inymart Labs</span> — Your Trusted
-              Digital Marketing Agency in Tamil Nadu
-            </h1>
-          </Reveal>
+        {/* Primary Pill Button - Futuristic Orange Button */}
+        <Reveal delay={300}>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 rounded-full bg-orange-600 px-7 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-orange-500 hover:scale-[1.02] shadow-lg shadow-orange-600/20"
+            >
+              START YOUR DIGITAL GROWTH TODAY
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+          </div>
+        </Reveal>
 
-          <Reveal delay={160}>
-            <p className="font-sans mt-6 max-w-xl text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
-              Be found where your customers are searching. We help businesses
-              improve online visibility, generate quality leads, and achieve
-              long-term growth through result-driven digital marketing
-              strategies — including online reputation management.
-            </p>
-          </Reveal>
-
-          <Reveal delay={240}>
-            <ul className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
-              {heroPoints.map((point) => (
-                <li
-                  key={point}
-                  className="flex items-center gap-2.5 text-sm font-medium text-foreground sm:text-base"
-                >
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-
-          <Reveal delay={320}>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <a
-                href="#contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/40"
-              >
-                Ready to Grow Your Business?
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-background px-7 py-3.5 text-sm font-semibold text-foreground transition-all duration-300 hover:border-accent/40 hover:bg-secondary"
-              >
-                Explore Services
-              </a>
-            </div>
-          </Reveal>
-
-          <Reveal delay={400}>
-            <dl className="mt-12 grid grid-cols-3 gap-4 border-t border-border pt-8 sm:gap-8">
-              {HERO_STATS.map((stat) => (
-                <div key={stat.label} className="flex flex-col">
-                  <dt className="font-display text-3xl font-extrabold text-foreground sm:text-4xl">
-                    {stat.value}
-                  </dt>
-                  <dd className="mt-1 text-xs font-medium uppercase tracking-wide text-muted-foreground sm:text-sm">
-                    {stat.label}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </Reveal>
-        </div>
-
-        {/* Right: visual composition */}
-        <Reveal delay={200} className="relative">
-          <div className="relative mx-auto max-w-md lg:max-w-none">
-            {/* Main image card */}
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-2xl shadow-primary/10">
+        {/* Centerpiece Hero Showcase Visual */}
+        <Reveal delay={400} className="relative mt-8 sm:mt-10 w-full flex justify-center">
+          <div className="relative mx-auto w-full group flex justify-center items-end max-w-7xl px-4 sm:px-6 lg:px-8">
+            
+            {/* Center Hand holding phone container (reduced height with float animation) */}
+            <div className="relative z-10 w-full max-w-3xl flex justify-center pb-0 animate-float-phone">
               <img
-                src="/images/hero.jpeg"
-                alt="Inymart Labs digital marketing team analysing growth strategy"
-                className="h-[420px] w-full object-cover sm:h-[480px] lg:h-[540px]"
+                src="/images/hero_phone.png"
+                alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"
+                className="relative z-10 w-full h-auto max-h-[400px] sm:max-h-[480px] md:max-h-[550px] lg:max-h-[600px] object-contain transition-transform duration-500 hover:scale-[1.01]"
+                style={{
+                  WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
+                  maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
+                }}
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/5 to-transparent" />
-              <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-background/90 p-4 backdrop-blur-md">
-                <p className="font-sans text-sm font-semibold text-foreground">
-                  Result-driven digital marketing strategies
-                </p>
-                <p className="font-sans mt-1 text-xs text-muted-foreground">
-                  Serving businesses across Tamil Nadu since {SITE.established}
-                </p>
-              </div>
+
+              {/* Dark Overlay Gradient for smooth bottom hand cutting transition (reduced height) */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-10 sm:h-16 bg-gradient-to-t from-[#090a0f] via-[#090a0f]/80 to-transparent"
+              />
             </div>
 
-            {/* Floating stat card */}
-            <div className="absolute -left-4 top-10 hidden rounded-2xl border border-border bg-background/95 p-4 shadow-xl backdrop-blur-md sm:block">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                  <Search className="h-5 w-5" />
-                </span>
-                <div>
-                  <p className="font-sans font-display text-xl font-bold text-foreground">
-                    Top Rankings
-                  </p>
-                  <p className="font-sans text-xs text-muted-foreground">SEO &amp; Local SEO</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating rating card */}
-            <div className="absolute -right-3 bottom-24 hidden rounded-2xl border border-border bg-background/95 p-4 shadow-xl backdrop-blur-md sm:block">
-              <div className="flex items-center gap-1 text-amber-500">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-3.5 w-3.5 fill-current" />
-                ))}
-              </div>
-              <p className="font-sans mt-1.5 font-display text-lg font-bold text-foreground">
-                50+ Happy Clients
-              </p>
-              <p className="font-sans text-xs text-muted-foreground">Across industries</p>
-            </div>
           </div>
         </Reveal>
       </div>
