@@ -1,22 +1,37 @@
 'use client';
 
+import { Reveal } from '@/components/Reveal';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Reveal } from '@/components/Reveal';
-import { FAQS } from '@/lib/content';
 import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
-export function Faqs() {
+const FAQS = [
+  {
+    q: 'What does Inymart Labs do?',
+    a: 'We offer SEO, Local SEO, AEO, GEO, social media marketing, and effective marketing strategies including web development and PPC to grow visibility, leads, and conversions.',
+  },
+  {
+    q: 'How is Inymart Labs different from other Tamil Nadu agencies?',
+    a: 'We place early emphasis on AEO and GEO — helping brands appear in AI tools like ChatGPT and Perplexity, and focusing on online reputation management, not just Google.',
+  },
+  {
+    q: 'How long has Inymart Labs been in business?',
+    a: 'Founded in 2016 in Tiruchirappalli, with 9+ years of marketing expertise serving clients across India, UAE, UK, and the USA.',
+  },
+  {
+    q: 'Which areas does Inymart Labs serve?',
+    a: 'Tamil Nadu (Trichy, Chennai, Madurai, Coimbatore, Salem, Thanjavur), plus India, UAE, UK, the USA, and Australia.',
+  },
+];
+
+export function AboutFaqs() {
   return (
-    <section
-      id="faqs"
-      className="relative scroll-mt-24 bg-white py-14 overflow-hidden"
-    >
-      <div className="container-x">
+    <section className="relative bg-secondary/30 py-12 lg:py-16 overflow-hidden">
+      <div className="container-x relative">
         <div className="mx-auto flex w-full max-w-4xl flex-col">
           
           {/* Section Heading */}
@@ -28,18 +43,13 @@ export function Faqs() {
                   <Circle className="h-3 w-3 fill-[#ff6b35] text-[#ff6b35]" />
                   <ArrowRight className="h-4 w-4 -ml-2 text-[#ff6b35]" strokeWidth={3} />
                 </div>
-                <span>OUR FAQS</span>
+                <span>ABOUT FAQS</span>
               </div>
               
               {/* Heading */}
               <h2 className="font-display text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-6">
                 Frequently Asked Questions
               </h2>
-              
-              {/* Paragraph */}
-              <p className="font-sans text-slate-500 text-[15px] leading-relaxed max-w-lg mx-auto">
-                Answers to the questions businesses most often ask before partnering with Inymart Labs.
-              </p>
             </div>
           </Reveal>
 

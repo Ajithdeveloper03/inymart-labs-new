@@ -70,6 +70,9 @@
   * {
     @apply border-border;
   }
+  body, p, span, a, button, input, textarea, select, table, th, td, div {
+    @apply font-sans;
+  }
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "cv01", "cv11";
@@ -172,6 +175,43 @@
   animation: float-slower 12s ease-in-out infinite;
 }
 
+/* Dynamic Directional Slides for Images */
+@keyframes slide-up-down {
+  0%, 100% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+.animate-slide-up-down {
+  animation: slide-up-down 10s ease-in-out infinite;
+}
+
+@keyframes slide-down-up {
+  0%, 100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+.animate-slide-down-up {
+  animation: slide-down-up 11s ease-in-out infinite;
+}
+
+@keyframes slide-left-right {
+  0%, 100% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+}
+.animate-slide-left-right {
+  animation: slide-left-right 12s ease-in-out infinite;
+}
+
 /* gradient text helper */
 .text-gradient {
   background: linear-gradient(120deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.7) 100%);
@@ -179,3 +219,34 @@
   background-clip: text;
   color: transparent;
 }
+
+/* Image hover shine effect */
+.group:has(> img)::after,
+.overflow-hidden:has(> img)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  z-index: 20;
+  pointer-events: none;
+  transition: none;
+}
+.group:has(> img):hover::after,
+.overflow-hidden:has(> img):hover::after {
+  animation: shine-sweep 0.8s ease-in-out forwards;
+}
+@keyframes shine-sweep {
+  0% { left: -150%; }
+  100% { left: 200%; }
+}
+
+
+.group:has(> img),
+.overflow-hidden:has(> img) {
+  position: relative;
+}
+

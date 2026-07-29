@@ -4,6 +4,7 @@ import { BannerSlider } from '@/components/sections/BannerSlider';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Services } from '@/components/sections/Services';
 import { Portfolio } from '@/components/sections/Portfolio';
+import { Brands } from '@/components/sections/Brands';
 import { Industries } from '@/components/sections/Industries';
 import { WhyDigitalMarketing } from '@/components/sections/WhyDigitalMarketing';
 import { Faqs } from '@/components/sections/Faqs';
@@ -38,6 +39,7 @@ export default function Home() {
         <WhyChooseUs />
         <Services />
         <Portfolio />
+        <Brands />
         <Industries />
         <WhyDigitalMarketing />
         <Faqs />

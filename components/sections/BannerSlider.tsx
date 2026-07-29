@@ -162,7 +162,7 @@ export function BannerSlider() {
                     
                     {slide.description && (
                       <Reveal delay={300}>
-                        <p className="mt-6 text-lg sm:text-xl leading-relaxed text-zinc-400 max-w-xl">
+                        <p className="font-sans mt-6 text-lg sm:text-xl leading-relaxed text-zinc-400 max-w-xl">
                           {slide.description}
                         </p>
                       </Reveal>

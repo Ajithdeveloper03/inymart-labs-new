@@ -49,7 +49,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
+            <p className="font-sans mt-6 max-w-xl text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
               Be found where your customers are searching. We help businesses
               improve online visibility, generate quality leads, and achieve
               long-term growth through result-driven digital marketing
@@ -118,10 +118,10 @@ export function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/5 to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-background/90 p-4 backdrop-blur-md">
-                <p className="text-sm font-semibold text-foreground">
+                <p className="font-sans text-sm font-semibold text-foreground">
                   Result-driven digital marketing strategies
                 </p>
-                <p className="mt-1 text-xs text-muted-foreground">
+                <p className="font-sans mt-1 text-xs text-muted-foreground">
                   Serving businesses across Tamil Nadu since {SITE.established}
                 </p>
               </div>
@@ -134,10 +134,10 @@ export function Hero() {
                   <Search className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="font-display text-xl font-bold text-foreground">
+                  <p className="font-sans font-display text-xl font-bold text-foreground">
                     Top Rankings
                   </p>
-                  <p className="text-xs text-muted-foreground">SEO &amp; Local SEO</p>
+                  <p className="font-sans text-xs text-muted-foreground">SEO &amp; Local SEO</p>
                 </div>
               </div>
             </div>
@@ -149,10 +149,10 @@ export function Hero() {
                   <Star key={i} className="h-3.5 w-3.5 fill-current" />
                 ))}
               </div>
-              <p className="mt-1.5 font-display text-lg font-bold text-foreground">
+              <p className="font-sans mt-1.5 font-display text-lg font-bold text-foreground">
                 50+ Happy Clients
               </p>
-              <p className="text-xs text-muted-foreground">Across industries</p>
+              <p className="font-sans text-xs text-muted-foreground">Across industries</p>
             </div>
           </div>
         </Reveal>

@@ -128,7 +128,7 @@ export function slugify(value: string): string {
 
 export const NAV_LINKS: NavGroup[] = [
   { label: 'Home', href: '#home' },
-  { label: 'About Us', href: '#about' },
+  { label: 'About Us', href: '/about' },
   {
     label: 'Services',
     href: '#services',

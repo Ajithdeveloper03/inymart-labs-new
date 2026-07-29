@@ -11,17 +11,18 @@ export function Portfolio() {
     <section id="portfolio" className="relative flex flex-col lg:flex-row bg-[#0c1f28] overflow-hidden">
       
       {/* Left Side (Dark Slate Background) */}
-      <div className="relative w-full lg:w-[60%] flex px-8 py-4 lg:pl-8 lg:pr-20 xl:pl-12 xl:pr-24">
+      <div className="relative w-full lg:w-[60%] flex px-8 py-14 lg:pl-8 lg:pr-20 xl:pl-12 xl:pr-24">
         
         {/* Vertical Text "INYMART LABS" matching reference */}
         <div className="hidden lg:flex flex-col items-center justify-center mr-10 xl:mr-16 relative">
           <div 
-            className="font-display text-[40px] xl:text-[50px] font-black uppercase tracking-[0.1em] relative select-none leading-none"
+            className="font-display text-[40px] xl:text-[50px] font-black uppercase tracking-[0.1em] relative select-none leading-none animate-text-fill"
             style={{ 
               writingMode: 'vertical-rl', 
               transform: 'rotate(180deg)',
               WebkitTextStroke: '1px rgba(255, 255, 255, 0.7)',
-              background: 'linear-gradient(to bottom, #ea580c 50%, transparent 50%)',
+              backgroundImage: 'linear-gradient(to bottom, transparent 50%, #ea580c 50%)',
+              backgroundSize: '100% 200%',
               WebkitBackgroundClip: 'text',
               color: 'transparent'
             }}
@@ -56,7 +57,7 @@ export function Portfolio() {
 
           {/* Main Description */}
           <Reveal delay={200}>
-            <p className="text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl">
+            <p className="font-sans text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl">
               We&apos;re proud to partner with businesses that trust Inymart Labs for their digital growth, and customized digital marketing solutions. Our clients come from a wide range of industries, and we&apos;re committed to helping each one achieve measurable online success.
             </p>
           </Reveal>
@@ -65,7 +66,7 @@ export function Portfolio() {
 
           {/* Localized Paragraph (styled like the secondary text in reference) */}
           <Reveal delay={400}>
-            <p className="text-white/80 text-sm leading-relaxed mb-10 max-w-2xl">
+            <p className="font-sans text-white/80 text-sm leading-relaxed mb-10 max-w-2xl">
               <span className="text-primary font-bold uppercase tracking-wider">LOCALIZED APPROACH:</span> Digital marketing strategies from Tamil Nadu agencies like Inymart Labs often differ from those in other states by focusing on region-specific insights, cultural nuances, and local language preferences, ensuring campaigns resonate more deeply with target audiences. This localized approach enables businesses to benefit from digital marketing solutions tailored to the unique demographics and market trends of Tamil Nadu, setting them apart from more generic strategies commonly used elsewhere.
             </p>
           </Reveal>

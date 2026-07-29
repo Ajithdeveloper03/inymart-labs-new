@@ -84,7 +84,7 @@ export function WhyChooseUs() {
             </Reveal>
             
             <Reveal delay={400}>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              <p className="font-sans mt-4 text-base leading-relaxed text-muted-foreground">
                 Our focus is to improve search rankings through expert web design, increase website traffic, generate quality leads, and maximize your ROI with transparent and measurable results.
               </p>
             </Reveal>

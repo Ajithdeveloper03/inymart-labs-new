@@ -19,7 +19,7 @@ export function Footer() {
                 className="h-10 w-auto"
               />
             </Link>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            <p className="font-sans mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
               A trusted Digital Marketing Agency in Tamil Nadu and leading
               Digital Marketing Agency in Tiruchirappalli. We help businesses
               improve online visibility, generate quality leads, and achieve
@@ -82,10 +82,10 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-center sm:flex-row sm:text-left">
-          <p className="text-xs text-muted-foreground">
+          <p className="font-sans text-xs text-muted-foreground">
             &copy; {year} {SITE.name}. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className="font-sans text-xs text-muted-foreground">
             Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli
           </p>
         </div>

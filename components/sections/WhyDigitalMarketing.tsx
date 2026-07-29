@@ -42,7 +42,7 @@ export function WhyDigitalMarketing() {
               </h2>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
+              <p className="font-sans mt-6 text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
                 As a trusted Digital Marketing Agency in Tamil Nadu, we help businesses improve visibility through SEO, Local SEO, Website Development, AI Search Optimization, Performance Marketing, Social Media Marketing, and enhance their organic traffic.
               </p>
             </Reveal>
@@ -76,10 +76,10 @@ export function WhyDigitalMarketing() {
                   <LineChart className="h-6 w-6" />
                 </span>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">
+                  <p className="font-sans font-display text-lg font-bold text-foreground">
                     Organic Traffic Growth
                   </p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="font-sans text-xs text-muted-foreground">
                     Enhanced through SEO &amp; AI Search Optimization
                   </p>
                 </div>
