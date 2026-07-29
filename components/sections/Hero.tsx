@@ -142,49 +142,78 @@ export function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-36 sm:pt-40 lg:pt-44 pb-0"
+      className="relative w-full overflow-hidden bg-[#0c0d12] pt-24 sm:pt-32 min-h-screen flex flex-col justify-between"
     >
       {/* Canvas for Magical Star Splashes */}
-      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-30" />
-      {/* Grid Backdrop (top area) - subtle visible white grid lines on dark background */}
-      <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[1] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)]" />
+      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-40" />
 
-      {/* Floating Glowing Gradient Blur Orbs/Blobs for Futuristic Aesthetics */}
-      <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] rounded-full bg-orange-600/20 blur-[110px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
-      <div className="absolute top-[35%] right-[5%] w-[400px] h-[400px] rounded-full bg-blue-600/15 blur-[120px] pointer-events-none mix-blend-screen animate-float-slower z-0" />
-      <div className="absolute bottom-[20%] left-[15%] w-[300px] h-[300px] rounded-full bg-pink-600/15 blur-[90px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
+      {/* Grid Backdrop */}
+      <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_100%_100%_at_50%_0%,#000_60%,transparent_100%)]" />
 
-      {/* Curved Orangish Gradient Shape behind the image, placed starting high (above 40% of the bottom) */}
-      <div className="absolute inset-x-0 bottom-0 h-[650px] z-0 pointer-events-none">
-        <svg
-          viewBox="0 0 1440 600"
-          className="absolute bottom-0 w-full h-full"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient id="orangeFlowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="rgba(255, 146, 60, 0)" />
-              <stop offset="35%" stopColor="rgba(254, 146, 60, 0.08)" />
-              <stop offset="75%" stopColor="rgba(253, 120, 50, 0.15)" />
-              <stop offset="100%" stopColor="rgba(249, 115, 22, 0.25)" />
-            </linearGradient>
-          </defs>
-          {/* Curve where left/right are at the same level, and the middle curves upward */}
-          <path
-      fill="url(#orangeFlowGrad)"
-      d="
-        M0 0
-        H1440
-        V520
-        Q720 250 0 520
-        Z
-      "
-    />
-        </svg>
+      {/* Glow Behind Text */}
+      <div className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-orange-600/10 blur-[120px] pointer-events-none mix-blend-screen z-0" />
+
+      {/* Main Content */}
+      <div className="container-x relative z-30 text-center flex flex-col items-center flex-grow mt-4 lg:mt-8">
+        {/* Top Accent Subtitle in Serif Italic */}
+        <Reveal delay={0}>
+          <p className="font-serif italic text-sm sm:text-base md:text-lg text-neutral-300 tracking-wide mb-3">
+            Be Found Where Your Customers Are Searching
+          </p>
+        </Reveal>
+
+        {/* Main Bold Headline */}
+        <Reveal delay={100}>
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold tracking-tight text-white leading-[1.1] max-w-4xl mx-auto mb-4 lg:mb-6">
+            Grow Your Business With Us <br className="hidden sm:block" />
+            <span className="text-gradient relative inline-block">
+              Your Trusted Agency in Tamil Nadu
+              {/* Decorative sparkles next to text like in reference */}
+              <div className="absolute -right-8 lg:-right-12 top-1/2 -translate-y-1/2 text-orange-400 opacity-80 hidden md:block scale-75 lg:scale-100">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" className="animate-pulse">
+                  <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" />
+                </svg>
+              </div>
+            </span>
+          </h1>
+        </Reveal>
+
+        {/* Paragraph Description */}
+        <Reveal delay={200}>
+          <p className="max-w-2xl mx-auto text-xs sm:text-sm lg:text-[15px] leading-relaxed text-neutral-300 font-normal mb-6">
+            Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
+          </p>
+        </Reveal>
+
+        {/* Centered Elegant Icons Badges (No BG, Orange Border, Reference matching) */}
+        <Reveal delay={250}>
+          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] sm:text-xs lg:text-[13px] font-medium text-neutral-300 mb-8">
+            <span className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 px-3 py-1.5 hover:bg-orange-500/10 transition-colors">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Get a Free Consultation
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 px-3 py-1.5 hover:bg-orange-500/10 transition-colors">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Talk to Our Experts
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-orange-500/30 px-3 py-1.5 hover:bg-orange-500/10 transition-colors">
+              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Start Your Digital Growth Today
+            </span>
+          </div>
+        </Reveal>
+
+        {/* Primary Pill Button */}
+        <Reveal delay={300}>
+          <a
+            href="#contact"
+            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff7000] to-[#e64000] px-6 lg:px-8 py-3 lg:py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-[1.05] shadow-[0_0_20px_rgba(255,112,0,0.4)] hover:shadow-[0_0_30px_rgba(255,112,0,0.6)]"
+          >
+            START YOUR DIGITAL GROWTH TODAY
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
+        </Reveal>
       </div>
 
-      {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
-      <div className="hidden lg:block absolute -left-12 xl:-left-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
+      {/* Left Showcase Image (Woman with curly hair) */}
+      <div className="hidden lg:block absolute left-8 xl:left-16 2xl:left-24 top-[15%] w-[240px] xl:w-[280px] 2xl:w-[320px] aspect-[4/5] rounded-[24px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 transform -rotate-[10deg] origin-center pointer-events-none">
         <img
           src="/images/hero_left.png"
           alt="Digital Art Concept Left"
@@ -192,8 +221,8 @@ export function Hero() {
         />
       </div>
 
-      {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
-      <div className="hidden lg:block absolute -right-12 xl:-right-6 top-[45%] w-[310px] xl:w-[350px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
+      {/* Right Showcase Image (Astronaut Cat) */}
+      <div className="hidden lg:block absolute right-8 xl:right-16 2xl:right-24 top-[15%] w-[240px] xl:w-[280px] 2xl:w-[320px] aspect-[4/5] rounded-[24px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-right z-20 transform rotate-[10deg] origin-center pointer-events-none">
         <img
           src="/images/hero_right.png"
           alt="Digital Art Concept Right"
@@ -201,83 +230,22 @@ export function Hero() {
         />
       </div>
 
-      <div className="container-x relative z-10 text-center flex flex-col items-center">
-        {/* Top Accent Subtitle in Serif Italic */}
-        <Reveal delay={0}>
-          <p className="font-serif italic text-base sm:text-lg md:text-xl text-neutral-300 tracking-wide">
-            Be Found Where Your Customers Are Searching
-          </p>
-        </Reveal>
+      {/* Background Curved Floor Dome */}
+      <div className="absolute inset-x-0 bottom-0 z-10 overflow-hidden h-[200px] md:h-[250px] pointer-events-none">
+        <div className="absolute w-[150%] h-[800px] left-[-25%] top-[10%] bg-[#050608] rounded-[100%] shadow-[0_-30px_80px_rgba(249,115,22,0.08)] border-t border-orange-500/10"></div>
+      </div>
 
-        {/* Main Bold Headline */}
-        <Reveal delay={100}>
-          <h1 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1] max-w-5xl mx-auto">
-            Grow Your Business With Us <br className="hidden sm:block" />
-            <span className="text-orange-500">Your Trusted Agency in Tamil Nadu</span>
-          </h1>
-        </Reveal>
-
-        {/* Paragraph Description: Shortened to 4-5 lines with minimal text size */}
-        <Reveal delay={200}>
-          <p className="mt-4 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed text-neutral-300 font-normal">
-            Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
-          </p>
-        </Reveal>
-
-        {/* Centered Elegant Icons Badges */}
-        <Reveal delay={250}>
-          <div className="mt-5 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] sm:text-xs font-semibold text-neutral-200">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Get a Free Consultation
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Talk to Our Experts
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-50/10 border border-orange-500/20 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Start Your Digital Growth Today
-            </span>
-          </div>
-        </Reveal>
-
-        {/* Primary Pill Button - Futuristic Orange Button */}
-        <Reveal delay={300}>
-          <div className="mt-6 flex justify-center">
-            <a
-              href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-orange-600 px-7 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-orange-500 hover:scale-[1.02] shadow-lg shadow-orange-600/20"
-            >
-              START YOUR DIGITAL GROWTH TODAY
-              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-          </div>
-        </Reveal>
-
-        {/* Centerpiece Hero Showcase Visual */}
-        <Reveal delay={400} className="relative mt-8 sm:mt-10 w-full flex justify-center">
-          <div className="relative mx-auto w-full group flex justify-center items-end max-w-7xl px-4 sm:px-6 lg:px-8">
-            
-            {/* Center Hand holding phone container (reduced height with float animation) */}
-            <div className="relative z-10 w-full max-w-3xl flex justify-center pb-0 animate-float-phone">
-              <img
-                src="/images/hero_phone.png"
-                alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"
-                className="relative z-10 w-full h-auto max-h-[400px] sm:max-h-[480px] md:max-h-[550px] lg:max-h-[600px] object-contain transition-transform duration-500 hover:scale-[1.01]"
-                style={{
-                  WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
-                  maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
-                }}
-                loading="eager"
-              />
-
-              {/* Dark Overlay Gradient for smooth bottom hand cutting transition (reduced height) */}
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-10 sm:h-16 bg-gradient-to-t from-[#090a0f] via-[#090a0f]/80 to-transparent"
-              />
-            </div>
-
-          </div>
-        </Reveal>
+      {/* Center Phone Container */}
+      <div className="relative w-full h-[220px] sm:h-[260px] md:h-[300px] lg:h-[320px] z-20 pointer-events-none max-w-[1600px] mx-auto mt-4">
+        
+        {/* Center Hand holding phone */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-30 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[460px] flex justify-center animate-float-phone">
+          <img
+            src="/images/hero_phone.png"
+            alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"
+            className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02] pointer-events-auto cursor-pointer"
+          />
+        </div>
       </div>
     </section>
   );
