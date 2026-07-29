@@ -32,10 +32,10 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 transition-all duration-300">
       {/* Top Announcement Banner Bar - Orange background matching reference image */}
       {bannerVisible && (
-        <div className="relative w-full bg-orange-600 px-4 py-2 text-white shadow-sm transition-all duration-300">
-          <div className="flex items-center justify-center text-xs font-medium gap-2 sm:gap-3 text-center pr-8">
-            <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
-              <Sparkles className="h-3 w-3 text-amber-200" /> Trusted Agency
+        <div className="relative w-full bg-orange-600 px-4 py-2.5 text-white shadow-sm transition-all duration-300">
+          <div className="flex flex-wrap items-center justify-center text-[11px] sm:text-xs font-medium gap-x-2 gap-y-1.5 text-center px-6 sm:px-10">
+            <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+              <Sparkles className="h-2.5 w-2.5 text-amber-200" /> Trusted Agency
             </span>
             <span className="font-semibold text-white/95">
               Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli
@@ -53,7 +53,7 @@ export function Header() {
             type="button"
             aria-label="Close announcement"
             onClick={() => setBannerVisible(false)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
+            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
           >
             <X className="h-3.5 w-3.5" />
           </button>
@@ -69,7 +69,7 @@ export function Header() {
             : 'border-b border-neutral-100/60 py-4'
         )}
       >
-        <div className="container-x flex items-center justify-between gap-6">
+        <div className="container-x flex items-center justify-between gap-4 xl:gap-6">
           {/* Brand Logo */}
           <Link href="#home" className="group flex items-center gap-2.5">
             <img
@@ -80,7 +80,7 @@ export function Header() {
           </Link>
 
           {/* Navigation links */}
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center xl:gap-8 xl:flex">
             {NAV_LINKS.map((link) =>
               link.children ? (
                 <div key={link.label} className="group relative">
@@ -162,7 +162,7 @@ export function Header() {
           </nav>
 
           {/* Right CTA Button: Exact pill shape with outline border & arrow icon */}
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <a
               href="#contact"
               className="group inline-flex items-center gap-2 rounded-full border border-neutral-900 bg-neutral-950 px-5 py-2 text-[12px] font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-neutral-900 hover:border-neutral-800 hover:shadow-md"
@@ -178,7 +178,7 @@ export function Header() {
             aria-label="Toggle menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-800 lg:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-800 xl:hidden"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
@@ -187,8 +187,8 @@ export function Header() {
         {/* Mobile drawer */}
         <div
           className={cn(
-            'lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out',
-            open ? 'max-h-[90vh] opacity-100' : 'max-h-0 opacity-0'
+            'xl:hidden overflow-y-auto transition-[max-height,opacity] duration-300 ease-in-out',
+            open ? 'max-h-[calc(100vh-110px)] opacity-100' : 'max-h-0 opacity-0'
           )}
         >
           <nav className="container-x flex flex-col gap-1 border-t border-neutral-100 pb-6 pt-4">
