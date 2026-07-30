@@ -51,11 +51,11 @@ export function WhereWeWork() {
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
-        {/* Changed to exactly 50/50 layout with no horizontal gap */}
-        <div className="grid lg:grid-cols-2 gap-y-12 gap-x-0 items-center">
+        {/* Changed layout to give the map more prominence (5-7 split) */}
+        <div className="grid lg:grid-cols-12 gap-y-12 gap-x-8 items-center">
           
-          {/* Left: Content (Compact and balanced) */}
-          <div className="flex flex-col text-left pr-0 lg:pr-12">
+          {/* Left: Content */}
+          <div className="flex flex-col text-left lg:col-span-5 pr-0 lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight mb-5 mt-4">
                 Where We <span className="text-gradient">Work</span>
@@ -84,23 +84,23 @@ export function WhereWeWork() {
             </Reveal>
           </div>
 
-          {/* Right: Map Container (Visually equal size to left content) */}
-          <Reveal delay={200} className="relative w-full aspect-[4/3] sm:aspect-[2/1] lg:aspect-square max-h-[500px]">
-            {/* The wrapper scales to fit perfectly within the 50% grid column */}
-            <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 aspect-[2/1] w-full max-w-[800px] mx-auto">
+          {/* Right: Map Container (Visually prominent) */}
+          <Reveal delay={200} className="relative w-full lg:col-span-7 aspect-[4/3] sm:aspect-[2/1] lg:aspect-[1.8/1] max-h-[600px] flex items-center justify-center">
+            {/* The wrapper scales to fit perfectly */}
+            <div className="relative aspect-[2/1] w-full max-w-[900px] lg:scale-105">
               <div 
-                className="absolute inset-0 bg-center bg-no-repeat bg-contain opacity-25 pointer-events-none filter drop-shadow-lg"
+                className="absolute inset-0 bg-center bg-no-repeat bg-contain opacity-80 pointer-events-none filter contrast-125 drop-shadow-xl brightness-95"
                 style={{ 
                   backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg")'
                 }}
               />
 
               {/* Location Pins */}
-              <GlowingPin top="32%" left="21%" delay="0s" label="United States" />
-              <GlowingPin top="25%" left="47.5%" delay="0.5s" label="United Kingdom" />
-              <GlowingPin top="43%" left="63.5%" delay="1s" label="UAE" />
-              <GlowingPin top="47%" left="71%" delay="1.5s" label="India (HQ)" />
-              <GlowingPin top="77%" left="86%" delay="2s" label="Australia" />
+              <GlowingPin top="33%" left="16%" delay="0s" label="United States" />
+              <GlowingPin top="22%" left="48%" delay="0.5s" label="United Kingdom" />
+              <GlowingPin top="42%" left="63.5%" delay="1s" label="UAE" />
+              <GlowingPin top="51%" left="70%" delay="1.5s" label="India (HQ)" />
+              <GlowingPin top="78%" left="88.5%" delay="2s" label="Australia" />
             </div>
           </Reveal>
 

@@ -55,7 +55,7 @@ export function PortfolioBrands() {
         <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-secondary/10 to-transparent" />
 
         {/* Row 1 (Normal Marquee) */}
-        <div className="flex w-max animate-marquee items-center gap-6 sm:gap-8 hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-marquee items-center gap-6 sm:gap-8 pr-6 sm:pr-8 hover:[animation-play-state:paused]">
           {scrollItems1.map((brand, i) => (
             <div
               key={`r1-${brand}-${i}`}
@@ -74,7 +74,7 @@ export function PortfolioBrands() {
         </div>
 
         {/* Row 2 (Reverse Marquee) */}
-        <div className="flex w-max animate-marquee items-center gap-6 sm:gap-8 hover:[animation-play-state:paused] [animation-direction:reverse]">
+        <div className="flex w-max animate-marquee-reverse items-center gap-6 sm:gap-8 pr-6 sm:pr-8 hover:[animation-play-state:paused]">
           {scrollItems2.map((brand, i) => (
             <div
               key={`r2-${brand}-${i}`}

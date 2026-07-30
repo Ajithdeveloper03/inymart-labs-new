@@ -6,17 +6,7 @@ import Link from 'next/link';
 
 export function AboutHero() {
   return (
-    <section className="relative overflow-hidden bg-hero-glow py-12 lg:py-16">
-      {/* Decorative elements */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-24 top-32 h-72 w-72 rounded-full bg-accent/20 blur-3xl animate-float-slow"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-[-10%] top-20 h-80 w-80 rounded-full bg-chart-4/20 blur-3xl animate-float-slower"
-      />
-
+    <section className="relative overflow-hidden bg-white py-12 lg:py-16">
       <div className="container-x relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
@@ -31,7 +21,7 @@ export function AboutHero() {
 
             <Reveal delay={100}>
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.15] mb-6">
-                A Leading <span className="text-gradient">Digital Marketing Agency</span> in Tamil Nadu
+                A Leading <span className="text-primary">Digital Marketing Agency</span> in Tamil Nadu
               </h1>
             </Reveal>
 

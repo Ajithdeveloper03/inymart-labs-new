@@ -19,7 +19,7 @@ export default function PortfolioPage() {
   return (
     <>
       <Header />
-      <main className="flex flex-col min-h-screen">
+      <main className="flex flex-col min-h-screen gap-4 [&>*:not(:nth-child(6))]:!pt-8 [&>*:not(:nth-child(6))]:!pb-4 [&>*:nth-child(6)]:!pt-12 [&>*:nth-child(6)]:!pb-12">
         <PortfolioBanner />
         <PortfolioQuickAnswer />
         <PortfolioBrands />

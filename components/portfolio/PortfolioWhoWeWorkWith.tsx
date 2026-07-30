@@ -65,9 +65,8 @@ export function PortfolioWhoWeWorkWith() {
                 <div className="flex flex-col items-center text-center relative px-2">
                   
                   {/* Step Badge (Top) */}
-                  <div className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mb-8 transition-all duration-300 shadow-sm
-                    bg-white border-2 border-slate-100 text-slate-400 group-hover:border-primary group-hover:text-primary group-hover:shadow-md
-                    first-of-type:bg-[#ff6b35] first-of-type:border-[#ff6b35] first-of-type:text-white first-of-type:shadow-[#ff6b35]/30
+                  <div className="relative z-50 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mb-8 transition-all duration-300 shadow-sm
+                    bg-primary border-2 border-primary text-white shadow-primary/30 group-hover:-translate-y-1 group-hover:shadow-md
                   ">
                     {String(idx + 1).padStart(2, '0')}
                   </div>
