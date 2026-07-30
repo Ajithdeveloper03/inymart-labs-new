@@ -4,13 +4,13 @@ import { Reveal } from '@/components/Reveal';
 import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
 
-export function AboutBanner() {
+export function PortfolioBanner() {
   return (
     <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-24 pb-12 sm:pt-28 lg:pt-32 lg:pb-16">
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/banner 1.png')" }}
+        style={{ backgroundImage: "url('/banner 3.png')" }} // Assuming we can use a different banner image or same one.
       />
       {/* A dark gradient overlay to ensure text readability and a premium corporate look */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/80 via-[#0c1f28]/50 to-[#0c1f28]/80 backdrop-blur-[1px]" />
@@ -20,8 +20,8 @@ export function AboutBanner() {
 
         {/* Heading */}
         <Reveal delay={100}>
-          <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl max-w-4xl mx-auto">
-            Find the Best <span className="text-gradient">Digital Marketing Agency</span> in Tamil Nadu Today
+          <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl max-w-5xl mx-auto">
+            Our Portfolio — <span className="text-gradient">Digital Marketing Agency</span> in Trichy, Tamil Nadu
           </h1>
         </Reveal>
 
@@ -51,7 +51,7 @@ export function AboutBanner() {
               Home
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-500" />
-            <span className="text-white">About Us</span>
+            <span className="text-white">Our Portfolio</span>
           </nav>
         </Reveal>
       </div>

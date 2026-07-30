@@ -127,19 +127,19 @@ export function slugify(value: string): string {
 }
 
 export const NAV_LINKS: NavGroup[] = [
-  { label: 'Home', href: '#home' },
+  { label: 'Home', href: '/#home' },
   { label: 'About Us', href: '/about' },
   {
     label: 'Services',
-    href: '#services',
+    href: '/#services',
     children: SERVICES.map((s) => ({
       label: s.title,
       href: `/services/${slugify(s.title)}`,
     })),
   },
-  { label: 'Case Studies / Portfolio', href: '#portfolio' },
+  { label: 'Case Studies / Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export const BRANDS = [

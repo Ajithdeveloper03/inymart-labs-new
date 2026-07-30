@@ -57,7 +57,7 @@ const TEAM = [
 
 export function MeetTheTeam() {
   return (
-    <section className="relative bg-white py-12 lg:py-16 overflow-hidden">
+    <section className="relative bg-white pt-4 pb-12 lg:pt-8 lg:pb-16 overflow-hidden">
       <div className="container-x relative">
         
         {/* Eyebrow */}
