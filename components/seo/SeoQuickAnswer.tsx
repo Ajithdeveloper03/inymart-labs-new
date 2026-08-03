@@ -54,13 +54,15 @@ export function SeoQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12">
             <Reveal>
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
-                <Lightbulb className="w-8 h-8" />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
+                  Quick Answer
+                </h2>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
-                Quick Answer
-              </h2>
-              <div className="w-20 h-1.5 bg-primary rounded-full mt-6 mb-10"></div>
+              <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 
             <div className="space-y-6">

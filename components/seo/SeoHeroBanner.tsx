@@ -22,7 +22,7 @@ export function SeoHeroBanner() {
 
         <Reveal delay={100}>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl max-w-4xl mx-auto mb-8">
-            AI SEO Service in Tamil Nadu
+            SEO Agency in Tamil Nadu — Inymart Labs
           </h1>
         </Reveal>
 
@@ -53,7 +53,7 @@ export function SeoHeroBanner() {
               Services
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />
-            <span className="text-white">AI SEO Service</span>
+            <span className="text-white">SEO Service</span>
           </nav>
         </Reveal>
       </div>

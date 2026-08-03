@@ -5,12 +5,10 @@ import { SeoHeroBanner } from '@/components/seo/SeoHeroBanner';
 import { SeoQuickAnswer } from '@/components/seo/SeoQuickAnswer';
 import { SeoWhatWeDo } from '@/components/seo/SeoWhatWeDo';
 import { SeoWhyChoose } from '@/components/seo/SeoWhyChoose';
-import { SeoComparison } from '@/components/seo/SeoComparison';
 import { SeoKeyFacts } from '@/components/seo/SeoKeyFacts';
 import { SeoProcess } from '@/components/seo/SeoProcess';
 import { SeoWhoThisIsFor } from '@/components/seo/SeoWhoThisIsFor';
 import { SeoExpectations } from '@/components/seo/SeoExpectations';
-import { SeoTrust } from '@/components/seo/SeoTrust';
 import { SeoFaq } from '@/components/seo/SeoFaq';
 import { SeoCta } from '@/components/seo/SeoCta';
 
@@ -28,12 +26,10 @@ export default function SeoServicePage() {
         <SeoQuickAnswer />
         <SeoWhatWeDo />
         <SeoWhyChoose />
-        <SeoComparison />
         <SeoKeyFacts />
         <SeoProcess />
         <SeoWhoThisIsFor />
         <SeoExpectations />
-        <SeoTrust />
         <SeoFaq />
         <SeoCta />
       </main>

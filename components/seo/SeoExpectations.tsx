@@ -7,27 +7,27 @@ export function SeoExpectations() {
   const points = [
     {
       title: "Higher Rankings",
-      text: "Higher rankings on Google for the keywords your customers actually search.",
+      text: "Higher rankings on Google for the keywords your customers actually search",
       icon: TrendingUp,
     },
     {
       title: "More Enquiries",
-      text: "More calls, form fills, and enquiries from your website and Google Business Profile.",
+      text: "More calls, form fills, and enquiries from your website and Google Business Profile",
       icon: PhoneCall,
     },
     {
       title: "Steady Growth",
-      text: "Steady growth in organic traffic month over month, without relying only on paid ads.",
+      text: "Steady growth in organic traffic month over month, without trustable only on paid ads",
       icon: LineChart,
     },
     {
       title: "Better Visibility",
-      text: "Better visibility in local map results for searches from Trichy, Chennai, Madurai, and nearby areas.",
+      text: "Better visibility in local map results for searches from Trichy, Chennai, Madurai, and nearby areas",
       icon: MapPin,
     },
     {
       title: "Clear Reports",
-      text: "Clear monthly reports so you can see exactly how rankings, traffic, and leads are improving.",
+      text: "Clear monthly reports so you can see exactly how rankings, traffic, and leads are improving",
       icon: FileText,
     }
   ];

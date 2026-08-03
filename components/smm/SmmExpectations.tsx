@@ -6,28 +6,28 @@ import { Eye, PhoneCall, Calculator, TrendingUp, FileText } from 'lucide-react';
 export function SmmExpectations() {
   const points = [
     {
-      title: "Immediate Visibility",
-      text: "Immediate visibility for your business through targeted paid ads.",
+      title: `Immediate Visibility`,
+      text: `Immediate visibility for your business through targeted paid ads.`,
       icon: Eye,
     },
     {
-      title: "Fast Leads",
-      text: "More calls, form fills, and enquiries within days of launching.",
+      title: `Fast Leads`,
+      text: `More calls, form fills, and enquiries within days of launching.`,
       icon: PhoneCall,
     },
     {
-      title: "Clear ROI",
-      text: "Clearer understanding of your cost per lead and return on ad spend.",
+      title: `Clear ROI`,
+      text: `Clearer understanding of your cost per lead and return on ad spend.`,
       icon: Calculator,
     },
     {
-      title: "Steady Improvement",
-      text: "Steady improvement in campaign performance as we test and optimize.",
+      title: `Steady Improvement`,
+      text: `Steady improvement in campaign performance as we test and optimize.`,
       icon: TrendingUp,
     },
     {
-      title: "Simple Reports",
-      text: "Simple monthly reports showing exactly where your ad budget is going.",
+      title: `Simple Reports`,
+      text: `Simple monthly reports showing exactly where your ad budget is going.`,
       icon: FileText,
     }
   ];
@@ -51,10 +51,10 @@ export function SmmExpectations() {
             const Icon = point.icon;
             return (
               <Reveal key={index} delay={index * 100} className="h-full">
-                <div className="bg-[#122b38] rounded-3xl p-8 border border-white/5 h-full hover:border-[#ff6b35]/50 transition-colors flex flex-col group">
-                  <h3 className="text-lg font-bold text-white mb-8 pr-4 leading-snug">{point.title}</h3>
+                <div className="bg-[#122b38] rounded-3xl p-8 border border-white/5 h-full hover:border-primary/50 transition-colors flex flex-col group">
+                  {point.title && <h3 className="text-lg font-bold text-white mb-8 pr-4 leading-snug">{point.title}</h3>}
                   <div className="mb-6">
-                    <Icon className="w-10 h-10 text-[#ff6b35] stroke-1" />
+                    <Icon className="w-10 h-10 text-primary stroke-1" />
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed flex-grow">
                     {point.text}

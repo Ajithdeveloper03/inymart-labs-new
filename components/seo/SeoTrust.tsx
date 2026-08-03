@@ -8,9 +8,9 @@ export function SeoTrust() {
     "10+ years of digital marketing experience, with early, dedicated focus on AEO and GEO",
     "50+ brands served across India, UAE, UK, and the USA",
     "Headquartered in Tiruchirappalli, with hands-on knowledge of Tamil Nadu markets",
-    "AI SEO built alongside proven traditional SEO, not sold as a replacement for it",
-    "Honest reporting — we show you exactly how AI tools represent your business, good or bad",
-    "Real specialists monitoring AI platforms — not a one-time content update with no follow-up"
+    "SEO built on proven traditional methods, not sold as a quick fix",
+    "Honest reporting — we show you exactly how your business is performing, good or bad",
+    "Real specialists monitoring search engines — not a one-time content update with no follow-up"
   ];
 
   return (
@@ -27,7 +27,7 @@ export function SeoTrust() {
               </h2>
             </div>
             <p className="text-gray-600 text-lg leading-relaxed mb-10">
-              AI SEO is a new, fast-changing field, so experience and honesty matter. Here's why businesses trust Inymart Labs as their AI SEO Service in Tamil Nadu and AI SEO Service in Trichy:
+              SEO is a constantly evolving field, so experience and honesty matter. Here's why businesses trust Inymart Labs as their SEO Agency in Tamil Nadu and SEO Agency in Trichy:
             </p>
           </Reveal>
 

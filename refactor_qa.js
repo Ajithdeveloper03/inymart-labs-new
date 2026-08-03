@@ -1,9 +1,25 @@
-'use client';
+const fs = require('fs');
+const path = require('path');
+
+const componentsDir = path.join(__dirname, 'components');
+const configs = [
+  { file: 'local-seo/LocalSeoQuickAnswer.tsx', comp: 'LocalSeoQuickAnswer', tag: 'L-SEO', img: 'https://images.unsplash.com/photo-1524146128017-b9dd0bfd2778?q=80&w=2070', alt: 'Local SEO Maps' },
+  { file: 'ai-seo/AiSeoQuickAnswer.tsx', comp: 'AiSeoQuickAnswer', tag: 'AI', img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070', alt: 'AI Technology' },
+  { file: 'web-analytics/WebAnalyticsQuickAnswer.tsx', comp: 'WebAnalyticsQuickAnswer', tag: 'DATA', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070', alt: 'Data Charts' },
+  { file: 'dma/DmaQuickAnswer.tsx', comp: 'DmaQuickAnswer', tag: 'DMA', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015', alt: 'Digital Marketing Team' },
+  { file: 'dmc/DmcQuickAnswer.tsx', comp: 'DmcQuickAnswer', tag: 'DMC', img: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070', alt: 'Consulting Meeting' },
+  { file: 'smo/SmoQuickAnswer.tsx', comp: 'SmoQuickAnswer', tag: 'SMO', img: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974', alt: 'Social Media Apps' },
+  { file: 'web-development/WebDevQuickAnswer.tsx', comp: 'WebDevQuickAnswer', tag: 'DEV', img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072', alt: 'Coding on Laptop' },
+  { file: 'ppc/PpcQuickAnswer.tsx', comp: 'PpcQuickAnswer', tag: 'PPC', img: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070', alt: 'Online Advertising' },
+  { file: 'smm/SmmQuickAnswer.tsx', comp: 'SmmQuickAnswer', tag: 'SMM', img: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070', alt: 'Social Media Marketing' }
+];
+
+const template = `'use client';
 
 import { Reveal } from '@/components/Reveal';
 import { Lightbulb } from 'lucide-react';
 
-export function AiSeoQuickAnswer() {
+export function __COMP_NAME__() {
   return (
     <section id="quick-answer" className="relative pt-8 pb-12 bg-white overflow-hidden">
       {/* Background Decorative Blob */}
@@ -18,8 +34,8 @@ export function AiSeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full min-h-[350px] w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070" 
-                  alt="AI Technology" 
+                  src="__MAIN_IMG__" 
+                  alt="__ALT__" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -44,7 +60,7 @@ export function AiSeoQuickAnswer() {
                       lineHeight: 1
                     }}
                   >
-                    AI
+                    __TAG__
                   </span>
                 </div>
               </div>
@@ -66,11 +82,7 @@ export function AiSeoQuickAnswer() {
             </Reveal>
 
             <div className="space-y-6">
-              <Reveal delay={100}>
-                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs offers an <strong className="text-[#0c1f28]">AI SEO Service in Trichy, Tamil Nadu</strong> also called an <strong className="text-[#0c1f28]">AEO Service (Answer Engine Optimization)</strong>, that helps businesses get found and recommended by AI tools like ChatGPT, Gemini, Copilot, and Perplexity — not just traditional Google search. This includes structuring content for direct answers, building citable facts and entity clarity, and monitoring how AI engines represent a business, with visibility improvements typically building over 2–4 months as AI platforms recrawl and re-index content.
-                </p>
-              </Reveal>
+__CONTENT__
             </div>
           </div>
           
@@ -78,4 +90,38 @@ export function AiSeoQuickAnswer() {
       </div>
     </section>
   );
+}
+`;
+
+for (const config of configs) {
+  const filePath = path.join(componentsDir, config.file);
+  let oldContent = fs.readFileSync(filePath, 'utf-8');
+  
+  // Extract paragraphs
+  let paragraphs = [];
+  const pRegex = /<p[^>]*>([\s\S]*?)<\/p>/g;
+  let match;
+  while ((match = pRegex.exec(oldContent)) !== null) {
+    paragraphs.push(match[1].trim());
+  }
+
+  // Generate new content
+  let contentHtml = paragraphs.map((p, i) => {
+    let classes = i === 0 ? "text-lg sm:text-xl text-gray-700 leading-relaxed font-medium" : "text-lg text-gray-600 leading-relaxed";
+    return `              <Reveal delay={${100 + i * 100}}>
+                <p className="${classes}">
+                  ${p}
+                </p>
+              </Reveal>`;
+  }).join('\n');
+
+  let newFile = template
+    .replace('__COMP_NAME__', config.comp)
+    .replace('__MAIN_IMG__', config.img)
+    .replace('__ALT__', config.alt)
+    .replace('__TAG__', config.tag)
+    .replace('__CONTENT__', contentHtml);
+
+  fs.writeFileSync(filePath, newFile, 'utf-8');
+  console.log('Processed', config.file);
 }

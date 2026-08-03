@@ -18,7 +18,7 @@ export function SmmQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full min-h-[350px] w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2074" 
+                  src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070" 
                   alt="Social Media Marketing" 
                   className="w-full h-full object-cover"
                 />
@@ -26,14 +26,17 @@ export function SmmQuickAnswer() {
 
               {/* Floating Tag Overlay */}
               <div className="absolute bottom-0 right-0 z-20">
+                {/* Orange Circle Background */}
                 <div className="absolute -right-4 -bottom-4 w-28 h-28 sm:w-36 sm:h-36 bg-[#ff6b35] rounded-[32px] sm:rounded-[40px] z-0 shadow-lg" />
+                
+                {/* White Box with Rotated Text */}
                 <div className="relative z-10 bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex items-center justify-center min-w-[80px] sm:min-w-[120px] h-[200px] sm:h-[280px]">
                   <span 
-                    className="text-[60px] sm:text-[90px] font-black tracking-tighter"
+                    className="text-[80px] sm:text-[110px] font-black tracking-tighter"
                     style={{ 
                       writingMode: 'vertical-rl',
                       transform: 'rotate(180deg)',
-                      backgroundImage: "url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074')",
+                      backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070')",
                       backgroundPosition: "center",
                       backgroundSize: "cover",
                       WebkitBackgroundClip: 'text',
@@ -41,7 +44,7 @@ export function SmmQuickAnswer() {
                       lineHeight: 1
                     }}
                   >
-                    ADS
+                    SMM
                   </span>
                 </div>
               </div>
@@ -51,13 +54,15 @@ export function SmmQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12">
             <Reveal>
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
-                <Lightbulb className="w-8 h-8" />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
+                  Quick Answer
+                </h2>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
-                Quick Answer
-              </h2>
-              <div className="w-20 h-1.5 bg-primary rounded-full mt-6 mb-10"></div>
+              <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 
             <div className="space-y-6">

@@ -1,60 +1,112 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Layers, ArrowRight } from 'lucide-react';
+import { ArrowRight, Activity, Search, Target, Settings, PenTool, Link2, BarChart } from 'lucide-react';
 import Link from 'next/link';
 
 export function LocalSeoProcess() {
   const steps = [
-    { title: "1. Google Business Profile Setup", desc: "We create or optimize your Google Business Profile with accurate details, categories, and photos so customers find the right information instantly." },
-    { title: "2. Local Keyword Research", desc: "We find the exact \"near me\" and location-based phrases your customers are searching for." },
-    { title: "3. Listings & Citations", desc: "We list your business consistently across trusted directories, so Google sees your business as verified and reliable." },
-    { title: "4. Review Management", desc: "We help you collect and respond to customer reviews, which build trust with both Google and new customers." },
-    { title: "5. Location-Based Content", desc: "We create website content that speaks directly to customers in your service areas." },
-    { title: "6. Map Pack Optimization", desc: "We work to get your business into Google's local \"map pack\" results, right at the top of local searches." },
-    { title: "7. Reporting", desc: "Every month, you get a simple report showing local rankings, calls, and direction requests — no confusing jargon." }
+    {
+      title: `Google Business Profile Setup`,
+      desc: `We create or optimize your Google Business Profile with accurate details, categories, and photos so customers find the right information instantly.`,
+      icon: Activity
+    },
+    {
+      title: `Local Keyword Research`,
+      desc: `We find the exact "near me" and location-based phrases your customers are searching for.`,
+      icon: Search
+    },
+    {
+      title: `Listings & Citations`,
+      desc: `We list your business consistently across trusted directories, so Google sees your business as verified and reliable.`,
+      icon: Target
+    },
+    {
+      title: `Review Management`,
+      desc: `We help you collect and respond to customer reviews, which build trust with both Google and new customers.`,
+      icon: Settings
+    },
+    {
+      title: `Location-Based Content`,
+      desc: `We create website content that speaks directly to customers in your service areas.`,
+      icon: PenTool
+    },
+    {
+      title: `Map Pack Optimization`,
+      desc: `We work to get your business into Google's local "map pack" results, right at the top of local searches.`,
+      icon: Link2
+    },
+    {
+      title: `Reporting`,
+      desc: `Every month, you get a simple report showing local rankings, calls, and direction requests — no confusing jargon.`,
+      icon: BarChart
+    }
   ];
 
   return (
-    <section className="relative pt-8 pb-12 bg-slate-50">
+    <section className="relative pt-8 pb-12 bg-white">
       <div className="container-x">
-        <div className="max-w-4xl mx-auto">
-          <Reveal>
-            <div className="flex items-center gap-4 mb-10">
-              <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center shrink-0">
-                <Layers className="w-8 h-8 text-cyan-500" />
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                Our Local SEO Process
-              </h2>
-            </div>
-          </Reveal>
+        <Reveal>
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
+              Our Local SEO Process
+            </h2>
+            <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
+          </div>
+        </Reveal>
 
-          <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-            {steps.map((step, i) => (
-              <Reveal key={i} delay={i * 100}>
-                <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-primary text-white font-bold text-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-md z-10">
-                    {i + 1}
+        <div className="max-w-5xl mx-auto relative">
+          {/* Central Line for Desktop */}
+          <div className="hidden md:block absolute left-1/2 top-8 bottom-0 w-0.5 bg-slate-200 -translate-x-1/2"></div>
+          
+          {/* Left Line for Mobile */}
+          <div className="block md:hidden absolute left-7 sm:left-9 top-8 bottom-0 w-0.5 bg-slate-200"></div>
+
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            const isEven = (index + 1) % 2 === 0; // step 2, 4, 6
+            
+            return (
+              <Reveal key={index} delay={index * 50}>
+                <div className={`relative flex flex-row ${isEven ? 'md:flex-row-reverse' : ''} gap-6 sm:gap-10 md:gap-0 items-start md:items-center mb-16 md:mb-24 last:mb-0`}>
+                  
+                  {/* Left Spacer (Desktop only) */}
+                  <div className="hidden md:block md:w-1/2"></div>
+
+                  {/* Icon & Number (Center on Desktop, Left on Mobile) */}
+                  <div className="relative z-10 flex flex-col items-center shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
+                    <div className="w-14 h-14 sm:w-18 sm:h-18 rounded-full bg-white border-4 border-slate-50 shadow-md flex items-center justify-center text-primary font-bold text-xl sm:text-2xl relative">
+                      {index + 1}
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center border-2 border-white text-slate-500">
+                        <Icon className="w-4 h-4" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all">
-                    <h3 className="font-bold text-lg text-[#0c1f28] mb-2">{step.title.replace(/^\d+\.\s*/, '')}</h3>
-                    <p className="text-slate-600 text-sm md:text-base leading-relaxed">{step.desc}</p>
+                  
+                  {/* Content (Alternates sides on Desktop) */}
+                  <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-2 md:pt-0 w-full`}>
+                    <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center flex flex-col items-center">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                      <p className="text-gray-600 leading-relaxed text-lg">{step.desc}</p>
+                    </div>
                   </div>
                 </div>
               </Reveal>
-            ))}
-          </div>
-          
-          <Reveal delay={800} className="mt-12 text-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors"
-            >
-              See Our Local SEO Process in Action <ArrowRight className="w-5 h-5" />
-            </Link>
-          </Reveal>
+            );
+          })}
         </div>
+
+        <Reveal delay={200}>
+          <div className="mt-16 text-center">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
+            >
+              See Our Local SEO Process in Action
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

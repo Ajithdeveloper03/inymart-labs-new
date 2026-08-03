@@ -1,38 +1,64 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Settings, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export function PpcWhatWeDo() {
   return (
-    <section className="relative pt-8 pb-12 bg-slate-50">
+    <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
-        <div className="max-w-4xl mx-auto">
-          <Reveal>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center shrink-0">
-                <Settings className="w-8 h-8 text-indigo-500" />
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+          
+          {/* Left: Content */}
+          <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
+            <Reveal>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] mb-6 font-display leading-[1.2]">
                 What We Do
               </h2>
-            </div>
-            <div className="space-y-6 text-lg text-gray-600 leading-relaxed mb-8">
-              <p>
+              <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
+            </Reveal>
+
+            <Reveal delay={100}>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
                 Inymart Labs offers a results-focused <strong className="text-[#0c1f28]">PPC Service in Tamil Nadu</strong>, helping businesses run Google Ads campaigns that bring in real calls, enquiries, and sales — not just clicks. As a trusted <strong className="text-[#0c1f28]">PPC Service in Trichy</strong>, we manage your ad budget carefully, so every rupee spent works toward a clear business goal.
               </p>
-              <p>
+            </Reveal>
+            <Reveal delay={200}>
+              <p className="text-gray-600 text-lg leading-relaxed mb-10">
                 We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you want more calls to a local business or more online orders for an ecommerce store, our team as your PPC Service in Tamil Nadu builds campaigns around what actually matters to you.
               </p>
-            </div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors"
-            >
-              Talk to Our PPC Team <ArrowRight className="w-5 h-5" />
-            </Link>
-          </Reveal>
+            </Reveal>
+
+            <Reveal delay={300}>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group"
+              >
+                Talk to Our Ads Team
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Reveal>
+          </div>
+
+          {/* Right: Visual (Image) */}
+          <div className="order-1 lg:order-2 relative">
+            <Reveal className="h-full">
+              <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
+                <img 
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070" 
+                  alt="PPC Services" 
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />
+              </div>
+            </Reveal>
+            
+            {/* Decorative background blob behind image */}
+            <div className="absolute -right-12 -bottom-12 w-64 h-64 bg-primary/10 rounded-full blur-[80px] -z-10" />
+          </div>
+
         </div>
       </div>
     </section>

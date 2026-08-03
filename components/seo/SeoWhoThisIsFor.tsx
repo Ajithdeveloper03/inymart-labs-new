@@ -1,52 +1,105 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { CheckCircle2 } from 'lucide-react';
+import { Users, Search, AlertCircle, TrendingUp } from 'lucide-react';
 
 export function SeoWhoThisIsFor() {
   const points = [
-    "Local businesses want more calls, visits, and enquiries",
-    "Growing brands want to reach new cities or regions",
-    "Ecommerce businesses want more product page visibility",
-    "Any business tired of paying for SEO with no clear results"
+    {
+      title: null,
+      text: `Local businesses want more calls, visits, and enquiries`,
+      icon: Users,
+      iconColor: "text-pink-500",
+      bgImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      title: null,
+      text: `Growing brands want to reach new cities or regions`,
+      icon: Search,
+      iconColor: "text-emerald-500",
+      bgImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      title: null,
+      text: `Ecommerce businesses want more product page visibility`,
+      icon: AlertCircle,
+      iconColor: "text-amber-500",
+      bgImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      title: null,
+      text: `Any business tired of paying for SEO with no clear results`,
+      icon: TrendingUp,
+      iconColor: "text-blue-500",
+      bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600"
+    }
   ];
 
   return (
-    <section className="relative pt-8 pb-12 bg-slate-50 border-t border-slate-100 overflow-hidden">
-      {/* Decorative Blob */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div className="container-x relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="relative pt-12 pb-16 bg-slate-50">
+      <div className="container-x">
+        <div className="max-w-6xl mx-auto">
           
           <Reveal>
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-                Who This Is For
-              </h2>
-              <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
-              
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center shrink-0">
+                  <Users className="w-8 h-8 text-pink-500" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
+                  Who This Is For
+                </h2>
+              </div>
+              <p className="text-gray-600 text-lg md:text-xl">
                 As an SEO agency in Tamil Nadu, our service works well for:
-              </p>
-
-              <p className="text-gray-600 text-lg leading-relaxed mt-10">
-                Whether you're just start to think about SEO or you've tried it before without results, our team takes the time to understand your business before recommend anything.
               </p>
             </div>
           </Reveal>
 
-          <div className="flex flex-col gap-4">
-            {points.map((point, index) => (
-              <Reveal key={index} delay={index * 100}>
-                <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
-                  <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-0.5" />
-                  <p className="text-gray-800 font-medium text-lg">{point}</p>
-                </div>
-              </Reveal>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
+            {points.map((point, i) => {
+              const Icon = point.icon;
+              return (
+                <Reveal key={i} delay={i * 100} className="h-full">
+                  <div className="relative flex items-center gap-5 sm:gap-6 p-4 sm:p-5 pr-6 sm:pr-8 rounded-[2.5rem] sm:rounded-[3rem] text-white shadow-xl hover:-translate-y-1 transition-transform duration-300 overflow-hidden group h-full">
+                    
+                    {/* Background Image Layer */}
+                    <div 
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${point.bgImage})` }}
+                    />
+                    
+                    {/* Subtle Primary Color Overlay + Dark Gradient for Readability */}
+                    <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40" />
+                    
+                    {/* Icon Container */}
+                    <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                       <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${point.iconColor}`} />
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="relative z-10 flex-1 py-2">
+                      {point.title && <h3 className="text-white text-lg font-bold mb-1 font-display">{point.title}</h3>}
+                      <p className="text-slate-200 text-sm sm:text-base font-medium leading-relaxed">
+                        {point.text}
+                      </p>
+                    </div>
+                    
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
 
+          <Reveal delay={400}>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-gray-600 text-lg text-center leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                Whether you're just start to think about SEO or you've tried it before without results, our team takes the time to understand your business before recommend anything.
+              </p>
+            </div>
+          </Reveal>
+          
         </div>
       </div>
     </section>

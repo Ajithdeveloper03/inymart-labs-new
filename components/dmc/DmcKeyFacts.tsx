@@ -1,46 +1,57 @@
 'use client';
 import { Reveal } from '@/components/Reveal';
+import {
+  Building2,
+  MapPin,
+  Settings,
+  Handshake,
+  Clock
+} from 'lucide-react';
 
 export function DmcKeyFacts() {
   const facts = [
-    { label: 'Service', value: 'Digital Marketing Consulting in Tamil Nadu and Trichy' },
-    { label: 'Headquarters', value: 'Tiruchirappalli, Tamil Nadu' },
-    { label: 'Areas Covered', value: 'SEO, Local SEO, social media, PPC, web analytics, and web development strategy' },
-    { label: 'Core Process', value: 'Business & goal understanding, marketing audit, competitor insight, strategy roadmap, channel recommendations, implementation guidance, ongoing advisory' },
-    { label: 'Engagement Options', value: 'One-time strategy session or ongoing monthly consulting' },
-    { label: 'Typical Timeline', value: 'Clarity and direction immediately; measurable improvements build over following months' },
+{ icon: Building2, label: 'Service', value: 'Digital Marketing Consulting in Tamil Nadu and Trichy' },
+    { icon: MapPin, label: 'Headquarters', value: 'Tiruchirappalli, Tamil Nadu' },
+    { icon: MapPin, label: 'Areas Covered', value: 'SEO, Local SEO, social media, PPC, web analytics, and web development strategy' },
+    { icon: Settings, label: 'Core Process', value: 'Business & goal understanding, marketing audit, competitor insight, strategy roadmap, channel recommendations, implementation guidance, ongoing advisory' },
+    { icon: Handshake, label: 'Engagement Options', value: 'One-time strategy session or ongoing monthly consulting' },
+    { icon: Clock, label: 'Typical Timeline', value: 'Clarity and direction immediately; measurable improvements build over following months' },
   ];
 
-  return (
-    <section className="relative pt-8 pb-12 bg-[#0c1f28] overflow-hidden">
-      <div className="container-x relative z-10">
+    return (
+    <section className="relative pt-8 pb-12 bg-white">
+      <div className="container-x">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6 font-display">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
               Key Facts About Inymart Labs&apos; Consulting Service
             </h2>
           </div>
         </Reveal>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-[#122b38] rounded-3xl p-6 sm:p-10 border border-white/5 shadow-2xl overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-2 h-full bg-[#ff6b35]" />
-            
-            <dl className="divide-y divide-white/5">
-              {facts.map((fact, index) => (
-                <Reveal key={index} delay={index * 50}>
-                  <div className="py-4 sm:py-5 flex flex-col sm:flex-row sm:gap-4 hover:bg-white/5 transition-colors px-4 rounded-xl">
-                    <dt className="text-sm font-bold text-[#ff6b35] sm:w-1/3 shrink-0 mb-1 sm:mb-0">
-                      {fact.label}
-                    </dt>
-                    <dd className="text-sm sm:text-base text-zinc-300 font-medium">
-                      {fact.value}
-                    </dd>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {facts.map((fact, index) => {
+            const Icon = fact.icon;
+            return (
+              <Reveal key={index} delay={index * 100}>
+                <div className="group bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-[#ff6b35]/30 hover:bg-white hover:shadow-lg transition-all duration-300 h-full">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 group-hover:border-[#ff6b35]/30 group-hover:bg-[#ff6b35]/5 transition-colors">
+                      <Icon className="w-6 h-6 text-slate-600 group-hover:text-[#ff6b35] transition-colors" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-1">
+                        {fact.label}
+                      </h3>
+                      <p className="text-slate-800 font-medium leading-snug">
+                        {fact.value}
+                      </p>
+                    </div>
                   </div>
-                </Reveal>
-              ))}
-            </dl>
-          </div>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

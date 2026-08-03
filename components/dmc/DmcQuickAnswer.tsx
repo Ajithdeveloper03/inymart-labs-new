@@ -1,59 +1,95 @@
 'use client';
+
 import { Reveal } from '@/components/Reveal';
-import { Zap, Clock, Target, CheckCircle2 } from 'lucide-react';
+import { Lightbulb } from 'lucide-react';
 
 export function DmcQuickAnswer() {
   return (
-    <section className="relative -mt-16 z-20 pb-12">
-      <div className="container-x">
-        <Reveal>
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-slate-100 flex flex-col md:flex-row gap-12 items-center">
-            <div className="flex-1">
-              <div className="inline-flex items-center gap-2 text-[#ff6b35] font-bold tracking-wide uppercase text-sm mb-4">
-                <Zap className="w-5 h-5 fill-current" />
-                Quick Answer
+    <section id="quick-answer" className="relative pt-8 pb-12 bg-white overflow-hidden">
+      {/* Background Decorative Blob */}
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 -translate-x-1/2" />
+      
+      <div className="container-x relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+          
+          {/* Left Side: Image with Tag */}
+          <div className="order-1 relative w-full pr-8 sm:pr-12 lg:pr-16 pb-8 sm:pb-12 lg:pb-16 pt-8 pl-4 lg:pl-10">
+            <Reveal delay={200} className="h-full">
+              {/* Main Image */}
+              <div className="relative h-full min-h-[350px] w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
+                <img 
+                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070" 
+                  alt="Consulting Meeting" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-800 mb-6 leading-snug font-display">
-                Inymart Labs offers Digital Marketing Consulting in Trichy, Tamil Nadu giving businesses an outside, expert view.
-              </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-6 font-medium">
-                Consulting engagements can be one-time strategy sessions or ongoing monthly advisory, with clarity and direction typically visible right away and measurable marketing improvements building over the following months.
-              </p>
-            </div>
-            
-            <div className="w-full md:w-80 bg-slate-50 rounded-2xl p-6 border border-slate-100">
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                    <Target className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-800">Clear Action Plan</h4>
-                    <p className="text-sm text-slate-500 mt-1">A prioritized plan for what to focus on next.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-800">Expert View</h4>
-                    <p className="text-sm text-slate-500 mt-1">Reviewing your SEO, social media, ads, and analytics.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-800">Flexible Sessions</h4>
-                    <p className="text-sm text-slate-500 mt-1">One-time strategy sessions or ongoing monthly advisory.</p>
-                  </div>
+
+              {/* Floating Tag Overlay */}
+              <div className="absolute bottom-0 right-0 z-20">
+                {/* Orange Circle Background */}
+                <div className="absolute -right-4 -bottom-4 w-28 h-28 sm:w-36 sm:h-36 bg-[#ff6b35] rounded-[32px] sm:rounded-[40px] z-0 shadow-lg" />
+                
+                {/* White Box with Rotated Text */}
+                <div className="relative z-10 bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex items-center justify-center min-w-[80px] sm:min-w-[120px] h-[200px] sm:h-[280px]">
+                  <span 
+                    className="text-[80px] sm:text-[110px] font-black tracking-tighter"
+                    style={{ 
+                      writingMode: 'vertical-rl',
+                      transform: 'rotate(180deg)',
+                      backgroundImage: "url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070')",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      lineHeight: 1
+                    }}
+                  >
+                    DMC
+                  </span>
                 </div>
               </div>
+            </Reveal>
+          </div>
+
+          {/* Right Side: Content */}
+          <div className="order-2 flex flex-col items-start lg:pl-12">
+            <Reveal>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
+                  Quick Answer
+                </h2>
+              </div>
+              <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
+            </Reveal>
+
+            <div className="space-y-6">
+              <Reveal delay={100}>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
+                  Consulting engagements can be one-time strategy sessions or ongoing monthly advisory, with clarity and direction typically visible right away and measurable marketing improvements building over the following months.
+                </p>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  A prioritized plan for what to focus on next.
+                </p>
+              </Reveal>
+              <Reveal delay={300}>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Reviewing your SEO, social media, ads, and analytics.
+                </p>
+              </Reveal>
+              <Reveal delay={400}>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  One-time strategy sessions or ongoing monthly advisory.
+                </p>
+              </Reveal>
             </div>
           </div>
-        </Reveal>
+          
+        </div>
       </div>
     </section>
   );

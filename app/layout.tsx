@@ -1,4 +1,4 @@
-import './styles.css';
+import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';

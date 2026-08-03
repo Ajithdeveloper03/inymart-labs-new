@@ -1,6 +1,7 @@
 'use client';
+
 import { Reveal } from '@/components/Reveal';
-import { MousePointerClick, Zap, Map } from 'lucide-react';
+import { Target } from 'lucide-react';
 import Link from 'next/link';
 
 const PixelScatter = () => {
@@ -25,11 +26,13 @@ export function DmcWhyChoose() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
               Why Choose Digital Marketing Consulting in Tamil Nadu
             </h2>
+            
           </div>
         </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto relative">
           
+          {/* Card 1 */}
           <Reveal delay={100} className="h-full">
             <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
               <PixelScatter />
@@ -37,13 +40,14 @@ export function DmcWhyChoose() {
               <div className="mb-4 mt-2 relative">
                 <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <MousePointerClick className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
+                <Target className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 font-display transition-colors duration-300">
                 Stop Wasting Budget
               </h3>
 
+              {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
@@ -56,6 +60,7 @@ export function DmcWhyChoose() {
             </div>
           </Reveal>
 
+          {/* Card 2 */}
           <Reveal delay={200} className="h-full">
             <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
               <PixelScatter />
@@ -63,13 +68,14 @@ export function DmcWhyChoose() {
               <div className="mb-4 mt-2 relative">
                 <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Zap className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
+                <Target className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 font-display transition-colors duration-300">
                 Clear Action Plan
               </h3>
 
+              {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
@@ -82,6 +88,7 @@ export function DmcWhyChoose() {
             </div>
           </Reveal>
 
+          {/* Card 3 */}
           <Reveal delay={300} className="h-full">
             <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
               <PixelScatter />
@@ -89,13 +96,14 @@ export function DmcWhyChoose() {
               <div className="mb-4 mt-2 relative">
                 <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Map className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
+                <Target className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 font-display transition-colors duration-300">
                 Tailored to Your Business
               </h3>
 
+              {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
