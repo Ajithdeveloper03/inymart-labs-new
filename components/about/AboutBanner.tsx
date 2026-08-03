@@ -31,7 +31,7 @@ export function AboutBanner() {
             {/* Blinking / Pulse glow effect */}
             <div className="absolute -inset-1.5 rounded-full bg-orange-500/50 blur-md animate-pulse pointer-events-none" />
             <Link
-              href="#contact"
+              href="/contact"
               className="relative inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm sm:text-base font-bold uppercase tracking-wide text-primary-foreground shadow-lg shadow-orange-500/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
             >
               START YOUR DIGITAL GROWTH TODAY

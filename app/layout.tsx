@@ -4,6 +4,19 @@ import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { CustomCursor } from '@/components/CustomCursor';
 
+const sans = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const display = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['500', '600', '700', '800'],
+  display: 'swap',
+});
+
 const serif = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-serif',
@@ -53,25 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-        <style dangerouslySetInnerHTML={{ __html: `
-          :root {
-            --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-            --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-          }
-          body, p, span, a, button, input, textarea, select, table, th, td, div, li, ul, label {
-            font-family: var(--font-sans) !important;
-          }
-          h1, h2, h3, h4, h5, h6, .font-display {
-            font-family: var(--font-display) !important;
-          }
-        `}} />
-      </head>
       <body
         className={cn(
+          sans.variable,
+          display.variable,
           serif.variable,
           'font-sans bg-background text-foreground'
         )}

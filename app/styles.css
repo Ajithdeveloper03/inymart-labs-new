@@ -220,7 +220,6 @@
   color: transparent;
 }
 
-
 /* Image hover shine effect */
 .group:has(> img)::after,
 .overflow-hidden:has(> img)::after {
@@ -251,39 +250,3 @@
   position: relative;
 }
 
-
-/* Custom subtle floating animations for side showcase cards and phone */
-@keyframes float-card-left {
-  0%, 100% {
-    transform: translateY(0) rotate(-10deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(-9deg);
-  }
-}
-@keyframes float-card-right {
-  0%, 100% {
-    transform: translateY(0) rotate(10deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(9deg);
-  }
-}
-@keyframes float-phone-dashboard {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.animate-float-left {
-  animation: float-card-left 6s ease-in-out infinite;
-}
-.animate-float-right {
-  animation: float-card-right 6.5s ease-in-out infinite;
-}
-.animate-float-phone {
-  animation: float-phone-dashboard 5s ease-in-out infinite;
-}

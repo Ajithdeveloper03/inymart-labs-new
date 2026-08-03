@@ -44,7 +44,7 @@ export function Header() {
               Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli
             </span>
             <a
-              href="#contact"
+              href="/contact"
               className="group inline-flex items-center gap-1 font-bold text-white underline underline-offset-4 hover:text-amber-100 transition-colors"
             >
               Get Free Consultation
@@ -125,7 +125,7 @@ export function Header() {
                             'Web Analytics': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=120&fit=crop&q=80',
                             'Web Development': 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=120&h=120&fit=crop&q=80',
                             'Digital Marketing Consulting': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop&q=80',
-                            'Digital Marketing Service': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80',
+                            'Digital Marketing Agency': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80',
                             'PPC Service': 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=120&h=120&fit=crop&q=80',
                             'AI SEO Services': 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=120&h=120&fit=crop&q=80'
                           };
@@ -173,7 +173,7 @@ export function Header() {
           {/* Right CTA Button: Exact pill shape with outline border & arrow icon */}
           <div className="hidden xl:block">
             <a
-              href="#contact"
+              href="/contact"
               className={cn(
                 "group inline-flex items-center gap-2 rounded-full border px-5 py-2 text-[12px] font-bold uppercase tracking-wider shadow-sm transition-all duration-300",
                 isSolid
@@ -260,7 +260,7 @@ export function Header() {
               )
             )}
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-neutral-900 shadow-sm"
             >

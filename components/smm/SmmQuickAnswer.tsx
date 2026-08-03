@@ -1,0 +1,81 @@
+'use client';
+
+import { Reveal } from '@/components/Reveal';
+import { Lightbulb } from 'lucide-react';
+
+export function SmmQuickAnswer() {
+  return (
+    <section id="quick-answer" className="relative pt-8 pb-12 bg-white overflow-hidden">
+      {/* Background Decorative Blob */}
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 -translate-x-1/2" />
+      
+      <div className="container-x relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+          
+          {/* Left Side: Image with Tag */}
+          <div className="order-1 relative w-full pr-8 sm:pr-12 lg:pr-16 pb-8 sm:pb-12 lg:pb-16 pt-8 pl-4 lg:pl-10">
+            <Reveal delay={200} className="h-full">
+              {/* Main Image */}
+              <div className="relative h-full min-h-[350px] w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
+                <img 
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2074" 
+                  alt="Social Media Marketing" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Floating Tag Overlay */}
+              <div className="absolute bottom-0 right-0 z-20">
+                <div className="absolute -right-4 -bottom-4 w-28 h-28 sm:w-36 sm:h-36 bg-[#ff6b35] rounded-[32px] sm:rounded-[40px] z-0 shadow-lg" />
+                <div className="relative z-10 bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex items-center justify-center min-w-[80px] sm:min-w-[120px] h-[200px] sm:h-[280px]">
+                  <span 
+                    className="text-[60px] sm:text-[90px] font-black tracking-tighter"
+                    style={{ 
+                      writingMode: 'vertical-rl',
+                      transform: 'rotate(180deg)',
+                      backgroundImage: "url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074')",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      lineHeight: 1
+                    }}
+                  >
+                    ADS
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          {/* Right Side: Content */}
+          <div className="order-2 flex flex-col items-start lg:pl-12">
+            <Reveal>
+              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                <Lightbulb className="w-8 h-8" />
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
+                Quick Answer
+              </h2>
+              <div className="w-20 h-1.5 bg-primary rounded-full mt-6 mb-10"></div>
+            </Reveal>
+
+            <div className="space-y-6">
+              <Reveal delay={100}>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
+                  Inymart Labs is a social media marketing agency in Trichy, Tamil Nadu that plans, creates, and manages paid ad campaigns on Facebook, Instagram, and LinkedIn to generate calls, leads, and sales.
+                </p>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Unlike organic social media management, Inymart Labs' social media marketing service uses paid advertising, audience targeting, and daily budget optimization — with most businesses seeing traffic and enquiries within days of a campaign going live.
+                </p>
+              </Reveal>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  );
+}

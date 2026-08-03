@@ -25,7 +25,7 @@ import {
 export const SITE = {
   name: 'Inymart Labs',
   tagline: 'Digital Marketing Agency in Tamil Nadu',
-  location: 'Tiruchirappalli, Tamil Nadu',
+  location: 'No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur, Tiruchirappalli, Tamil Nadu 620017.',
   email: 'hello@inymartlabs.com',
   phone: '+91 00000 00000',
   established: '2016',
@@ -97,7 +97,7 @@ export const SERVICES: Service[] = [
     icon: Lightbulb,
   },
   {
-    title: 'Digital Marketing Service',
+    title: 'Digital Marketing Agency',
     description:
       'Complete, end-to-end digital marketing solutions tailored to your goals and budget.',
     icon: Rocket,
@@ -139,7 +139,7 @@ export const NAV_LINKS: NavGroup[] = [
   },
   { label: 'Case Studies / Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const BRANDS = [
