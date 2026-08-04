@@ -9,6 +9,20 @@ export function DmcWhatWeDo() {
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
         
+        {/* Section 1: What is DMC */}
+        <div className="mb-20">
+          <Reveal>
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
+                What Is Digital Marketing Consulting?
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed font-medium">
+                Digital Marketing Consulting is expert, outside guidance on a business's marketing strategy — reviewing existing SEO, social media, ads, and analytics efforts, identifying what's working and what isn't, and building a clear, prioritized plan for what to do next. Unlike a full-service marketing agency, consulting can be advice-only, or paired with implementation if the business wants the same team to execute the plan.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           
           {/* Left: Content */}
@@ -22,17 +36,13 @@ export function DmcWhatWeDo() {
 
             <Reveal delay={100}>
               <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Digital Marketing Consulting is expert, outside guidance on a business&apos;s marketing strategy — reviewing existing SEO, social media, ads, and analytics efforts, identifying what&apos;s working and what isn&apos;t, and building a clear, prioritized plan for what to do next. Unlike a full-service marketing agency, consulting can be advice-only, or paired with implementation if the business wants the same team to execute the plan.
-              </p>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
                 Inymart Labs offers expert Digital Marketing Consulting in Tamil Nadu, help to business owners and marketing teams make sense of SEO, social media, ads, and analytics — without needing to become experts themselves. As a trusted provider of Digital Marketing Consulting in Trichy, we help you see the full picture and decide what actually deserves your time and budget.
               </p>
             </Reveal>
-            <Reveal delay={300}>
+            
+            <Reveal delay={200}>
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you&apos;re planning your first marketing strategy or trying to fix one that isn&apos;t working, our team as your Digital Marketing Consulting partner in Tamil Nadu gives you clear, honest direction.
+                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you're planning your first marketing strategy or trying to fix one that isn't working, our team as your Digital Marketing Consulting partner in Tamil Nadu gives you clear, honest direction.
               </p>
             </Reveal>
 
@@ -41,7 +51,7 @@ export function DmcWhatWeDo() {
                 href="/contact" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group"
               >
-                Talk to Our Consultants
+                Talk to Our Consulting Team
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Reveal>

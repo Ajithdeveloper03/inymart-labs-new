@@ -85,18 +85,9 @@ export function DmcFaq() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="bg-white p-5 border-t border-slate-100">
-                    <div className="flex gap-5 items-center">
-                      <div className="shrink-0 rounded-lg overflow-hidden h-[60px] w-[80px]">
-                        <img 
-                          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&q=80" 
-                          alt="FAQ Detail" 
-                          className="w-full h-full object-cover" 
-                        />
-                      </div>
-                      <div className="border-l-[3px] border-slate-200 pl-4 text-[13.5px] leading-relaxed text-slate-500 font-medium">
+                    <div className="border-l-[3px] border-slate-200 pl-4 text-[13.5px] leading-relaxed text-slate-500 font-medium">
                         {faq.a}
                       </div>
-                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Reveal>

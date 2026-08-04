@@ -43,10 +43,7 @@ export function PortfolioQuickAnswer() {
                 </p>
               </div>
 
-              {/* Bottom Right Circle Button */}
-              <div className="absolute bottom-6 right-6 lg:bottom-8 lg:right-8 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff6b35] text-white shadow-lg shadow-[#ff6b35]/30 cursor-pointer transition-transform hover:scale-110">
-                <Plus className="h-5 w-5" />
-              </div>
+
             </div>
           </div>
         </Reveal>
@@ -77,10 +74,7 @@ export function PortfolioQuickAnswer() {
                 </p>
               </div>
 
-              {/* Bottom Right Circle Button */}
-              <div className="absolute bottom-6 right-6 lg:bottom-8 lg:right-8 flex h-10 w-10 items-center justify-center rounded-full bg-[#f59e0b] text-white shadow-lg shadow-[#f59e0b]/30 cursor-pointer transition-transform hover:scale-110">
-                <Plus className="h-5 w-5" />
-              </div>
+
             </div>
             
             {/* Image Half */}

@@ -68,22 +68,12 @@ export function DmcQuickAnswer() {
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Consulting engagements can be one-time strategy sessions or ongoing monthly advisory, with clarity and direction typically visible right away and measurable marketing improvements building over the following months.
+                  Inymart Labs offers Digital Marketing Consulting in Trichy, Tamil Nadu giving businesses an outside, expert view of their SEO, social media, ads, and analytics — and a clear, prioritized action plan for what to focus on next.
                 </p>
               </Reveal>
               <Reveal delay={200}>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  A prioritized plan for what to focus on next.
-                </p>
-              </Reveal>
-              <Reveal delay={300}>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Reviewing your SEO, social media, ads, and analytics.
-                </p>
-              </Reveal>
-              <Reveal delay={400}>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  One-time strategy sessions or ongoing monthly advisory.
+                  Consulting engagements can be one-time strategy sessions or ongoing monthly advisory, with clarity and direction typically visible right away and measurable marketing improvements building over the following months.
                 </p>
               </Reveal>
             </div>

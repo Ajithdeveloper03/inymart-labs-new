@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ChevronRight, Home, ArrowDown } from 'lucide-react';
+import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
 
 export function PpcHeroBanner() {
@@ -15,8 +15,9 @@ export function PpcHeroBanner() {
 
       <div className="container-x relative z-10 flex flex-col items-center justify-center text-center">
         <Reveal>
-          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full border border-primary/20 backdrop-blur-sm">
-            Inymart Labs
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
+            <div className="w-2 h-2 rounded-full bg-[#ff6b35] animate-pulse" />
+            <span className="text-sm font-medium text-white/90 tracking-wide uppercase">PAY-PER-CLICK SERVICE</span>
           </div>
         </Reveal>
 
@@ -27,19 +28,13 @@ export function PpcHeroBanner() {
         </Reveal>
 
         <Reveal delay={300} className="mt-8 lg:mt-12">
-          <div className="relative inline-flex group">
-            <div className="absolute -inset-1.5 rounded-full bg-primary/30 blur-md animate-pulse pointer-events-none" />
-            <a
-              href="#quick-answer"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('quick-answer')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-110"
-              aria-label="Scroll Down"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link 
+              href="/contact"
+              className="w-full sm:w-auto px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(255,107,53,0.3)] hover:shadow-[0_0_30px_rgba(255,107,53,0.5)] hover:-translate-y-1 text-center"
             >
-              <ArrowDown className="h-6 w-6 animate-bounce" />
-            </a>
+              Talk to Our PPC Team
+            </Link>
           </div>
         </Reveal>
 
