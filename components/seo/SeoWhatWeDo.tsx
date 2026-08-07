@@ -3,8 +3,10 @@
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function SeoWhatWeDo() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
@@ -14,9 +16,9 @@ export function SeoWhatWeDo() {
           {/* Left: Content */}
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] mb-6 font-display leading-[1.2]">
-                What We Do
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  What <span className="text-gradient">We Do</span>
+</h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
@@ -32,13 +34,13 @@ export function SeoWhatWeDo() {
             </Reveal>
 
             <Reveal delay={300}>
-              <Link 
-                href="/contact" 
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group"
+              <button 
+                onClick={openPopup} 
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group whitespace-nowrap"
               >
                 Talk to Our SEO Team
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </button>
             </Reveal>
           </div>
 

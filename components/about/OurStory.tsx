@@ -21,7 +21,7 @@ export function OurStory() {
               {/* Floating Badge overlay */}
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-4 border border-white flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-gradient-to-tr from-primary to-accent shadow-md flex items-center justify-center text-white font-bold text-xl">
-                  9+
+                  10+
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-bold text-foreground">Years of</span>
@@ -32,7 +32,7 @@ export function OurStory() {
           </Reveal>
 
           {/* Right: Content */}
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <Reveal>
               <div className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-[0.2em] text-sm mb-6">
                 <History className="h-4 w-4" />
@@ -47,13 +47,13 @@ export function OurStory() {
             </Reveal>
 
             <Reveal delay={200}>
-              <p className="font-sans text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 text-justify lg:text-left">
                 Founded in 2016 in Trichy, Inymart Labs, a digital marketing firm, started with a simple belief: <strong>traffic without intent is noise.</strong> What began as a small local SEO practice has grown into a full-stack agency combining SEO, Local SEO, link building, and Generative Engine Optimization (GEO) to drive business growth.
               </p>
             </Reveal>
 
             <Reveal delay={300}>
-              <p className="font-sans text-muted-foreground text-lg leading-relaxed mb-8">
+              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 text-justify lg:text-left">
                 Before hiring an agency, check their expertise in SEO, Local SEO, AEO, and GEO, plus their track record in attracting organic traffic, including performance marketing. Our clients now span multiple countries, but our roots stay firmly in Tamil Nadu.
               </p>
             </Reveal>
@@ -67,7 +67,7 @@ export function OurStory() {
                     </div>
                     Growth Driven
                   </div>
-                  <p className="font-sans text-sm text-muted-foreground">Focusing on intent, not just traffic.</p>
+                  <div className="font-sans text-sm text-muted-foreground">Focusing on intent, not just traffic.</div>
                 </div>
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-3 text-foreground font-semibold">
@@ -76,7 +76,7 @@ export function OurStory() {
                     </div>
                     Global Reach
                   </div>
-                  <p className="font-sans text-sm text-muted-foreground">Serving clients across multiple countries.</p>
+                  <div className="font-sans text-sm text-muted-foreground">Serving clients across multiple countries.</div>
                 </div>
               </div>
             </Reveal>

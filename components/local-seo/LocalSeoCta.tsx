@@ -3,8 +3,10 @@
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function LocalSeoCta() {
+  const { openPopup } = usePopup();
   return (
     <section
       id="contact"
@@ -26,9 +28,9 @@ export function LocalSeoCta() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-[#0c1f28] sm:text-4xl lg:text-[44px]">
-              Ready to Get Found by <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b35] to-[#ff8c5f]">Nearby Customers?</span>
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
+  Ready to Get Found by <span className="text-gradient">Nearby Customers?</span>
+</h2>
           </Reveal>
 
           <Reveal delay={160}>
@@ -41,7 +43,8 @@ export function LocalSeoCta() {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row flex-wrap">
               <Link
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto"
+                
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto whitespace-nowrap"
               >
                 Start Your Local SEO Journey
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

@@ -23,9 +23,9 @@ export function DmcWhyChoose() {
       <div className="container-x">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-              Why Choose Digital Marketing Consulting in Tamil Nadu
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  Why Choose Digital <span className="text-gradient">Marketing Consulting</span> in Tamil Nadu
+</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Many businesses spend money on SEO, ads, and social media without a clear strategy tying it all together. This usually means wasted budget, mixed messaging, and no clear way to measure what's actually working.
             </p>

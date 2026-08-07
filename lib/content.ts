@@ -26,8 +26,8 @@ export const SITE = {
   name: 'Inymart Labs',
   tagline: 'Digital Marketing Agency in Tamil Nadu',
   location: 'No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur, Tiruchirappalli, Tamil Nadu 620017.',
-  email: 'hello@inymartlabs.com',
-  phone: '+91 00000 00000',
+  email: 'ceo@inymartlabs.com',
+  phone: '+91 9994723446',
   established: '2016',
 } as const;
 
@@ -138,7 +138,7 @@ export const NAV_LINKS: NavGroup[] = [
     })),
   },
   { label: 'Case Studies / Portfolio', href: '/portfolio' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Blog', href: '/blogs' },
   { label: 'Contact', href: '/contact' },
 ];
 

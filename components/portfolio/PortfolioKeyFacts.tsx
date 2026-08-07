@@ -52,7 +52,7 @@ export function PortfolioKeyFacts() {
               <div className="font-display text-8xl lg:text-9xl font-black text-foreground leading-none tracking-tighter mb-4 relative z-10">
                 50<span className="text-primary">+</span>
               </div>
-              <p className="font-sans text-slate-500 text-lg lg:text-xl leading-relaxed relative z-10">
+              <p className="font-sans text-slate-500 text-lg lg:text-xl leading-relaxed relative z-10 text-justify sm:text-left">
                 Across India, UAE, UK, and the USA.
               </p>
             </div>
@@ -71,7 +71,7 @@ export function PortfolioKeyFacts() {
                   <h3 className="font-display text-xl font-bold text-foreground mb-3">
                     Service Focus
                   </h3>
-                  <p className="font-sans text-slate-500 leading-relaxed">
+                  <p className="font-sans text-slate-500 leading-relaxed text-justify sm:text-left">
                     Digital Marketing Agency based in Trichy, Tamil Nadu.
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export function PortfolioKeyFacts() {
                   <h3 className="font-display text-xl font-bold text-foreground mb-3">
                     Headquarters
                   </h3>
-                  <p className="font-sans text-slate-500 leading-relaxed">
+                  <p className="font-sans text-slate-500 leading-relaxed text-justify sm:text-left">
                     Tiruchirappalli,<br />Tamil Nadu, India.
                   </p>
                 </div>
@@ -103,7 +103,7 @@ export function PortfolioKeyFacts() {
                     Services Delivered
                   </h3>
                 </div>
-                <div className="flex flex-wrap gap-2 lg:gap-3">
+                <div className="flex flex-wrap gap-2 lg:gap-3 justify-center sm:justify-start">
                   {SERVICES.map((srv, i) => (
                     <span key={i} className="px-4 py-2 rounded-lg bg-slate-50 border border-slate-100 text-slate-600 text-sm font-semibold transition-colors hover:bg-primary hover:text-white hover:border-primary">
                       {srv}
@@ -120,10 +120,10 @@ export function PortfolioKeyFacts() {
             <div className="group relative flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-10 rounded-[32px] bg-secondary/5 p-8 lg:p-10 border border-secondary/10 transition-all hover:border-secondary/20">
               <div className="flex-shrink-0">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-2">Industries Covered</h3>
-                <p className="font-sans text-slate-500 text-sm">Deep expertise across multiple sectors.</p>
+                <p className="font-sans text-slate-500 text-sm text-justify sm:text-left">Deep expertise across multiple sectors.</p>
               </div>
               <div className="h-px w-full lg:h-16 lg:w-px bg-slate-200 hidden lg:block"></div>
-              <div className="flex flex-wrap gap-2 lg:gap-3">
+              <div className="flex flex-wrap gap-2 lg:gap-3 justify-center lg:justify-start">
                 {INDUSTRIES.map((ind, i) => (
                   <span key={i} className="px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-700 shadow-sm text-sm font-semibold transition-all hover:bg-primary/10 hover:text-primary hover:border-primary/20 hover:scale-105 cursor-default">
                     {ind}

@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChevronDown, ArrowRight, Sparkles } from 'lucide-react';
+import { usePopup } from '@/components/providers/PopupProvider';
+import { Menu, X, ChevronDown, ArrowRight, Sparkles, Target, MapPin, Share2, Users, LineChart, Code, Lightbulb, Rocket, MousePointerClick, Bot } from 'lucide-react';
 import { NAV_LINKS, SERVICES, slugify } from '@/lib/content';
 import { cn } from '@/lib/utils';
 
 export function Header() {
+  const { openPopup } = usePopup();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -35,21 +37,35 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 transition-all duration-300">
       {/* Top Announcement Banner Bar - Orange background matching reference image */}
       {bannerVisible && (
-        <div className="relative w-full bg-orange-600 px-4 py-2.5 text-white shadow-sm transition-all duration-300">
-          <div className="flex flex-wrap items-center justify-center text-[11px] sm:text-xs font-medium gap-x-2 gap-y-1.5 text-center px-6 sm:px-10">
-            <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+        <div className="relative w-full bg-orange-600 px-4 py-2 text-white shadow-sm transition-all duration-300">
+          {/* Mobile: 2-line stacked layout */}
+          <div className="flex flex-col items-center text-center sm:hidden gap-0.5 px-8">
+            <span className="font-semibold text-white/95 text-[11px] leading-tight whitespace-nowrap">
+              Digital Marketing Agency – Tamil Nadu
+            </span>
+            <button
+              onClick={openPopup}
+              className="inline-flex items-center gap-1 font-bold text-white underline underline-offset-2 hover:text-amber-100 transition-colors text-[11px] whitespace-nowrap"
+            >
+              Get Free Consultation
+              <ArrowRight className="h-3 w-3" />
+            </button>
+          </div>
+          {/* Desktop: single-line layout */}
+          <div className="hidden sm:flex items-center justify-center text-xs font-medium gap-x-3 text-center px-10">
+            <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm whitespace-nowrap">
               <Sparkles className="h-2.5 w-2.5 text-amber-200" /> Trusted Agency
             </span>
-            <span className="font-semibold text-white/95">
+            <span className="font-semibold text-white/95 text-center leading-tight">
               Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli
             </span>
-            <a
-              href="/contact"
-              className="group inline-flex items-center gap-1 font-bold text-white underline underline-offset-4 hover:text-amber-100 transition-colors"
+            <button
+              onClick={openPopup}
+              className="group hidden sm:inline-flex items-center gap-1 font-bold text-white underline underline-offset-4 hover:text-amber-100 transition-colors whitespace-nowrap"
             >
               Get Free Consultation
               <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
-            </a>
+            </button>
           </div>
           {/* Right Close Button - absolutely positioned */}
           <button
@@ -73,10 +89,9 @@ export function Header() {
         )}
       >
         <div className="container-x flex items-center justify-between gap-4 xl:gap-6">
-          {/* Brand Logo */}
-          <Link href="/#home" className="group flex items-center gap-2.5">
+          <Link href="/" className="group flex items-center gap-2.5">
             <img
-              src="/logo.webp"
+              src="/new/logo.webp"
               alt="Inymart Labs"
               className="h-9 w-auto transition-transform duration-300 group-hover:scale-105"
             />
@@ -116,20 +131,22 @@ export function Header() {
                       <ul className="grid grid-cols-3 gap-4">
                         {SERVICES.map((service) => {
                           const href = `/services/${slugify(service.title)}`;
-                          // Map each service to a highly relevant free Unsplash image
-                          const serviceImages: Record<string, string> = {
-                            'SEO': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=120&h=120&fit=crop&q=80',
-                            'Local SEO': 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=120&h=120&fit=crop&q=80',
-                            'SMO': 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=120&h=120&fit=crop&q=80',
-                            'SMM': 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=120&h=120&fit=crop&q=80',
-                            'Web Analytics': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&h=120&fit=crop&q=80',
-                            'Web Development': 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=120&h=120&fit=crop&q=80',
-                            'Digital Marketing Consulting': 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop&q=80',
-                            'Digital Marketing Agency': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80',
-                            'PPC Service': 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=120&h=120&fit=crop&q=80',
-                            'AI SEO Services': 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=120&h=120&fit=crop&q=80'
+                          const getServiceIcon = (title: string) => {
+                            const iconProps = { className: "h-6 w-6 text-neutral-500 transition-colors duration-300 group-hover/item:text-orange-600" };
+                            switch (title) {
+                              case 'SEO': return <Target {...iconProps} />;
+                              case 'Local SEO': return <MapPin {...iconProps} />;
+                              case 'SMO': return <Share2 {...iconProps} />;
+                              case 'SMM': return <Users {...iconProps} />;
+                              case 'Web Analytics': return <LineChart {...iconProps} />;
+                              case 'Web Development': return <Code {...iconProps} />;
+                              case 'Digital Marketing Consulting': return <Lightbulb {...iconProps} />;
+                              case 'Digital Marketing Agency': return <Rocket {...iconProps} />;
+                              case 'PPC Service': return <MousePointerClick {...iconProps} />;
+                              case 'AI SEO Services': return <Bot {...iconProps} />;
+                              default: return <Target {...iconProps} />;
+                            }
                           };
-                          const imgUrl = serviceImages[service.title] || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=120&h=120&fit=crop&q=80';
 
                           return (
                             <li key={service.title}>
@@ -137,12 +154,8 @@ export function Header() {
                                 href={href}
                                 className="group/item flex items-center gap-4 rounded-xl border border-transparent p-3 transition-all duration-200 hover:border-neutral-100 hover:bg-neutral-50/70"
                               >
-                                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl overflow-hidden bg-neutral-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
-                                  <img
-                                    src={imgUrl}
-                                    alt={service.title}
-                                    className="h-full w-full object-cover"
-                                  />
+                                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-neutral-100/80 shadow-sm transition-all duration-300 group-hover/item:scale-105 group-hover/item:bg-orange-50">
+                                  {getServiceIcon(service.title)}
                                 </span>
                                 <span className="text-[14px] font-extrabold tracking-tight text-neutral-800 transition-colors group-hover/item:text-orange-600 leading-snug">
                                   {service.title}
@@ -172,8 +185,8 @@ export function Header() {
 
           {/* Right CTA Button: Exact pill shape with outline border & arrow icon */}
           <div className="hidden xl:block">
-            <a
-              href="/contact"
+            <button
+              onClick={openPopup}
               className={cn(
                 "group inline-flex items-center gap-2 rounded-full border px-5 py-2 text-[12px] font-bold uppercase tracking-wider shadow-sm transition-all duration-300",
                 isSolid
@@ -183,7 +196,7 @@ export function Header() {
             >
               FREE CONSULTATION
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu trigger */}
@@ -259,13 +272,15 @@ export function Header() {
                 </Link>
               )
             )}
-            <a
-              href="/contact"
-              onClick={() => setOpen(false)}
+            <button
+              onClick={() => {
+                setOpen(false);
+                openPopup();
+              }}
               className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-neutral-900 shadow-sm"
             >
               FREE CONSULTATION <ArrowRight className="h-3.5 w-3.5" />
-            </a>
+            </button>
           </nav>
         </div>
       </div>

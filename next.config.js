@@ -4,6 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  output: 'export',
+  basePath: '/new',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

@@ -23,26 +23,26 @@ const benefits = [
 
 export function WhyDigitalMarketing() {
   return (
-    <section className="relative scroll-mt-24 bg-background py-14">
-      <div className="container-x grid items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
+    <section className="relative scroll-mt-24 bg-background py-8 sm:py-14">
+      <div className="container-x grid items-stretch gap-12 md:grid-cols-2 md:gap-8 lg:gap-16">
         
         {/* Left: copy and CTA */}
-        <div className="order-2 flex flex-col justify-between lg:order-1 py-4">
+        <div className="order-2 flex flex-col justify-between md:order-1 lg:order-1 py-4">
           <div>
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent ring-1 ring-accent/20">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                Why Digital Marketing Matters
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span className="text-center sm:text-left">Why Digital Marketing Matters</span>
               </span>
             </Reveal>
             <Reveal delay={80}>
-              <h2 className="mt-5 font-display font-semibold tracking-tight text-foreground text-balance text-[2rem] leading-[2rem]">
+              <h2 className="mt-2 sm:mt-5 font-display font-semibold tracking-tight text-foreground text-balance text-[1.5rem] leading-[1.2] sm:text-[2rem] sm:leading-[2rem]">
                 A strong online presence helps businesses{' '}
                 <span className="text-accent">attract more customers, build trust, and increase sales.</span>
               </h2>
             </Reveal>
             <Reveal delay={160}>
-              <p className="font-sans mt-6 text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
+              <p className="font-sans mt-6 text-base leading-relaxed text-muted-foreground text-justify lg:text-left text-pretty sm:text-lg">
                 As a trusted Digital Marketing Agency in Tamil Nadu, we help businesses improve visibility through SEO, Local SEO, Website Development, AI Search Optimization, Performance Marketing, Social Media Marketing, and enhance their organic traffic.
               </p>
             </Reveal>
@@ -61,10 +61,10 @@ export function WhyDigitalMarketing() {
         </div>
 
         {/* Right: image + overlay stat */}
-        <Reveal className="relative order-1 lg:order-2 h-full">
+        <Reveal className="relative order-1 md:order-2 lg:order-2 h-full min-h-[300px]">
           <div className="relative h-full overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 min-h-[350px]">
             <img
-              src="/images/digital-marketing.jpeg"
+              src="/new/images/digital-marketing.jpeg"
               alt="Business growth analytics dashboard showing increasing online visibility"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"

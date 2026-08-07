@@ -19,7 +19,7 @@ export function AboutCta() {
           </Reveal>
           
           <Reveal delay={100}>
-            <p className="font-sans text-muted-foreground text-lg leading-relaxed mb-10 max-w-3xl">
+            <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-10 max-w-3xl text-justify sm:text-center">
               Whether you need Local SEO, full-site SEO, or AEO and GEO for AI search, Inymart Labs brings a data-driven approach to growing your visibility, leads, conversions, and effective marketing services.
             </p>
           </Reveal>
@@ -27,7 +27,7 @@ export function AboutCta() {
           <Reveal delay={200}>
             <div className="flex flex-col sm:flex-row items-center gap-6 justify-center">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-white shadow-[0_8px_20px_rgba(249,115,22,0.3)] transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
               >
                 Work With Us

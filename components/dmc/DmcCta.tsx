@@ -29,9 +29,9 @@ export function DmcCta() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-[#0c1f28] sm:text-4xl lg:text-[44px]">
-              Ready to Get Expert <span className="text-gradient">Marketing Direction?</span>
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
+  Ready to Get Expert Marketing <span className="text-gradient">Direction</span>?
+</h2>
           </Reveal>
 
           <Reveal delay={160}>

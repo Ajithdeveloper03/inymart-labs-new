@@ -55,12 +55,12 @@ export function WhereWeWork() {
         <div className="grid lg:grid-cols-12 gap-y-12 gap-x-8 items-center">
           
           {/* Left: Content */}
-          <div className="flex flex-col text-left lg:col-span-5 pr-0 lg:pr-8">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:col-span-5 pr-0 lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight mb-5 mt-4">
                 Where We <span className="text-gradient">Work</span>
               </h2>
-              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
+              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 text-justify lg:text-left">
                 We&apos;re based in Tiruchirappalli — proud to be a leading digital marketing agency in Trichy — and serve clients across Tamil Nadu, plus the USA, UAE, Australia, and the UK. We work across various sectors offering dedicated services to enhance user experience.
               </p>
 

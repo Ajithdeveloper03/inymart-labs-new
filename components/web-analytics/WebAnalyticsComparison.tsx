@@ -13,9 +13,9 @@ export function WebAnalyticsComparison() {
               <div className="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center shrink-0">
                 <GitCompare className="w-8 h-8 text-purple-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                Web Analytics vs. Just Having Google Analytics Installed
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  Web <span className="text-gradient">Analytics</span> vs. Just Having Google <span className="text-gradient">Analytics</span> Installed
+</h2>
             </div>
             <p className="text-gray-600 text-lg mb-8">
               Having Google Analytics installed is not the same as having accurate, actionable data. Here's the difference:

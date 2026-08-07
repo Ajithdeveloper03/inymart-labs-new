@@ -19,13 +19,13 @@ export function DmaServices() {
       <div className="container-x">
         <div className="max-w-4xl mx-auto">
           <Reveal>
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex flex-col items-center justify-center text-center gap-4 mb-10">
               <div className="w-16 h-16 rounded-2xl bg-rose-500/10 flex items-center justify-center shrink-0">
                 <Rocket className="w-8 h-8 text-rose-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                Our Digital Marketing Services
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  Our Digital <span className="text-gradient">Marketing Services</span>
+</h2>
             </div>
           </Reveal>
 

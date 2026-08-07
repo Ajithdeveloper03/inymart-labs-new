@@ -1,9 +1,14 @@
+'use client';
+
+import Link from 'next/link';
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight, Check } from 'lucide-react';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 const ctaPoints = ['Book Your Free Consultation'];
 
 export function FinalCta() {
+  const { openPopup } = usePopup();
   return (
     <section
       id="contact"
@@ -29,14 +34,14 @@ export function FinalCta() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-[#0c1f28] sm:text-4xl lg:text-[44px] lg:whitespace-nowrap">
+            <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-[#0c1f28] sm:text-4xl md:text-[40px] lg:text-[44px] lg:whitespace-nowrap">
               Let&apos;s Grow Your Business with{' '}
               <span className="text-gradient">Inymart Labs</span>
             </h2>
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
+            <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-justify sm:text-center text-pretty sm:text-lg">
               Whether you&apos;re looking for a reliable Digital Marketing
               Agency in Tamil Nadu or an experienced Digital Marketing Agency in
               Tiruchirappalli, our team is ready to help you improve your online
@@ -49,16 +54,16 @@ export function FinalCta() {
 
           <Reveal delay={320}>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href="mailto:hello@inymartlabs.com"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50"
+              <Link
+                href="/contact"
+                className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-accent px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 whitespace-nowrap w-full sm:w-auto"
               >
                 Book Your Free Consultation
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
+              </Link>
               <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-8 py-4 text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300"
+                href="/services"
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-slate-200 bg-white px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300 whitespace-nowrap w-full sm:w-auto"
               >
                 View Our Services
               </a>

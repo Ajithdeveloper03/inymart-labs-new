@@ -3,15 +3,17 @@
 import { Reveal } from '@/components/Reveal';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function AboutHero() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative overflow-hidden bg-white py-12 lg:py-16">
       <div className="container-x relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Left side: Content */}
-          <div className="flex flex-col items-start text-left max-w-2xl">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl">
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent mb-6">
                 <Sparkles className="h-3.5 w-3.5" />
@@ -26,25 +28,27 @@ export function AboutHero() {
             </Reveal>
 
             <Reveal delay={200}>
-              <p className="font-sans text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-6 text-justify lg:text-left">
                 Inymart Labs is headquartered in Trichy. As a trusted digital marketing agency since 2016, we’ve helped businesses improve their online visibility through Google Search, Google Maps, voice search, and AI platforms like ChatGPT, Gemini, and Perplexity.
               </p>
             </Reveal>
 
             <Reveal delay={300}>
-              <p className="font-sans text-muted-foreground text-lg leading-relaxed mb-8">
+              <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 text-justify lg:text-left">
                 With 9+ years of experience, we have supported 50+ brands across India, UAE, UK, and the USA with result-driven digital marketing and web design solutions that generate visibility, leads, and business growth.
               </p>
             </Reveal>
 
             <Reveal delay={400}>
-              <Link
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
-              >
-                Talk to Our Team
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              <div className="w-full flex justify-center lg:justify-start">
+                <button
+                  onClick={openPopup}
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
+                >
+                  Talk to Our Team
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </div>
             </Reveal>
           </div>
 

@@ -13,9 +13,9 @@ export function WebDevComparison() {
               <div className="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center shrink-0">
                 <GitCompare className="w-8 h-8 text-purple-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                Professional Web Development vs. DIY Website Builders
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  Professional Web <span className="text-gradient">Development</span> vs. DIY Website Builders
+</h2>
             </div>
             <p className="text-gray-600 text-lg mb-8">
               Many businesses start with a DIY website builder before realizing its limits. Here's how the two compare:

@@ -48,7 +48,7 @@ export function PortfolioWhoWeWorkWith() {
             </h2>
           </Reveal>
           <Reveal delay={100}>
-            <p className="font-sans text-muted-foreground text-lg">
+            <p className="font-sans text-muted-foreground text-lg text-justify sm:text-center">
               As a Digital Marketing Agency in Trichy, Tamil Nadu, our portfolio includes:
             </p>
           </Reveal>
@@ -114,7 +114,7 @@ export function PortfolioWhoWeWorkWith() {
                     ">
                       {item.title}
                     </h3>
-                    <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                    <p className="font-sans text-sm text-muted-foreground leading-relaxed text-center">
                       {item.desc}
                     </p>
                   </div>

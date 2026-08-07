@@ -10,6 +10,7 @@ import { Industries } from '@/components/sections/Industries';
 import { WhyDigitalMarketing } from '@/components/sections/WhyDigitalMarketing';
 import { Faqs } from '@/components/sections/Faqs';
 import { FinalCta } from '@/components/sections/FinalCta';
+import { PopupTrigger } from '@/components/PopupTrigger';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -43,6 +44,7 @@ export default function Home() {
         <Brands />
         <Industries />
         <WhyDigitalMarketing />
+        <PopupTrigger />
         <Faqs />
         <FinalCta />
       </main>

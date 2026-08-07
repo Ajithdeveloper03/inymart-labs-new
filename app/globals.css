@@ -250,3 +250,36 @@
   position: relative;
 }
 
+/* =====================================================
+   Mobile Responsive: Justify paragraph text only
+   ===================================================== */
+@media (max-width: 639px) {
+  p {
+    text-align: justify;
+  }
+}
+
+/* Float animations for hero side images */
+@keyframes float-left {
+  0%, 100% { transform: rotate(12deg) translateY(0px); }
+  50% { transform: rotate(12deg) translateY(-12px); }
+}
+.animate-float-left {
+  animation: float-left 7s ease-in-out infinite;
+}
+
+@keyframes float-right {
+  0%, 100% { transform: rotate(-12deg) translateY(0px); }
+  50% { transform: rotate(-12deg) translateY(-12px); }
+}
+.animate-float-right {
+  animation: float-right 8s ease-in-out infinite;
+}
+
+@keyframes float-phone {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+}
+.animate-float-phone {
+  animation: float-phone 6s ease-in-out infinite;
+}

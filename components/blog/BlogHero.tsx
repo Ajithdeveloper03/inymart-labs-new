@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export function BlogHero() {
   return (
-    <section className="relative overflow-hidden min-h-[70vh] flex flex-col justify-center pt-8 pb-12">
+    <section className="relative overflow-hidden min-h-[70vh] flex flex-col justify-center pt-32 pb-12 lg:pt-40">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1920')" }}

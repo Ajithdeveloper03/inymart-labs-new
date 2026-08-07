@@ -34,7 +34,7 @@ export function Industries() {
           description="As a leading SEO company, we help businesses across a wide range of industries grow their online presence and reach the right audience."
         />
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 lg:grid-cols-5">
           {INDUSTRIES.map((industry, i) => (
             <Reveal key={industry.name} delay={i * 60}>
               <article className="group relative flex h-[160px] flex-col items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 text-center transition-all duration-300 hover:border-primary hover:shadow-[0_12px_40px_-12px_rgba(234,88,12,0.3)] overflow-hidden">

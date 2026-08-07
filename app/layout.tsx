@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { CustomCursor } from '@/components/CustomCursor';
+import { PopupProvider } from '@/components/providers/PopupProvider';
+import { PopupForm } from '@/components/PopupForm';
 
 const sans = Inter({
   subsets: ['latin'],
@@ -74,10 +76,13 @@ export default function RootLayout({
           'font-sans bg-background text-foreground'
         )}
       >
-        <CustomCursor />
-        <div className="font-sans antialiased">
-          {children}
-        </div>
+        <PopupProvider>
+          <CustomCursor />
+          <div className="font-sans antialiased">
+            {children}
+          </div>
+          <PopupForm />
+        </PopupProvider>
       </body>
     </html>
   );

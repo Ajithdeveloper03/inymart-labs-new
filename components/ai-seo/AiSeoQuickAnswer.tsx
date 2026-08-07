@@ -58,9 +58,9 @@ export function AiSeoQuickAnswer() {
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                   <Lightbulb className="w-8 h-8" />
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
-                  Quick Answer
-                </h2>
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  Quick <span className="text-gradient">Answer</span>
+</h2>
               </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>

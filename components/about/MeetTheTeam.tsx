@@ -18,16 +18,16 @@ const TEAM = [
     bgColor: 'bg-[#A8B4C4]' 
   },
   { 
-    name: 'Mr. Ajith Kumar', 
-    role: 'Web Team Lead',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400&h=500',
-    bgColor: 'bg-[#C1BAB3]' 
-  },
-  { 
     name: 'Ms. Shanthini', 
     role: 'Traffic Team Co-ordinator',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500',
     bgColor: 'bg-[#988290]' 
+  },
+  { 
+    name: 'Mr. Ajith Kumar', 
+    role: 'Web Team Lead',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400&h=500',
+    bgColor: 'bg-[#C1BAB3]' 
   },
   { 
     name: 'Ms. Santhiya', 
@@ -99,7 +99,7 @@ export function MeetTheTeam() {
                 {/* Text Content */}
                 <div className="text-center pb-5 px-2">
                   <h3 className="font-bold text-foreground text-[17px] mb-1.5">{member.name}</h3>
-                  <p className="font-sans text-[13px] text-muted-foreground">{member.role}</p>
+                  <div className="font-sans text-[13px] text-muted-foreground">{member.role}</div>
                 </div>
 
                 {/* LinkedIn Pill */}

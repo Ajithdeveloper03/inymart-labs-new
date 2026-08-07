@@ -1,47 +1,69 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export function SeoTrust() {
   const points = [
+
     "10+ years of digital marketing experience, with early, dedicated focus on AEO and GEO",
     "50+ brands served across India, UAE, UK, and the USA",
     "Headquartered in Tiruchirappalli, with hands-on knowledge of Tamil Nadu markets",
     "SEO built on proven traditional methods, not sold as a quick fix",
     "Honest reporting — we show you exactly how your business is performing, good or bad",
     "Real specialists monitoring search engines — not a one-time content update with no follow-up"
+  
   ];
 
   return (
-    <section className="relative pt-8 pb-12 bg-white">
-      <div className="container-x">
-        <div className="max-w-4xl mx-auto">
-          <Reveal>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-8 h-8 text-primary" />
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                Why Trust Inymart Labs
-              </h2>
+    <section className="relative overflow-hidden bg-white py-16 lg:py-24">
+      <div className="container-x relative z-10">
+        
+        <div className="grid gap-12 lg:grid-cols-2 items-center">
+          
+          {/* Image / Graphic */}
+          <Reveal className="order-2 lg:order-1">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200" 
+                alt="Team Meeting" 
+                className="w-full h-[400px] lg:h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed mb-10">
-              SEO is a constantly evolving field, so experience and honesty matter. Here's why businesses trust Inymart Labs as their SEO Agency in Tamil Nadu and SEO Agency in Trichy:
-            </p>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {points.map((point, i) => (
-              <Reveal key={i} delay={i * 100}>
-                <div className="flex items-start gap-4">
-                  <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-0.5" />
-                  <p className="text-slate-700 font-medium leading-relaxed">{point}</p>
-                </div>
-              </Reveal>
-            ))}
+          {/* Content */}
+          <div className="order-1 lg:order-2 flex flex-col justify-center">
+            <Reveal>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  Why Trust Inymart <span className="text-gradient">Labs</span>
+</h2>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="font-sans text-gray-600 text-lg mb-8 leading-relaxed">
+                SEO is a constantly evolving field, so experience and honesty matter. Here's why businesses trust Inymart Labs as their SEO Agency in Tamil Nadu and SEO Agency in Trichy:
+              </p>
+            </Reveal>
+
+            <div className="flex flex-col gap-4">
+              {points.map((point, idx) => (
+                <Reveal key={idx} delay={200 + idx * 50}>
+                  <div className="flex items-start gap-4">
+                    <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
+                      <CheckCircle2 className="h-4 w-4" />
+                    </div>
+                    <p className="font-sans text-gray-700 leading-relaxed">
+                      {point}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
+
         </div>
+
       </div>
     </section>
   );

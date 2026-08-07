@@ -3,6 +3,7 @@
 import { Reveal } from '@/components/Reveal';
 import { Search, Wrench, ArrowUpRight, Sparkles, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 const steps = [
   {
@@ -32,6 +33,7 @@ const steps = [
 ];
 
 export function OurApproach() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative bg-[#0c1f28] py-12 lg:py-16 overflow-hidden">
       <div className="container-x relative">
@@ -74,13 +76,13 @@ export function OurApproach() {
 
         <div className="flex justify-center">
           <Reveal delay={500}>
-            <Link
-              href="#contact"
+            <button
+              onClick={openPopup}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
             >
               Start Your Growth Plan
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </button>
           </Reveal>
         </div>
       </div>

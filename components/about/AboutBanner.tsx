@@ -3,14 +3,16 @@
 import { Reveal } from '@/components/Reveal';
 import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function AboutBanner() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-24 pb-12 sm:pt-28 lg:pt-32 lg:pb-16">
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/banner 1.png')" }}
+        style={{ backgroundImage: "url('/new/banner 1.png')" }}
       />
       {/* A dark gradient overlay to ensure text readability and a premium corporate look */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/80 via-[#0c1f28]/50 to-[#0c1f28]/80 backdrop-blur-[1px]" />
@@ -30,13 +32,13 @@ export function AboutBanner() {
           <div className="relative inline-flex group">
             {/* Blinking / Pulse glow effect */}
             <div className="absolute -inset-1.5 rounded-full bg-orange-500/50 blur-md animate-pulse pointer-events-none" />
-            <Link
-              href="/contact"
-              className="relative inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm sm:text-base font-bold uppercase tracking-wide text-primary-foreground shadow-lg shadow-orange-500/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
+            <button
+              onClick={openPopup}
+              className="relative inline-flex items-center justify-center gap-1 sm:gap-2 rounded-full bg-primary px-4 sm:px-8 py-3 sm:py-4 text-[10px] sm:text-base font-bold uppercase tracking-wide text-primary-foreground shadow-lg shadow-orange-500/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 whitespace-nowrap"
             >
               START YOUR DIGITAL GROWTH TODAY
-              <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Link>
+              <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1 shrink-0" />
+            </button>
           </div>
         </Reveal>
 

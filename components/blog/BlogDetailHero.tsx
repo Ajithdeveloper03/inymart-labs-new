@@ -11,7 +11,7 @@ interface BlogDetailHeroProps {
 
 export function BlogDetailHero({ post }: BlogDetailHeroProps) {
   return (
-    <section className="relative overflow-hidden min-h-[70vh] flex flex-col justify-center pt-8 pb-12">
+    <section className="relative overflow-hidden min-h-[70vh] flex flex-col justify-center pt-32 pb-12 lg:pt-40">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('${post.image}')` }}
@@ -57,7 +57,7 @@ export function BlogDetailHero({ post }: BlogDetailHeroProps) {
               <Home className="h-4 w-4" /> Home
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />
-            <Link href="/blog" className="transition-colors hover:text-primary">
+            <Link href="/blogs" className="transition-colors hover:text-primary">
               Blog
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />

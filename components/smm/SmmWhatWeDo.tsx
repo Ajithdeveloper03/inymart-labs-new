@@ -3,8 +3,10 @@
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function SmmWhatWeDo() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
@@ -13,9 +15,9 @@ export function SmmWhatWeDo() {
         <div className="mb-20">
           <Reveal>
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-                What Is Social Media Marketing (SMM)?
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  What Is Social <span className="text-gradient">Media Marketing</span> (SMM)?
+</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
                 Social Media Marketing (SMM), also called paid social advertising or social media ads, is the practice of running paid ad campaigns on platforms like Facebook, Instagram, and LinkedIn to reach a targeted audience and drive specific business outcomes — calls, website visits, form fills, or direct sales.
               </p>
@@ -31,9 +33,9 @@ export function SmmWhatWeDo() {
           {/* Left: Content */}
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] mb-6 font-display leading-[1.2]">
-                What We Do
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  What <span className="text-gradient">We Do</span>
+</h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
@@ -50,13 +52,13 @@ export function SmmWhatWeDo() {
             </Reveal>
 
             <Reveal delay={300}>
-              <Link 
-                href="/contact" 
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group"
+              <button 
+                onClick={openPopup} 
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group whitespace-nowrap"
               >
                 Talk to Our Ads Team
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </button>
             </Reveal>
           </div>
 

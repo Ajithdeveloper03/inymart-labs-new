@@ -8,26 +8,26 @@ export function AiSeoWhoThisIsFor() {
     {
       text: "Businesses that don't appear when customers ask AI tools for recommendations",
       icon: Search,
-      iconColor: "text-pink-500",
-      bgImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+      iconColor: "text-pink-500", bgColor: "bg-pink-50", borderColor: "border-pink-100",
+      
     },
     {
       text: "Businesses that appear in AI answers but with outdated or incorrect information",
       icon: AlertCircle,
-      iconColor: "text-emerald-500",
-      bgImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
+      iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
+      
     },
     {
       text: "Brands wanting to stay ahead as AI search grows alongside traditional Google search",
       icon: TrendingUp,
-      iconColor: "text-amber-500",
-      bgImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600"
+      iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
+      
     },
     {
       text: "Any business already investing in SEO and wanting to extend that visibility to AI platforms",
       icon: Target,
-      iconColor: "text-blue-500",
-      bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600"
+      iconColor: "text-blue-500", bgColor: "bg-blue-50", borderColor: "border-blue-100",
+      
     }
   ];
 
@@ -42,9 +42,9 @@ export function AiSeoWhoThisIsFor() {
                 <div className="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center shrink-0">
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] font-display">
-                  Who This Is For
-                </h2>
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  Who <span className="text-gradient">This Is For</span>
+</h2>
               </div>
               <p className="text-gray-600 text-lg md:text-xl">
                 As an AI SEO Service in Tamil Nadu, our service works well for:
@@ -57,26 +57,20 @@ export function AiSeoWhoThisIsFor() {
               const Icon = point.icon;
               return (
                 <Reveal key={i} delay={i * 100} className="h-full">
-                  <div className="relative flex items-center gap-5 sm:gap-6 p-4 sm:p-5 pr-6 sm:pr-8 rounded-[2.5rem] sm:rounded-[3rem] text-white shadow-xl hover:-translate-y-1 transition-transform duration-300 overflow-hidden group h-full">
+                  <div className={`relative flex items-center gap-5 sm:gap-6 p-4 sm:p-5 pr-6 sm:pr-8 rounded-[2.5rem] sm:rounded-[3rem] ${point.bgColor} border ${point.borderColor} shadow-xl hover:-translate-y-1 transition-transform duration-300 overflow-hidden group h-full`}>
                     
-                    {/* Background Image Layer */}
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                      style={{ backgroundImage: `url(${point.bgImage})` }}
-                    />
                     
-                    {/* Subtle Primary Color Overlay + Dark Gradient for Readability */}
-                    <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40" />
+                    
+                    
                     
                     {/* Icon Container */}
-                    <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                    <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white flex items-center justify-center shadow-md">
                        <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${point.iconColor}`} />
                     </div>
                     
                     {/* Content */}
                     <div className="relative z-10 flex-1 py-2">
-                      <p className="text-slate-200 text-sm sm:text-base font-medium leading-relaxed">
+                      <p className="text-gray-600 text-sm sm:text-base font-medium leading-relaxed">
                         {point.text}
                       </p>
                     </div>

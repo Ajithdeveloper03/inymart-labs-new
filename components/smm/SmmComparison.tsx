@@ -8,9 +8,9 @@ export function SmmComparison() {
       <div className="container-x">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-              Social Media Marketing (Ads) vs. Social Media Optimization (Organic)
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  Social Media Marketing (Ads) vs. Social <span className="text-gradient">Media Optimization</span> (Organic)
+</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Businesses often confuse paid social media marketing with organic social media optimization. Here's the difference:
             </p>

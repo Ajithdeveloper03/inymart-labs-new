@@ -1,8 +1,9 @@
 import { Reveal } from '@/components/Reveal';
 import { SectionHeading } from '@/components/SectionHeading';
 import { CtaBanner } from '@/components/CtaBanner';
-import { SERVICES } from '@/lib/content';
+import { SERVICES, slugify } from '@/lib/content';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const SERVICE_IMAGES = [
@@ -36,7 +37,7 @@ export function Services() {
         />
 
         {/* 5-Column Grid Layout matching reference */}
-        <div className="mt-16 grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-16 grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {SERVICES.map((service, i) => (
             <Reveal key={service.title} delay={i * 50}>
               <div className="h-full filter drop-shadow-sm hover:drop-shadow-2xl transition-all duration-300">
@@ -66,10 +67,13 @@ export function Services() {
                       {service.title}
                     </h3>
 
-                    <div className="mt-auto pt-6">
-                      <button className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-slate-900 border border-slate-200 bg-white px-5 py-3 transition-all duration-500 group-hover:text-primary group-hover:border-transparent">
-                        Read More <ArrowRight className="h-4 w-4" />
-                      </button>
+                    <div className="mt-auto pt-6 w-full">
+                      <Link 
+                        href={`/services/${slugify(service.title)}`}
+                        className="flex w-full justify-center items-center gap-1.5 sm:gap-2 text-[10px] sm:text-[11px] font-extrabold uppercase tracking-widest text-slate-900 border border-slate-200 bg-white px-3 sm:px-5 py-2.5 sm:py-3 transition-all duration-500 group-hover:text-primary group-hover:border-transparent whitespace-nowrap"
+                      >
+                        View Service <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                      </Link>
                     </div>
                     
                   </div>

@@ -46,7 +46,7 @@ export function CtaBanner({
       {variant !== 'light' && (
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
       )}
-      <div className={cn("relative flex flex-col", !stacked ? "gap-6 lg:flex-row lg:items-center lg:justify-between" : "items-center text-center")}>
+      <div className={cn("relative flex flex-col", !stacked ? "gap-6 md:flex-row md:items-center md:justify-between" : "items-center text-center")}>
         <div className={cn("max-w-2xl", stacked && "flex flex-col items-center")}>
           <h3 className={cn("font-display font-bold tracking-tight", stacked ? "text-xl leading-6" : "text-xl sm:text-2xl lg:text-[28px] lg:leading-tight")}>
             {title}
@@ -71,7 +71,7 @@ export function CtaBanner({
           <a
             href={ctaHref}
             className={cn(
-              'group inline-flex items-center justify-center text-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition-all duration-300 hover:shadow-lg',
+              'group inline-flex items-center justify-center text-center gap-1.5 sm:gap-2 rounded-full px-4 sm:px-6 py-2.5 sm:py-3 text-[11px] sm:text-sm font-bold transition-all duration-300 hover:shadow-lg whitespace-nowrap',
               variant === 'light'
                 ? 'bg-accent text-white hover:bg-accent/90 hover:shadow-accent/30'
                 : variant === 'accent'

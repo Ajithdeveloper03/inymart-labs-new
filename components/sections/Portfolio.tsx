@@ -8,10 +8,10 @@ export function Portfolio() {
   const marquee = [...BRANDS, ...BRANDS];
 
   return (
-    <section id="portfolio" className="relative flex flex-col lg:flex-row bg-[#0c1f28] overflow-hidden">
+    <section id="portfolio" className="relative flex flex-col md:flex-row bg-[#0c1f28] overflow-hidden">
       
       {/* Left Side (Dark Slate Background) */}
-      <div className="relative w-full lg:w-[60%] flex px-8 py-14 lg:pl-8 lg:pr-20 xl:pl-12 xl:pr-24">
+      <div className="relative w-full md:w-[60%] flex px-8 py-14 md:py-20 lg:pl-8 lg:pr-20 xl:pl-12 xl:pr-24">
         
         {/* Vertical Text "INYMART LABS" matching reference */}
         <div className="hidden lg:flex flex-col items-center justify-center mr-10 xl:mr-16 relative">
@@ -50,14 +50,14 @@ export function Portfolio() {
 
           {/* Title */}
           <Reveal delay={100}>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-white leading-[1.15] mb-6">
+            <h2 className="font-display text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-6">
               Businesses That Trust<br />Inymart Labs.
             </h2>
           </Reveal>
 
           {/* Main Description */}
           <Reveal delay={200}>
-            <p className="font-sans text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl">
+            <p className="font-sans text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl text-justify md:text-left">
               We&apos;re proud to partner with businesses that trust Inymart Labs for their digital growth, and customized digital marketing solutions. Our clients come from a wide range of industries, and we&apos;re committed to helping each one achieve measurable online success.
             </p>
           </Reveal>
@@ -66,7 +66,7 @@ export function Portfolio() {
 
           {/* Localized Paragraph (styled like the secondary text in reference) */}
           <Reveal delay={400}>
-            <p className="font-sans text-white/80 text-sm leading-relaxed mb-10 max-w-2xl">
+            <p className="font-sans text-white/80 text-sm leading-relaxed mb-10 max-w-2xl text-justify md:text-left">
               <span className="text-primary font-bold uppercase tracking-wider">LOCALIZED APPROACH:</span> Digital marketing strategies from Tamil Nadu agencies like Inymart Labs often differ from those in other states by focusing on region-specific insights, cultural nuances, and local language preferences, ensuring campaigns resonate more deeply with target audiences. This localized approach enables businesses to benefit from digital marketing solutions tailored to the unique demographics and market trends of Tamil Nadu, setting them apart from more generic strategies commonly used elsewhere.
             </p>
           </Reveal>
@@ -75,14 +75,14 @@ export function Portfolio() {
       </div>
 
       {/* Right Side Image */}
-      <div className="relative w-full lg:w-[40%] h-[50vh] lg:h-auto overflow-hidden">
+      <div className="relative w-full md:w-[40%] h-[50vh] md:h-auto overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" 
           alt="Modern Coworking Space" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Subtle overlay to blend the edge slightly */}
-        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0c1f28] to-transparent hidden lg:block opacity-50" />
+        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#0c1f28] to-transparent hidden md:block opacity-50" />
       </div>
 
     </section>

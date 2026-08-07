@@ -23,9 +23,9 @@ export function SmmWhyChoose() {
       <div className="container-x">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-              Why Choose a Social Media Marketing Agency in Tamil Nadu
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  Why Choose a Social <span className="text-gradient">Media Marketing</span> Agency in Tamil Nadu
+</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Running social media ads without a clear strategy usually means wasted budget. Random boosting or copy-paste campaigns rarely bring real customers — they just burn through money.
             </p>

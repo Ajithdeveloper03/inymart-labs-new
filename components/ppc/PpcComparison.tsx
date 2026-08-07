@@ -13,9 +13,9 @@ export function PpcComparison() {
               <div className="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center shrink-0">
                 <GitCompare className="w-8 h-8 text-purple-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                PPC vs. SEO — Which Do You Need?
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  PPC vs. SEO — Which Do <span className="text-gradient">You Need?</span>
+</h2>
             </div>
             <p className="text-gray-600 text-lg mb-8">
               Businesses often ask whether to invest in PPC, SEO, or both. Here's how they compare:

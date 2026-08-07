@@ -3,13 +3,15 @@
 import { Reveal } from '@/components/Reveal';
 import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function SmmHeroBanner() {
+  const { openPopup } = usePopup();
   return (
-    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-8 pb-12">
+    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-32 pb-12 lg:pt-40">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/banner 1.png')" }}
+        style={{ backgroundImage: "url('/new/banner 1.png')" }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/90 via-[#0c1f28]/70 to-[#0c1f28]/95 backdrop-blur-[2px]" />
 
@@ -29,12 +31,12 @@ export function SmmHeroBanner() {
 
         <Reveal delay={300} className="mt-8 lg:mt-12">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link 
-              href="/contact"
-              className="w-full sm:w-auto px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(255,107,53,0.3)] hover:shadow-[0_0_30px_rgba(255,107,53,0.5)] hover:-translate-y-1 text-center"
+            <button
+              onClick={openPopup}
+              className="w-full sm:w-auto px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(255,107,53,0.3)] hover:shadow-[0_0_30px_rgba(255,107,53,0.5)] hover:-translate-y-1 text-center whitespace-nowrap"
             >
               Talk to Our Ads Team
-            </Link>
+            </button>
           </div>
         </Reveal>
 

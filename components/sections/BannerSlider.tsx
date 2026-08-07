@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils';
 
 const SLIDES = [
   {
-    image: '/banner 1.png',
+    image: '/new/banner 1.png',
     title: 'Grow Your Business with us',
     titleAccent: 'Tamil Nadu',
     subtitle: 'Be Found Where Your Customers Are Searching',
@@ -26,7 +26,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/banner 2.png',
+    image: '/new/banner 2.png',
     title: 'At Inymart Labs, a trusted',
     titleAccent: 'Agency',
     subtitle: 'Result-Driven Strategies',
@@ -37,7 +37,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/banner 3.png',
+    image: '/new/banner 3.png',
     title: 'Ready to Grow Your',
     titleAccent: 'Business?',
     subtitle: 'Start Your Digital Growth Today',

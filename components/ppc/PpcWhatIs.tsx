@@ -1,29 +1,48 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Search } from 'lucide-react';
+import { MousePointerClick } from 'lucide-react';
 
 export function PpcWhatIs() {
   return (
-    <section className="relative pt-8 pb-12 bg-white">
+    <section className="relative pt-12 pb-16 bg-white">
       <div className="container-x">
-        <div className="max-w-4xl mx-auto">
-          <Reveal>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center shrink-0">
-                <Search className="w-8 h-8 text-blue-500" />
+        <Reveal>
+          {/* Banner Container */}
+          <div className="group relative overflow-hidden rounded-[20px] border-[1.5px] border-[#c6a052]/70 bg-white shadow-2xl transition-all duration-500 hover:shadow-[0_0_40px_rgba(198,160,82,0.15)] flex flex-col md:flex-row min-h-[350px]">
+            
+            {/* Left Image Section */}
+            <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
+                alt="PPC Analytics Data" 
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
+              />
+              {/* Gradient overlay to seamlessly fade the image into the white background */}
+              <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-transparent via-white/30 to-white"></div>
+            </div>
+
+            {/* Right Content Section */}
+            <div className="relative flex-1 flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 pl-0 pr-4 z-10 text-center">
+              
+              {/* Faint Background Watermark Icon */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] transition-opacity duration-500 group-hover:opacity-[0.05]">
+                <MousePointerClick className="w-[280px] h-[280px] text-black" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                What Is PPC?
-              </h2>
+
+              <div className="relative z-10 max-w-3xl">
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
+                  What <span className="text-gradient">Is PPC?</span>
+                </h2>
+                
+                <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
+                  PPC (Pay-Per-Click) is a form of online advertising where a business pays only when someone clicks their ad, typically shown at the top of Google search results or across partner websites. Unlike SEO, which builds organic visibility over time, PPC delivers immediate visibility for chosen keywords, with performance measured directly through clicks, calls, and conversions.
+                </p>
+              </div>
             </div>
-            <div className="prose prose-lg prose-slate max-w-none">
-              <p className="text-gray-600 leading-relaxed">
-                PPC (Pay-Per-Click) is a form of online advertising where a business pays only when someone clicks their ad, typically shown at the top of Google search results or across partner websites. Unlike SEO, which builds organic visibility over time, PPC delivers immediate visibility for chosen keywords, with performance measured directly through clicks, calls, and conversions.
-              </p>
-            </div>
-          </Reveal>
-        </div>
+
+          </div>
+        </Reveal>
       </div>
     </section>
   );

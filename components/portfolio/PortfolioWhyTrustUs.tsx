@@ -40,7 +40,7 @@ export function PortfolioWhyTrustUs() {
               </h2>
             </Reveal>
             <Reveal delay={100}>
-              <p className="font-sans text-white/80 text-lg mb-8 leading-relaxed">
+              <p className="font-sans text-white/80 text-lg mb-8 leading-relaxed text-justify sm:text-left">
                 A portfolio of real, varied clients says more than any promise. Here's why businesses across industries trust Inymart Labs as their Digital Marketing Agency in Trichy, Tamil Nadu:
               </p>
             </Reveal>
@@ -52,7 +52,7 @@ export function PortfolioWhyTrustUs() {
                     <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary">
                       <CheckCircle2 className="h-4 w-4" />
                     </div>
-                    <p className="font-sans text-white leading-relaxed">
+                    <p className="font-sans text-white leading-relaxed text-justify sm:text-left">
                       {point}
                     </p>
                   </div>

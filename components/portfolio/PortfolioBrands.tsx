@@ -41,7 +41,7 @@ export function PortfolioBrands() {
             </h2>
           </Reveal>
           <Reveal delay={100}>
-            <p className="font-sans text-muted-foreground text-lg">
+            <p className="font-sans text-muted-foreground text-lg text-justify sm:text-center">
               Here are some of the businesses Inymart Labs has worked with as their Digital Marketing Agency in Trichy, Tamil Nadu:
             </p>
           </Reveal>
@@ -62,7 +62,7 @@ export function PortfolioBrands() {
               className="group flex flex-col h-[140px] w-48 sm:w-56 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 text-center"
             >
               <img
-                src="/logo.webp"
+                src="/new/logo.webp"
                 alt={brand}
                 className="h-10 w-auto object-contain grayscale transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 opacity-70 group-hover:opacity-100 mb-3"
               />
@@ -81,7 +81,7 @@ export function PortfolioBrands() {
               className="group flex flex-col h-[140px] w-48 sm:w-56 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 text-center"
             >
               <img
-                src="/logo.webp"
+                src="/new/logo.webp"
                 alt={brand}
                 className="h-10 w-auto object-contain grayscale transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 opacity-70 group-hover:opacity-100 mb-3"
               />

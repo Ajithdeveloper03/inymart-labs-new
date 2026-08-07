@@ -3,8 +3,10 @@
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function DmcWhatWeDo() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
@@ -13,9 +15,9 @@ export function DmcWhatWeDo() {
         <div className="mb-20">
           <Reveal>
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] mb-6 font-display">
-                What Is Digital Marketing Consulting?
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  What Is Digital <span className="text-gradient">Marketing Consulting</span>?
+</h2>
               <p className="text-gray-600 text-lg leading-relaxed font-medium">
                 Digital Marketing Consulting is expert, outside guidance on a business's marketing strategy — reviewing existing SEO, social media, ads, and analytics efforts, identifying what's working and what isn't, and building a clear, prioritized plan for what to do next. Unlike a full-service marketing agency, consulting can be advice-only, or paired with implementation if the business wants the same team to execute the plan.
               </p>
@@ -28,9 +30,9 @@ export function DmcWhatWeDo() {
           {/* Left: Content */}
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a1f2e] mb-6 font-display leading-[1.2]">
-                What We Do
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+  What <span className="text-gradient">We Do</span>
+</h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
@@ -47,13 +49,13 @@ export function DmcWhatWeDo() {
             </Reveal>
 
             <Reveal delay={300}>
-              <Link 
-                href="/contact" 
-                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group"
+              <button 
+                onClick={openPopup} 
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 group whitespace-nowrap"
               >
                 Talk to Our Consulting Team
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </button>
             </Reveal>
           </div>
 

@@ -3,8 +3,10 @@
 import { Reveal } from '@/components/Reveal';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 export function SeoCta() {
+  const { openPopup } = usePopup();
   return (
     <section
       id="contact"
@@ -30,9 +32,9 @@ export function SeoCta() {
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-[#0c1f28] sm:text-4xl lg:text-[44px]">
-              Ready to Grow Your <span className="text-gradient">Visibility?</span>
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
+  Ready to Grow Your <span className="text-gradient">Visibility</span>?
+</h2>
           </Reveal>
 
           <Reveal delay={160}>
@@ -45,6 +47,7 @@ export function SeoCta() {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row flex-wrap">
               <Link
                 href="/contact"
+                
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 w-full sm:w-auto"
               >
                 Start Your SEO Journey

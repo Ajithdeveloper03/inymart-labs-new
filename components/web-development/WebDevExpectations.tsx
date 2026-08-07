@@ -37,9 +37,9 @@ export function WebDevExpectations() {
       <div className="container-x">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6 font-display">
-              What Results Can You Expect?
-            </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-white mb-6">
+  What Results <span className="text-gradient">Can You Expect</span>?
+</h2>
             <p className="text-zinc-300 text-lg leading-relaxed">
               Once your Web Development Service in Tamil Nadu and Web Development Service in Trichy project is complete, here's what businesses typically see over time:
             </p>
@@ -51,14 +51,18 @@ export function WebDevExpectations() {
             const Icon = point.icon;
             return (
               <Reveal key={index} delay={index * 100} className="h-full">
-                <div className="bg-[#122b38] rounded-3xl p-8 border border-white/5 h-full hover:border-primary/50 transition-colors flex flex-col group">
-                  {point.title && <h3 className="text-lg font-bold text-white mb-8 pr-4 leading-snug">{point.title}</h3>}
-                  <div className="mb-6">
-                    <Icon className="w-10 h-10 text-primary stroke-1" />
+                <div className="bg-[#122b38] rounded-3xl p-8 border border-white/5 h-full hover:border-primary/50 transition-colors flex flex-col items-center justify-center text-center group">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="flex items-center gap-3">
+                      <div className="shrink-0">
+                        <Icon className="w-10 h-10 text-primary stroke-1" />
+                      </div>
+                      <h3 className="text-lg font-bold text-white leading-snug">{point.title}</h3>
+                    </div>
+                    <p className="text-zinc-400 text-sm leading-relaxed">
+                      {point.text}
+                    </p>
                   </div>
-                  <p className="text-zinc-400 text-sm leading-relaxed flex-grow">
-                    {point.text}
-                  </p>
                 </div>
               </Reveal>
             );

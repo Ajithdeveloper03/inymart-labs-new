@@ -14,16 +14,16 @@ export function Faqs() {
   return (
     <section
       id="faqs"
-      className="relative scroll-mt-24 bg-white py-14 overflow-hidden"
+      className="relative scroll-mt-24 bg-white py-8 sm:py-14 overflow-hidden"
     >
       <div className="container-x">
         <div className="mx-auto flex w-full max-w-4xl flex-col">
           
           {/* Section Heading */}
           <Reveal>
-            <div className="flex flex-col items-center text-center mb-10 mt-2">
+            <div className="flex flex-col items-center text-center mb-6 sm:mb-10 mt-0 sm:mt-2">
               {/* Eyebrow */}
-              <div className="flex items-center justify-center gap-2 text-[#ff6b35] font-bold text-sm tracking-widest uppercase mb-4">
+              <div className="flex items-center justify-center gap-2 text-[#ff6b35] font-bold text-[12px] sm:text-sm tracking-widest uppercase mb-2 sm:mb-4">
                 <div className="flex items-center">
                   <Circle className="h-3 w-3 fill-[#ff6b35] text-[#ff6b35]" />
                   <ArrowRight className="h-4 w-4 -ml-2 text-[#ff6b35]" strokeWidth={3} />
@@ -32,12 +32,12 @@ export function Faqs() {
               </div>
               
               {/* Heading */}
-              <h2 className="font-display text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-3 sm:mb-6">
                 Frequently Asked Questions
               </h2>
               
               {/* Paragraph */}
-              <p className="font-sans text-slate-500 text-[15px] leading-relaxed max-w-lg mx-auto">
+              <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
                 Answers to the questions businesses most often ask before partnering with Inymart Labs.
               </p>
             </div>
@@ -56,11 +56,11 @@ export function Faqs() {
                         {/* Left Edge Orange Tag */}
                         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-5 h-10 bg-[#ff6b35] rounded-r-[4px]" />
                         {/* Number Circle Badge */}
-                        <div className="relative z-10 flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#0c1f28] text-sm font-bold text-white transition-colors duration-300 group-hover:bg-[#ff6b35] group-data-[state=open]:bg-white group-data-[state=open]:text-[#0c1f28]">
+                        <div className="relative z-10 flex h-[34px] w-[34px] items-center justify-center rounded-full bg-[#0c1f28] text-[12px] sm:text-sm font-bold text-white transition-colors duration-300 group-hover:bg-[#ff6b35] group-data-[state=open]:bg-white group-data-[state=open]:text-[#0c1f28]">
                           {String(i + 1).padStart(2, '0')}
                         </div>
                       </div>
-                      <span className="ml-1 pr-4 font-bold text-[#0c1f28] transition-colors duration-300 group-hover:text-[#ff6b35] group-data-[state=open]:text-white text-[15px] text-left leading-snug">
+                      <span className="ml-1 pr-4 font-bold text-[#0c1f28] transition-colors duration-300 group-hover:text-[#ff6b35] group-data-[state=open]:text-white text-[12px] sm:text-[15px] md:text-[16px] text-left leading-snug">
                         {faq.q}
                       </span>
                     </div>
@@ -71,7 +71,7 @@ export function Faqs() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="bg-white p-5 border-t border-slate-100">
-                    <div className="border-l-[3px] border-slate-200 pl-4 text-[13.5px] leading-relaxed text-slate-500 font-medium">
+                    <div className="border-l-[3px] border-slate-200 pl-4 text-[12px] sm:text-[13.5px] md:text-[15px] leading-relaxed text-slate-500 font-medium text-justify md:text-left">
                         {faq.a}
                       </div>
                   </AccordionContent>

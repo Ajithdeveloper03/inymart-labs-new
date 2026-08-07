@@ -13,9 +13,9 @@ export function AiSeoComparison() {
               <div className="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center shrink-0">
                 <GitCompare className="w-8 h-8 text-purple-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1a1f2e] font-display">
-                AI SEO (AEO) vs. Traditional SEO
-              </h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+  AI SEO (AEO) vs. <span className="text-gradient">Traditional SEO</span>
+</h2>
             </div>
             <p className="text-gray-600 text-lg mb-8">
               Businesses often ask how AI SEO differs from the SEO they already know. Here's the comparison:
