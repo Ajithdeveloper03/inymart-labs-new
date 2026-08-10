@@ -11,19 +11,7 @@ export function DmcWhatWeDo() {
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
         
-        {/* Section 1: What is DMC */}
-        <div className="mb-20">
-          <Reveal>
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What Is Digital <span className="text-gradient">Marketing Consulting</span>?
-</h2>
-              <p className="text-gray-600 text-lg leading-relaxed font-medium">
-                Digital Marketing Consulting is expert, outside guidance on a business's marketing strategy — reviewing existing SEO, social media, ads, and analytics efforts, identifying what's working and what isn't, and building a clear, prioritized plan for what to do next. Unlike a full-service marketing agency, consulting can be advice-only, or paired with implementation if the business wants the same team to execute the plan.
-              </p>
-            </div>
-          </Reveal>
-        </div>
+        {/* DMC What We Do Content */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           

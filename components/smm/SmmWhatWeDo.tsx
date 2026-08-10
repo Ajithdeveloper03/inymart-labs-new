@@ -11,22 +11,7 @@ export function SmmWhatWeDo() {
     <section className="relative pt-8 pb-12 bg-white overflow-hidden">
       <div className="container-x">
         
-        {/* Section 1: What is SMM */}
-        <div className="mb-20">
-          <Reveal>
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What Is Social <span className="text-gradient">Media Marketing</span> (SMM)?
-</h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Social Media Marketing (SMM), also called paid social advertising or social media ads, is the practice of running paid ad campaigns on platforms like Facebook, Instagram, and LinkedIn to reach a targeted audience and drive specific business outcomes — calls, website visits, form fills, or direct sales.
-              </p>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                It is distinct from organic social media management, which focuses on regular posting without paid promotion.
-              </p>
-            </div>
-          </Reveal>
-        </div>
+        {/* SMM What We Do Content */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           

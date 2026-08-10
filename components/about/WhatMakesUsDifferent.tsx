@@ -82,7 +82,7 @@ export function WhatMakesUsDifferent() {
 
                 {/* Bottom Text Section */}
                 <div className="p-5 pt-8 flex-1 flex flex-col">
-                  <p className="font-sans text-[13px] text-muted-foreground leading-relaxed">
+                  <p className="font-sans text-[13px] text-muted-foreground leading-relaxed text-center sm:text-left">
                     {feature.description}
                   </p>
                 </div>

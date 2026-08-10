@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { SmmHeroBanner } from '@/components/smm/SmmHeroBanner';
 import { SmmQuickAnswer } from '@/components/smm/SmmQuickAnswer';
+import { SmmWhatIs } from '@/components/smm/SmmWhatIs';
 import { SmmWhatWeDo } from '@/components/smm/SmmWhatWeDo';
 import { SmmWhyChoose } from '@/components/smm/SmmWhyChoose';
 import { SmmComparison } from '@/components/smm/SmmComparison';
@@ -26,6 +27,7 @@ export default function SmmServicePage() {
       <main className="flex min-h-screen flex-col overflow-hidden">
         <SmmHeroBanner />
         <SmmQuickAnswer />
+        <SmmWhatIs />
         <SmmWhatWeDo />
         <SmmWhyChoose />
         <SmmComparison />

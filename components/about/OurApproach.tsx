@@ -66,7 +66,7 @@ export function OurApproach() {
                 <h3 className="font-display text-xl font-bold text-white mb-3">
                   {step.title}
                 </h3>
-                <p className="font-sans text-zinc-400 text-sm leading-relaxed">
+                <p className="font-sans text-zinc-400 text-sm leading-relaxed text-center">
                   {step.description}
                 </p>
               </div>

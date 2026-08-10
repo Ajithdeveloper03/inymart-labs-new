@@ -27,12 +27,12 @@ export function SmoQuickAnswer() {
               {/* Floating Tag Overlay */}
               <div className="absolute bottom-0 right-0 z-20">
                 {/* Orange Circle Background */}
-                <div className="absolute -right-4 -bottom-4 w-28 h-28 sm:w-36 sm:h-36 bg-[#ff6b35] rounded-[32px] sm:rounded-[40px] z-0 shadow-lg" />
+                <div className="absolute -right-4 -bottom-4 w-16 h-16 sm:w-24 sm:h-24 bg-[#ff6b35] rounded-[32px] sm:rounded-[40px] z-0 shadow-lg" />
                 
                 {/* White Box with Rotated Text */}
-                <div className="relative z-10 bg-white rounded-3xl p-4 sm:p-6 shadow-2xl flex items-center justify-center min-w-[80px] sm:min-w-[120px] h-[200px] sm:h-[280px]">
+                <div className="relative z-10 bg-white rounded-xl p-2 sm:p-3 shadow-2xl flex items-center justify-center min-w-[50px] sm:min-w-[70px] h-[110px] sm:h-[140px]">
                   <span 
-                    className="text-[80px] sm:text-[110px] font-black tracking-tighter"
+                    className="text-[36px] sm:text-[50px] font-black tracking-tighter"
                     style={{ 
                       writingMode: 'vertical-rl',
                       transform: 'rotate(180deg)',

@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { DmcHeroBanner } from '@/components/dmc/DmcHeroBanner';
 import { DmcQuickAnswer } from '@/components/dmc/DmcQuickAnswer';
+import { DmcWhatIs } from '@/components/dmc/DmcWhatIs';
 import { DmcWhatWeDo } from '@/components/dmc/DmcWhatWeDo';
 import { DmcWhyChoose } from '@/components/dmc/DmcWhyChoose';
 import { DmcComparison } from '@/components/dmc/DmcComparison';
@@ -26,6 +27,7 @@ export default function DigitalMarketingConsultingPage() {
       <main className="flex min-h-screen flex-col overflow-hidden">
         <DmcHeroBanner />
         <DmcQuickAnswer />
+        <DmcWhatIs />
         <DmcWhatWeDo />
         <DmcWhyChoose />
         <DmcComparison />

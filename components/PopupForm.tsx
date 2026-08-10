@@ -7,12 +7,24 @@ import { X, Send, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function PopupForm() {
-  const { isPopupOpen, closePopup } = usePopup();
+  const { isPopupOpen, closePopup, openPopup } = usePopup();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    
+    // Check if we've already shown the popup in this session
+    const hasShownPopup = sessionStorage.getItem('hasAutoShownPopup');
+    
+    if (!hasShownPopup) {
+      const timer = setTimeout(() => {
+        openPopup();
+        sessionStorage.setItem('hasAutoShownPopup', 'true');
+      }, 4000);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [openPopup]);
 
   // Prevent background scrolling when open
   useEffect(() => {
@@ -54,8 +66,9 @@ export function PopupForm() {
         
         {/* Close Button */}
         <button 
+          type="button"
           onClick={closePopup}
-          className="absolute top-4 right-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-colors"
+          className="absolute top-4 right-4 z-50 flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-colors"
         >
           <X className="h-4 w-4" />
         </button>
@@ -84,12 +97,12 @@ export function PopupForm() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label htmlFor="age" className="text-xs font-semibold text-neutral-300 ml-1">Age</label>
+                <label htmlFor="message" className="text-xs font-semibold text-neutral-300 ml-1">Message</label>
                 <input 
-                  type="number" 
-                  id="age" 
+                  type="text" 
+                  id="message" 
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
-                  placeholder="25"
+                  placeholder="How can we help?"
                   required
                 />
               </div>
