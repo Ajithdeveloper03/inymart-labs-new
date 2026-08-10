@@ -25,7 +25,7 @@ export function AiSeoHeroBanner() {
 
         <Reveal delay={100}>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl max-w-4xl mx-auto mb-8">
-            AI SEO Service in Tamil Nadu
+            AI SEO Service in <span className="text-gradient">Tamil Nadu</span>
           </h1>
         </Reveal>
 

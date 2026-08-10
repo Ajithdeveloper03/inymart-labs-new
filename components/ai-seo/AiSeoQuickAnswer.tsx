@@ -16,7 +16,7 @@ export function AiSeoQuickAnswer() {
           <div className="order-1 relative w-full pr-8 sm:pr-12 lg:pr-16 pb-8 sm:pb-12 lg:pb-16 pt-8 pl-4 lg:pl-10">
             <Reveal delay={200} className="h-full">
               {/* Main Image */}
-              <div className="relative h-full min-h-[350px] w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
+              <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070" 
                   alt="AI Technology" 
@@ -52,7 +52,7 @@ export function AiSeoQuickAnswer() {
           </div>
 
           {/* Right Side: Content */}
-          <div className="order-2 flex flex-col items-start lg:pl-12">
+          <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">

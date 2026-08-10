@@ -56,8 +56,8 @@ export function WhyChooseUs() {
             <Reveal delay={150} className="h-full">
               <div className="relative h-full w-full overflow-hidden rounded-[2.5rem] border-4 border-background shadow-2xl shadow-primary/10">
                 <img
-                  src="/new/images/digital-marketing.jpeg"
-                  alt=""
+                  src="/new/why choose.jpeg"
+                  alt="Why Choose Inymart Labs"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                 />

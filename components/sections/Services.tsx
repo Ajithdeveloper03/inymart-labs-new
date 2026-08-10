@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const SERVICE_IMAGES = [
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600',
+  '/new/seo.jpeg',
   'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600',
   'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600',
   'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600',
@@ -88,6 +88,7 @@ export function Services() {
             title="Need Complete Digital Marketing Solutions?"
             points={['Get a Free Website Analysis', 'Talk to Our Experts']}
             ctaLabel="Get a Free Website Analysis"
+            ctaHref="/contact"
             variant="accent"
           />
         </div>

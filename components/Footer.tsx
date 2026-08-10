@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Linkedin, Youtube, Mail, MapPin, Phone } from 'lucide-react';
-import { NAV_LINKS, SITE, SERVICES } from '@/lib/content';
+import { NAV_LINKS, SITE, SERVICES, slugify } from '@/lib/content';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -59,12 +59,12 @@ export function Footer() {
             <ul className="mt-5 flex flex-col gap-3">
               {serviceLinks.map((service) => (
                 <li key={service}>
-                  <a
-                    href="#services"
+                  <Link
+                    href={`/services/${slugify(service)}`}
                     className="text-sm text-white/70 transition-colors hover:text-white"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

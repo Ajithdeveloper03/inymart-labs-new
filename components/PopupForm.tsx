@@ -90,7 +90,7 @@ export function PopupForm() {
                 type="text" 
                 id="fullName" 
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
-                placeholder="John Doe"
+                placeholder="Your Name"
                 required
               />
             </div>
@@ -102,7 +102,7 @@ export function PopupForm() {
                   type="text" 
                   id="message" 
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
-                  placeholder="How can we help?"
+                  placeholder="Your Message"
                   required
                 />
               </div>
@@ -112,7 +112,7 @@ export function PopupForm() {
                   type="tel" 
                   id="phone" 
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
-                  placeholder="+91 98765 43210"
+                  placeholder="Your Phone Number"
                   required
                 />
               </div>
@@ -124,7 +124,7 @@ export function PopupForm() {
                 type="email" 
                 id="email" 
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
-                placeholder="john@example.com"
+                placeholder="Your Email Address"
                 required
               />
             </div>
@@ -138,7 +138,7 @@ export function PopupForm() {
                   required
                   defaultValue=""
                 >
-                  <option value="" disabled className="text-neutral-500">Choose a service</option>
+                  <option value="" disabled className="text-neutral-500">Select a Service</option>
                   {SERVICES.map(s => (
                     <option key={s.title} value={s.title}>{s.title}</option>
                   ))}

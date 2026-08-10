@@ -8,25 +8,25 @@ const TEAM = [
   { 
     name: 'Mr. Manoj Jeevagan', 
     role: 'Web Traffic Ideator',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/ceo.webp',
     bgColor: 'bg-[#B4BDB3]' 
   },
   { 
     name: 'Mr. Deen Mohamed', 
     role: 'Traffic Team Manager',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/deen.webp',
     bgColor: 'bg-[#A8B4C4]' 
   },
   { 
     name: 'Ms. Shanthini', 
     role: 'Traffic Team Co-ordinator',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/shan.webp',
     bgColor: 'bg-[#988290]' 
   },
   { 
     name: 'Mr. Ajith Kumar', 
     role: 'Web Team Lead',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/ajith.webp',
     bgColor: 'bg-[#C1BAB3]' 
   },
   { 
@@ -50,7 +50,7 @@ const TEAM = [
   { 
     name: 'Mr. Saravanan', 
     role: 'Web Developer',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/saravanan.png',
     bgColor: 'bg-[#C4D4D8]' 
   },
 ];
