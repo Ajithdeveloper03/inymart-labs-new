@@ -3,7 +3,7 @@
 import { Reveal } from '@/components/Reveal';
 import { 
   MapPin, Phone, Mail,
-  Instagram, Facebook, Linkedin
+  Instagram, Facebook, Linkedin, Youtube
 } from 'lucide-react';
 
 export function ContactInfoAndForm() {
@@ -88,19 +88,17 @@ export function ContactInfoAndForm() {
               {/* Social Media Icons */}
               <Reveal delay={400}>
                 <div className="mt-4 flex gap-4 ml-[72px] pl-6">
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                  <a href="https://www.facebook.com/people/Inymart-Labs/61583856676865/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
                     <Facebook className="w-5 h-5 fill-current" strokeWidth={0} />
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                    </svg>
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <Linkedin className="w-5 h-5 fill-current" strokeWidth={0} />
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                  <a href="https://www.instagram.com/inymart_labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
                     <Instagram className="w-5 h-5" strokeWidth={2} />
+                  </a>
+                  <a href="https://www.youtube.com/@InymartLabs" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Youtube className="w-5 h-5" strokeWidth={2} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/inymartlabs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Linkedin className="w-5 h-5 fill-current" strokeWidth={0} />
                   </a>
                 </div>
               </Reveal>

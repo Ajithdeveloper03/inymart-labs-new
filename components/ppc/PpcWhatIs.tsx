@@ -23,7 +23,7 @@ export function PpcWhatIs() {
             </div>
 
             {/* Right Content Section */}
-            <div className="relative flex-1 flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 pl-0 pr-4 z-10 text-center">
+            <div className="relative flex-1 flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 px-4 lg:pl-0 lg:pr-4 z-10 text-center">
               
               {/* Faint Background Watermark Icon */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] transition-opacity duration-500 group-hover:opacity-[0.05]">

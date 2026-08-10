@@ -27,8 +27,8 @@ export function FinalCta() {
       <div className="container-x relative">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent ring-1 ring-accent/20">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-accent ring-1 ring-accent/20 whitespace-nowrap">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
               Ready to Transform Your Business?
             </span>
           </Reveal>

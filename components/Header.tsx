@@ -39,17 +39,23 @@ export function Header() {
       {bannerVisible && (
         <div className="relative w-full bg-orange-600 px-4 py-2 text-white shadow-sm transition-all duration-300">
           {/* Mobile: 2-line stacked layout */}
-          <div className="flex flex-col items-center text-center sm:hidden gap-0.5 px-8">
+          <div className="flex flex-col items-center text-center sm:hidden gap-0.5 px-6">
             <span className="font-semibold text-white/95 text-[11px] leading-tight whitespace-nowrap">
               Digital Marketing Agency – Tamil Nadu
             </span>
-            <button
-              onClick={openPopup}
-              className="inline-flex items-center gap-1 font-bold text-white underline underline-offset-2 hover:text-amber-100 transition-colors text-[11px] whitespace-nowrap"
-            >
-              Get Free Consultation
-              <ArrowRight className="h-3 w-3" />
-            </button>
+            <div className="flex items-center gap-1.5 whitespace-nowrap">
+              <span className="font-semibold text-white/95 text-[11px] leading-tight">
+                Tiruchirappalli
+              </span>
+              <span className="w-1 h-1 shrink-0 rounded-full bg-white/50" />
+              <button
+                onClick={openPopup}
+                className="inline-flex items-center gap-1 font-bold text-white underline underline-offset-2 hover:text-amber-100 transition-colors text-[11px]"
+              >
+                Get Free Consultation
+                <ArrowRight className="h-3 w-3" />
+              </button>
+            </div>
           </div>
           {/* Desktop: single-line layout */}
           <div className="hidden sm:flex items-center justify-center text-xs font-medium gap-x-3 text-center px-10">
@@ -120,12 +126,7 @@ export function Header() {
                         <span className="text-xs font-extrabold uppercase tracking-wider text-neutral-400">
                           Our Digital Marketing Services
                         </span>
-                        <Link
-                          href={link.href}
-                          className="inline-flex items-center gap-1 text-xs font-bold text-neutral-900 hover:text-orange-600 transition-colors"
-                        >
-                          View all Services <ArrowRight className="h-3 w-3" />
-                        </Link>
+
                       </div>
                       
                       <ul className="grid grid-cols-3 gap-4">

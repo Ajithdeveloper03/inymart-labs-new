@@ -64,21 +64,24 @@ export function SmoProcess() {
             
             return (
               <Reveal key={index} delay={index * 50}>
-                <div className={`relative flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''} gap-6 sm:gap-10 md:gap-0 items-center mb-16 md:mb-24 last:mb-0`}>
+                <div className={`relative flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''} md:gap-0 items-center mb-0 md:mb-24 last:mb-0`}>
                   
-                  {/* Vertical Line Segment - Downwards */}
+                  {/* MOBILE Vertical Line - Upwards (Connects Previous Card to Number) */}
+                  {index !== 0 && (
+                    <div className="w-0.5 h-8 sm:h-12 bg-primary md:hidden shrink-0"></div>
+                  )}
+
+                  {/* DESKTOP Vertical Line Segment - Downwards */}
                   {index !== steps.length - 1 && (
-                    <div className="absolute w-0.5 bg-primary -z-10
-                      left-1/2 top-[56px] h-[calc(100%+8px)]
-                      md:top-1/2 md:h-[calc(50%+96px)] -translate-x-1/2
+                    <div className="absolute w-0.5 bg-primary -z-10 hidden md:block
+                      left-1/2 md:top-1/2 md:h-[calc(50%+96px)] -translate-x-1/2
                     "></div>
                   )}
 
-                  {/* Vertical Line Segment - Upwards */}
+                  {/* DESKTOP Vertical Line Segment - Upwards */}
                   {index !== 0 && (
                     <div className="absolute w-0.5 bg-primary -z-10 hidden md:block
-                      left-1/2 top-[-64px] h-[64px]
-                      md:top-0 md:h-[50%] -translate-x-1/2
+                      left-1/2 md:top-0 md:h-[50%] -translate-x-1/2
                     "></div>
                   )}
 
@@ -100,9 +103,12 @@ export function SmoProcess() {
                       {index + 1}
                     </div>
                   </div>
+
+                  {/* MOBILE Vertical Line - Downwards (Connects Number to Card) */}
+                  <div className="w-0.5 h-8 sm:h-12 bg-primary md:hidden shrink-0"></div>
                   
                   {/* Content (Alternates sides on Desktop, Full width on Mobile) */}
-                  <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-2 md:pt-0 w-full px-2 sm:px-8 md:px-0`}>
+                  <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-0 w-full px-2 sm:px-8 md:px-0`}>
                     <div className="relative z-20 bg-slate-100 rounded-2xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center flex flex-col items-center">
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
                       <p className="text-gray-600 leading-relaxed text-lg">{step.desc}</p>

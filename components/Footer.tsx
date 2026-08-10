@@ -93,16 +93,16 @@ export function Footer() {
             {/* Social Media Icons */}
             <div className="mt-6">
               <div className="flex items-center gap-3">
-                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#1877F2] hover:scale-110" aria-label="Facebook">
+                <a href="https://www.facebook.com/people/Inymart-Labs/61583856676865/" target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#1877F2] hover:scale-110" aria-label="Facebook">
                   <Facebook className="h-4 w-4" />
                 </a>
-                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#E4405F] hover:scale-110" aria-label="Instagram">
+                <a href="https://www.instagram.com/inymart_labs/" target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#E4405F] hover:scale-110" aria-label="Instagram">
                   <Instagram className="h-4 w-4" />
                 </a>
-                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#0A66C2] hover:scale-110" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/inymartlabs/" target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#0A66C2] hover:scale-110" aria-label="LinkedIn">
                   <Linkedin className="h-4 w-4" />
                 </a>
-                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#FF0000] hover:scale-110" aria-label="YouTube">
+                <a href="https://www.youtube.com/@InymartLabs" target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:bg-[#FF0000] hover:scale-110" aria-label="YouTube">
                   <Youtube className="h-4 w-4" />
                 </a>
               </div>
