@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { ArrowUp } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function ScrollToTop() {
@@ -28,16 +28,22 @@ export function ScrollToTop() {
   };
 
   return (
-    <button
-      type="button"
-      onClick={scrollToTop}
+    <div
       className={cn(
-        'fixed bottom-6 right-6 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-orange-600 text-white shadow-lg transition-all duration-300 hover:bg-orange-500 hover:scale-110 active:scale-95 focus:outline-none',
+        'fixed bottom-6 right-6 z-50 flex flex-col items-center transition-all duration-500',
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'
       )}
-      aria-label="Scroll to top"
     >
-      <ArrowUp className="h-5 w-5" />
-    </button>
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className="relative z-10 flex h-14 w-11 items-center justify-center rounded-[50%] bg-orange-600 text-white shadow-lg transition-transform duration-300 hover:scale-110 active:scale-95 focus:outline-none"
+        aria-label="Scroll to top"
+      >
+        <Rocket className="h-6 w-6 mb-1 -rotate-45" strokeWidth={2.5} />
+      </button>
+      {/* Oval Shadow below */}
+      <div className="mt-1 h-3 w-14 rounded-[50%] bg-orange-600/40 blur-[1px]" />
+    </div>
   );
 }
