@@ -9,6 +9,51 @@ import { cn } from '@/lib/utils';
 export function PopupForm() {
   const { isPopupOpen, closePopup, openPopup } = usePopup();
   const [mounted, setMounted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    const data = {
+      formType: 'Popup Form',
+      fullName: formData.get('fullName'),
+      message: formData.get('message'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      service: formData.get('service'),
+    };
+
+    try {
+      const response = await fetch('/new/api/contact/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus({ type: 'success', message: 'Your enquiry has been sent successfully!' });
+        form.reset();
+        setTimeout(() => {
+          setStatus(null);
+          closePopup();
+        }, 3000);
+      } else {
+        setStatus({ type: 'error', message: result.message || 'Failed to send enquiry.' });
+      }
+    } catch (error) {
+      setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -83,12 +128,19 @@ export function PopupForm() {
             </p>
           </div>
 
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            {status && (
+              <div className={cn("p-3 rounded-xl text-sm font-medium", status.type === 'success' ? "bg-green-500/20 text-green-200 border border-green-500/30" : "bg-red-500/20 text-red-200 border border-red-500/30")}>
+                {status.message}
+              </div>
+            )}
+            
             <div className="space-y-1">
               <label htmlFor="fullName" className="text-xs font-semibold text-neutral-300 ml-1">Full Name</label>
               <input 
                 type="text" 
                 id="fullName" 
+                name="fullName"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                 placeholder="Your Name"
                 required
@@ -101,6 +153,7 @@ export function PopupForm() {
                 <input 
                   type="text" 
                   id="message" 
+                  name="message"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                   placeholder="Your Message"
                   required
@@ -111,6 +164,7 @@ export function PopupForm() {
                 <input 
                   type="tel" 
                   id="phone" 
+                  name="phone"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                   placeholder="Your Phone Number"
                   required
@@ -123,6 +177,7 @@ export function PopupForm() {
               <input 
                 type="email" 
                 id="email" 
+                name="email"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                 placeholder="Your Email Address"
                 required
@@ -134,6 +189,7 @@ export function PopupForm() {
               <div className="relative">
                 <select 
                   id="service" 
+                  name="service"
                   className="w-full bg-[#13141a] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all appearance-none"
                   required
                   defaultValue=""
@@ -150,10 +206,11 @@ export function PopupForm() {
             <div className="pt-2">
               <button
                 type="submit"
-                className="relative w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#ff7000] to-[#e64000] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-[1.02] shadow-[0_0_20px_rgba(255,112,0,0.3)] hover:shadow-[0_0_30px_rgba(255,112,0,0.5)]"
+                disabled={isSubmitting}
+                className="relative w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#ff7000] to-[#e64000] px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-[1.02] shadow-[0_0_20px_rgba(255,112,0,0.3)] hover:shadow-[0_0_30px_rgba(255,112,0,0.5)] disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Submit Enquiry
-                <Send className="h-4 w-4" />
+                {isSubmitting ? 'Sending...' : 'Submit Enquiry'}
+                {!isSubmitting && <Send className="h-4 w-4" />}
               </button>
             </div>
           </form>

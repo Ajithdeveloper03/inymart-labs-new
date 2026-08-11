@@ -160,7 +160,7 @@ export function Hero() {
       <div className="w-full px-0 relative z-30 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between flex-grow gap-6 lg:gap-4 max-w-[2000px] mx-auto mt-2 lg:mt-4">
         
         {/* Left Showcase Image (Mobile: Stacked Below Text, Desktop: Left Side) */}
-        <div className="hidden lg:block order-2 lg:order-1 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[240px] xl:max-w-[290px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 pointer-events-none mt-2 lg:mt-20 rotate-[10deg] lg:rotate-[12deg] origin-bottom-right lg:absolute lg:-left-32 xl:-left-16 2xl:left-4 lg:top-1/4 xl:top-[15%]">
+        <div className="hidden lg:block order-2 lg:order-1 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[180px] xl:max-w-[290px] 2xl:max-w-[260px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 rotate-[10deg] lg:rotate-[12deg] origin-bottom-right lg:absolute lg:-left-6 xl:-left-16 2xl:-left-12 lg:top-1/4 xl:top-[15%]">
           <img
             src="/new/images/hero_left.png"
             alt="Digital Art Concept Left"
@@ -169,7 +169,7 @@ export function Hero() {
         </div>
 
         {/* Center Text Content */}
-        <div className="order-1 lg:order-2 flex flex-col items-center text-center w-full max-w-[1000px] lg:max-w-[700px] xl:max-w-[1000px] px-4 sm:px-4 lg:mx-auto lg:relative lg:z-30 overflow-hidden sm:overflow-visible -mt-8 sm:-mt-12 lg:-mt-16">
+        <div className="order-1 lg:order-2 flex flex-col items-center text-center w-full max-w-[1000px] lg:max-w-[600px] xl:max-w-[1000px] 2xl:max-w-[940px] px-4 sm:px-4 lg:mx-auto lg:relative lg:z-30 overflow-hidden sm:overflow-visible -mt-8 sm:-mt-12 lg:-mt-16 2xl:-mt-4">
           {/* Top Accent Subtitle in Serif Italic */}
           <Reveal delay={0}>
             <p className="font-serif italic text-sm sm:text-base md:text-lg text-neutral-300 tracking-wide mb-2 mt-2">
@@ -179,7 +179,7 @@ export function Hero() {
 
           {/* Main Bold Headline */}
           <Reveal delay={100}>
-            <h1 className="font-display text-[2rem] leading-[1.05] sm:text-[3rem] md:text-[3.25rem] font-extrabold tracking-tight text-white sm:leading-[1.15] md:leading-[1.1] mb-2 lg:mb-4 w-full lg:max-w-[700px] xl:max-w-[1000px] mx-auto break-words">
+            <h1 className="font-display text-[2rem] leading-[1.05] sm:text-[3rem] md:text-[3.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.2rem] font-extrabold tracking-tight text-white sm:leading-[1.15] md:leading-[1.1] mb-2 lg:mb-4 w-full lg:max-w-[600px] xl:max-w-[1000px] 2xl:max-w-[940px] mx-auto break-words">
               Grow Your Business With Us <br className="hidden sm:block" />
               <span className="text-gradient relative inline-block whitespace-normal lg:whitespace-nowrap mt-1 sm:mt-0">
                 Your Trusted Agency in Tamil Nadu
@@ -189,7 +189,7 @@ export function Hero() {
 
           {/* Main Paragraph Description */}
           <Reveal delay={200}>
-            <p className="text-sm sm:text-base md:text-[1.05rem] lg:text-lg leading-relaxed text-neutral-300 font-normal mb-4 max-w-[98%] md:max-w-[85%] lg:max-w-[600px] xl:max-w-[860px] mx-auto text-justify sm:text-center">
+            <p className="text-sm sm:text-base md:text-[1.05rem] lg:text-base xl:text-lg leading-relaxed text-neutral-300 font-normal mb-4 max-w-[98%] md:max-w-[85%] lg:max-w-[500px] xl:max-w-[860px] 2xl:max-w-[800px] mx-auto text-justify sm:text-center">
               Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
             </p>
           </Reveal>
@@ -228,7 +228,7 @@ export function Hero() {
         </div>
 
         {/* Right Showcase Image (Mobile: Stacked Below Text, Desktop: Right Side) */}
-        <div className="hidden lg:block order-3 lg:order-3 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[240px] xl:max-w-[290px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-right z-20 pointer-events-none mt-2 lg:mt-20 -rotate-[10deg] lg:-rotate-[12deg] origin-bottom-left lg:absolute lg:-right-32 xl:-right-16 2xl:right-4 lg:top-1/4 xl:top-[15%]">
+        <div className="hidden lg:block order-3 lg:order-3 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[180px] xl:max-w-[290px] 2xl:max-w-[260px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-right z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 -rotate-[10deg] lg:-rotate-[12deg] origin-bottom-left lg:absolute lg:-right-6 xl:-right-16 2xl:-right-12 lg:top-1/4 xl:top-[15%]">
           <img
             src="/new/images/hero_right.png"
             alt="Digital Art Concept Right"

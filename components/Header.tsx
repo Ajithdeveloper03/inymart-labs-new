@@ -95,11 +95,11 @@ export function Header() {
         )}
       >
         <div className="container-x flex items-center justify-between gap-4 xl:gap-6">
-          <Link href="/" className="group flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <img
               src="/new/logo.webp"
               alt="Inymart Labs"
-              className="h-9 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-9 w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 

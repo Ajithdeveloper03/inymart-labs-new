@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 
 import { Reveal } from '@/components/Reveal';
 import { 
@@ -7,6 +8,49 @@ import {
 } from 'lucide-react';
 
 export function ContactInfoAndForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    const data = {
+      formType: 'Contact Form',
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/new/api/contact/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus({ type: 'success', message: 'Your message has been sent successfully!' });
+        form.reset();
+        setTimeout(() => setStatus(null), 5000);
+      } else {
+        setStatus({ type: 'error', message: result.message || 'Failed to send message.' });
+      }
+    } catch (error) {
+      setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="relative bg-white py-16 lg:py-24 overflow-hidden">
       {/* Optional: Subtle map/dotted background pattern could go here */}
@@ -122,13 +166,19 @@ export function ContactInfoAndForm() {
                   Your email address will not be published. We promise not to spam!
                 </p>
 
-                <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+                <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+                {status && (
+                  <div className={`p-4 rounded-lg text-sm font-medium ${status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'}`}>
+                    {status.message}
+                  </div>
+                )}
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   {/* Name */}
                   <input 
                     type="text" 
                     id="name"
+                    name="name"
                     placeholder="Name" 
                     className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
                     required
@@ -138,6 +188,7 @@ export function ContactInfoAndForm() {
                   <input 
                     type="email" 
                     id="email"
+                    name="email"
                     placeholder="Email" 
                     className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
                     required
@@ -149,6 +200,7 @@ export function ContactInfoAndForm() {
                   <input 
                     type="tel" 
                     id="phone"
+                    name="phone"
                     placeholder="Phone number" 
                     className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
                   />
@@ -157,6 +209,7 @@ export function ContactInfoAndForm() {
                   <input 
                     type="text" 
                     id="subject"
+                    name="subject"
                     placeholder="Subject" 
                     className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
                   />
@@ -165,6 +218,7 @@ export function ContactInfoAndForm() {
                 {/* Message */}
                 <textarea 
                   id="message"
+                  name="message"
                   placeholder="Write your message..." 
                   rows={6}
                   className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 resize-none text-[15px] hover:border-slate-300"
@@ -175,9 +229,10 @@ export function ContactInfoAndForm() {
                 <div className="mt-2">
                   <button 
                     type="submit"
-                    className="inline-block py-3.5 px-8 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-bold text-sm tracking-wide rounded-[4px] shadow-md hover:shadow-lg transition-all duration-300 uppercase w-full sm:w-auto"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center justify-center py-3.5 px-8 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-bold text-sm tracking-wide rounded-[4px] shadow-md hover:shadow-lg transition-all duration-300 uppercase w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </div>
               </form>
