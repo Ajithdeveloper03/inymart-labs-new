@@ -14,9 +14,9 @@ export function DmaWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
+                src="/new/what is digital marketing agency(DMA).png" 
                 alt="Digital Marketing Team" 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
+                className="absolute inset-0 w-full h-full object-fill transition-transform duration-1000 group-hover:scale-105 opacity-100"
               />
               {/* Gradient overlay to seamlessly fade the image into the white background */}
               <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-transparent via-white/30 to-white"></div>

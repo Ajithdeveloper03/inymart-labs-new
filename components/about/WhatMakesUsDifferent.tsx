@@ -6,27 +6,27 @@ import Link from 'next/link';
 
 const features = [
   {
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
+    image: '/new/Visible + Reachable +.png',
     title: 'Visible + Reachable + Clickable + Buyable',
     description: 'A growth formula built for conversions, not just clicks, including through Google Ads.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80',
+    image: "/new/Built for today's video.png",
     title: "Built for today's video production search",
     description: 'Intent, voice, location, and AI-driven discovery optimized for modern platforms.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
+    image: '/new/Data speaks, not.png',
     title: 'Data speaks, not guesswork',
     description: 'Every recommendation is backed by measurable analytics and solid data.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80',
+    image: '/new/Clear reporting.png',
     title: 'Clear reporting',
     description: 'No fancy words just to look smart. We share clear ideas and outcomes you can act on.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
+    image: '/new/Real humans, real.png',
     title: 'Real humans, real conversations',
     description: 'A team that understands Tamil Nadu businesses and offers dedicated digital marketing solutions.',
   },

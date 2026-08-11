@@ -18,7 +18,7 @@ export function PpcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070" 
+                  src="/new/Quick Answer (PPC).png" 
                   alt="Online Advertising" 
                   className="w-full h-full object-cover"
                 />

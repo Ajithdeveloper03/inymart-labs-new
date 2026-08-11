@@ -1,13 +1,26 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+};
+
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders });
+}
+
 export async function POST(req: Request) {
   try {
     const data = await req.json();
     const { formType, ...fields } = data;
 
     if (!formType) {
-      return NextResponse.json({ success: false, message: 'formType is required' }, { status: 400 });
+      return NextResponse.json(
+        { success: false, message: 'formType is required' }, 
+        { status: 400, headers: corsHeaders }
+      );
     }
 
     const date = new Date().toLocaleString();
@@ -48,12 +61,15 @@ export async function POST(req: Request) {
 
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ success: true, message: 'Email sent successfully' });
+    return NextResponse.json(
+      { success: true, message: 'Email sent successfully' },
+      { headers: corsHeaders }
+    );
   } catch (error) {
     console.error('Error handling contact form submission:', error);
     return NextResponse.json(
       { success: false, message: 'Failed to process submission', error: error instanceof Error ? error.message : String(error) },
-      { status: 500 }
+      { status: 500, headers: corsHeaders }
     );
   }
 }

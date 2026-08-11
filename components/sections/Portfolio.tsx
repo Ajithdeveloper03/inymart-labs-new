@@ -77,8 +77,8 @@ export function Portfolio() {
       {/* Right Side Image */}
       <div className="relative w-full md:w-[40%] h-[50vh] md:h-auto overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" 
-          alt="Modern Coworking Space" 
+          src="/new/Our Portfolio.png" 
+          alt="Our Portfolio" 
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Subtle overlay to blend the edge slightly */}

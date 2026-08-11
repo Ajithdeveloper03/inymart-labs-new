@@ -58,8 +58,8 @@ export function AboutHero() {
             <Reveal delay={200} className="absolute top-[10%] left-[5%] w-[65%] h-[55%] z-10">
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white animate-slide-up-down">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
-                  alt="Team collaboration" 
+                  src="/new/Who We Are 1.png" 
+                  alt="Who We Are 1" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -69,8 +69,8 @@ export function AboutHero() {
             <Reveal delay={400} className="absolute bottom-[10%] right-[5%] w-[60%] h-[50%] z-20">
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white animate-slide-down-up">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
-                  alt="Digital marketing analytics" 
+                  src="/new/Who We Are 2.png" 
+                  alt="Who We Are 2" 
                   className="w-full h-full object-cover"
                 />
               </div>

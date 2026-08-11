@@ -49,7 +49,7 @@ export function DmaWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070" 
+                  src="/new/what we do(DMA).png" 
                   alt="Digital Marketing Agency" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

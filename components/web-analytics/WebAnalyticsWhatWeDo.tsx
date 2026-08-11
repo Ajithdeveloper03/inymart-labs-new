@@ -49,8 +49,8 @@ export function WebAnalyticsWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076" 
-                  alt="Web Analytics" 
+                  src="/new/What We Do (Web Analytics).png" 
+                  alt="Web Analytics Optimization" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />

@@ -18,7 +18,7 @@ export function DmaQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015" 
+                  src="/new/quick answer(DMA).png" 
                   alt="Digital Marketing Team" 
                   className="w-full h-full object-cover"
                 />

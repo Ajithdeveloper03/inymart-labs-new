@@ -49,8 +49,8 @@ export function SmoWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1974" 
-                  alt="Social Media Optimization" 
+                  src="/new/SMO (What We Do).png" 
+                  alt="SMO What We Do" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />

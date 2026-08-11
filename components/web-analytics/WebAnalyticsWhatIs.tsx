@@ -14,7 +14,7 @@ export function WebAnalyticsWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" 
+                src="/new/What Is a Web (Web Analytics).png" 
                 alt="Web Analytics Dashboard" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />

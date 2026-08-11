@@ -18,8 +18,8 @@ export function SmoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974" 
-                  alt="Social Media Apps" 
+                  src="/new/SMO (Quick Answer).png" 
+                  alt="SMO Quick Answer" 
                   className="w-full h-full object-cover"
                 />
               </div>

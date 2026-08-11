@@ -30,7 +30,8 @@ export function PopupForm() {
     };
 
     try {
-      const response = await fetch('/new/api/contact/', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/new/api/contact/';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

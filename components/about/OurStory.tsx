@@ -13,8 +13,8 @@ export function OurStory() {
             <div className="absolute inset-0 bg-primary/5 rounded-[32px] transform translate-x-4 translate-y-4" />
             <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-2xl border border-white/50 bg-white animate-float-slow">
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" 
-                alt="Our professional team at work" 
+                src="/new/Our Story.png" 
+                alt="Our Story" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               
