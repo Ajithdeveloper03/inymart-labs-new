@@ -14,8 +14,8 @@ export function DmcWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" 
-                alt="Digital Marketing Consulting team working" 
+                src="/new/what is (DMC).jpeg" 
+                alt="Business Consulting Strategy" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
               {/* Gradient overlay to seamlessly fade the image into the white background */}

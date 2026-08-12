@@ -18,7 +18,7 @@ export function SeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070" 
+                  src="/new/Quick answer (SEO).png" 
                   alt="SEO Team Working" 
                   className="w-full h-full object-cover"
                 />

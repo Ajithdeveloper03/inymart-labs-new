@@ -1,12 +1,26 @@
 import { SectionHeading } from '@/components/SectionHeading';
 
 const BRANDS = [
-  { name: 'Covai Tech Park' },
-  { name: 'Ellora' },
-  { name: 'SG Education' },
-  { name: 'SGNL' },
-  { name: 'Lesoko' },
-  { name: 'Arsen Interiors' },
+  { name: '1Een Technologies', image: '/new/images/1 Een(brand).webp' },
+  { name: 'Hallmark Business School', image: '/new/images/Hallmark(brand).webp' },
+  { name: 'Lesoko', image: '/new/images/Lesoko-Logo-(brand).png' },
+  { name: 'New Dream Data System', image: '/new/images/Newdream (brand).webp' },
+  { name: 'SKS Clean Tech', image: '/new/images/SKS(brand).png' },
+  { name: 'Viswanathan R Associates', image: '/new/images/Viswanathan (brand).png' },
+  { name: 'Alliance Technologies', image: '/new/images/alliances tecknologies(brand).png' },
+  { name: 'Arsen Interiors', image: '/new/images/arsen(brand).webp' },
+  { name: 'Covai Tech Park', image: '/new/images/covai-tech-park-(brand).png' },
+  { name: 'Ellora', image: '/new/images/ellora(brand).webp' },
+  { name: 'Infinity Organic', image: '/new/images/infinity(brand).webp' },
+  { name: 'Inymart Academy', image: '/new/images/inymart academy (brand).webp' },
+  { name: 'Ivakaa', image: '/new/images/ivaka(brand).png' },
+  { name: 'Jobbycart', image: '/new/images/jobbycart(brand).png' },
+  { name: 'Kaveri Restaurant', image: '/new/images/kaveri(brand).webp' },
+  { name: 'KPN Roofing Shed', image: '/new/images/kpnruofingshed(brand).png' },
+  { name: 'SG Education', image: '/new/images/sg-education(brand).webp' },
+  { name: 'SGNL', image: '/new/images/sgnl(brand).webp' },
+  { name: 'Tech Edge', image: '/new/images/techedge(brand).webp' },
+  { name: 'Uniform Australia', image: '/new/images/uniform (brand).webp' },
 ];
 
 export function Brands() {
@@ -32,9 +46,13 @@ export function Brands() {
               className="group flex h-24 w-40 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 sm:h-28 sm:w-48 md:h-32 md:w-56"
             >
               <img
-                src="/new/logo.webp"
-                alt="Inymart Labs Placeholder"
-                className="h-full w-auto object-contain grayscale transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 opacity-70 group-hover:opacity-100"
+                src={brand.image}
+                alt={brand.name}
+                className={`w-auto max-w-full object-contain transition-all duration-300 group-hover:scale-105 p-[3px] ${
+                  ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed'].includes(brand.name) 
+                    ? 'h-20 sm:h-24 md:h-28' 
+                    : 'h-full'
+                }`}
               />
             </div>
           ))}

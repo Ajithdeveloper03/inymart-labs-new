@@ -52,8 +52,8 @@ export function SmmWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=2031" 
-                  alt="Social Media Ads Dashboard" 
+                  src="/new/what we do (SMM).jpeg" 
+                  alt="SMM Strategy Planning" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />

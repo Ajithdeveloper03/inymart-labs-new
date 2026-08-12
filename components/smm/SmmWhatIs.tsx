@@ -14,8 +14,8 @@ export function SmmWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800" 
-                alt="Social Media Marketing screen icons" 
+                src="/new/what is smm (SMM).png" 
+                alt="Social Media Strategy" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
               {/* Gradient overlay to seamlessly fade the image into the white background */}

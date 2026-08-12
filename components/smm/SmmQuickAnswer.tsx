@@ -18,8 +18,8 @@ export function SmmQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2070" 
-                  alt="Social Media Marketing" 
+                  src="/new/quick answer (SMM).png" 
+                  alt="Social Media Management" 
                   className="w-full h-full object-cover"
                 />
               </div>

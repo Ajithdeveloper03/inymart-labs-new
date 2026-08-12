@@ -37,7 +37,14 @@ export function PopupForm() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      let result;
+      const text = await response.text();
+      try {
+        result = JSON.parse(text);
+      } catch (e) {
+        console.error('Failed to parse JSON response. Status:', response.status, 'Body:', text);
+        throw new Error('Invalid API response');
+      }
 
       if (response.ok && result.success) {
         setStatus({ type: 'success', message: 'Your enquiry has been sent successfully!' });
@@ -47,9 +54,10 @@ export function PopupForm() {
           closePopup();
         }, 3000);
       } else {
-        setStatus({ type: 'error', message: result.message || 'Failed to send enquiry.' });
+        setStatus({ type: 'error', message: result?.message || 'Failed to send enquiry.' });
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Form submission error:', error);
       setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
     } finally {
       setIsSubmitting(false);

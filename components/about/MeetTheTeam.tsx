@@ -32,19 +32,19 @@ const TEAM = [
   { 
     name: 'Ms. Santhiya', 
     role: 'Digital Marketing Executive',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/santhiya.png',
     bgColor: 'bg-[#D1C8C1]' 
   },
   { 
     name: 'Ms. Swathi', 
     role: 'Digital Marketing Executive',
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/swathi.jpeg',
     bgColor: 'bg-[#B5C2B7]' 
   },
   { 
     name: 'Ms. Abi', 
     role: 'Digital Marketing Executive',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400&h=500',
+    image: '/new/abi.jpg',
     bgColor: 'bg-[#D6C5C0]' 
   },
   { 

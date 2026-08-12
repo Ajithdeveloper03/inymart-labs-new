@@ -18,8 +18,8 @@ export function DmcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070" 
-                  alt="Consulting Meeting" 
+                  src="/new/quick answer (DMC).jpeg" 
+                  alt="Consulting Services" 
                   className="w-full h-full object-cover"
                 />
               </div>

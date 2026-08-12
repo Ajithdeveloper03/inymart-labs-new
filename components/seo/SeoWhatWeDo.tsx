@@ -49,7 +49,7 @@ export function SeoWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074" 
+                  src="/new/what we do (SEO).png" 
                   alt="SEO Strategy" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

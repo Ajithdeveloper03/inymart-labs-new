@@ -59,6 +59,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: '/new/logo.webp',
+  },
 };
 
 export default function RootLayout({

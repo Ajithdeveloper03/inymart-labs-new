@@ -7,16 +7,16 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const SERVICE_IMAGES = [
-  '/new/seo.jpeg',
-  'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=600',
-  'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600'
+  '/new/SEO%20(home).png',
+  '/new/Local%20SEO%20(home).png',
+  '/new/SMO%20(home).png',
+  '/new/SMM%20(home).png',
+  '/new/Web%20Analytics%20(home).png',
+  '/new/Web%20Development(home).png',
+  '/new/Digital%20Marketing%20Consulting(home).png',
+  '/new/Digital%20Marketing%20Agency(home).png',
+  '/new/PPC%20Service%20(home).png',
+  '/new/AI%20SEO%20Services(home).png'
 ];
 
 export function Services() {

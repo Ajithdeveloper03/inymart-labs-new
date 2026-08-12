@@ -102,8 +102,8 @@ const config: Config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         shimmer: 'shimmer 2.5s linear infinite',
-        marquee: 'marquee 25s linear infinite',
-        'marquee-reverse': 'marquee-reverse 25s linear infinite',
+        marquee: 'marquee 120s linear infinite',
+        'marquee-reverse': 'marquee-reverse 120s linear infinite',
         'text-fill': 'text-fill 3s linear infinite',
       },
       transitionTimingFunction: {

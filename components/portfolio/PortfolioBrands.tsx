@@ -3,33 +3,35 @@
 import { Reveal } from '@/components/Reveal';
 
 const ALL_BRANDS = [
-  'Infinity Organic',
-  'KPN Roofing Shed',
-  'Viswanathan R Associates',
-  'Covai Tech Park',
-  'SGNL',
-  'Digital Ocean',
-  'Arsen Interiors',
-  'Lesoko',
-  'SKS Clean Tech',
-  'Kaveri Restaurant',
-  'Tech Edge',
-  'New Dream Data System',
-  '1Een Technologies',
-  'Jobbycart',
-  'Alliance Technologies',
-  'Uniform Australia',
-  'Ivakaa',
-  'Hallmark Business School',
-]; // 18 items exactly
+  { name: '1Een Technologies', image: '/new/images/1 Een(brand).webp' },
+  { name: 'Hallmark Business School', image: '/new/images/Hallmark(brand).webp' },
+  { name: 'Lesoko', image: '/new/images/Lesoko-Logo-(brand).png' },
+  { name: 'New Dream Data System', image: '/new/images/Newdream (brand).webp' },
+  { name: 'SKS Clean Tech', image: '/new/images/SKS(brand).png' },
+  { name: 'Viswanathan R Associates', image: '/new/images/Viswanathan (brand).png' },
+  { name: 'Alliance Technologies', image: '/new/images/alliances tecknologies(brand).png' },
+  { name: 'Arsen Interiors', image: '/new/images/arsen(brand).webp' },
+  { name: 'Covai Tech Park', image: '/new/images/covai-tech-park-(brand).png' },
+  { name: 'Ellora', image: '/new/images/ellora(brand).webp' },
+  { name: 'Infinity Organic', image: '/new/images/infinity(brand).webp' },
+  { name: 'Inymart Academy', image: '/new/images/inymart academy (brand).webp' },
+  { name: 'Ivakaa', image: '/new/images/ivaka(brand).png' },
+  { name: 'Jobbycart', image: '/new/images/jobbycart(brand).png' },
+  { name: 'Kaveri Restaurant', image: '/new/images/kaveri(brand).webp' },
+  { name: 'KPN Roofing Shed', image: '/new/images/kpnruofingshed(brand).png' },
+  { name: 'SG Education', image: '/new/images/sg-education(brand).webp' },
+  { name: 'SGNL', image: '/new/images/sgnl(brand).webp' },
+  { name: 'Tech Edge', image: '/new/images/techedge(brand).webp' },
+  { name: 'Uniform Australia', image: '/new/images/uniform (brand).webp' },
+];
 
 export function PortfolioBrands() {
-  const row1 = ALL_BRANDS.slice(0, 9);
-  const row2 = ALL_BRANDS.slice(9, 18);
+  const row1 = ALL_BRANDS.slice(0, 10);
+  const row2 = ALL_BRANDS.slice(10, 20);
 
-  // Duplicate enough times for seamless scrolling
-  const scrollItems1 = [...row1, ...row1, ...row1, ...row1];
-  const scrollItems2 = [...row2, ...row2, ...row2, ...row2];
+  // Duplicate enough times for seamless scrolling (8 times to match 80 items total, equalizing scroll speed with Brands.tsx)
+  const scrollItems1 = [...row1, ...row1, ...row1, ...row1, ...row1, ...row1, ...row1, ...row1];
+  const scrollItems2 = [...row2, ...row2, ...row2, ...row2, ...row2, ...row2, ...row2, ...row2];
 
   return (
     <section className="relative overflow-hidden bg-secondary/10 py-16 lg:py-24">
@@ -58,16 +60,22 @@ export function PortfolioBrands() {
         <div className="flex w-max animate-marquee items-center gap-6 sm:gap-8 pr-6 sm:pr-8 hover:[animation-play-state:paused]">
           {scrollItems1.map((brand, i) => (
             <div
-              key={`r1-${brand}-${i}`}
-              className="group flex flex-col h-[140px] w-48 sm:w-56 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 text-center"
+              key={`r1-${brand.name}-${i}`}
+              className="group flex flex-col items-center w-48 sm:w-56 gap-3"
             >
-              <img
-                src="/new/logo.webp"
-                alt={brand}
-                className="h-10 w-auto object-contain grayscale transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 opacity-70 group-hover:opacity-100 mb-3"
-              />
-              <span className="font-sans text-sm font-bold text-foreground">
-                {brand}
+              <div className="flex flex-col h-[140px] w-full items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 group-hover:border-primary/20 group-hover:shadow-xl group-hover:shadow-primary/5">
+                <img
+                  src={brand.image}
+                  alt={brand.name}
+                  className={`w-auto max-w-full object-contain transition-all duration-300 group-hover:scale-105 p-[3px] ${
+                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivakaa'].includes(brand.name) 
+                      ? 'h-24 sm:h-28' 
+                      : 'h-16 sm:h-20'
+                  }`}
+                />
+              </div>
+              <span className="font-sans text-sm font-bold text-foreground text-center">
+                {brand.name}
               </span>
             </div>
           ))}
@@ -77,16 +85,22 @@ export function PortfolioBrands() {
         <div className="flex w-max animate-marquee-reverse items-center gap-6 sm:gap-8 pr-6 sm:pr-8 hover:[animation-play-state:paused]">
           {scrollItems2.map((brand, i) => (
             <div
-              key={`r2-${brand}-${i}`}
-              className="group flex flex-col h-[140px] w-48 sm:w-56 items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 text-center"
+              key={`r2-${brand.name}-${i}`}
+              className="group flex flex-col items-center w-48 sm:w-56 gap-3"
             >
-              <img
-                src="/new/logo.webp"
-                alt={brand}
-                className="h-10 w-auto object-contain grayscale transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 opacity-70 group-hover:opacity-100 mb-3"
-              />
-              <span className="font-sans text-sm font-bold text-foreground">
-                {brand}
+              <div className="flex flex-col h-[140px] w-full items-center justify-center rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 group-hover:border-primary/20 group-hover:shadow-xl group-hover:shadow-primary/5">
+                <img
+                  src={brand.image}
+                  alt={brand.name}
+                  className={`w-auto max-w-full object-contain transition-all duration-300 group-hover:scale-105 p-[3px] ${
+                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivakaa'].includes(brand.name) 
+                      ? 'h-24 sm:h-28' 
+                      : 'h-16 sm:h-20'
+                  }`}
+                />
+              </div>
+              <span className="font-sans text-sm font-bold text-foreground text-center">
+                {brand.name}
               </span>
             </div>
           ))}

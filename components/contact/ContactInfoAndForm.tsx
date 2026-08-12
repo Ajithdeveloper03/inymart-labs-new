@@ -36,16 +36,24 @@ export function ContactInfoAndForm() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      let result;
+      const text = await response.text();
+      try {
+        result = JSON.parse(text);
+      } catch (e) {
+        console.error('Failed to parse JSON response. Status:', response.status, 'Body:', text);
+        throw new Error('Invalid API response');
+      }
 
       if (response.ok && result.success) {
         setStatus({ type: 'success', message: 'Your message has been sent successfully!' });
         form.reset();
         setTimeout(() => setStatus(null), 5000);
       } else {
-        setStatus({ type: 'error', message: result.message || 'Failed to send message.' });
+        setStatus({ type: 'error', message: result?.message || 'Failed to send message.' });
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Form submission error:', error);
       setStatus({ type: 'error', message: 'An error occurred. Please try again.' });
     } finally {
       setIsSubmitting(false);

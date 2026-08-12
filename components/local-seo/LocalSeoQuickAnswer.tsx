@@ -18,8 +18,8 @@ export function LocalSeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1524146128017-b9dd0bfd2778?q=80&w=2070" 
-                  alt="Local SEO Maps" 
+                  src="/new/quick answer (L-SEO).png" 
+                  alt="Local Search Map" 
                   className="w-full h-full object-cover"
                 />
               </div>

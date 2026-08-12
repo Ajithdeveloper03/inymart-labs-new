@@ -6,31 +6,31 @@ import { Users, Code, Factory, GraduationCap, ShoppingCart, Plane, ChevronRight 
 const AUDIENCES = [
   {
     icon: Users,
-    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=400',
+    image: '/new/local%20&%20Regional%20Business%20(who%20we%20work%20with)%201.png',
     title: 'Local & Regional Businesses',
     desc: 'Wanting stronger visibility in Tamil Nadu',
   },
   {
     icon: Code,
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=400',
+    image: '/new/tech%20companys%20&%20IT%20parks%20(%20who%20we%20work%20with%20)%202.png',
     title: 'Tech Companies & IT Parks',
     desc: 'Wanting a professional digital presence',
   },
   {
     icon: Factory,
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400',
+    image: '/new/Manufacturing%20&%20industril%20(%20portfolio)%203.png',
     title: 'Manufacturing & Industrial',
     desc: 'Businesses like roofing, cleaning technology, and interiors',
   },
   {
     icon: GraduationCap,
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=400',
+    image: '/new/education%20,%20restaurants%20&%20retail%20(%20portfolio%20)%204.png',
     title: 'Education, Restaurants & Retail',
     desc: 'Brands wanting more local enquiries',
   },
   {
     icon: ShoppingCart,
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=400',
+    image: '/new/E-%20commerce%20&%20international%20(%20portfolio%20)%205.png',
     title: 'E-commerce & International',
     desc: 'Including clients in Australia and beyond',
   },
@@ -110,7 +110,6 @@ export function PortfolioWhoWeWorkWith() {
                   <div className="px-2">
                     <h3 className="mb-3 font-display text-[17px] font-bold transition-colors duration-300
                       text-foreground group-hover:text-primary
-                      first-of-type:text-primary
                     ">
                       {item.title}
                     </h3>

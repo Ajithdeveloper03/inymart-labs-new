@@ -18,8 +18,8 @@ export function WebDevQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072" 
-                  alt="Coding on Laptop" 
+                  src="/new/quick answer (WB).png" 
+                  alt="Web Development Code" 
                   className="w-full h-full object-cover"
                 />
               </div>
