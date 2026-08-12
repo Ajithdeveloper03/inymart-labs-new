@@ -142,12 +142,70 @@ export function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-36 sm:pt-40 lg:pt-44 pb-0"
+      className="relative w-full overflow-hidden bg-gradient-to-b from-[#090a0f] via-[#121526] to-[#090a0f] pt-24 sm:pt-28 lg:pt-32 pb-0"
     >
       {/* Canvas for Magical Star Splashes */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-30" />
       {/* Grid Backdrop (top area) - subtle visible white grid lines on dark background */}
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-[1] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)]" />
+
+      {/* Plus marks at grid intersections (aligned to the 32px grid lines) */}
+      <div className="absolute inset-0 z-0 opacity-90 [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_80%,transparent_100%)] pointer-events-none select-none">
+        {/* Left side aligned pluses */}
+        {[
+          { x: 3, y: 2 },
+          { x: 7, y: 6 },
+          { x: 12, y: 4 },
+          { x: 16, y: 9 },
+          { x: 5, y: 13 },
+          { x: 22, y: 5 },
+          { x: 10, y: 17 },
+          { x: 18, y: 21 },
+          { x: 6, y: 25 },
+          { x: 14, y: 29 },
+          { x: 23, y: 14 },
+          { x: 9, y: 34 },
+          { x: 15, y: 32 },
+        ].map((pos, idx) => (
+          <div
+            key={`left-${idx}`}
+            className="absolute text-[28px] font-light text-white/85 -translate-x-1/2 -translate-y-1/2 leading-none"
+            style={{
+              left: `${pos.x * 32}px`,
+              top: `${pos.y * 32}px`,
+            }}
+          >
+            +
+          </div>
+        ))}
+        {/* Right side aligned pluses */}
+        {[
+          { x: 4, y: 4 },
+          { x: 9, y: 2 },
+          { x: 15, y: 7 },
+          { x: 21, y: 3 },
+          { x: 7, y: 11 },
+          { x: 13, y: 16 },
+          { x: 19, y: 20 },
+          { x: 26, y: 10 },
+          { x: 5, y: 23 },
+          { x: 11, y: 27 },
+          { x: 24, y: 29 },
+          { x: 8, y: 33 },
+          { x: 16, y: 35 },
+        ].map((pos, idx) => (
+          <div
+            key={`right-${idx}`}
+            className="absolute text-[28px] font-light text-white/85 -translate-x-1/2 -translate-y-1/2 leading-none"
+            style={{
+              right: `${pos.x * 32}px`,
+              top: `${pos.y * 32}px`,
+            }}
+          >
+            +
+          </div>
+        ))}
+      </div>
 
       {/* Floating Glowing Gradient Blur Orbs/Blobs for Futuristic Aesthetics */}
       <div className="absolute top-[10%] left-[10%] w-[350px] h-[350px] rounded-full bg-orange-600/20 blur-[110px] pointer-events-none mix-blend-screen animate-float-slow z-0" />
@@ -190,7 +248,7 @@ export function Hero() {
       {/* Left Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
       <div className="hidden xl:block absolute -left-16 2xl:-left-6 top-[45%] w-[260px] 2xl:w-[320px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-500/80 shadow-2xl animate-float-left z-20">
         <img
-          src="/images/hero_left.png"
+          src="/new/images/hero_left.png"
           alt="Digital Art Concept Left"
           className="w-full h-full object-cover"
         />
@@ -199,47 +257,53 @@ export function Hero() {
       {/* Right Showcase Image (tilted, matching Leonardo.Ai style, positioned on the side of the hero content - increased height with float animation) */}
       <div className="hidden xl:block absolute -right-16 2xl:-right-6 top-[45%] w-[260px] 2xl:w-[320px] aspect-[4/4.8] rounded-3xl overflow-hidden border-[6px] border-orange-600/80 shadow-2xl animate-float-right z-20">
         <img
-          src="/images/hero_right.png"
+          src="/new/images/hero_right.png"
           alt="Digital Art Concept Right"
           className="w-full h-full object-cover"
         />
       </div>
 
-      <div className="container-x relative z-10 text-center flex flex-col items-center">
+      <div className="container-x mt-4 relative z-10 text-center flex flex-col items-center">
         {/* Top Accent Subtitle in Serif Italic */}
         <Reveal delay={0}>
           <p className="font-serif italic text-base sm:text-lg md:text-xl text-neutral-300 tracking-wide">
             Be Found Where Your Customers Are Searching
           </p>
         </Reveal>
-
+ 
         {/* Main Bold Headline */}
         <Reveal delay={100}>
-          <h1 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1] max-w-5xl mx-auto">
+          <h1 className="mt-2 font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1] max-w-5xl mx-auto">
             Grow Your Business With Us <br className="hidden sm:block" />
             <span className="text-orange-500">Your Trusted Agency in Tamil Nadu</span>
           </h1>
         </Reveal>
-
+ 
         {/* Paragraph Description: Shortened to 4-5 lines with minimal text size */}
         <Reveal delay={200}>
-          <p className="mt-4 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed text-neutral-300 font-normal">
-            Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
-          </p>
+          <div className="mt-2 max-w-3xl mx-auto text-xs sm:text-sm font-sans leading-relaxed text-neutral-300 font-normal space-y-2">
+            <p>
+              Today&apos;s customers search online before choosing a product or service. Whether it&apos;s Google Search, Google Maps, AI-powered search platforms, or social media, your business needs to be visible where your customers are looking. At Inymart Labs, a trusted Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven digital marketing and ORM strategies. With 10+ years of experience since 2016 and 50+ satisfied clients, we deliver customised solutions that create measurable success. The average cost of hiring a digital marketing company in Tamil Nadu typically ranges from INR 20,000 to INR 1,00,000 per month, depending on scope and scale, though costs vary based on your specific requirements.
+            </p>
+            
+          </div>
         </Reveal>
-
+ 
         {/* Centered Elegant Icons Badges */}
         <Reveal delay={250}>
-          <div className="mt-5 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] sm:text-xs font-semibold text-neutral-200">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Get a Free Consultation
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Talk to Our Experts
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-50/10 border border-orange-500/20 px-3 py-1 text-orange-200">
-              <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Start Your Digital Growth Today
-            </span>
+          <div className="mt-4 flex flex-col items-center font-sans">
+            {/* <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-orange-500 font-sans">Ready to Grow Your Business?</h3> */}
+            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[11px] sm:text-xs font-semibold text-neutral-200">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
+                <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Get a Free Consultation
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-950/40 border border-orange-500/30 px-3 py-1 text-orange-200">
+                <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Talk to Our Experts
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-50/10 border border-orange-500/20 px-3 py-1 text-orange-200">
+                <CheckCircle2 className="h-3.5 w-3.5 text-orange-500" /> Start Your Digital Growth Today
+              </span>
+            </div>
           </div>
         </Reveal>
 
@@ -263,7 +327,7 @@ export function Hero() {
             {/* Center Hand holding phone container (reduced height with float animation) */}
             <div className="relative z-10 w-full max-w-3xl flex justify-center pb-0 animate-float-phone">
               <img
-                src="/images/hero_phone.png"
+                src="/new/images/hero_phone.png"
                 alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"
                 className="relative z-10 w-full h-auto max-h-[400px] sm:max-h-[480px] md:max-h-[550px] lg:max-h-[600px] object-contain transition-transform duration-500 hover:scale-[1.01]"
                 style={{

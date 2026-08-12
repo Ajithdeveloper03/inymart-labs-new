@@ -32,7 +32,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 transition-all duration-300">
       {/* Top Announcement Banner Bar - Orange background matching reference image */}
       {bannerVisible && (
-        <div className="relative w-full bg-orange-600 px-4 py-2.5 text-white shadow-sm transition-all duration-300">
+        <div className="relative w-full bg-orange-600 px-4 py-2.5 text-white shadow-sm transition-all duration-300 font-sans">
           <div className="flex flex-wrap items-center justify-center text-[11px] sm:text-xs font-medium gap-x-2 gap-y-1.5 text-center px-6 sm:px-10">
             <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur-sm">
               <Sparkles className="h-2.5 w-2.5 text-amber-200" /> Trusted Agency
@@ -63,17 +63,17 @@ export function Header() {
       {/* Main Navbar */}
       <div
         className={cn(
-          'w-full transition-all duration-300 bg-white/90 backdrop-blur-md',
+          'w-full transition-all duration-300 backdrop-blur-md font-sans',
           scrolled
             ? 'border-b border-neutral-200/80 py-3 shadow-sm bg-white/95'
-            : 'border-b border-neutral-100/60 py-4'
+            : 'border-b border-white/10 py-4 bg-transparent'
         )}
       >
         <div className="container-x flex items-center justify-between gap-4 xl:gap-6">
           {/* Brand Logo */}
           <Link href="#home" className="group flex items-center gap-2.5">
             <img
-              src="/logo.webp"
+              src="/new/logo.webp"
               alt="Inymart Labs"
               className="h-9 w-auto transition-transform duration-300 group-hover:scale-105"
             />
@@ -86,7 +86,10 @@ export function Header() {
                 <div key={link.label} className="group relative">
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 text-[14px] font-medium text-neutral-600 transition-colors duration-200 hover:text-neutral-900 py-2"
+                    className={cn(
+                      'flex items-center gap-1 text-[14px] font-medium transition-colors duration-200 py-2',
+                      scrolled ? 'text-neutral-600 hover:text-neutral-900' : 'text-white/90 hover:text-white'
+                    )}
                   >
                     {link.label}
                     <ChevronDown className="h-3.5 w-3.5 opacity-60 transition-transform duration-300 group-hover:rotate-180" />
@@ -153,7 +156,10 @@ export function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-[14px] font-medium text-neutral-600 transition-colors duration-200 hover:text-neutral-900"
+                  className={cn(
+                    'text-[14px] font-medium transition-colors duration-200',
+                    scrolled ? 'text-neutral-600 hover:text-neutral-900' : 'text-white/90 hover:text-white'
+                  )}
                 >
                   {link.label}
                 </Link>
@@ -165,7 +171,7 @@ export function Header() {
           <div className="hidden xl:block">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-full border border-neutral-900 bg-neutral-950 px-5 py-2 text-[12px] font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-neutral-900 hover:border-neutral-800 hover:shadow-md"
+              className="group inline-flex items-center gap-2 rounded-full border border-orange-600 bg-orange-600 px-5 py-2 text-[12px] font-bold uppercase tracking-wider text-white shadow-sm transition-all duration-300 hover:bg-orange-500 hover:border-orange-500 hover:shadow-md"
             >
               FREE CONSULTATION
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -178,7 +184,12 @@ export function Header() {
             aria-label="Toggle menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-800 xl:hidden"
+            className={cn(
+              'flex h-9 w-9 items-center justify-center rounded-full border transition-colors xl:hidden',
+              scrolled
+                ? 'border-neutral-200 bg-white text-neutral-800'
+                : 'border-white/20 bg-white/10 text-white hover:bg-white/20'
+            )}
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
@@ -243,7 +254,7 @@ export function Header() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-neutral-900 shadow-sm"
+              className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-orange-600 bg-orange-600 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-orange-500"
             >
               FREE CONSULTATION <ArrowRight className="h-3.5 w-3.5" />
             </a>

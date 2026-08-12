@@ -79,14 +79,14 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <CtaBanner
             title="Need Complete Digital Marketing Solutions?"
             points={['Get a Free Website Analysis', 'Talk to Our Experts']}
             ctaLabel="Get a Free Website Analysis"
             variant="accent"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

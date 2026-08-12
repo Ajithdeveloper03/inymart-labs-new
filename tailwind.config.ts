@@ -10,9 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'ui-serif', 'Georgia', 'serif'],
-        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        sans: ['Inter', 'var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'var(--font-display)', 'ui-serif', 'Georgia', 'serif'],
+        serif: ['"Playfair Display"', 'var(--font-serif)', 'Georgia', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

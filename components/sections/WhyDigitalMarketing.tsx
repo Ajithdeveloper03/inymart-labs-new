@@ -64,7 +64,7 @@ export function WhyDigitalMarketing() {
         <Reveal className="relative order-1 lg:order-2 h-full">
           <div className="relative h-full overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 min-h-[350px]">
             <img
-              src="/images/digital-marketing.jpeg"
+              src="/new/images/digital-marketing.jpeg"
               alt="Business growth analytics dashboard showing increasing online visibility"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"

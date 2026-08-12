@@ -14,7 +14,7 @@ export function Footer() {
           <div>
             <Link href="#home" className="flex items-center gap-2.5">
               <img
-                src="/logo.webp"
+                src="/new/logo.webp"
                 alt="Inymart Labs"
                 className="h-10 w-auto"
               />
