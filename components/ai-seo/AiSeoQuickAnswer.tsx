@@ -18,7 +18,7 @@ export function AiSeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070" 
+                  src="/new/quick answer ai seo.png" 
                   alt="AI Technology" 
                   className="w-full h-full object-cover"
                 />
