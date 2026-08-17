@@ -283,7 +283,7 @@ export function Hero() {
         <Reveal delay={200}>
           <div className="mt-2 max-w-3xl mx-auto text-xs sm:text-sm font-sans leading-relaxed text-neutral-300 font-normal space-y-2">
             <p>
-              Today&apos;s customers search online before choosing a product or service. Whether it&apos;s Google Search, Google Maps, AI-powered search platforms, or social media, your business needs to be visible where your customers are looking. At Inymart Labs, a trusted Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven digital marketing and ORM strategies. With 10+ years of experience since 2016 and 50+ satisfied clients, we deliver customised solutions that create measurable success. The average cost of hiring a digital marketing company in Tamil Nadu typically ranges from INR 20,000 to INR 1,00,000 per month, depending on scope and scale, though costs vary based on your specific requirements.
+              Today&apos;s customers search online before choosing a product or service. Whether it&apos;s Google Search, Google Maps, AI-powered search platforms, or social media, your business needs to be visible where your customers are looking. At Inymart Labs, a trusted Digital Marketing Agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven digital marketing and ORM strategies. 
             </p>
             
           </div>
