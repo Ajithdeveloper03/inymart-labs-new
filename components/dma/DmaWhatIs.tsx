@@ -14,7 +14,7 @@ export function DmaWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/new/what is digital marketing agency(DMA).png" 
+                src="/what is digital marketing agency(DMA).png" 
                 alt="Digital Marketing Team" 
                 className="absolute inset-0 w-full h-full object-fill transition-transform duration-1000 group-hover:scale-105 opacity-100"
               />

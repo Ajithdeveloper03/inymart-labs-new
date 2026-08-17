@@ -14,7 +14,7 @@ export function SmmWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/new/what is smm (SMM).png" 
+                src="/what is smm (SMM).png" 
                 alt="Social Media Strategy" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />

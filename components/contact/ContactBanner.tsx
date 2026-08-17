@@ -10,7 +10,7 @@ export function ContactBanner() {
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat blur-[2px] scale-105"
-        style={{ backgroundImage: "url('/new/contact banner.png')" }}
+        style={{ backgroundImage: "url('/contact banner.png')" }}
       />
       <div className="absolute inset-0 z-0 bg-black/40 backdrop-blur-sm" />
 

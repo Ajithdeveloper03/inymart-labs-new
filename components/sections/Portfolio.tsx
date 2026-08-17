@@ -77,7 +77,7 @@ export function Portfolio() {
       {/* Right Side Image */}
       <div className="relative w-full md:w-[40%] h-[50vh] md:h-auto overflow-hidden">
         <img 
-          src="/new/Our Portfolio.png" 
+          src="/Our Portfolio.png" 
           alt="Our Portfolio" 
           className="absolute inset-0 w-full h-full object-cover"
         />

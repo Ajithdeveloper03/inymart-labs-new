@@ -24,7 +24,7 @@ export function PortfolioWhyTrustUs() {
           <Reveal className="order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/new/why%20trust%20inymart%20labs%20(%20portfolio).png" 
+                src="/why%20trust%20inymart%20labs%20(%20portfolio).png" 
                 alt="Digital Marketing Team" 
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />

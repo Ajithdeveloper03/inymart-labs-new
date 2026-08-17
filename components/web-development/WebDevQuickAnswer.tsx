@@ -18,7 +18,7 @@ export function WebDevQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/quick answer (WB).png" 
+                  src="/quick answer (WB).png" 
                   alt="Web Development Code" 
                   className="w-full h-full object-cover"
                 />

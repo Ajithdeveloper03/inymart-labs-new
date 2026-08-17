@@ -6,27 +6,27 @@ import Link from 'next/link';
 
 const features = [
   {
-    image: '/new/Visible + Reachable +.png',
+    image: '/Visible + Reachable +.png',
     title: 'Visible + Reachable + Clickable + Buyable',
     description: 'A growth formula built for conversions, not just clicks, including through Google Ads.',
   },
   {
-    image: "/new/Built for today's video.png",
+    image: "/Built for today's video.png",
     title: "Built for today's video production search",
     description: 'Intent, voice, location, and AI-driven discovery optimized for modern platforms.',
   },
   {
-    image: '/new/Data speaks, not.png',
+    image: '/Data speaks, not.png',
     title: 'Data speaks, not guesswork',
     description: 'Every recommendation is backed by measurable analytics and solid data.',
   },
   {
-    image: '/new/Clear reporting.png',
+    image: '/Clear reporting.png',
     title: 'Clear reporting',
     description: 'No fancy words just to look smart. We share clear ideas and outcomes you can act on.',
   },
   {
-    image: '/new/Real humans, real.png',
+    image: '/Real humans, real.png',
     title: 'Real humans, real conversations',
     description: 'A team that understands Tamil Nadu businesses and offers dedicated digital marketing solutions.',
   },

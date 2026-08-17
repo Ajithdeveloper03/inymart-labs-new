@@ -14,7 +14,7 @@ export function PortfolioQuickAnswer() {
             {/* Image Half */}
             <div className="w-full lg:w-[55%] h-[400px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-lg relative">
               <img 
-                src="/new/quick%20answer%20(%20portfolio).png" 
+                src="/quick%20answer%20(%20portfolio).png" 
                 alt="Quick Answer" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -80,7 +80,7 @@ export function PortfolioQuickAnswer() {
             {/* Image Half */}
             <div className="w-full lg:w-[55%] h-[400px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-lg relative ml-auto">
               <img 
-                src="/new/what%20we%20done(portfolio).png" 
+                src="/what%20we%20done(portfolio).png" 
                 alt="What We've Done" 
                 className="absolute inset-0 w-full h-full object-cover"
               />

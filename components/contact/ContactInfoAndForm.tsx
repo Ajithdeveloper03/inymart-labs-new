@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 import { Reveal } from '@/components/Reveal';
-import {
+import { 
   MapPin, Phone, Mail,
   Instagram, Facebook, Linkedin, Youtube
 } from 'lucide-react';
@@ -18,7 +18,7 @@ export function ContactInfoAndForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-
+    
     const data = {
       formType: 'Contact Form',
       name: formData.get('name'),
@@ -29,7 +29,7 @@ export function ContactInfoAndForm() {
     };
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/new/api/contact/';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/contact.php';
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -67,7 +67,7 @@ export function ContactInfoAndForm() {
 
       <div className="container-x relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-
+          
           {/* Left Column: Contact Information */}
           <div className="flex flex-col">
             <Reveal>
@@ -164,7 +164,7 @@ export function ContactInfoAndForm() {
               <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 p-6 sm:p-8 lg:p-10 h-full flex flex-col justify-center relative overflow-hidden">
                 {/* Subtle top decoration */}
                 <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#ff6b35] to-[#ff8c61]"></div>
-
+                
                 <div className="text-[#ff6b35] text-sm font-bold mb-3 tracking-wider uppercase">
                   Have a Question?
                 </div>
@@ -176,75 +176,75 @@ export function ContactInfoAndForm() {
                 </p>
 
                 <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
-                  {status && (
-                    <div className={`p-4 rounded-lg text-sm font-medium ${status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'}`}>
-                      {status.message}
-                    </div>
-                  )}
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    {/* Name */}
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                      className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
-                      required
-                    />
-
-                    {/* Email */}
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                      className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
-                      required
-                    />
+                {status && (
+                  <div className={`p-4 rounded-lg text-sm font-medium ${status.type === 'success' ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-red-50 text-red-700 border border-red-200'}`}>
+                    {status.message}
                   </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    {/* Phone */}
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone number"
-                      className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
-                    />
-
-                    {/* Subject */}
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="Subject"
-                      className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
-                    />
-                  </div>
-
-                  {/* Message */}
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write your message..."
-                    rows={6}
-                    className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 resize-none text-[15px] hover:border-slate-300"
+                )}
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {/* Name */}
+                  <input 
+                    type="text" 
+                    id="name"
+                    name="name"
+                    placeholder="Name" 
+                    className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
                     required
-                  ></textarea>
+                  />
 
-                  {/* Submit Button */}
-                  <div className="mt-2">
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="inline-flex items-center justify-center py-3.5 px-8 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-bold text-sm tracking-wide rounded-[4px] shadow-md hover:shadow-lg transition-all duration-300 uppercase w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
-                    >
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
-                    </button>
-                  </div>
-                </form>
+                  {/* Email */}
+                  <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="Email" 
+                    className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
+                    required
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {/* Phone */}
+                  <input 
+                    type="tel" 
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone number" 
+                    className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
+                  />
+
+                  {/* Subject */}
+                  <input 
+                    type="text" 
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject" 
+                    className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 text-[15px] hover:border-slate-300"
+                  />
+                </div>
+
+                {/* Message */}
+                <textarea 
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..." 
+                  rows={6}
+                  className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 text-gray-700 focus:outline-none focus:ring-4 focus:ring-[#ff6b35]/10 focus:border-[#ff6b35] focus:bg-white transition-all duration-300 placeholder:text-gray-400 resize-none text-[15px] hover:border-slate-300"
+                  required
+                ></textarea>
+
+                {/* Submit Button */}
+                <div className="mt-2">
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center justify-center py-3.5 px-8 bg-[#ff6b35] hover:bg-[#e55a2b] text-white font-bold text-sm tracking-wide rounded-[4px] shadow-md hover:shadow-lg transition-all duration-300 uppercase w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
+                </div>
+              </form>
               </div>
             </Reveal>
           </div>

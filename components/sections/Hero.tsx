@@ -160,9 +160,9 @@ export function Hero() {
       <div className="w-full px-0 relative z-30 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between flex-grow gap-6 lg:gap-4 max-w-[2000px] mx-auto mt-2 lg:mt-4">
         
         {/* Left Showcase Image (Mobile: Stacked Below Text, Desktop: Left Side) */}
-        <div className="hidden lg:block order-2 lg:order-1 w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[230px] xl:max-w-[340px] 2xl:max-w-[320px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 lg:absolute lg:-left-6 xl:-left-12 2xl:-left-8 lg:top-[20%] xl:top-[15%]">
+        <div className="hidden lg:block order-2 lg:order-1 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[180px] xl:max-w-[290px] 2xl:max-w-[260px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 rotate-[10deg] lg:rotate-[12deg] origin-bottom-right lg:absolute lg:-left-6 xl:-left-16 2xl:-left-12 lg:top-1/4 xl:top-[15%]">
           <img
-            src="/new/images/hero_left.png"
+            src="/images/hero_left.png"
             alt="Digital Art Concept Left"
             className="w-full h-full object-cover"
           />
@@ -179,9 +179,9 @@ export function Hero() {
 
           {/* Main Bold Headline */}
           <Reveal delay={100}>
-            <h1 className="font-display text-[2rem] leading-[1] sm:text-[3rem] md:text-[3.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.2rem] font-extrabold tracking-tight text-white sm:leading-[1] md:leading-[1] mb-2 lg:mb-4 w-full  lg:max-w-[600px] xl:max-w-[1000px] 2xl:max-w-[940px] mx-auto break-words">
+            <h1 className="font-display text-[2rem] leading-[1.05] sm:text-[3rem] md:text-[3.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.2rem] font-extrabold tracking-tight text-white sm:leading-[1.15] md:leading-[1.1] mb-2 lg:mb-4 w-full lg:max-w-[600px] xl:max-w-[1000px] 2xl:max-w-[940px] mx-auto break-words">
               Grow Your Business With Us <br className="hidden sm:block" />
-              <span className="text-gradient relative inline-block whitespace-normal lg:whitespace-nowrap mt-1 pb-2 sm:mt-0">
+              <span className="text-gradient relative inline-block whitespace-normal lg:whitespace-nowrap mt-1 sm:mt-0">
                 Your Trusted Agency in Tamil Nadu
               </span>
             </h1>
@@ -189,7 +189,7 @@ export function Hero() {
 
           {/* Main Paragraph Description */}
           <Reveal delay={200}>
-            <p className="text-sm sm:text-base md:text-[1.05rem] lg:text-base xl:text-lg leading-[1] text-neutral-300 font-normal mb-4 max-w-[98%] md:max-w-[85%] lg:max-w-[500px] xl:max-w-[860px] 2xl:max-w-[800px] mx-auto text-justify sm:text-center">
+            <p className="text-sm sm:text-base md:text-[1.05rem] lg:text-base xl:text-lg leading-relaxed text-neutral-300 font-normal mb-4 max-w-[98%] md:max-w-[85%] lg:max-w-[500px] xl:max-w-[860px] 2xl:max-w-[800px] mx-auto text-justify sm:text-center">
               Today&apos;s customers search online before choosing a product or service. At Inymart Labs, a leading digital marketing agency in Tamil Nadu &amp; Tiruchirappalli, we help businesses improve visibility, generate quality leads, and achieve long-term growth through result-driven marketing, ORM, and high-ROI strategies tailored for your success.
             </p>
           </Reveal>
@@ -228,9 +228,9 @@ export function Hero() {
         </div>
 
         {/* Right Showcase Image (Mobile: Stacked Below Text, Desktop: Right Side) */}
-        <div className="hidden lg:block order-3 lg:order-3 w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[230px] xl:max-w-[340px] 2xl:max-w-[320px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-right z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 lg:absolute lg:-right-6 xl:-right-12 2xl:-right-8 lg:top-[20%] xl:top-[15%]">
+        <div className="hidden lg:block order-3 lg:order-3 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[180px] xl:max-w-[290px] 2xl:max-w-[260px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-right z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 -rotate-[10deg] lg:-rotate-[12deg] origin-bottom-left lg:absolute lg:-right-6 xl:-right-16 2xl:-right-12 lg:top-1/4 xl:top-[15%]">
           <img
-            src="/new/images/hero_right.png"
+            src="/images/hero_right.png"
             alt="Digital Art Concept Right"
             className="w-full h-full object-cover"
           />
@@ -249,7 +249,7 @@ export function Hero() {
         {/* Center Hand holding phone */}
         <div className="absolute bottom-[-1rem] left-1/2 -translate-x-1/2 z-30 w-full max-w-[260px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px] xl:max-w-[480px] flex justify-center animate-float-phone">
           <img
-            src="/new/images/hero_phone.png"
+            src="/images/hero_phone.png"
             alt="Inymart Labs Digital Growth Mobile Analytics Dashboard"
             className="w-full h-auto object-contain transition-transform duration-500 hover:scale-[1.02] pointer-events-auto cursor-pointer"
           />

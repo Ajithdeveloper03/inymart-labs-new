@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer 
       className="relative border-t border-white/10 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/new/footer.png')" }}
+      style={{ backgroundImage: "url('/footer.png')" }}
     >
       <div className="absolute inset-0 bg-black/30 pointer-events-none" />
       <div className="container-x py-14 relative z-10">
@@ -18,7 +18,7 @@ export function Footer() {
           <div className="flex flex-col h-full">
             <Link href="/" className="flex items-center gap-2.5">
               <img
-                src="/new/logo.webp"
+                src="/logo.webp"
                 alt="Inymart Labs"
                 className="h-10 w-auto"
               />

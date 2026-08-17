@@ -18,7 +18,7 @@ export function SmoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/SMO (Quick Answer).png" 
+                  src="/SMO (Quick Answer).png" 
                   alt="SMO Quick Answer" 
                   className="w-full h-full object-cover"
                 />

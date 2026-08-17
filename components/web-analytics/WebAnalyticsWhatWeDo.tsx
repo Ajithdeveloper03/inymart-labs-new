@@ -49,7 +49,7 @@ export function WebAnalyticsWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/new/What We Do (Web Analytics).png" 
+                  src="/What We Do (Web Analytics).png" 
                   alt="Web Analytics Optimization" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

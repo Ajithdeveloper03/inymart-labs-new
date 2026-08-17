@@ -19,7 +19,7 @@ export function PopupForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-
+    
     const data = {
       formType: 'Popup Form',
       fullName: formData.get('fullName'),
@@ -30,7 +30,7 @@ export function PopupForm() {
     };
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/new/api/contact/';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/contact.php';
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -66,16 +66,16 @@ export function PopupForm() {
 
   useEffect(() => {
     setMounted(true);
-
+    
     // Check if we've already shown the popup in this session
     const hasShownPopup = sessionStorage.getItem('hasAutoShownPopup');
-
+    
     if (!hasShownPopup) {
       const timer = setTimeout(() => {
         openPopup();
         sessionStorage.setItem('hasAutoShownPopup', 'true');
       }, 4000);
-
+      
       return () => clearTimeout(timer);
     }
   }, [openPopup]);
@@ -102,13 +102,13 @@ export function PopupForm() {
       )}
     >
       {/* Backdrop */}
-      <div
+      <div 
         className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
         onClick={closePopup}
       />
-
+      
       {/* Modal */}
-      <div
+      <div 
         className={cn(
           "relative w-full max-w-lg bg-[#0c0d12] rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,112,0,0.15)] border border-white/10 transition-all duration-500 transform",
           isPopupOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-8"
@@ -117,9 +117,9 @@ export function PopupForm() {
         {/* Glowing Orbs */}
         <div className="absolute top-0 left-0 w-[200px] h-[200px] rounded-full bg-orange-600/20 blur-[80px] pointer-events-none mix-blend-screen" />
         <div className="absolute bottom-0 right-0 w-[250px] h-[250px] rounded-full bg-blue-600/15 blur-[80px] pointer-events-none mix-blend-screen" />
-
+        
         {/* Close Button */}
-        <button
+        <button 
           type="button"
           onClick={closePopup}
           className="absolute top-4 right-4 z-50 flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-colors"
@@ -143,25 +143,25 @@ export function PopupForm() {
                 {status.message}
               </div>
             )}
-
+            
             <div className="space-y-1">
               <label htmlFor="fullName" className="text-xs font-semibold text-neutral-300 ml-1">Full Name</label>
-              <input
-                type="text"
-                id="fullName"
+              <input 
+                type="text" 
+                id="fullName" 
                 name="fullName"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                 placeholder="Your Name"
                 required
               />
             </div>
-
+            
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
                 <label htmlFor="message" className="text-xs font-semibold text-neutral-300 ml-1">Message</label>
-                <input
-                  type="text"
-                  id="message"
+                <input 
+                  type="text" 
+                  id="message" 
                   name="message"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                   placeholder="Your Message"
@@ -170,9 +170,9 @@ export function PopupForm() {
               </div>
               <div className="space-y-1">
                 <label htmlFor="phone" className="text-xs font-semibold text-neutral-300 ml-1">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
+                <input 
+                  type="tel" 
+                  id="phone" 
                   name="phone"
                   className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                   placeholder="Your Phone Number"
@@ -183,9 +183,9 @@ export function PopupForm() {
 
             <div className="space-y-1">
               <label htmlFor="email" className="text-xs font-semibold text-neutral-300 ml-1">Email Address</label>
-              <input
-                type="email"
-                id="email"
+              <input 
+                type="email" 
+                id="email" 
                 name="email"
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-neutral-500 focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all"
                 placeholder="Your Email Address"
@@ -196,8 +196,8 @@ export function PopupForm() {
             <div className="space-y-1 relative">
               <label htmlFor="service" className="text-xs font-semibold text-neutral-300 ml-1">Select Service</label>
               <div className="relative">
-                <select
-                  id="service"
+                <select 
+                  id="service" 
                   name="service"
                   className="w-full bg-[#13141a] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/50 transition-all appearance-none"
                   required

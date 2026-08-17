@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  basePath: '/new',
+  output: 'export',
   trailingSlash: true,
 };
 

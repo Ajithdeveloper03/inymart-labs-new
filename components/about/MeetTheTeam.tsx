@@ -8,49 +8,49 @@ const TEAM = [
   { 
     name: 'Mr. Manoj Jeevagan', 
     role: 'Web Traffic Ideator',
-    image: '/new/ceo.webp',
+    image: '/ceo.webp',
     bgColor: 'bg-[#B4BDB3]' 
   },
   { 
     name: 'Mr. Deen Mohamed', 
     role: 'Traffic Team Manager',
-    image: '/new/deen.webp',
+    image: '/deen.webp',
     bgColor: 'bg-[#A8B4C4]' 
   },
   { 
     name: 'Ms. Shanthini', 
     role: 'Traffic Team Co-ordinator',
-    image: '/new/shan.webp',
+    image: '/shan.webp',
     bgColor: 'bg-[#988290]' 
   },
   { 
     name: 'Mr. Ajith Kumar', 
     role: 'Web Team Lead',
-    image: '/new/ajith.webp',
+    image: '/ajith.webp',
     bgColor: 'bg-[#C1BAB3]' 
   },
   { 
     name: 'Ms. Santhiya', 
     role: 'Digital Marketing Executive',
-    image: '/new/santhiya.png',
+    image: '/santhiya.png',
     bgColor: 'bg-[#D1C8C1]' 
   },
   { 
     name: 'Ms. Swathi', 
     role: 'Digital Marketing Executive',
-    image: '/new/swathi.jpeg',
+    image: '/swathi.jpeg',
     bgColor: 'bg-[#B5C2B7]' 
   },
   { 
     name: 'Ms. Abi', 
     role: 'Digital Marketing Executive',
-    image: '/new/abi.jpg',
+    image: '/abi.jpg',
     bgColor: 'bg-[#D6C5C0]' 
   },
   { 
     name: 'Mr. Saravanan', 
     role: 'Web Developer',
-    image: '/new/saravanan.png',
+    image: '/saravanan.png',
     bgColor: 'bg-[#C4D4D8]' 
   },
 ];

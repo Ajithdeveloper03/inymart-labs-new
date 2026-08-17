@@ -9,7 +9,7 @@ export function BlogHero() {
     <section className="relative overflow-hidden min-h-[70vh] flex flex-col justify-center pt-32 pb-12 lg:pt-40">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/new/blog banner.png')" }}
+        style={{ backgroundImage: "url('/blog banner.png')" }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/90 via-[#0c1f28]/70 to-[#0c1f28]/95 backdrop-blur-[2px]" />
       

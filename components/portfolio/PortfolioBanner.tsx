@@ -12,7 +12,7 @@ export function PortfolioBanner() {
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/new/Banner%20(portfolio).png')" }} // Assuming we can use a different banner image or same one.
+        style={{ backgroundImage: "url('/Banner%20(portfolio).png')" }} // Assuming we can use a different banner image or same one.
       />
       {/* A dark gradient overlay to ensure text readability and a premium corporate look */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/80 via-[#0c1f28]/50 to-[#0c1f28]/80 backdrop-blur-[1px]" />

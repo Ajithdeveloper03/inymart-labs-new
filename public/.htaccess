@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1. Force HTTPS (Highly recommended for Hostinger)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 2. Handle Next.js 404 Custom Error Page
+ErrorDocument 404 /404.html
+
+# 3. Browser Caching Rules for Maximum Performance
+<IfModule mod_headers.c>
+  # Cache static assets (CSS, JS, Fonts, Images) for 1 year since Next.js hashes them
+  <FilesMatch "\.(js|css|woff|woff2|png|jpe?g|gif|ico|svg|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
+  # Prevent caching of HTML files so your live updates show immediately!
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+</IfModule>
+
+# 4. Security Headers (Optional but recommended)
+<IfModule mod_headers.c>
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
