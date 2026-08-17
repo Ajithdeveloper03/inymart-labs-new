@@ -247,16 +247,16 @@
 
 /* Float animations for hero side images */
 @keyframes float-left {
-  0%, 100% { transform: rotate(12deg) translateY(0px); }
-  50% { transform: rotate(12deg) translateY(-12px); }
+  0%, 100% { transform: perspective(1200px) rotateY(20deg) rotateZ(-12deg) translateY(0px); }
+  50% { transform: perspective(1200px) rotateY(20deg) rotateZ(-12deg) translateY(-12px); }
 }
 .animate-float-left {
   animation: float-left 7s ease-in-out infinite;
 }
 
 @keyframes float-right {
-  0%, 100% { transform: rotate(-12deg) translateY(0px); }
-  50% { transform: rotate(-12deg) translateY(-12px); }
+  0%, 100% { transform: perspective(1200px) rotateY(-20deg) rotateZ(12deg) translateY(0px); }
+  50% { transform: perspective(1200px) rotateY(-20deg) rotateZ(12deg) translateY(-12px); }
 }
 .animate-float-right {
   animation: float-right 8s ease-in-out infinite;

@@ -96,11 +96,11 @@ export function WhereWeWork() {
               />
 
               {/* Location Pins */}
-              <GlowingPin top="33%" left="16%" delay="0s" label="United States" />
-              <GlowingPin top="22%" left="48%" delay="0.5s" label="United Kingdom" />
-              <GlowingPin top="42%" left="63.5%" delay="1s" label="UAE" />
-              <GlowingPin top="51%" left="70%" delay="1.5s" label="India (HQ)" />
-              <GlowingPin top="78%" left="88.5%" delay="2s" label="Australia" />
+              <GlowingPin top="30%" left="29%" delay="0s" label="United States" />
+              <GlowingPin top="26%" left="47%" delay="0.5s" label="United Kingdom" />
+              <GlowingPin top="42%" left="60.5%" delay="1s" label="UAE" />
+              <GlowingPin top="45%" left="66%" delay="1.5s" label="India (HQ)" />
+              <GlowingPin top="72%" left="79.5%" delay="2s" label="Australia" />
             </div>
           </Reveal>
 
