@@ -28,9 +28,14 @@ const serif = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.inymartlabs.com'),
-  title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
+  title: {
+    default: 'Digital Marketing Agency Tamilnadu: Your Growth Partner | Inymart Labs',
+    template: '%s | Inymart Labs',
+  },
   description:
-    'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential. Learn how we can help you achieve your growth objectives!',
+    'Partner with our top-tier digital marketing agency in Tamil Nadu to unlock your business\'s true potential. Specializing in AI SEO, PPC, and localized strategies for unparalleled growth.',
+  applicationName: 'Inymart Labs',
+  category: 'Marketing',
   keywords: [
     'Digital Marketing Agency Tamil Nadu',
     'Digital Marketing Agency Tiruchirappalli',
@@ -39,28 +44,63 @@ export const metadata: Metadata = {
     'AI SEO Services',
     'PPC service',
     'Social Media Marketing',
+    'Best Marketing Agency in Trichy',
   ],
-  authors: [{ name: 'Inymart Labs' }],
+  authors: [{ name: 'Inymart Labs', url: 'https://www.inymartlabs.com' }],
+  creator: 'Inymart Labs',
+  publisher: 'Inymart Labs',
   openGraph: {
     title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
     description:
       'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential.',
+    url: 'https://www.inymartlabs.com',
     type: 'website',
     locale: 'en_IN',
     siteName: 'Inymart Labs',
+    images: [
+      {
+        url: '/logo.webp',
+        width: 800,
+        height: 600,
+        alt: 'Inymart Labs Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
     description:
       'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential.',
+    images: ['/logo.webp'],
+    creator: '@inymartlabs',
   },
   alternates: {
     canonical: '/',
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: '/logo.webp',
+    shortcut: '/logo.webp',
+    apple: '/logo.webp',
+  },
+  verification: {
+    // google: 'your-google-verification-code', // Add your code here
+    // yandex: 'yandex-verification-code', // Add your code here
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
 };
 

@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { API_BASE_URL } from '@/lib/api';
 import Link from 'next/link';
 import { Plus, X, UploadCloud, ChevronUp, ChevronDown } from 'lucide-react';
 
-export default function AdminEditor() {
+function AdminEditorContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
@@ -408,5 +408,13 @@ export default function AdminEditor() {
 
       </div>
     </div>
+  );
+}
+
+export default function AdminEditor() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center text-gray-500 font-medium">Loading editor...</div>}>
+      <AdminEditorContent />
+    </Suspense>
   );
 }
