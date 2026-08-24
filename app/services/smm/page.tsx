@@ -35,8 +35,8 @@ export default function SmmServicePage() {
         <SmmProcess />
         <SmmWhoThisIsFor />
         <SmmExpectations />
-        <SmmFaq />
         <SmmTrust />
+        <SmmFaq />
         <SmmCta />
       </main>
       <Footer />

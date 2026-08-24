@@ -3,6 +3,7 @@
 import { Reveal } from '@/components/Reveal';
 import { Plus, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { usePopup } from '@/components/providers/PopupProvider';
 
 const features = [
   {
@@ -33,6 +34,7 @@ const features = [
 ];
 
 export function WhatMakesUsDifferent() {
+  const { openPopup } = usePopup();
   return (
     <section className="relative bg-secondary/30 py-12 lg:py-16 overflow-hidden">
       <div className="container-x relative">
@@ -94,13 +96,13 @@ export function WhatMakesUsDifferent() {
 
         <div className="flex justify-center">
           <Reveal delay={400}>
-            <Link
-              href="#portfolio"
+            <button
+              onClick={openPopup}
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
             >
               See Why Businesses Choose Us
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </button>
           </Reveal>
         </div>
       </div>

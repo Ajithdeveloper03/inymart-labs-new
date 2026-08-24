@@ -39,11 +39,7 @@ export function AboutCta() {
                   <Phone className="h-4 w-4 text-primary" />
                   +91 9994723446
                 </a>
-                <span className="hidden sm:block text-slate-300 font-normal">|</span>
-                <a href="mailto:ceo@inymartlabs.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  <Mail className="h-4 w-4 text-primary" />
-                  ceo@inymartlabs.com
-                </a>
+
               </div>
             </div>
           </Reveal>

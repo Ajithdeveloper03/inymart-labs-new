@@ -3,13 +3,13 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { INDUSTRIES } from '@/lib/content';
 
 const INDUSTRY_IMAGES = [
-  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80', // Educational Institutions
-  'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', // Healthcare
+  '/Educational Institutions.jpg.jpeg', // Educational Institutions
+  '/Healthcare.jpg.jpeg', // Healthcare
   'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80', // Real Estate
-  'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=600&q=80', // Manufacturing
+  'Manufacturing.jpg.jpeg', // Manufacturing
   'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80', // Retail
-  'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80', // E-commerce
-  'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80', // Hospitality
+  '/E-commerce.jpg.jpeg', // E-commerce
+  '/hospitality.avif', // Hospitality
   'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80', // Corporate Companies
   'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80', // Startups
   'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80', // Professional Services

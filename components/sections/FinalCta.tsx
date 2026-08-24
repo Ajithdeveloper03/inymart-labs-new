@@ -62,7 +62,7 @@ export function FinalCta() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <a
-                href="/services"
+                href="/#services"
                 className="inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-slate-200 bg-white px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300 whitespace-nowrap w-full sm:w-auto"
               >
                 View Our Services
