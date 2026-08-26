@@ -16,7 +16,7 @@ export function SeoKeyFacts() {
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
     { icon: Award, label: "Experience", value: "10+ years" },
     { icon: Globe, label: "Brands Served", value: "50+, across India, UAE, UK, and the USA" },
-    { icon: Settings, label: "Core Process", value: "Website audit, keyword research, on-page optimization, technical SEO, content optimization, link building, monthly reporting" },
+    { icon: Settings, label: "Core Process", value: "Website Audit, Keyword Research, On-Page Optimization, Technical SEO, Content Optimization, Link Building, Monthly Reporting" },
     { icon: FileText, label: "Reporting", value: "Simple monthly reports covering rankings, traffic, and leads" }
   ];
 

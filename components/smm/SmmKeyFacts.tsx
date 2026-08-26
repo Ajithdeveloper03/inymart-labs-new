@@ -25,12 +25,11 @@ export function SmmKeyFacts() {
     {
       icon: MonitorSmartphone,
       label: "Platforms",
-      value: "Facebook, Instagram, and LinkedIn ads"
+      value: "Facebook, Instagram, YouTube, and LinkedIn ads"
     },
     {
       icon: Settings,
-      label: "Core Process",
-      value: "Goal setting, targeting, creative, setup, A/B testing, optimization, reporting"
+      label: "Core Process", value: "Goal Setting, Targeting, Creative, Setup, A/B Testing, Optimization, Reporting"
     },
     {
       icon: Clock,

@@ -46,7 +46,7 @@ export function WebDevWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A website is often the first real impression a customer has of your business. If it loads slowly, looks outdated, or is hard to use on a phone, customers leave before they even understand what you offer.
               </p>
 
@@ -70,7 +70,7 @@ export function WebDevWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A good Web Development Service in Tamil Nadu builds websites with both design and performance in mind. As an experienced Web Development Service in Trichy, Inymart Labs makes sure your website looks professional, loads quickly, and is built in a way that search engines can understand and rank well.
               </p>
 
@@ -94,7 +94,7 @@ export function WebDevWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also build with the future in mind. Your website should be easy to update, simple to expand, and strong enough to support your marketing — whether that's SEO, ads, or social media traffic.
               </p>
 

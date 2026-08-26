@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
-import { CustomCursor } from '@/components/CustomCursor';
 import { PopupProvider } from '@/components/providers/PopupProvider';
 import { PopupForm } from '@/components/PopupForm';
 
@@ -135,7 +134,6 @@ export default function RootLayout({
         )}
       >
         <PopupProvider>
-          <CustomCursor />
           <div className="font-sans antialiased">
             {children}
           </div>

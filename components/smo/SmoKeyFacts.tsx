@@ -14,8 +14,8 @@ export function SmoKeyFacts() {
   const facts = [
 { icon: Building2, label: "Service", value: "Social Media Optimization Company in Tamil Nadu and Social Media Optimization Company in Trichy" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
-    { icon: MonitorSmartphone, label: "Platforms Managed", value: "Facebook, Instagram, LinkedIn, and other platforms" },
-    { icon: Settings, label: "Core Process", value: "Profile audit, audience research, content planning, content creation, posting and scheduling, community management, monthly reporting" },
+    { icon: MonitorSmartphone, label: "Platforms Managed", value: "Facebook, Instagram, YouTube, LinkedIn, and other platforms" },
+    { icon: Settings, label: "Core Process", value: "Profile Audit, Audience Research, Content Planning, Content Creation, Posting And Scheduling, Community Management, Monthly Reporting" },
     { icon: Calendar, label: "Typical Posting Frequency", value: "3–5 posts per week across key platforms" },
     { icon: Clock, label: "Typical Timeline", value: "Better engagement within the first month; stronger brand presence by month 3 onward" }
   ];

@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Search, AlertCircle, TrendingUp } from 'lucide-react';
+import { Users, Search, AlertCircle, TrendingUp, Lightbulb } from 'lucide-react';
 
 export function LocalSeoWhoThisIsFor() {
   const points = [
@@ -22,7 +22,7 @@ export function LocalSeoWhoThisIsFor() {
     {
       title: null,
       text: `Businesses that rely on nearby customers finding them quickly`,
-      icon: AlertCircle,
+      icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },

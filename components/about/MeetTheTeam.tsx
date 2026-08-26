@@ -34,7 +34,7 @@ const TEAM = [
     linkedin: 'https://www.linkedin.com/in/ajith-kumar-web-developer/'
   },
   { 
-    name: 'Ms. Santhiyaa', 
+    name: 'Ms. Santhiya', 
     role: 'Digital Marketing Executive',
     image: '/santhiyaa.png',
     bgColor: 'bg-[#D1C8C1]',

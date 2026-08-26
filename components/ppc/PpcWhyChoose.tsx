@@ -46,7 +46,7 @@ export function PpcWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Running Google Ads without the right strategy usually means paying for clicks that never turn into customers. Poor keyword choices, weak ad copy, or badly set up campaigns can burn through budget fast with little to show for it.
               </p>
 
@@ -70,7 +70,7 @@ export function PpcWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A proper PPC Service in Tamil Nadu builds campaigns around the right keywords, the right audience, and a clear goal — whether that's calls, form fills, or purchases. As an experienced PPC Service in Trichy, Inymart Labs sets up and manages every campaign carefully, so your budget goes toward customers who are actually ready to buy.
               </p>
 
@@ -94,7 +94,7 @@ export function PpcWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also understand local search behavior. What works for a business in Chennai may not work the same way in Trichy or Madurai, and we build location-based campaigns that reflect this.
               </p>
 

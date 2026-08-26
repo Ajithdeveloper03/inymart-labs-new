@@ -46,7 +46,7 @@ export function LocalSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Most customers today search for businesses "near me" before making a decision. If your business doesn't appear in local map results or the top local search listings, you're losing customers to businesses right down the street that do show up.
               </p>
 
@@ -70,7 +70,7 @@ export function LocalSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Local SEO isn't just about adding your address online. It's about building trust with Google through accurate listings, reviews, and location-based content. As an experienced Local SEO agency in Trichy, Inymart Labs makes sure your business is seen as the right, trustworthy choice for nearby customers.
               </p>
 
@@ -94,7 +94,7 @@ export function LocalSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A good Local SEO agency in Tamil Nadu also understands regional search habits. Customers in Trichy, Chennai, Madurai, and Coimbatore often search differently, and we factor these local patterns into every strategy we build.
               </p>
 

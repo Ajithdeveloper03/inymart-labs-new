@@ -14,7 +14,7 @@ export function LocalSeoKeyFacts() {
 { icon: Building2, label: "Service", value: "Local SEO Agency in Tamil Nadu and Local SEO Agency in Trichy" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
     { icon: MapPin, label: "Service Areas", value: "Trichy, Chennai, Madurai, Coimbatore, and nearby regions" },
-    { icon: Settings, label: "Core Process", value: "Google Business Profile setup, local keyword research, listings and citations, review management, location-based content, map pack optimization, monthly reporting" },
+    { icon: Settings, label: "Core Process", value: "Google Business Profile Setup, Local Keyword Research, Listings And Citations, Review Management, Location-Based Content, Map Pack Optimization, Monthly Reporting" },
     { icon: Clock, label: "Typical Timeline", value: "Early visibility improvements within a few weeks; stronger results by month 2–3" },
     { icon: FileText, label: "Reporting", value: "Simple monthly reports covering local rankings, calls, and direction requests" }
   ];

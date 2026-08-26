@@ -46,7 +46,7 @@ export function DmaWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Many businesses end up working with separate vendors for SEO, social media, and ads — and none of them talk to each other. This often leads to mixed messaging, wasted budget, and no clear picture of what's actually working.
               </p>
 
@@ -70,7 +70,7 @@ export function DmaWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A complete Digital Marketing Agency in Tamil Nadu solves this by bringing every channel under one strategy and one team. As an experienced Digital Marketing Agency in Trichy, Inymart Labs makes sure your SEO, content, ads, and social media all work together toward the same goals.
               </p>
 
@@ -94,7 +94,7 @@ export function DmaWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also believe in transparency. Every service from Inymart Labs comes with clear reporting, so you always know what's being done and how it's performing.
               </p>
 

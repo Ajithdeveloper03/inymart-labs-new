@@ -52,7 +52,7 @@ export function DmcWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Digital Marketing Consulting in Tamil Nadu from Inymart Labs gives you an outside, expert view of your marketing — what's working, what's not, and what to prioritize next. As an experienced provider of Digital Marketing Consulting in Trichy, we simplify complex marketing decisions into a clear action plan.
               </p>
 
@@ -80,7 +80,7 @@ export function DmcWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also understand that every business is different. A strategy that works for an e-commerce brand won't necessarily work for a local service business, and we build our recommendations around your specific goals, budget, and industry.
               </p>
 

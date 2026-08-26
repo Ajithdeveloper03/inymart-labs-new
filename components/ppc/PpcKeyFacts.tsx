@@ -15,7 +15,7 @@ export function PpcKeyFacts() {
 { icon: Building2, label: "Service", value: "PPC Service in Tamil Nadu and PPC Service in Trichy" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
     { icon: MonitorSmartphone, label: "Platforms", value: "Google Ads (search, display, and local campaigns)" },
-    { icon: Settings, label: "Core Process", value: "Goal setting, keyword research, campaign setup, ad copywriting, landing page alignment, bid management, A/B testing, monthly reporting" },
+    { icon: Settings, label: "Core Process", value: "Goal Setting, Keyword Research, Campaign Setup, Ad Copywriting, Landing Page Alignment, Bid Management, A/B Testing, Monthly Reporting" },
     { icon: Clock, label: "Typical Timeline", value: "Traffic and enquiries within days of campaign launch" },
     { icon: FileText, label: "Reporting", value: "Monthly reports covering spend, clicks, calls, and conversions" }
   ];

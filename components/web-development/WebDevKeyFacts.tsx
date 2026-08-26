@@ -15,7 +15,7 @@ export function WebDevKeyFacts() {
 { icon: Building2, label: "Service", value: "Web Development Service in Tamil Nadu and Web Development Service in Trichy" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
     { icon: Layout, label: "Website Types", value: "Business websites, ecommerce stores, landing pages, redesigns, web applications" },
-    { icon: Settings, label: "Core Process", value: "Discovery, website structure, design, development, mobile optimization, SEO-ready setup, testing and launch, ongoing support" },
+    { icon: Settings, label: "Core Process", value: "Discovery, Website Structure, Design, Development, Mobile Optimization, SEO-Ready Setup, Testing And Launch, Ongoing Support" },
     { icon: Clock, label: "Typical Timeline", value: "3–8 weeks for most business websites; ecommerce sites may take longer" },
     { icon: LifeBuoy, label: "Support", value: "Ongoing maintenance and updates after launch" }
   ];

@@ -137,7 +137,7 @@ export const NAV_LINKS: NavGroup[] = [
       href: `/services/${slugify(s.title)}`,
     })),
   },
-  { label: 'Case Studies / Portfolio', href: '/portfolio' },
+  { label: 'Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blogs' },
   { label: 'Contact', href: '/contact' },
 ];
