@@ -1,7 +1,7 @@
 import { SectionHeading } from '@/components/SectionHeading';
 
 const BRANDS = [
-  { name: '1Een Technologies', image: '/images/1 Een(brand).webp' },
+  { name: 'Een Technologies', image: '/images/1 Een(brand).webp' },
   { name: 'Hallmark Business School', image: '/images/Hallmark(brand).webp' },
   { name: 'Lesoko', image: '/images/Lesoko (brand).png' },
   { name: 'New Dream Data System', image: '/images/Newdream (brand).webp' },
@@ -13,7 +13,7 @@ const BRANDS = [
   { name: 'Ellora', image: '/images/ellora(brand).webp' },
   { name: 'Infinity Organic', image: '/images/infinity(brand).webp' },
   { name: 'Inymart Academy', image: '/images/inymart academy (brand).png' },
-  { name: 'Ivaka', image: '/images/ivaka(brand).png' },
+  { name: 'Ivaka', image: '/images/ivaka.png' },
   { name: 'Jobbycart', image: '/images/jobbycart(brand).png' },
   { name: 'Kaveri Restaurant', image: '/images/kaveri(brand).webp' },
   { name: 'KPN Roofing Shed', image: '/images/kpnruofingshed(brand).png' },
