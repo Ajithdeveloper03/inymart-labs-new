@@ -21,6 +21,9 @@ interface Post {
 export default function AdminDashboard() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [statusFilter, setStatusFilter] = useState('All Status');
+  const [categoryFilter, setCategoryFilter] = useState('All Categories');
   const router = useRouter();
 
   useEffect(() => {
@@ -70,6 +73,16 @@ export default function AdminDashboard() {
   const liveCount = posts.filter(p => p.status === 'LIVE').length;
   const draftCount = posts.filter(p => p.status === 'DRAFT').length;
 
+  const uniqueCategories = Array.from(new Set(posts.map(p => p.category).filter(Boolean)));
+
+  const filteredPosts = posts.filter(post => {
+    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          post.slug.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesStatus = statusFilter === 'All Status' || post.status === statusFilter;
+    const matchesCategory = categoryFilter === 'All Categories' || post.category === categoryFilter;
+    return matchesSearch && matchesStatus && matchesCategory;
+  });
+
   return (
     <div className="w-full">
       {/* Stats Cards */}
@@ -103,17 +116,28 @@ export default function AdminDashboard() {
           type="text" 
           placeholder="Search articles..." 
           className="w-full md:w-64 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         <div className="flex gap-4 items-center w-full md:w-auto">
-          <select className="px-4 py-2 border rounded-lg bg-white outline-none">
-            <option>All Status</option>
-            <option>LIVE</option>
-            <option>DRAFT</option>
+          <select 
+            className="px-4 py-2 border rounded-lg bg-white outline-none"
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+          >
+            <option value="All Status">All Status</option>
+            <option value="LIVE">LIVE</option>
+            <option value="DRAFT">DRAFT</option>
           </select>
-          <select className="px-4 py-2 border rounded-lg bg-white outline-none">
-            <option>All Categories</option>
-            <option>AI SEO</option>
-            <option>EDUCATION</option>
+          <select 
+            className="px-4 py-2 border rounded-lg bg-white outline-none"
+            value={categoryFilter}
+            onChange={(e) => setCategoryFilter(e.target.value)}
+          >
+            <option value="All Categories">All Categories</option>
+            {uniqueCategories.map(cat => (
+              <option key={cat} value={cat}>{cat}</option>
+            ))}
           </select>
           <Link 
             href="/admin/editor" 
@@ -127,7 +151,7 @@ export default function AdminDashboard() {
       {/* Table */}
       <div className="bg-white rounded-xl shadow-sm border overflow-hidden">
         <div className="p-4 border-b flex justify-between items-center bg-white">
-          <span className="text-gray-600 font-medium">Showing 1 of {posts.length} articles</span>
+          <span className="text-gray-600 font-medium">Showing {filteredPosts.length} of {posts.length} articles</span>
           <button onClick={fetchPosts} className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
             <RefreshCw size={16} /> Refresh
           </button>
@@ -148,7 +172,7 @@ export default function AdminDashboard() {
           <tbody>
             {loading ? (
               <tr><td colSpan={8} className="p-8 text-center text-gray-500">Loading...</td></tr>
-            ) : posts.map(post => {
+            ) : filteredPosts.map(post => {
               // Parse sections to get count
               let sectionsCount = 0;
               let faqsCount = 0;
@@ -197,10 +221,10 @@ export default function AdminDashboard() {
                 </td>
               </tr>
             )})}
-            {posts.length === 0 && !loading && (
+            {filteredPosts.length === 0 && !loading && (
               <tr>
                 <td colSpan={8} className="p-8 text-center text-gray-500">
-                  No posts found. Create your first post!
+                  {posts.length > 0 ? "No articles match your search/filters." : "No posts found. Create your first post!"}
                 </td>
               </tr>
             )}

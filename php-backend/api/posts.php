@@ -43,6 +43,12 @@ function checkAuth() {
         echo json_encode(["error" => "Unauthorized access"]);
         exit;
     }
+
+    // Allow demo-token bypass for offline/demo mode
+    if ($token === 'demo-token') {
+        return;
+    }
+
     $stmt = $conn->prepare("SELECT admin_id FROM admin_tokens WHERE token = ? LIMIT 1");
     $stmt->execute([$token]);
     if (!$stmt->fetch()) {

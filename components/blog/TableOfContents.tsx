@@ -43,7 +43,7 @@ export function TableOfContents() {
   if (headings.length === 0) return null;
 
   return (
-    <div className="sticky top-24 bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hidden lg:block">
+    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
       <h3 className="text-sm font-bold text-slate-900 uppercase tracking-widest mb-4">Table of Contents</h3>
       <ul className="space-y-3">
         {headings.map((heading) => (

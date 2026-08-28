@@ -88,9 +88,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/logo.webp',
-    shortcut: '/logo.webp',
-    apple: '/logo.webp',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   verification: {
     // google: 'your-google-verification-code', // Add your code here

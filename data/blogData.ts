@@ -9,6 +9,7 @@ export interface BlogPost {
   date: string;
   readingTime: string;
   image: string;
+  schema?: string;
 }
 
 export const blogData: BlogPost[] = [

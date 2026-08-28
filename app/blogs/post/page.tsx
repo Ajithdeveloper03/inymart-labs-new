@@ -3,6 +3,7 @@
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
@@ -10,7 +11,6 @@ import { notFound } from 'next/navigation';
 import { BlogDetailHero } from '@/components/blog/BlogDetailHero';
 import { BlogContent } from '@/components/blog/BlogContent';
 import { TableOfContents } from '@/components/blog/TableOfContents';
-import { RelatedPosts } from '@/components/blog/RelatedPosts';
 import { API_BASE_URL } from '@/lib/api';
 import { BlogPost } from '@/data/blogData';
 
@@ -85,6 +85,12 @@ function BlogDetailContent() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white">
+      {post.schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: post.schema }}
+        />
+      )}
       <BlogDetailHero post={post} />
       
       <section className="py-16 lg:py-24">
@@ -98,14 +104,35 @@ function BlogDetailContent() {
 
             {/* Sidebar / Sticky TOC */}
             <div className="w-full lg:w-[30%]">
-              <TableOfContents />
+              <div className="sticky top-24 hidden lg:block space-y-8">
+                <TableOfContents />
+                
+                {relatedPosts.length > 0 && (
+                  <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+                    <h3 className="text-sm font-bold text-slate-900 uppercase tracking-widest mb-4">Related Articles</h3>
+                    <div className="space-y-4">
+                      {relatedPosts.map((rp) => (
+                        <Link href={`/blogs/post?slug=${rp.slug}`} key={rp.id} className="flex gap-4 group items-center">
+                          <div className="w-20 h-16 shrink-0 rounded-lg overflow-hidden relative bg-slate-100">
+                            {rp.image ? (
+                              <Image src={rp.image} alt={rp.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                            ) : null}
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-bold text-sm text-slate-900 group-hover:text-primary line-clamp-2 transition-colors mb-1 leading-tight">{rp.title}</h4>
+                            <p className="text-xs text-slate-500 font-medium">{rp.readingTime}</p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
             
           </div>
         </div>
       </section>
-
-      {relatedPosts.length > 0 && <RelatedPosts posts={relatedPosts} />}
     </main>
   );
 }

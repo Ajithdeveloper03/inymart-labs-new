@@ -162,7 +162,7 @@ export function Hero() {
         {/* Left Showcase Image (Mobile: Stacked Below Text, Desktop: Left Side) */}
         <div className="hidden lg:block order-2 lg:order-1 w-full max-w-[240px] sm:max-w-[280px] lg:max-w-[180px] xl:max-w-[290px] 2xl:max-w-[260px] aspect-[4/5] rounded-[28px] overflow-hidden border-[5px] border-[#ff7000] shadow-[0_0_30px_rgba(255,112,0,0.2)] animate-float-left z-20 pointer-events-none mt-2 lg:mt-24 xl:mt-20 2xl:mt-16 rotate-[10deg] lg:rotate-[12deg] origin-bottom-right lg:absolute lg:-left-6 xl:-left-16 2xl:-left-12 lg:top-1/4 xl:top-[15%]">
           <img
-            src="/images/hero_left.png"
+            src="/images/hero_left.png?v=20260828"
             alt="Digital Art Concept Left"
             className="w-full h-full object-cover"
           />
