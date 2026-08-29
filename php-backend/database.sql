@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS inymart_blog;
-USE inymart_blog;
-
 -- Admin Users Table
 CREATE TABLE IF NOT EXISTS admin_users (
     id INT AUTO_INCREMENT PRIMARY KEY,
