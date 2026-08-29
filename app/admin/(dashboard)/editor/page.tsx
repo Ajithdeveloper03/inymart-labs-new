@@ -23,7 +23,8 @@ function AdminEditorContent() {
     date: new Date().toISOString().split('T')[0],
     excerpt: '',
     status: 'DRAFT',
-    content: '' // keeping for legacy fallback if needed
+    content: ''
+    
   });
 
   const [sections, setSections] = useState<any[]>([]);

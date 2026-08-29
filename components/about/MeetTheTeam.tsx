@@ -38,14 +38,14 @@ const TEAM = [
   { 
     name: 'Ms. Swathi', 
     role: 'Digital Marketing Executive',
-    image: '/swathi.jpeg',
+    image: '/swathi-web.png',
     bgColor: 'bg-[#B5C2B7]' 
   },
   { 
     name: 'Ms. Abi', 
     role: 'Digital Marketing Executive',
     image: '/abi.jpg',
-    bgColor: 'bg-[#D6C5C0]' 
+    bgColor: 'bg-[#D6C5C0
   },
   { 
     name: 'Mr. Saravanan', 
