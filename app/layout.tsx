@@ -87,11 +87,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
-  },
   verification: {
     // google: 'your-google-verification-code', // Add your code here
     // yandex: 'yandex-verification-code', // Add your code here
