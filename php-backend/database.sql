@@ -9,10 +9,18 @@ CREATE TABLE IF NOT EXISTS admin_users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Default admin user: admin / admin123
+-- Default admin user: inymartlabs / inymartlabs@2026
 INSERT INTO admin_users (username, password_hash) 
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi')
+VALUES ('inymartlabs', '$2y$10$tZ2yD0L.y0892z5/C5k0fOnOq1.7.g/l4J.gJ7hL9/9j.j.L/i.y.')
 ON DUPLICATE KEY UPDATE username=username;
+
+-- Admin Tokens Table
+CREATE TABLE IF NOT EXISTS admin_tokens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    admin_id INT NOT NULL,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 -- Blog Posts Table
 CREATE TABLE IF NOT EXISTS blog_posts (
@@ -26,6 +34,9 @@ CREATE TABLE IF NOT EXISTS blog_posts (
     readingTime VARCHAR(50),
     image VARCHAR(255),
     date DATE NOT NULL,
+    status ENUM('LIVE', 'DRAFT') DEFAULT 'DRAFT',
+    sections JSON,
+    faqs JSON,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

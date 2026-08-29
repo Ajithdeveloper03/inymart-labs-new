@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import { API_BASE_URL } from '@/lib/api';
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const router = useRouter();
@@ -14,6 +14,14 @@ export default function AdminLogin() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
+    // Allow demo credentials to bypass API
+    if (username === 'inymartlabs' && password === 'inymartlabs@2026') {
+      localStorage.setItem('isAdmin', 'true');
+      localStorage.setItem('adminToken', 'demo-token');
+      router.push('/admin/dashboard');
+      return;
+    }
 
     try {
       const res = await fetch(`${API_BASE_URL}/auth.php?action=login`, {
@@ -36,7 +44,7 @@ export default function AdminLogin() {
       }
     } catch (err) {
       // Fallback for demo/offline mode
-      if (username === 'admin' && password === 'admin123') {
+      if (username === 'inymartlabs' && password === 'inymartlabs@2026') {
         localStorage.setItem('isAdmin', 'true');
         localStorage.setItem('adminToken', 'demo-token');
         router.push('/admin/dashboard');
@@ -50,10 +58,7 @@ export default function AdminLogin() {
     <div className="max-w-md mx-auto mt-20 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
       <h1 className="text-2xl font-bold text-center mb-2">Admin Login</h1>
       
-      <div className="text-center mb-6 text-sm text-gray-500 bg-gray-50 py-2 rounded-lg">
-        <p>Demo Credentials:</p>
-        <p className="font-mono mt-1">User: <b>admin</b> | Pass: <b>admin123</b></p>
-      </div>
+
 
       {error && (
         <div className="bg-red-50 text-red-600 p-3 rounded-lg mb-4 text-sm text-center">

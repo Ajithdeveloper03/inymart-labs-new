@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db_name = 'inymart_blog';
-$username = 'root';
-$password = '';
+$db_name = 'u508480125_inymartlabs';
+$username = 'u508480125_inymartlabs';
+$password = 'Inymart@Shield#585';
 
 $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8mb4", $username, $password);
 $conn->exec("CREATE TABLE IF NOT EXISTS admin_tokens (

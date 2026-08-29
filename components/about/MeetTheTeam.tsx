@@ -60,7 +60,7 @@ const TEAM = [
     role: 'Web Developer',
     image: '/saravanan.png',
     bgColor: 'bg-[#C4D4D8]',
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/in/saravanan-palaniswamy-57136933a/'
   },
 ];
 
