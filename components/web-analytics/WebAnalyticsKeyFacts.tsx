@@ -15,7 +15,7 @@ export function WebAnalyticsKeyFacts() {
 { icon: Building2, label: "Service", value: "Web Analytics Service in Trichy Tamil Nadu" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
     { icon: Wrench, label: "Tools Used", value: "Google Analytics, Google Search Console, and other free tracking tools" },
-    { icon: Settings, label: "Core Process", value: "Analytics audit, correct setup, goal mapping, traffic analysis, behavior analysis, custom reporting, ongoing reviews" },
+    { icon: Settings, label: "Core Process", value: "Analytics Audit, Correct Setup, Goal Mapping, Traffic Analysis, Behavior Analysis, Custom Reporting, Ongoing Reviews" },
     { icon: Clock, label: "Typical Timeline", value: "Accurate data immediately after setup; clearer insights build over 2–3 months" },
     { icon: FileText, label: "Reporting", value: "Monthly, in plain language, no technical jargon" }
   ];

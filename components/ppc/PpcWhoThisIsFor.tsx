@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Search, AlertCircle, TrendingUp } from 'lucide-react';
+import { Users, Search, AlertCircle, TrendingUp, Lightbulb } from 'lucide-react';
 
 export function PpcWhoThisIsFor() {
   const points = [
@@ -22,7 +22,7 @@ export function PpcWhoThisIsFor() {
     {
       title: null,
       text: `Growing brands wanting fast visibility while SEO builds in the background`,
-      icon: AlertCircle,
+      icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },

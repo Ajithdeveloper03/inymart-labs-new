@@ -46,7 +46,7 @@ export function WebAnalyticsWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Most businesses have Google Analytics installed but never actually look at it, or don't know what the numbers mean. Without real analysis, you're making marketing decisions based on guesswork instead of facts.
               </p>
 
@@ -70,7 +70,7 @@ export function WebAnalyticsWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A good Web Analytics Service in Tamil Nadu doesn't just show you charts — it explains what's working, what's not, and what to do next. As an experienced Web Analytics Service in Trichy, Inymart Labs connects your website data to real business outcomes like enquiries, calls, and sales.
               </p>
 
@@ -94,7 +94,7 @@ export function WebAnalyticsWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also make sure your data is set up correctly in the first place. Many businesses have broken or incomplete tracking without realizing it, which means every report they've seen so far may already be wrong.
               </p>
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Search, AlertCircle, TrendingUp } from 'lucide-react';
+import { Users, Search, AlertCircle, TrendingUp, Lightbulb } from 'lucide-react';
 
 export function SeoWhoThisIsFor() {
   const points = [
@@ -22,7 +22,7 @@ export function SeoWhoThisIsFor() {
     {
       title: null,
       text: `Ecommerce businesses want more product page visibility`,
-      icon: AlertCircle,
+      icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },

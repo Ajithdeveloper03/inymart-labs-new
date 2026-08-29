@@ -52,7 +52,7 @@ export function SmmWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A proper social media marketing agency in Tamil Nadu builds campaigns around who your customer is, what they care about, and where they are in their buying decision. As an experienced social media marketing agency in Tamil Nadu, Inymart Labs sets clear goals for every campaign — whether that's calls, website visits, form fills, or direct sales.
               </p>
 
@@ -80,7 +80,7 @@ export function SmmWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also understand local buying behavior. As a dedicated social media marketing agency in Trichy, we know ads that work for a business in Chennai may not work the same way for a business in Madurai or Trichy. We factor location, language, and local trends into every campaign we run.
               </p>
 

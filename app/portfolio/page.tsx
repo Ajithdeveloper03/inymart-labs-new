@@ -5,7 +5,6 @@ import { PortfolioBanner } from '@/components/portfolio/PortfolioBanner';
 import { PortfolioQuickAnswer } from '@/components/portfolio/PortfolioQuickAnswer';
 import { PortfolioBrands } from '@/components/portfolio/PortfolioBrands';
 import { PortfolioKeyFacts } from '@/components/portfolio/PortfolioKeyFacts';
-import { PortfolioWhoWeWorkWith } from '@/components/portfolio/PortfolioWhoWeWorkWith';
 import { PortfolioWhyTrustUs } from '@/components/portfolio/PortfolioWhyTrustUs';
 import { PortfolioFaqs } from '@/components/portfolio/PortfolioFaqs';
 import { PortfolioCta } from '@/components/portfolio/PortfolioCta';
@@ -24,7 +23,6 @@ export default function PortfolioPage() {
         <PortfolioQuickAnswer />
         <PortfolioBrands />
         <PortfolioKeyFacts />
-        <PortfolioWhoWeWorkWith />
         <PortfolioWhyTrustUs />
         <PortfolioFaqs />
         <PortfolioCta />

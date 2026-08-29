@@ -14,8 +14,8 @@ export function AiSeoKeyFacts() {
   const facts = [
 { icon: Building2, label: "Service", value: "AI SEO Service in Tamil Nadu, AI SEO Service in Trichy, and AEO Service" },
     { icon: MapPin, label: "Headquarters", value: "Tiruchirappalli, Tamil Nadu" },
-    { icon: MonitorSmartphone, label: "AI Platforms Covered", value: "ChatGPT, Gemini, Copilot, Perplexity, and Grok" },
-    { icon: Settings, label: "Core Process", value: "AI visibility audit, content restructuring, entity and fact-building, citation-ready content, ongoing AI monitoring" },
+    { icon: MonitorSmartphone, label: "AI Platforms Covered", value: "ChatGPT, Gemini, Copilot, Perplexity, Claude AI, and Grok" },
+    { icon: Settings, label: "Core Process", value: "AI Visibility Audit, Content Restructuring, Entity And Fact-Building, Citation-Ready Content, Ongoing AI Monitoring" },
     { icon: Clock, label: "Typical Timeline", value: "Visibility improvements typically build over 2–4 months as AI platforms recrawl and re-index content" },
     { icon: FileText, label: "Reporting", value: "Monthly updates on how your business appears across AI search tools" }
   ];

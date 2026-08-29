@@ -58,13 +58,7 @@ export function AiSeoCta() {
                 Call +91 9994723446
               </a>
 
-              <a
-                href="mailto:ceo@inymartlabs.com"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-8 py-4 text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300 w-full sm:w-auto"
-              >
-                <Mail className="h-4 w-4 text-blue-500" />
-                Email Us
-              </a>
+              
             </div>
           </Reveal>
         </div>

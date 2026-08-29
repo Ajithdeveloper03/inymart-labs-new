@@ -11,7 +11,7 @@ function AdminEditorContent() {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
 
-  const [activeTab, setActiveTab] = useState<'content' | 'faqs' | 'settings'>('content');
+  const [activeTab, setActiveTab] = useState<'content' | 'faqs' | 'settings' | 'schema'>('content');
 
   const [formData, setFormData] = useState({
     title: '',
@@ -23,8 +23,8 @@ function AdminEditorContent() {
     date: new Date().toISOString().split('T')[0],
     excerpt: '',
     status: 'DRAFT',
-    content: ''
-    
+    content: '', // keeping for legacy fallback if needed
+    schema: ''
   });
 
   const [sections, setSections] = useState<any[]>([]);
@@ -83,7 +83,8 @@ function AdminEditorContent() {
               date: post.date,
               excerpt: post.excerpt,
               status: post.status,
-              content: post.content
+              content: post.content,
+              schema: post.schema || ''
             });
             try { if (post.sections) setSections(JSON.parse(post.sections)); } catch (e) {}
             try { if (post.faqs) setFaqs(JSON.parse(post.faqs)); } catch (e) {}
@@ -93,6 +94,12 @@ function AdminEditorContent() {
   }, [id, router]);
 
   const handleSave = async (status: 'LIVE' | 'DRAFT') => {
+    if (status === 'LIVE') {
+      if (!confirm("Warning: You are updating the live website. Changes will be reflected instantly. Are you sure you want to proceed?")) {
+        return;
+      }
+    }
+    
     setSaving(true);
     
     // Convert to API payload
@@ -204,7 +211,10 @@ function AdminEditorContent() {
               FAQs ({faqs.length})
             </button>
             <button onClick={() => setActiveTab('settings')} className={`px-4 py-3 font-medium text-sm transition-colors ${activeTab === 'settings' ? 'border-b-2 border-[#1f2937] text-[#1f2937]' : 'text-gray-500 hover:text-gray-800'}`}>
-              Article Settings
+              Settings & Cover
+            </button>
+            <button onClick={() => setActiveTab('schema')} className={`px-4 py-3 font-medium text-sm transition-colors ${activeTab === 'schema' ? 'border-b-2 border-orange-500 text-orange-500' : 'text-gray-500 hover:text-gray-800'}`}>
+              JSON-LD Schema
             </button>
           </div>
 
@@ -340,23 +350,49 @@ function AdminEditorContent() {
                 </div>
             </div>
           )}
+
+          {activeTab === 'schema' && (
+            <div className="space-y-6 animate-in fade-in">
+              <div>
+                <h3 className="font-bold text-lg text-gray-800 mb-2">SEO JSON-LD Schema</h3>
+                <p className="text-sm text-gray-500 mb-6">Paste your JSON-LD structured data markup below. It will be automatically injected into the &lt;head&gt; of this article's page for SEO.</p>
+                
+                <div className="border border-orange-200 bg-orange-50/30 rounded-xl p-6 relative">
+                  <div className="flex items-center gap-2 mb-4 text-sm font-bold text-gray-700 uppercase tracking-wide">
+                    <span className="text-xl">🔍</span> JSON-LD STRUCTURED DATA
+                  </div>
+                  <textarea 
+                    className="w-full p-4 border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-orange-500/50 font-mono text-xs text-gray-700 min-h-[300px] shadow-inner bg-white"
+                    placeholder={`{\n  "@context": "https://schema.org",\n  "@type": "Article",\n  "headline": "Your article title",\n  "author": {\n    "@type": "Organization",\n    "name": "Inymart Labs"\n  }\n}`}
+                    value={formData.schema}
+                    onChange={(e) => setFormData({...formData, schema: e.target.value})}
+                  />
+                  <div className="mt-3 text-xs text-orange-600 flex items-center gap-2">
+                    <span>ℹ️ Use <b>Article</b>, <b>FAQPage</b>, or <b>BlogPosting</b> schema types. Must be valid JSON. Leave blank to skip.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Right Sidebar - Info */}
         <div className="w-full md:w-1/3 p-6 bg-slate-50 space-y-6">
           <div className="bg-white border rounded-xl p-4 shadow-sm">
             <label className="block text-xs font-bold text-gray-400 uppercase mb-2">Category</label>
-            <select 
+            <input 
+              list="category-options"
+              placeholder="Select or type category..."
               className="w-full p-2 border rounded-lg outline-none font-medium"
               value={formData.category}
               onChange={(e) => setFormData({...formData, category: e.target.value})}
-            >
-              <option value="">Select Category</option>
-              <option value="EDUCATION">EDUCATION</option>
-              <option value="AI SEO">AI SEO</option>
-              <option value="WEB DEV">WEB DEV</option>
-              <option value="PPC">PPC</option>
-            </select>
+            />
+            <datalist id="category-options">
+              <option value="EDUCATION" />
+              <option value="AI SEO" />
+              <option value="WEB DEV" />
+              <option value="PPC" />
+            </datalist>
           </div>
 
           <div className="bg-white border rounded-xl p-4 shadow-sm">

@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Search, AlertCircle, TrendingUp, Target } from 'lucide-react';
+import { Users, Search, FileCheck, TrendingUp, Target, Lightbulb } from 'lucide-react';
 
 export function AiSeoWhoThisIsFor() {
   const points = [
@@ -13,13 +13,13 @@ export function AiSeoWhoThisIsFor() {
     },
     {
       text: "Businesses that appear in AI answers but with outdated or incorrect information",
-      icon: AlertCircle,
+      icon: FileCheck,
       iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
       
     },
     {
       text: "Brands wanting to stay ahead as AI search grows alongside traditional Google search",
-      icon: TrendingUp,
+      icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },

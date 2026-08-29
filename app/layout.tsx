@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
-import { CustomCursor } from '@/components/CustomCursor';
 import { PopupProvider } from '@/components/providers/PopupProvider';
 import { PopupForm } from '@/components/PopupForm';
 
@@ -89,9 +88,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/logo.webp',
-    shortcut: '/logo.webp',
-    apple: '/logo.webp',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   verification: {
     // google: 'your-google-verification-code', // Add your code here
@@ -111,6 +110,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF90YKK688"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-GF90YKK688');
+            `,
+          }}
+        />
+      </head>
       <body
         className={cn(
           sans.variable,
@@ -120,7 +134,6 @@ export default function RootLayout({
         )}
       >
         <PopupProvider>
-          <CustomCursor />
           <div className="font-sans antialiased">
             {children}
           </div>

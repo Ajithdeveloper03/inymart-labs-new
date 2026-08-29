@@ -49,7 +49,7 @@ export function SeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Most of customers start their searching online today. If your business doesn't show up on the first page of Google or in local map results, you're losing customers to businesses that do show up.
               </p>
 
@@ -77,7 +77,7 @@ export function SeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 SEO isn't just about keywords anymore. It's about making sure your website is fast and easy to use, trustworthy and answers the exact questions your customers are asking. As an experienced SEO agency in Tamil Nadu, Inymart Labs builds strategies around real search behavior — not old-style tricks that stopped working years ago.
               </p>
 
@@ -105,7 +105,7 @@ export function SeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Our SEO agency in Tamil Nadu understands including local customers. As a dedicated SEO agency in Trichy, we know that people searching from Trichy, Chennai, or Madurai often search different than people in other states. We factor this local search behavior into every strategy we build.
               </p>
 

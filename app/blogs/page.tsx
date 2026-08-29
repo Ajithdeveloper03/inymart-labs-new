@@ -56,11 +56,7 @@ export default function BlogPage() {
               )}
             </div>
             
-            {posts.length > 0 && !loading && (
-              <Reveal delay={200}>
-                <BlogPagination />
-              </Reveal>
-            )}
+
           </div>
         </section>
       </main>

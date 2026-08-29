@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Store, ShoppingCart, TrendingUp, HelpCircle } from 'lucide-react';
+import { Users, Store, ShoppingCart, TrendingUp, HelpCircle, Lightbulb } from 'lucide-react';
 
 export function SmmWhoThisIsFor() {
   const points = [
@@ -22,7 +22,7 @@ export function SmmWhoThisIsFor() {
     {
       title: `Growing Brands`,
       text: `Growing brands wanting faster visibility than organic posting alone`,
-      icon: TrendingUp,
+      icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },

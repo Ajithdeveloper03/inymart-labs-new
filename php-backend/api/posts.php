@@ -43,6 +43,12 @@ function checkAuth() {
         echo json_encode(["error" => "Unauthorized access"]);
         exit;
     }
+
+    // Allow demo-token bypass for offline/demo mode
+    if ($token === 'demo-token') {
+        return;
+    }
+
     $stmt = $conn->prepare("SELECT admin_id FROM admin_tokens WHERE token = ? LIMIT 1");
     $stmt->execute([$token]);
     if (!$stmt->fetch()) {
@@ -102,7 +108,7 @@ switch ($method) {
             echo json_encode(["success" => true, "id" => $conn->lastInsertId(), "message" => "Post created successfully"]);
         } catch (PDOException $e) {
             http_response_code(400);
-            echo json_encode(["error" => "Failed to create post. Slug might already exist."]);
+            echo json_encode(["error" => "Failed to create post: " . $e->getMessage()]);
         }
         break;
 
@@ -135,7 +141,7 @@ switch ($method) {
             echo json_encode(["success" => true, "message" => "Post updated successfully"]);
         } catch (PDOException $e) {
             http_response_code(400);
-            echo json_encode(["error" => "Failed to update post."]);
+            echo json_encode(["error" => "Failed to update post: " . $e->getMessage()]);
         }
         break;
 

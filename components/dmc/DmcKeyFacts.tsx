@@ -13,7 +13,7 @@ export function DmcKeyFacts() {
 { icon: Building2, label: 'Service', value: 'Digital Marketing Consulting in Tamil Nadu and Trichy' },
     { icon: MapPin, label: 'Headquarters', value: 'Tiruchirappalli, Tamil Nadu' },
     { icon: MapPin, label: 'Areas Covered', value: 'SEO, Local SEO, social media, PPC, web analytics, and web development strategy' },
-    { icon: Settings, label: 'Core Process', value: 'Business & goal understanding, marketing audit, competitor insight, strategy roadmap, channel recommendations, implementation guidance, ongoing advisory' },
+    { icon: Settings, label: 'Core Process', value: 'Business & Goal Understanding, Marketing Audit, Competitor Insight, Strategy Roadmap, Channel Recommendations, Implementation Guidance, Ongoing Advisory' },
     { icon: Handshake, label: 'Engagement Options', value: 'One-time strategy session or ongoing monthly consulting' },
     { icon: Clock, label: 'Typical Timeline', value: 'Clarity and direction immediately; measurable improvements build over following months' },
   ];

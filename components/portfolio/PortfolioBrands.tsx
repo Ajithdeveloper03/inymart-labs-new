@@ -3,19 +3,19 @@
 import { Reveal } from '@/components/Reveal';
 
 const ALL_BRANDS = [
-  { name: '1Een Technologies', image: '/images/1 Een(brand).webp' },
+  { name: 'Een Technologies', image: '/images/1 Een(brand).webp' },
   { name: 'Hallmark Business School', image: '/images/Hallmark(brand).webp' },
-  { name: 'Lesoko', image: '/images/Lesoko-Logo-(brand).png' },
+  { name: 'Lesoko', image: '/images/Lesoko (brand).png' },
   { name: 'New Dream Data System', image: '/images/Newdream (brand).webp' },
   { name: 'SKS Clean Tech', image: '/images/SKS(brand).png' },
   { name: 'Viswanathan R Associates', image: '/images/Viswanathan (brand).png' },
   { name: 'Alliance Technologies', image: '/images/alliances tecknologies(brand).png' },
-  { name: 'Arsen Interiors', image: '/images/arsen(brand).webp' },
+  { name: 'Arsen Interiors', image: '/images/arsen(brand).png' },
   { name: 'Covai Tech Park', image: '/images/covai-tech-park-(brand).png' },
   { name: 'Ellora', image: '/images/ellora(brand).webp' },
   { name: 'Infinity Organic', image: '/images/infinity(brand).webp' },
-  { name: 'Inymart Academy', image: '/images/inymart academy (brand).webp' },
-  { name: 'Ivakaa', image: '/images/ivaka(brand).png' },
+  { name: 'Inymart Academy', image: '/images/inymart academy (brand).png' },
+  { name: 'Ivaka', image: '/images/ivaka.png' },
   { name: 'Jobbycart', image: '/images/jobbycart(brand).png' },
   { name: 'Kaveri Restaurant', image: '/images/kaveri(brand).webp' },
   { name: 'KPN Roofing Shed', image: '/images/kpnruofingshed(brand).png' },
@@ -68,7 +68,7 @@ export function PortfolioBrands() {
                   src={brand.image}
                   alt={brand.name}
                   className={`w-auto max-w-full object-contain transition-all duration-300 group-hover:scale-105 p-[3px] ${
-                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivakaa'].includes(brand.name) 
+                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivaka'].includes(brand.name) 
                       ? 'h-24 sm:h-28' 
                       : 'h-16 sm:h-20'
                   }`}
@@ -93,7 +93,7 @@ export function PortfolioBrands() {
                   src={brand.image}
                   alt={brand.name}
                   className={`w-auto max-w-full object-contain transition-all duration-300 group-hover:scale-105 p-[3px] ${
-                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivakaa'].includes(brand.name) 
+                    ['Viswanathan R Associates', 'Tech Edge', 'SGNL', 'SG Education', 'KPN Roofing Shed', 'Ivaka'].includes(brand.name) 
                       ? 'h-24 sm:h-28' 
                       : 'h-16 sm:h-20'
                   }`}

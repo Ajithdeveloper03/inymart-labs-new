@@ -46,7 +46,7 @@ export function AiSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 More customers are now asking ChatGPT, Gemini, Copilot, and Perplexity for recommendations instead of typing into Google alone. If your business isn't structured to be understood by these tools, you may be invisible in this growing channel — or worse, described inaccurately.
               </p>
 
@@ -70,7 +70,7 @@ export function AiSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A proper AEO Service goes beyond keywords. It restructures content with direct answers, clear entity facts, and citable statements that AI engines can lift accurately. As an experienced AI SEO Service in Trichy, Inymart Labs builds this alongside your existing SEO, not as a replacement for it.
               </p>
 
@@ -94,7 +94,7 @@ export function AiSeoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 We also monitor how AI tools currently describe your business, so we can identify and correct outdated, missing, or incorrect information before building new content.
               </p>
 

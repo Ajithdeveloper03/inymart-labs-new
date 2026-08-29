@@ -46,7 +46,7 @@ export function SmoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Social media today is often the first place a customer checks before they trust a business. If your profiles are outdated, inconsistent, or inactive, you're losing trust before a customer even visits your website.
               </p>
 
@@ -70,7 +70,7 @@ export function SmoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 Good social media isn't just about pretty posts. It's about consistency, clear messaging, and content that actually gets people to comment, share, and enquire. As an experienced social media optimization company in Tamil Nadu, Inymart Labs plans content around what your audience actually wants to see — not just what looks nice.
               </p>
 
@@ -94,7 +94,7 @@ export function SmoWhyChoose() {
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow transition-colors duration-300">
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
                 A good social media optimization company in Tamil Nadu also understands local audiences. As a dedicated social media optimization company in Trichy, we know festivals, local events, language, and culture all shape how people respond to content here. We factor all of this into every content plan we build.
               </p>
 
