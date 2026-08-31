@@ -26,7 +26,7 @@ const serif = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.inymartlabs.com'),
+  metadataBase: new URL('https://inymartlabs.com'),
   title: {
     default: 'Digital Marketing Agency Tamilnadu: Your Growth Partner | Inymart Labs',
     template: '%s | Inymart Labs',
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     'Social Media Marketing',
     'Best Marketing Agency in Trichy',
   ],
-  authors: [{ name: 'Inymart Labs', url: 'https://www.inymartlabs.com' }],
+  authors: [{ name: 'Inymart Labs', url: 'https://inymartlabs.com' }],
   creator: 'Inymart Labs',
   publisher: 'Inymart Labs',
   openGraph: {
     title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
     description:
       'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential.',
-    url: 'https://www.inymartlabs.com',
+    url: 'https://inymartlabs.com',
     type: 'website',
     locale: 'en_IN',
     siteName: 'Inymart Labs',

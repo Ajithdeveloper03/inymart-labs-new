@@ -13,6 +13,9 @@ import { LocalSeoFaq } from '@/components/local-seo/LocalSeoFaq';
 import { LocalSeoCta } from '@/components/local-seo/LocalSeoCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/local-seo/',
+  },
   title: 'Local SEO Agency in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a Local SEO agency in Trichy Tamil Nadu that helps businesses show up first in Google Maps and near me searches.',
 };

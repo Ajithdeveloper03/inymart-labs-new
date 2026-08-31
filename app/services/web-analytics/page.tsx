@@ -16,6 +16,9 @@ import { WebAnalyticsFaq } from '@/components/web-analytics/WebAnalyticsFaq';
 import { WebAnalyticsCta } from '@/components/web-analytics/WebAnalyticsCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/web-analytics/',
+  },
   title: 'Web Analytics Service in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a Web Analytics Service in Trichy Tamil Nadu that audits, fixes, and interprets website tracking data.',
 };

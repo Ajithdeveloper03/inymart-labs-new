@@ -16,6 +16,9 @@ import { PpcFaq } from '@/components/ppc/PpcFaq';
 import { PpcCta } from '@/components/ppc/PpcCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/ppc-service/',
+  },
   title: 'PPC Service in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a PPC Service in Trichy, Tamil Nadu that plans, sets up, and manages Google Ads campaigns to generate calls, leads, and sales.',
 };

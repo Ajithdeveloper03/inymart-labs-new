@@ -13,6 +13,9 @@ import { SmoFaq } from '@/components/smo/SmoFaq';
 import { SmoCta } from '@/components/smo/SmoCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/smo/',
+  },
   title: 'Social Media Optimization Company in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a social media optimization company in Tamil Nadu and social media optimization company in Trichy that builds and manages organic social media presence.',
 };

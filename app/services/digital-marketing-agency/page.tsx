@@ -17,6 +17,9 @@ import { DmaFaq } from '@/components/dma/DmaFaq';
 import { DmaCta } from '@/components/dma/DmaCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/digital-marketing-agency/',
+  },
   title: 'Digital Marketing Agency in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a full-service Digital Marketing Agency in Trichy Tamil Nadu, offering SEO, Local SEO, social media optimization, and more.',
 };

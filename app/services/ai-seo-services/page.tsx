@@ -16,6 +16,9 @@ import { AiSeoFaq } from '@/components/ai-seo/AiSeoFaq';
 import { AiSeoCta } from '@/components/ai-seo/AiSeoCta';
 
 export const metadata = {
+  alternates: {
+    canonical: '/services/ai-seo-services/',
+  },
   title: 'AI SEO Service in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs offers an AI SEO Service in Trichy, Tamil Nadu also called an AEO Service (Answer Engine Optimization), that helps businesses get found and recommended by AI tools.',
 };
