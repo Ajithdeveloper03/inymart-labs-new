@@ -23,9 +23,39 @@ export const metadata = {
   description: 'Inymart Labs offers expert Digital Marketing Consulting in Trichy, Tamil Nadu, giving businesses a clear, prioritized action plan for SEO, social media, ads, and analytics.',
 };
 
+const dmcSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/digital-marketing-consulting/#service",
+  "name": "Digital Marketing Consulting Services",
+  "url": "https://inymartlabs.com/services/digital-marketing-consulting/",
+  "description": "Inymart Labs provides digital marketing consulting services to help businesses develop effective marketing strategies, improve online visibility, generate quality leads, and achieve measurable business growth.",
+  "serviceType": "Digital Marketing Consulting",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function DigitalMarketingConsultingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(dmcSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <DmcHeroBanner />

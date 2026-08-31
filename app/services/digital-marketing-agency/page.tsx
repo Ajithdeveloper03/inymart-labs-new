@@ -24,9 +24,39 @@ export const metadata = {
   description: 'Inymart Labs is a full-service Digital Marketing Agency in Trichy Tamil Nadu, offering SEO, Local SEO, social media optimization, and more.',
 };
 
+const dmaSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/digital-marketing-agency/#service",
+  "name": "Digital Marketing Agency Services",
+  "url": "https://inymartlabs.com/services/digital-marketing-agency/",
+  "description": "Inymart Labs provides comprehensive digital marketing services to help businesses improve online visibility, reach the right audience, generate quality leads, and achieve sustainable business growth.",
+  "serviceType": "Digital Marketing Services",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function DigitalMarketingAgencyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(dmaSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <DmaHeroBanner />

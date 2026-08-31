@@ -24,9 +24,39 @@ export const metadata = {
   description: 'Inymart Labs is a Web Development Service in Trichy, Tamil Nadu that builds fast mobile-friendly, SEO-ready websites.',
 };
 
+const webDevSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/web-development/#service",
+  "name": "Web Development Services",
+  "url": "https://inymartlabs.com/services/web-development/",
+  "description": "Inymart Labs provides professional web development services to help businesses build responsive, user-friendly, and high-performing websites that support online visibility, customer engagement, and business growth.",
+  "serviceType": "Web Development",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function WebDevelopmentServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webDevSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <WebDevHeroBanner />

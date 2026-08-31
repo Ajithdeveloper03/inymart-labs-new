@@ -23,9 +23,39 @@ export const metadata = {
   description: 'Inymart Labs is a PPC Service in Trichy, Tamil Nadu that plans, sets up, and manages Google Ads campaigns to generate calls, leads, and sales.',
 };
 
+const ppcSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/ppc-service/#service",
+  "name": "PPC Services",
+  "url": "https://inymartlabs.com/services/ppc-service/",
+  "description": "Inymart Labs provides PPC services to help businesses reach their target audience, drive qualified traffic, generate leads, and improve conversions through performance-focused paid advertising campaigns.",
+  "serviceType": "Pay-Per-Click Advertising",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function PpcServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ppcSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <PpcHeroBanner />

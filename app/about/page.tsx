@@ -19,9 +19,70 @@ export const metadata: Metadata = {
   description: 'Learn about Inymart Labs, a leading digital marketing agency in Tamil Nadu offering SEO, Local SEO, AEO, and GEO services.',
 };
 
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://inymartlabs.com/about/#aboutpage",
+  "url": "https://inymartlabs.com/about/",
+  "name": "About Inymart Labs",
+  "description": "Learn about Inymart Labs, a digital marketing agency in Tamil Nadu and Tiruchirappalli offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, and AI SEO services.",
+  "isPartOf": {
+    "@id": "https://inymartlabs.com/#website"
+  },
+  "about": {
+    "@id": "https://inymartlabs.com/#organization"
+  },
+  "mainEntity": {
+    "@id": "https://inymartlabs.com/#organization"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Inymart Labs do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer SEO, Local SEO, AEO, GEO, social media marketing, and effective marketing strategies including web development and PPC to grow visibility, leads, and conversions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Inymart Labs different from other Tamil Nadu agencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We place early emphasis on AEO and GEO — helping brands appear in AI tools like ChatGPT and Perplexity, and focusing on online reputation management, not just Google."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long has Inymart Labs been in business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Founded in 2016 in Tiruchirappalli, with 9+ years of marketing expertise serving clients across India, UAE, UK, and the USA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which areas does Inymart Labs serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tamil Nadu (Trichy, Chennai, Madurai, Coimbatore, Salem, Thanjavur), plus India, UAE, UK, the USA, and Australia."
+      }
+    }
+  ]
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([aboutSchema, faqSchema]) }}
+      />
       <Header />
       <main className="flex flex-col min-h-screen space-y-4">
         <AboutBanner />

@@ -119,6 +119,109 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "ProfessionalService",
+                  "@id": "https://inymartlabs.com/#business",
+                  "name": "Inymart Labs",
+                  "url": "https://inymartlabs.com/",
+                  "description": "Inymart Labs is a digital marketing agency in Tamil Nadu and Tiruchirappalli offering SEO, Local SEO, AEO, GEO, Social Media Marketing, Web Development, PPC, and AI SEO services.",
+                  "foundingDate": "2016",
+                  "areaServed": [
+                    { "@type": "State", "name": "Tamil Nadu" },
+                    { "@type": "Country", "name": "India" },
+                    { "@type": "Country", "name": "United Arab Emirates" },
+                    { "@type": "Country", "name": "United Kingdom" },
+                    { "@type": "Country", "name": "United States" },
+                    { "@type": "Country", "name": "Australia" }
+                  ],
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Tiruchirappalli",
+                    "addressRegion": "Tamil Nadu",
+                    "postalCode": "620017",
+                    "addressCountry": "IN"
+                  },
+                  "telephone": "+91 9994723446",
+                  "email": "ceo@inymartlabs.com"
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://inymartlabs.com/#website",
+                  "url": "https://inymartlabs.com/",
+                  "name": "Inymart Labs",
+                  "publisher": {
+                    "@id": "https://inymartlabs.com/#business"
+                  }
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://inymartlabs.com/#localbusiness",
+                  "name": "Inymart Labs",
+                  "url": "https://inymartlabs.com/",
+                  "hasMap": "https://share.google/g9Nk3W6sGBF75z8X0",
+                  "description": "Inymart Labs is a digital marketing agency in Tiruchirappalli, Tamil Nadu, offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, and AI SEO services.",
+                  "foundingDate": "2016",
+                  "telephone": "+91 9994723446",
+                  "email": "ceo@inymartlabs.com",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur",
+                    "addressLocality": "Tiruchirappalli",
+                    "addressRegion": "Tamil Nadu",
+                    "postalCode": "620017",
+                    "addressCountry": "IN"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "Tiruchirappalli"
+                    },
+                    {
+                      "@type": "State",
+                      "name": "Tamil Nadu"
+                    },
+                    {
+                      "@type": "Country",
+                      "name": "India"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Organization",
+                  "@id": "https://inymartlabs.com/#organization",
+                  "name": "Inymart Labs",
+                  "url": "https://inymartlabs.com/",
+                  "description": "Inymart Labs is a digital marketing agency in Tamil Nadu and Tiruchirappalli offering SEO, Local SEO, AEO, GEO, Social Media Marketing, Web Development, PPC, and AI SEO services.",
+                  "foundingDate": "2016",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur",
+                    "addressLocality": "Tiruchirappalli",
+                    "addressRegion": "Tamil Nadu",
+                    "postalCode": "620017",
+                    "addressCountry": "IN"
+                  },
+                  "areaServed": [
+                    "Tamil Nadu",
+                    "India",
+                    "United Arab Emirates",
+                    "United Kingdom",
+                    "United States",
+                    "Australia"
+                  ],
+                  "telephone": "+91 9994723446",
+                  "email": "ceo@inymartlabs.com"
+                }
+              ]
+            })
+          }}
+        />
       </head>
       <body
         className={cn(

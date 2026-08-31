@@ -23,9 +23,39 @@ export const metadata = {
   description: 'Inymart Labs is a social media marketing agency in Trichy, Tamil Nadu that plans, creates, and manages paid ad campaigns on Facebook, Instagram, and LinkedIn.',
 };
 
+const smmSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/smm/#service",
+  "name": "Social Media Marketing Services",
+  "url": "https://inymartlabs.com/services/smm/",
+  "description": "Inymart Labs provides Social Media Marketing services to help businesses increase brand awareness, reach their target audience, drive engagement, generate quality leads, and achieve measurable business growth.",
+  "serviceType": "Social Media Marketing",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function SmmServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(smmSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <SmmHeroBanner />

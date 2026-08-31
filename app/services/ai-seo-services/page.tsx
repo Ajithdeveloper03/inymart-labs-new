@@ -23,9 +23,39 @@ export const metadata = {
   description: 'Inymart Labs offers an AI SEO Service in Trichy, Tamil Nadu also called an AEO Service (Answer Engine Optimization), that helps businesses get found and recommended by AI tools.',
 };
 
+const aiSeoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://inymartlabs.com/services/ai-seo-services/#service",
+  "name": "AI SEO Services",
+  "url": "https://inymartlabs.com/services/ai-seo-services/",
+  "description": "Inymart Labs provides AI SEO services to help businesses optimize their online presence for AI-powered search, improve visibility across search engines and AI platforms, and attract relevant audiences.",
+  "serviceType": "AI Search Engine Optimization",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://inymartlabs.com/#organization",
+    "name": "Inymart Labs",
+    "url": "https://inymartlabs.com/"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Tamil Nadu"
+    },
+    {
+      "@type": "Country",
+      "name": "India"
+    }
+  ]
+};
+
 export default function AiSeoServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aiSeoSchema) }}
+      />
       <Header />
       <main className="flex min-h-screen flex-col overflow-hidden">
         <AiSeoHeroBanner />
