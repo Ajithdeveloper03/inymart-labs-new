@@ -24,7 +24,8 @@ function AdminEditorContent() {
     excerpt: '',
     status: 'DRAFT',
     content: '',
-    schema: ''
+    schema: '',
+    imageAlt: ''
   });
 
   const [sections, setSections] = useState<any[]>([]);
@@ -71,7 +72,7 @@ function AdminEditorContent() {
       fetch(`${API_BASE_URL}/posts.php`)
         .then(res => res.json())
         .then(data => {
-          const post = data.find((p: any) => p.id === id);
+          const post = data.find((p: any) => String(p.id) === id);
           if (post) {
             setFormData({
               title: post.title,
@@ -84,7 +85,8 @@ function AdminEditorContent() {
               excerpt: post.excerpt,
               status: post.status,
               content: post.content,
-              schema: post.schema || ''
+              schema: post.schema || '',
+              imageAlt: post.imageAlt || ''
             });
             try { if (post.sections) setSections(JSON.parse(post.sections)); } catch (e) {}
             try { if (post.faqs) setFaqs(JSON.parse(post.faqs)); } catch (e) {}
@@ -140,7 +142,7 @@ function AdminEditorContent() {
   };
 
   // Section Builder Helpers
-  const addSection = () => setSections([...sections, { heading: '', body: '', bullets: [''], image: '' }]);
+  const addSection = () => setSections([...sections, { heading: '', body: '', bullets: [{ heading: '', description: '', isBold: true }], image: '', imageAlt: '' }]);
   const updateSection = (idx: number, field: string, val: any) => {
     const newSections = [...sections];
     newSections[idx][field] = val;
@@ -152,7 +154,7 @@ function AdminEditorContent() {
   const addBullet = (secIdx: number) => {
     const newSections = [...sections];
     if(!newSections[secIdx].bullets) newSections[secIdx].bullets = [];
-    newSections[secIdx].bullets.push('');
+    newSections[secIdx].bullets.push({ heading: '', description: '', isBold: true });
     setSections(newSections);
   };
   const updateBullet = (secIdx: number, bulIdx: number, val: string) => {
@@ -273,11 +275,55 @@ function AdminEditorContent() {
                         <label className="text-xs font-bold text-blue-600 uppercase">Bullet Points</label>
                         <button onClick={() => addBullet(sIdx)} className="text-blue-600 text-xs font-bold flex items-center gap-1 hover:underline"><Plus size={12}/> Add Point</button>
                       </div>
-                      {section.bullets?.map((bull: string, bIdx: number) => (
-                        <div key={bIdx} className="flex gap-2 mb-2">
-                          <input type="text" className="flex-1 p-2 border rounded bg-white outline-none text-sm" value={bull} onChange={e => updateBullet(sIdx, bIdx, e.target.value)} />
-                        </div>
-                      ))}
+                      {section.bullets?.map((bull: any, bIdx: number) => {
+                        const isString = typeof bull === 'string';
+                        const headingVal = isString ? bull : (bull.heading || '');
+                        const descVal = isString ? '' : (bull.description || '');
+                        const isBoldVal = isString ? false : (bull.isBold ?? true);
+                        
+                        return (
+                          <div key={bIdx} className="flex flex-col gap-2 mb-4 p-3 bg-white border rounded shadow-sm relative">
+                            <div className="flex justify-between items-center mb-1">
+                              <span className="text-xs font-bold text-gray-400">Point {bIdx + 1}</span>
+                              <label className="flex items-center gap-1 text-xs cursor-pointer select-none">
+                                <input type="checkbox" checked={isBoldVal} onChange={e => {
+                                  const newSections = [...sections];
+                                  if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
+                                    newSections[sIdx].bullets[bIdx] = { heading: newSections[sIdx].bullets[bIdx], description: '', isBold: e.target.checked };
+                                  } else {
+                                    newSections[sIdx].bullets[bIdx].isBold = e.target.checked;
+                                  }
+                                  setSections(newSections);
+                                }} />
+                                Bold Heading
+                              </label>
+                            </div>
+                            <input type="text" placeholder="Heading..." className="w-full p-2 border rounded outline-none text-sm font-medium" value={headingVal} onChange={e => {
+                               const newSections = [...sections];
+                               if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
+                                 newSections[sIdx].bullets[bIdx] = { heading: e.target.value, description: '', isBold: true };
+                               } else {
+                                 newSections[sIdx].bullets[bIdx].heading = e.target.value;
+                               }
+                               setSections(newSections);
+                            }} />
+                            <textarea placeholder="Description..." rows={2} className="w-full p-2 border rounded outline-none text-sm" value={descVal} onChange={e => {
+                               const newSections = [...sections];
+                               if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
+                                 newSections[sIdx].bullets[bIdx] = { heading: newSections[sIdx].bullets[bIdx], description: e.target.value, isBold: true };
+                               } else {
+                                 newSections[sIdx].bullets[bIdx].description = e.target.value;
+                               }
+                               setSections(newSections);
+                            }} />
+                            <button onClick={() => {
+                               const newSections = [...sections];
+                               newSections[sIdx].bullets.splice(bIdx, 1);
+                               setSections(newSections);
+                            }} className="absolute -top-2 -right-2 bg-white rounded-full p-1 border text-red-500 hover:bg-red-50" title="Remove Point"><X size={12} /></button>
+                          </div>
+                        );
+                      })}
                     </div>
 
                     <div className="border border-dashed border-gray-300 rounded-lg p-6 flex flex-col items-center justify-center bg-white">
@@ -296,6 +342,7 @@ function AdminEditorContent() {
                       />
                       <input type="url" placeholder="Or enter Image URL (e.g. https://...)" className="w-full p-2 border rounded outline-none text-sm text-center mb-2" value={section.image || ''} onChange={e => updateSection(sIdx, 'image', e.target.value)} />
                       {section.image && <img src={section.image} alt="preview" className="h-20 rounded mt-2" />}
+                      <input type="text" placeholder="Section Image Alt Text (SEO)" className="w-full p-2 border rounded outline-none text-sm text-center mt-2 bg-slate-50" value={section.imageAlt || ''} onChange={e => updateSection(sIdx, 'imageAlt', e.target.value)} />
                     </div>
                   </div>
                 </div>
@@ -411,6 +458,7 @@ function AdminEditorContent() {
                 }} 
               />
               <input type="url" placeholder="Or enter URL: https://..." className="w-full p-2 border rounded outline-none text-sm text-center mb-3 bg-slate-50" value={formData.image || ''} onChange={e => setFormData({...formData, image: e.target.value})} />
+              <input type="text" placeholder="Cover Image Alt Text (SEO)" className="w-full p-2 border rounded outline-none text-sm text-center mb-3 bg-slate-50" value={formData.imageAlt || ''} onChange={e => setFormData({...formData, imageAlt: e.target.value})} />
               
               {uploadingImage ? (
                  <div className="h-32 bg-gray-50 flex items-center justify-center text-blue-500 font-medium text-sm rounded-lg animate-pulse">Uploading Image...</div>

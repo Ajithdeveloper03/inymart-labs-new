@@ -50,7 +50,7 @@ export function AiSeoWhatWeDo() {
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
                   src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965" 
-                  alt="AI SEO" 
+                  alt="Humanoid robot sitting on a wooden bench while holding a tablet in an indoor setting." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />

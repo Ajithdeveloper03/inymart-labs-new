@@ -9,6 +9,7 @@ export interface BlogPost {
   date: string;
   readingTime: string;
   image: string;
+  imageAlt?: string;
   schema?: string;
 }
 

@@ -15,7 +15,7 @@ export function PortfolioQuickAnswer() {
             <div className="w-full lg:w-[55%] h-[400px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-lg relative">
               <img 
                 src="/quick%20answer%20(%20portfolio).png" 
-                alt="Quick Answer" 
+                alt=" Digital growth hub concept featuring a storefront, laptop analytics dashboard, SEO, social media, branding, advertising, traffic sources, conversions, and business growth metrics." 
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>

@@ -50,7 +50,7 @@ export function PpcWhatWeDo() {
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
                   src="/What We Do (PPC).png" 
-                  alt="PPC Campaign Management" 
+                  alt="Digital marketer creating Google Ads campaigns and display banner designs on dual monitors, with ad copy ideas, performance notes, and color palettes on the desk" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />

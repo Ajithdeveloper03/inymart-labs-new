@@ -115,7 +115,7 @@ function BlogDetailContent() {
                         <Link href={`/blogs/post?slug=${rp.slug}`} key={rp.id} className="flex gap-4 group items-center">
                           <div className="w-20 h-16 shrink-0 rounded-lg overflow-hidden relative bg-slate-100">
                             {rp.image ? (
-                              <Image src={rp.image} alt={rp.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                              <Image src={rp.image} alt={rp.imageAlt || rp.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                             ) : null}
                           </div>
                           <div className="flex-1">

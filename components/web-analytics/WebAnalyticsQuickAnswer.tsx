@@ -19,7 +19,7 @@ export function WebAnalyticsQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/quick answer (Web Analytics).png" 
-                  alt="Data Charts" 
+                  alt=" Digital marketing performance audit displayed on a tablet, showing Google Search Console, Google Analytics, website traffic, clicks, impressions, conversions, and SEO keyword data." 
                   className="w-full h-full object-cover"
                 />
               </div>

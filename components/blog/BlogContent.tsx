@@ -38,12 +38,6 @@ export function BlogContent({ post }: BlogContentProps) {
               </h2>
             )}
             
-            {section.image && (
-              <div className="mb-6 rounded-xl overflow-hidden shadow-sm">
-                <img src={section.image} alt={section.heading || 'Blog Image'} className="w-full h-auto object-cover" />
-              </div>
-            )}
-            
             {section.body && (
               <div 
                 className="text-slate-600 leading-relaxed mb-6 whitespace-pre-wrap text-lg"
@@ -52,12 +46,41 @@ export function BlogContent({ post }: BlogContentProps) {
               </div>
             )}
             
-            {section.bullets && section.bullets.length > 0 && section.bullets[0] !== '' && (
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-slate-600 text-lg">
-                {section.bullets.map((bullet: string, bIdx: number) => (
-                  bullet.trim() !== '' && <li key={bIdx}>{bullet}</li>
-                ))}
+            {section.bullets && section.bullets.length > 0 && (
+              <ul className="list-none mb-6 space-y-4">
+                {section.bullets.map((bullet: any, bIdx: number) => {
+                  if (typeof bullet === 'string') {
+                    if (bullet.trim() === '') return null;
+                    return <li key={bIdx} className="flex gap-3"><span className="text-primary font-bold mt-1.5">•</span><span className="text-slate-600 text-lg">{bullet}</span></li>;
+                  }
+                  
+                  if (!bullet.heading && !bullet.description) return null;
+                  
+                  return (
+                    <li key={bIdx} className="flex gap-3">
+                       <span className="text-primary font-bold mt-1.5">•</span>
+                       <div>
+                         {bullet.heading && (
+                           <div className={`text-lg text-slate-900 ${bullet.isBold ? 'font-bold' : 'font-semibold'}`}>
+                             {bullet.heading}
+                           </div>
+                         )}
+                         {bullet.description && (
+                           <div className="text-slate-600 text-lg mt-1 whitespace-pre-wrap">
+                             {bullet.description}
+                           </div>
+                         )}
+                       </div>
+                    </li>
+                  )
+                })}
               </ul>
+            )}
+
+            {section.image && (
+              <div className="mt-8 rounded-xl overflow-hidden shadow-sm">
+                <img src={section.image} alt={section.imageAlt || section.heading || 'Blog Image'} className="w-full h-auto object-cover" />
+              </div>
             )}
           </section>
         ))}

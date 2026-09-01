@@ -15,7 +15,7 @@ export function WebDevWhatIs() {
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
                 src="/what is (WB).png" 
-                alt="Web Development Screen" 
+                alt=" Responsive web design concept showing a mobile website displayed on a smartphone alongside its desktop version on a laptop." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
               {/* Gradient overlay to seamlessly fade the image into the white background */}

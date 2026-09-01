@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS blog_posts (
     author VARCHAR(100),
     readingTime VARCHAR(50),
     image VARCHAR(255),
+    image_alt VARCHAR(255),
     date DATE NOT NULL,
     status ENUM('LIVE', 'DRAFT') DEFAULT 'DRAFT',
     sections JSON,

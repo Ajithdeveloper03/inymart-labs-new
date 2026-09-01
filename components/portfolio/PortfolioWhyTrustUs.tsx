@@ -25,7 +25,7 @@ export function PortfolioWhyTrustUs() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="/why%20trust%20inymart%20labs%20(%20portfolio).png" 
-                alt="Digital Marketing Team" 
+                alt=" Modern IT park website design displayed on a large screen, featuring a futuristic business campus, infrastructure highlights, occupancy metrics, tenant information, and visit or enquiry options." 
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />

@@ -19,7 +19,7 @@ export function SeoQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/Quick answer (SEO).png" 
-                  alt="SEO Team Working" 
+                  alt="Laptop displaying Google search results with a highlighted top result, representing search engine optimization and online visibility." 
                   className="w-full h-full object-cover"
                 />
               </div>

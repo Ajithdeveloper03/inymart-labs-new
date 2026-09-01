@@ -89,7 +89,7 @@ switch ($method) {
             exit;
         }
 
-        $stmt = $conn->prepare("INSERT INTO blog_posts (slug, title, excerpt, content, category, author, readingTime, image, date, status, sections, faqs) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO blog_posts (slug, title, excerpt, content, category, author, readingTime, image, image_alt, date, status, sections, faqs) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         try {
             $stmt->execute([
                 $data->slug,
@@ -100,6 +100,7 @@ switch ($method) {
                 $data->author ?? 'Admin',
                 $data->readingTime ?? '5 min read',
                 $data->image ?? '',
+                $data->imageAlt ?? '',
                 $data->date ?? date('Y-m-d'),
                 $data->status ?? 'DRAFT',
                 isset($data->sections) ? json_encode($data->sections) : null,
@@ -121,7 +122,7 @@ switch ($method) {
             exit;
         }
 
-        $stmt = $conn->prepare("UPDATE blog_posts SET slug=?, title=?, excerpt=?, content=?, category=?, author=?, readingTime=?, image=?, date=?, status=?, sections=?, faqs=? WHERE id=?");
+        $stmt = $conn->prepare("UPDATE blog_posts SET slug=?, title=?, excerpt=?, content=?, category=?, author=?, readingTime=?, image=?, image_alt=?, date=?, status=?, sections=?, faqs=? WHERE id=?");
         try {
             $stmt->execute([
                 $data->slug,
@@ -132,6 +133,7 @@ switch ($method) {
                 $data->author,
                 $data->readingTime,
                 $data->image,
+                $data->imageAlt,
                 $data->date,
                 $data->status ?? 'DRAFT',
                 isset($data->sections) ? json_encode($data->sections) : null,

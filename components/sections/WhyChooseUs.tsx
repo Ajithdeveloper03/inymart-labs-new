@@ -57,7 +57,7 @@ export function WhyChooseUs() {
               <div className="relative h-full w-full overflow-hidden rounded-[2.5rem] border-4 border-background shadow-2xl shadow-primary/10">
                 <img
                   src="/why choose.jpeg"
-                  alt="Why Choose Inymart Labs"
+                  alt="Business professional presenting a growth chart on a tablet during a corporate meeting."
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                 />

@@ -19,7 +19,7 @@ export function WebDevQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/quick answer (WB).png" 
-                  alt="Web Development Code" 
+                  alt=" Web designer reviewing an old and new website design on a tablet alongside a website wireframe sketchbook" 
                   className="w-full h-full object-cover"
                 />
               </div>

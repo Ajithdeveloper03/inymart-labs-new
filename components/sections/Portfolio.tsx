@@ -78,7 +78,7 @@ export function Portfolio() {
       <div className="relative w-full md:w-[40%] h-[50vh] md:h-auto overflow-hidden">
         <img 
           src="/Our Portfolio.png" 
-          alt="Our Portfolio" 
+          alt="Digital marketing team collaborating on a strategy, with a presenter explaining ideas on a whiteboard while team members review notes and website content." 
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Subtle overlay to blend the edge slightly */}

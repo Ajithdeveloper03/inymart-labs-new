@@ -19,7 +19,7 @@ export function SmmQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/quick answer (SMM).png" 
-                  alt="Social Media Management" 
+                  alt=" Instagram ad for a saree business displayed on a smartphone, with WhatsApp new-lead notifications showing customer inquiries about products, prices, and delivery." 
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -19,7 +19,7 @@ export function AiSeoQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/quick answer ai seo.png" 
-                  alt="AI Technology" 
+                  alt="AI-powered digital marketing concept showing a website connected to multiple AI tools, with a central artificial intelligence brain, verified outputs, and global digital connectivity." 
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -19,7 +19,7 @@ export function PpcQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/Quick Answer (PPC).png" 
-                  alt="Online Advertising" 
+                  alt=" Google Ads campaign dashboard showing clicks, leads, conversions, and campaign performance alongside a smartphone displaying a Google Ads call lead screen." 
                   className="w-full h-full object-cover"
                 />
               </div>

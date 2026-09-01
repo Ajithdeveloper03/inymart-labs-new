@@ -19,7 +19,7 @@ export function LocalSeoQuickAnswer() {
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
                   src="/quick answer(L-SEO).png" 
-                  alt="Local Search Map" 
+                  alt="Tablet displaying a city map with multiple location pins, representing local search and location-based business visibility" 
                   className="w-full h-full object-cover"
                 />
               </div>

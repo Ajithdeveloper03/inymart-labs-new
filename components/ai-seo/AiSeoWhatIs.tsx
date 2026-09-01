@@ -15,7 +15,7 @@ export function AiSeoWhatIs() {
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
                 src="/what is ai seo.png" 
-                alt="AI SEO Professional Environment" 
+                alt=" Digital marketing team analyzing a glowing map of India with connected technology icons, representing digital connectivity, local marketing, and business growth in India." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
               {/* Gradient overlay to seamlessly fade the image into the white background */}
