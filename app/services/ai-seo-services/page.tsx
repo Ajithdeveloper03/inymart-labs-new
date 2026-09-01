@@ -49,9 +49,94 @@ const aiSeoSchema = {
   ]
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/services/ai-seo-services/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI SEO Services",
+      "item": "https://inymartlabs.com/services/ai-seo-services/"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is AEO or AI SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AEO stands for Answer Engine Optimisation, while AI SEO focuses on improving a business's visibility across AI-powered search and answer platforms. These strategies help make content clear, relevant, authoritative, and easier for search engines and AI systems to understand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AI SEO different from regular SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Traditional SEO primarily focuses on improving visibility in search engine results, while AI SEO also considers how content and business information may be discovered, understood, and referenced by AI-powered search and answer systems. Both approaches can work together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to see results from AI SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The time required to see results from AI SEO varies depending on factors such as website authority, content quality, competition, online presence, and the strategies implemented. Consistent optimisation and quality content may improve visibility over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Inymart Labs the right AI SEO Service in Tamil Nadu and AI SEO Service in Trichy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inymart Labs provides customised AI SEO strategies based on your business goals, industry, target audience, and online presence. Our approach focuses on creating useful content, improving information clarity, strengthening website visibility, and preparing content for AI-powered search experiences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I still need traditional SEO if I invest in AI SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Traditional SEO remains important because AI SEO and traditional SEO complement each other. A strong technical foundation, quality content, relevant keywords, website optimisation, and authority signals can support visibility across both traditional search engines and AI-powered search experiences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix incorrect information AI tools currently show about my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We can help identify inaccurate or inconsistent business information across online sources and improve the accuracy and consistency of your website and business profiles. However, AI platforms control their own outputs, so specific corrections or changes cannot be guaranteed."
+      }
+    }
+  ]
+};
+
 export default function AiSeoServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aiSeoSchema) }}

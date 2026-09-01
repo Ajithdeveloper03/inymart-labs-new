@@ -18,6 +18,7 @@ export const metadata = {
   },
   title: 'Social Media Optimization Company in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a social media optimization company in Tamil Nadu and social media optimization company in Trichy that builds and manages organic social media presence.',
+  keywords: ['Social Media Optimization Company in Trichy'],
 };
 
 const serviceSchema = {
@@ -101,9 +102,34 @@ const faqSchema = {
   ]
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/services/smo/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SMO Services",
+      "item": "https://inymartlabs.com/services/smo/"
+    }
+  ]
+};
+
 export default function SmoServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema]) }}

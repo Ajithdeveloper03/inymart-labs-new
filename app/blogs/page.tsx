@@ -10,6 +10,26 @@ import { BlogPagination } from '@/components/blog/BlogPagination';
 import { Reveal } from '@/components/Reveal';
 import { API_BASE_URL } from '@/lib/api';
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/blogs/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blogs",
+      "item": "https://inymartlabs.com/blogs/"
+    }
+  ]
+};
+
 export default function BlogPage() {
   const [posts, setPosts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -32,6 +52,11 @@ export default function BlogPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <Header />
       <main className="flex min-h-screen flex-col bg-[#f8fafc]">
         <BlogHero />

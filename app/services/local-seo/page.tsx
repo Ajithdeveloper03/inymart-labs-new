@@ -18,6 +18,7 @@ export const metadata = {
   },
   title: 'Local SEO Agency in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a Local SEO agency in Trichy Tamil Nadu that helps businesses show up first in Google Maps and near me searches.',
+  keywords: ['Local SEO agency in Tamil Nadu', 'Local SEO agency in Trichy'],
 };
 
 const serviceSchema = {
@@ -125,9 +126,34 @@ const faqSchema = {
   ]
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/services/local-seo/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Local SEO Services",
+      "item": "https://inymartlabs.com/services/local-seo/"
+    }
+  ]
+};
+
 export default function LocalSeoServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema]) }}

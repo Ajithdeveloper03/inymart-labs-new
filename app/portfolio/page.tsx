@@ -35,9 +35,86 @@ const portfolioSchema = {
   }
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/portfolio/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": "https://inymartlabs.com/portfolio/"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kind of businesses has Inymart Labs worked with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inymart Labs works with businesses across different industries, including startups, small businesses, local businesses, service providers, and growing companies that want to improve their online presence and generate more leads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Inymart Labs only work with businesses in Tamil Nadu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Although Inymart Labs is based in Tamil Nadu, the agency can work with businesses from different locations and provide digital marketing services based on their business goals and requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see examples of Inymart Labs' client work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Inymart Labs can share relevant examples, case studies, or selected client work where permission is available. The examples may demonstrate different digital marketing strategies and campaign outcomes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services have these clients used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clients may use services such as SEO, Local SEO, Google Ads, PPC, social media marketing, social media optimisation, web analytics, web development, and digital marketing consulting depending on their specific business needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Inymart Labs the right Digital Marketing Agency in Trichy, Tamil Nadu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inymart Labs provides customised digital marketing strategies based on each business's goals, target audience, industry, competition, and budget. The approach focuses on measurable performance, consistent optimisation, and building sustainable online growth."
+      }
+    }
+  ]
+};
+
 export default function PortfolioPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }}

@@ -21,6 +21,7 @@ export const metadata = {
   },
   title: 'Web Analytics Service in Tamil Nadu — Inymart Labs',
   description: 'Inymart Labs is a Web Analytics Service in Trichy Tamil Nadu that audits, fixes, and interprets website tracking data.',
+  keywords: ['Web Analytics Service in Tamil Nadu', 'Web Analytics Service in Trichy'],
 };
 
 const webAnalyticsSchema = {
@@ -49,9 +50,94 @@ const webAnalyticsSchema = {
   ]
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://inymartlabs.com/services/web-analytics/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://inymartlabs.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Web Analytics Services",
+      "item": "https://inymartlabs.com/services/web-analytics/"
+    }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a Web Analytics Service do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Web Analytics Service helps businesses track, analyse, and understand website data such as traffic, user behaviour, conversions, engagement, and campaign performance. It helps identify opportunities to improve website performance and marketing results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I already have Google Analytics installed - do I still need this service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Having Google Analytics installed provides access to data, but a Web Analytics Service helps interpret that data, identify important trends, find conversion issues, track key metrics, and turn website data into actionable marketing insights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often will I receive reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reporting frequency can be customised based on your business requirements. Inymart Labs can provide regular analytics reports covering website traffic, user behaviour, conversions, campaign performance, and other important metrics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Inymart Labs the right Web Analytics Service in Tamil Nadu and Web Analytics Service in Trichy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inymart Labs provides customised web analytics solutions focused on understanding user behaviour, measuring marketing performance, identifying conversion opportunities, and helping businesses make data-driven decisions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help me understand why my website isn't converting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We can analyse website traffic, user journeys, landing pages, engagement metrics, conversion paths, and other available data to identify potential reasons for low conversions and recommend areas for improvement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to buy any special tools for this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Web analytics can often be managed using tools such as Google Analytics and Google Tag Manager. Depending on your business requirements, additional analytics or reporting tools may be recommended."
+      }
+    }
+  ]
+};
+
 export default function WebAnalyticsServicePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAnalyticsSchema) }}
