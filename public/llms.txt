@@ -1,6 +1,6 @@
 # Inymart Labs
 
-> Inymart Labs is a digital marketing agency in Tiruchirappalli (Trichy), Tamil Nadu, India, helping businesses improve online visibility, generate quality leads, and achieve long-term growth through SEO, Local SEO, social media marketing, web development, PPC, AI SEO, and digital marketing strategies.
+> Inymart Labs is a digital marketing agency in Tiruchirappalli (Trichy), Tamil Nadu, India, helping businesses improve online visibility, generate quality leads, and achieve long-term growth through SEO, Local SEO, social media marketing, web development, PPC, AI SEO, web analytics, and digital marketing strategies.
 
 ## About Inymart Labs
 
@@ -14,6 +14,12 @@ Inymart Labs is a digital marketing agency based in Tiruchirappalli, Tamil Nadu,
 - Focus: Digital marketing, SEO, Local SEO, AI Search Optimization, social media marketing, web development, PPC, web analytics, and digital marketing consulting.
 
 ## Services
+
+### Digital Marketing Services
+
+Inymart Labs provides comprehensive digital marketing services for businesses looking to improve online visibility, generate quality leads, increase conversions, and achieve sustainable growth.
+
+- [All Digital Marketing Services](https://inymartlabs.com/services/)
 
 ### SEO
 
@@ -134,8 +140,8 @@ Inymart Labs provides digital marketing solutions for:
 
 Inymart Labs
 
-No.17, C3, 3rd Floor, Ayodhya Complex,  
-Thennur High Road, Srinivasapuram, Tennur,  
+No.17, C3, 3rd Floor, Ayodhya Complex,
+Thennur High Road, Srinivasapuram, Tennur,
 Tiruchirappalli, Tamil Nadu 620017, India
 
 - Email: ceo@inymartlabs.com

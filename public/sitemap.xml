@@ -11,43 +11,57 @@
         <loc>https://inymartlabs.com/about/</loc>
     </url>
 
-    <!-- Services -->
+    <!-- Services Main Page -->
+    <url>
+        <loc>https://inymartlabs.com/services/</loc>
+    </url>
+
+    <!-- SEO Services -->
     <url>
         <loc>https://inymartlabs.com/services/seo/</loc>
     </url>
 
+    <!-- Local SEO Services -->
     <url>
         <loc>https://inymartlabs.com/services/local-seo/</loc>
     </url>
 
+    <!-- SMO Services -->
     <url>
         <loc>https://inymartlabs.com/services/smo/</loc>
     </url>
 
+    <!-- SMM Services -->
     <url>
         <loc>https://inymartlabs.com/services/smm/</loc>
     </url>
 
+    <!-- Web Analytics Services -->
     <url>
         <loc>https://inymartlabs.com/services/web-analytics/</loc>
     </url>
 
+    <!-- Web Development Services -->
     <url>
         <loc>https://inymartlabs.com/services/web-development/</loc>
     </url>
 
+    <!-- Digital Marketing Consulting -->
     <url>
         <loc>https://inymartlabs.com/services/digital-marketing-consulting/</loc>
     </url>
 
+    <!-- Digital Marketing Agency -->
     <url>
         <loc>https://inymartlabs.com/services/digital-marketing-agency/</loc>
     </url>
 
+    <!-- PPC Services -->
     <url>
         <loc>https://inymartlabs.com/services/ppc-service/</loc>
     </url>
 
+    <!-- AI SEO Services -->
     <url>
         <loc>https://inymartlabs.com/services/ai-seo-services/</loc>
     </url>

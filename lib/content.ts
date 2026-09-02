@@ -131,7 +131,7 @@ export const NAV_LINKS: NavGroup[] = [
   { label: 'About Us', href: '/about' },
   {
     label: 'Services',
-    href: '/#services',
+    href: '/services',
     children: SERVICES.map((s) => ({
       label: s.title,
       href: `/services/${slugify(s.title)}`,
