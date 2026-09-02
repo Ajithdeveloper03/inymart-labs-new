@@ -19,6 +19,19 @@ const SERVICE_IMAGES = [
   '/AI%20SEO%20Services(home).png'
 ];
 
+const SERVICE_ALTS = [
+  'Digital marketing analytics dashboard on laptop showing website traffic growth, SEO performance, and data-driven marketing results.',
+  'Local SEO marketing concept showing a smartphone with a location pin outside a local business, representing Google Maps visibility and local business discovery.',
+  'Digital marketing concept showing a person using a smartphone to manage visual content and social media, representing mobile content creation and digital engagement.',
+  'Digital marketing concept showing a hand tapping a smartphone with a launch icon, representing social media campaigns, audience engagement, and online growth.',
+  'Web analytics dashboard on a desktop monitor showing traffic charts, performance metrics, and data visualizations for digital marketing analysis.',
+  'Web development workspace showing a developer working with code on dual monitors, representing website development, programming, and technical solutions.',
+  'Digital marketing consulting session with professionals discussing a marketing strategy using charts and growth planning documents.',
+  'Digital marketing agency workspace featuring a laptop, smartphone, tablet, analytics data, and marketing planning materials, representing integrated digital marketing services.',
+  'Digital marketing growth concept showing stacked coins beside an upward-trending orange bar chart, representing business growth, increasing revenue, and marketing ROI.',
+  'AI SEO services concept showing a hand interacting with an AI-powered search interface on a laptop, representing AI-driven search optimization and digital visibility.'
+];
+
 export function Services() {
   return (
     <section
@@ -49,7 +62,7 @@ export function Services() {
                   <div className="relative h-44 w-full overflow-hidden">
                     <img 
                       src={SERVICE_IMAGES[i]} 
-                      alt={service.title} 
+                      alt={SERVICE_ALTS[i]} 
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
                     />
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />

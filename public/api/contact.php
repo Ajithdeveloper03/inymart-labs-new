@@ -94,12 +94,19 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    // Recipients
-    $mail->setFrom($env['SMTP_USER'], 'Inymart Labs Website');
-    $toEmail = !empty($env['SMTP_TO']) ? $env['SMTP_TO'] : 'tn48saravanan@gmail.com';
+    // Set the FROM address as the user's email ID
+    $userEmail = !empty($input['email']) ? $input['email'] : $env['SMTP_USER'];
+    $userName = !empty($input['name']) ? $input['name'] : (!empty($input['fullName']) ? $input['fullName'] : 'User');
+    $mail->setFrom($userEmail, $userName);
+    
+    // Set the TO address using the .env value (or default to inymartlabs@gmail.com)
+    $toEmail = !empty($env['SMTP_TO']) ? $env['SMTP_TO'] : 'inymartlabs@gmail.com';
     $mail->addAddress($toEmail);
-    // You can add CC or BCC if needed
-    // $mail->addBCC('ceo@inymartlabs.com');
+
+    // It's also good practice to add Reply-To as the user's email
+    if (!empty($input['email'])) {
+        $mail->addReplyTo($input['email'], $userName);
+    }
 
     // Content
     $mail->isHTML(true);
