@@ -51,15 +51,20 @@ export function BlogContent({ post }: BlogContentProps) {
                 {section.bullets.map((bullet: any, bIdx: number) => {
                   if (typeof bullet === 'string') {
                     if (bullet.trim() === '') return null;
-                    return <li key={bIdx} className="flex gap-3"><span className="text-primary font-bold mt-1.5">•</span><span className="text-slate-600 text-lg">{bullet}</span></li>;
+                    return (
+                      <li key={bIdx} className="flex gap-3 items-start">
+                        <span className="text-primary font-bold text-xl leading-none mt-1 shrink-0">•</span>
+                        <span className="text-slate-600 text-lg">{bullet}</span>
+                      </li>
+                    );
                   }
                   
                   if (!bullet.heading && !bullet.description) return null;
                   
                   return (
-                    <li key={bIdx} className="flex gap-3">
-                       <span className="text-primary font-bold mt-1.5">•</span>
-                       <div>
+                    <li key={bIdx} className="flex gap-3 items-start">
+                       {bullet.showDot && <span className="text-primary font-bold text-xl leading-none mt-1 shrink-0">•</span>}
+                       <div className="flex-1">
                          {bullet.heading && (
                            <div className={`text-lg text-slate-900 ${bullet.isBold ? 'font-bold' : 'font-semibold'}`}>
                              {bullet.heading}

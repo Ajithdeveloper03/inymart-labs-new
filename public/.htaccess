@@ -1,9 +1,13 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # 1. Force HTTPS (Highly recommended for Hostinger)
+  # 1. Force HTTPS
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 1.1 Force non-www (SEO Fix for Duplicate URLs)
+  RewriteCond %{HTTP_HOST} ^www\.inymartlabs\.com [NC]
+  RewriteRule ^(.*)$ https://inymartlabs.com/$1 [L,R=301]
 </IfModule>
 
 # 2. Handle Next.js 404 Custom Error Page

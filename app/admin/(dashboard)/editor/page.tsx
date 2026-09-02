@@ -280,23 +280,38 @@ function AdminEditorContent() {
                         const headingVal = isString ? bull : (bull.heading || '');
                         const descVal = isString ? '' : (bull.description || '');
                         const isBoldVal = isString ? false : (bull.isBold ?? true);
+                        const showDotVal = isString ? true : (bull.showDot ?? false);
                         
                         return (
                           <div key={bIdx} className="flex flex-col gap-2 mb-4 p-3 bg-white border rounded shadow-sm relative">
                             <div className="flex justify-between items-center mb-1">
                               <span className="text-xs font-bold text-gray-400">Point {bIdx + 1}</span>
-                              <label className="flex items-center gap-1 text-xs cursor-pointer select-none">
-                                <input type="checkbox" checked={isBoldVal} onChange={e => {
-                                  const newSections = [...sections];
-                                  if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
-                                    newSections[sIdx].bullets[bIdx] = { heading: newSections[sIdx].bullets[bIdx], description: '', isBold: e.target.checked };
-                                  } else {
-                                    newSections[sIdx].bullets[bIdx].isBold = e.target.checked;
-                                  }
-                                  setSections(newSections);
-                                }} />
-                                Bold Heading
-                              </label>
+                              <div className="flex items-center gap-4">
+                                <label className="flex items-center gap-1 text-xs cursor-pointer select-none">
+                                  <input type="checkbox" checked={showDotVal} onChange={e => {
+                                    const newSections = [...sections];
+                                    if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
+                                      newSections[sIdx].bullets[bIdx] = { heading: newSections[sIdx].bullets[bIdx], description: '', isBold: true, showDot: e.target.checked };
+                                    } else {
+                                      newSections[sIdx].bullets[bIdx].showDot = e.target.checked;
+                                    }
+                                    setSections(newSections);
+                                  }} />
+                                  Show Dot
+                                </label>
+                                <label className="flex items-center gap-1 text-xs cursor-pointer select-none">
+                                  <input type="checkbox" checked={isBoldVal} onChange={e => {
+                                    const newSections = [...sections];
+                                    if (typeof newSections[sIdx].bullets[bIdx] === 'string') {
+                                      newSections[sIdx].bullets[bIdx] = { heading: newSections[sIdx].bullets[bIdx], description: '', isBold: e.target.checked, showDot: false };
+                                    } else {
+                                      newSections[sIdx].bullets[bIdx].isBold = e.target.checked;
+                                    }
+                                    setSections(newSections);
+                                  }} />
+                                  Bold Heading
+                                </label>
+                              </div>
                             </div>
                             <input type="text" placeholder="Heading..." className="w-full p-2 border rounded outline-none text-sm font-medium" value={headingVal} onChange={e => {
                                const newSections = [...sections];

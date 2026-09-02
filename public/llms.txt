@@ -1,6 +1,6 @@
-f# Inymart Labs
+# Inymart Labs
 
-> Inymart Labs is a digital marketing agency in Tamil Nadu and Tiruchirappalli (Trichy) helping businesses improve online visibility, generate quality leads, and achieve long-term growth through SEO, Local SEO, social media marketing, web development, PPC, AI SEO, and result-driven digital marketing strategies.
+> Inymart Labs is a digital marketing agency in Tiruchirappalli (Trichy), Tamil Nadu, India, helping businesses improve online visibility, generate quality leads, and achieve long-term growth through SEO, Local SEO, social media marketing, web development, PPC, AI SEO, and digital marketing strategies.
 
 ## About Inymart Labs
 
@@ -10,60 +10,70 @@ Inymart Labs is a digital marketing agency based in Tiruchirappalli, Tamil Nadu,
 - Experience: 10+ years
 - Clients: 50+
 - Primary location: Tiruchirappalli, Tamil Nadu, India
-- Service areas: Tamil Nadu, India, UAE, UK, USA, and other markets
-- Focus: Digital marketing, SEO, Local SEO, AI Search Optimization, social media marketing, web development, PPC, and online growth.
+- Service areas: Tamil Nadu, India, UAE, UK, USA, Australia, and other markets
+- Focus: Digital marketing, SEO, Local SEO, AI Search Optimization, social media marketing, web development, PPC, web analytics, and digital marketing consulting.
 
 ## Services
 
 ### SEO
+
 Search Engine Optimization services designed to improve website search visibility, keyword rankings, organic traffic, leads, and conversions.
 
-URL: https://inymartlabs.com/seo/
+- [SEO Services](https://inymartlabs.com/services/seo/)
 
 ### Local SEO
+
 Local SEO services focused on Google Search, Google Maps, Google Business Profile optimization, local visibility, citations, reviews, and location-based searches.
 
-URL: https://inymartlabs.com/local-seo/
+- [Local SEO Services](https://inymartlabs.com/services/local-seo/)
 
 ### SMO
+
 Social Media Optimization services focused on organic social media presence, content strategy, audience engagement, and brand visibility.
 
-URL: https://inymartlabs.com/smo/
+- [SMO Services](https://inymartlabs.com/services/smo/)
 
 ### SMM
+
 Social Media Marketing services for building brand awareness, reaching target audiences, generating engagement, and supporting business growth.
 
-URL: https://inymartlabs.com/smm/
+- [SMM Services](https://inymartlabs.com/services/smm/)
 
 ### Web Analytics
+
 Web analytics services for tracking website traffic, user behavior, conversions, campaign performance, and marketing results.
 
-URL: https://inymartlabs.com/web-analytics/
+- [Web Analytics Services](https://inymartlabs.com/services/web-analytics/)
 
 ### Web Development
+
 Website design and development services focused on creating professional, user-friendly, responsive, and business-oriented websites.
 
-URL: https://inymartlabs.com/web-development/
+- [Web Development Services](https://inymartlabs.com/services/web-development/)
 
 ### Digital Marketing Consulting
+
 Digital marketing consulting to help businesses develop customized strategies based on business objectives, target audiences, industry, and budget.
 
-URL: https://inymartlabs.com/digital-marketing-consulting/
+- [Digital Marketing Consulting](https://inymartlabs.com/services/digital-marketing-consulting/)
 
 ### Digital Marketing Agency
+
 Complete digital marketing solutions for businesses looking to improve online visibility, generate leads, and achieve sustainable growth.
 
-URL: https://inymartlabs.com/digital-marketing-agency/
+- [Digital Marketing Agency](https://inymartlabs.com/services/digital-marketing-agency/)
 
 ### PPC Service
+
 Pay-per-click advertising services designed to reach relevant audiences, generate qualified traffic, and support lead generation and conversions.
 
-URL: https://inymartlabs.com/ppc-service/
+- [PPC Services](https://inymartlabs.com/services/ppc-service/)
 
 ### AI SEO Services
+
 AI-focused SEO and search optimization services designed to improve visibility across modern search experiences and AI-powered search platforms.
 
-URL: https://inymartlabs.com/ai-seo-services/
+- [AI SEO Services](https://inymartlabs.com/services/ai-seo-services/)
 
 ## Industries Served
 
@@ -83,6 +93,7 @@ Inymart Labs provides digital marketing solutions for:
 ## Service Locations
 
 ### Tamil Nadu
+
 - Tiruchirappalli (Trichy)
 - Chennai
 - Madurai
@@ -92,6 +103,7 @@ Inymart Labs provides digital marketing solutions for:
 - Other areas across Tamil Nadu
 
 ### International
+
 - India
 - UAE
 - UK
@@ -111,29 +123,23 @@ Inymart Labs provides digital marketing solutions for:
 
 ## Website
 
-Homepage: https://inymartlabs.com/
-
-About Us: https://inymartlabs.com/about-us/
-
-Services: https://inymartlabs.com/services/
-
-Portfolio: https://inymartlabs.com/portfolio/
-
-Blog: https://inymartlabs.com/blog/
-
-Contact: https://inymartlabs.com/contact/
+- [Homepage](https://inymartlabs.com/)
+- [About Us](https://inymartlabs.com/about/)
+- [Services](https://inymartlabs.com/services/)
+- [Portfolio](https://inymartlabs.com/portfolio/)
+- [Blog](https://inymartlabs.com/blogs/)
+- [Contact](https://inymartlabs.com/contact/)
 
 ## Contact
 
 Inymart Labs
 
-Address:
-No.17, C3, 3rd Floor, Ayodhya Complex,
-Thennur High Road, Srinivasapuram, Tennur,
+No.17, C3, 3rd Floor, Ayodhya Complex,  
+Thennur High Road, Srinivasapuram, Tennur,  
 Tiruchirappalli, Tamil Nadu 620017, India
 
-Email: ceo@inymartlabs.com
-Phone: +91 9994723446
+- Email: ceo@inymartlabs.com
+- Phone: +91 9994723446
 
 ## Primary Topics
 
