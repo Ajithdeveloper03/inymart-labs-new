@@ -228,19 +228,28 @@ export function Header() {
             {NAV_LINKS.map((link) =>
               link.children ? (
                 <div key={link.label} className="flex flex-col">
-                  <button
-                    type="button"
-                    onClick={() => setMobileServicesOpen((v) => !v)}
-                    className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-medium text-neutral-800 hover:bg-neutral-50"
-                  >
-                    {link.label}
-                    <ChevronDown
-                      className={cn(
-                        'h-4 w-4 transition-transform duration-300',
-                        mobileServicesOpen && 'rotate-180'
-                      )}
-                    />
-                  </button>
+                  <div className="flex items-center justify-between rounded-xl hover:bg-neutral-50">
+                    <Link
+                      href={link.href}
+                      onClick={() => setOpen(false)}
+                      className="flex-1 px-4 py-2.5 text-sm font-medium text-neutral-800"
+                    >
+                      {link.label}
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => setMobileServicesOpen((v) => !v)}
+                      className="flex h-full items-center justify-center px-4 py-2.5 text-neutral-800"
+                      aria-label="Toggle submenu"
+                    >
+                      <ChevronDown
+                        className={cn(
+                          'h-4 w-4 transition-transform duration-300',
+                          mobileServicesOpen && 'rotate-180'
+                        )}
+                      />
+                    </button>
+                  </div>
                   <div
                     className={cn(
                       'overflow-hidden transition-[max-height] duration-300 ease-in-out',

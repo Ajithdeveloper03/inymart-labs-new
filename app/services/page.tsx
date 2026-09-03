@@ -40,7 +40,7 @@ export default function ServicesPage() {
         }}
       />
       <Header />
-      <main className="flex min-h-screen flex-col overflow-hidden">
+      <main className="flex min-h-screen flex-col">
         <ServicesHeroBanner />
         <ServicesPageCards />
       </main>

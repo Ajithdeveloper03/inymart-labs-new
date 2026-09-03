@@ -121,16 +121,16 @@ export function ServicesPageCards() {
                   
                   {/* Right Content Section */}
                   <div className="relative flex-1 flex flex-col p-6 sm:p-8 md:p-10 z-10 bg-white">
-                    {/* Overlapping Icon (Left side of the text block) */}
-                    <div className="absolute top-1/2 -left-6 sm:-left-8 -translate-y-1/2 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-l-full bg-white text-orange-600 shadow-[-4px_0_10px_-2px_rgba(0,0,0,0.05)] border-y border-l border-slate-100 border-r-0 z-20">
-                      <originalService.icon className="h-5 w-5 sm:h-7 sm:w-7 ml-1 sm:ml-2 transition-transform duration-300 group-hover:scale-110" strokeWidth={2} />
+                    {/* Overlapping Icon (Positioned on top-right for mobile, left for desktop) */}
+                    <div className="absolute -top-6 right-6 sm:top-1/2 sm:right-auto sm:-left-8 sm:-translate-y-1/2 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-full sm:rounded-none sm:rounded-l-full bg-white text-orange-600 shadow-[0_-4px_10px_-2px_rgba(0,0,0,0.05)] sm:shadow-[-4px_0_10px_-2px_rgba(0,0,0,0.05)] border border-slate-100 sm:border-r-0 z-20">
+                      <originalService.icon className="h-5 w-5 sm:h-7 sm:w-7 sm:ml-2 transition-transform duration-300 group-hover:scale-110" strokeWidth={2} />
                     </div>
 
                     <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors pr-2">
                       {pageData.shortTitle}
                     </h3>
                     
-                    <p className="text-sm sm:text-[15px] leading-relaxed text-slate-500 mb-6 line-clamp-3">
+                    <p className="text-sm sm:text-[15px] leading-relaxed text-slate-500 mb-6">
                       {pageData.description}
                     </p>
 
