@@ -80,7 +80,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
                 <span>{SITE.location}</span>
               </li>
-              <li className="flex items-center gap-2.5">
+              <li className="flex items-center gap-2.5 hidden">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
                 <span>{SITE.email}</span>
               </li>

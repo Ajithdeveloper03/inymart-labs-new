@@ -20,7 +20,7 @@ export function BlogContent({ post }: BlogContentProps) {
   if (!sections || sections.length === 0) {
     return (
       <article 
-        className="prose prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-slate-900 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-slate-800 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-6 prose-a:text-primary prose-a:font-semibold hover:prose-a:text-primary/80 prose-strong:text-slate-900 prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-6 prose-li:text-slate-600 prose-li:mb-2"
+        className="prose prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-slate-900 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-slate-800 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-6 prose-a:text-primary prose-a:font-semibold hover:prose-a:text-primary/80 prose-strong:text-slate-900 prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-6 prose-li:text-slate-600 prose-li:mb-2"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     );
@@ -33,7 +33,7 @@ export function BlogContent({ post }: BlogContentProps) {
         {sections.map((section: any, idx: number) => (
           <section key={idx} id={`section-${idx}`} className="scroll-mt-24">
             {section.heading && (
-              <h2 className="font-display font-bold text-3xl text-slate-900 mb-6">
+              <h2 className="font-display font-bold text-2xl text-slate-900 mb-6">
                 {section.heading}
               </h2>
             )}
@@ -94,7 +94,7 @@ export function BlogContent({ post }: BlogContentProps) {
       {/* FAQs */}
       {faqs && faqs.length > 0 && (
         <div className="mt-16 pt-12 border-t" id="faqs">
-          <h2 className="font-display font-bold text-3xl text-slate-900 mb-8">Frequently Asked Questions</h2>
+          <h2 className="font-display font-bold text-2xl text-slate-900 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq: any, idx: number) => (
               <div key={idx} className="border rounded-xl overflow-hidden">

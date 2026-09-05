@@ -145,7 +145,7 @@ export default function RootLayout({
                     "addressCountry": "IN"
                   },
                   "email": "ceo@inymartlabs.com",
-                  "telephone": "+91 9994723446",
+                  "telephone": "+91 8925807468",
                   "areaServed": [
                     {
                       "@type": "State",

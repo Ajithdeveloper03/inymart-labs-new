@@ -37,13 +37,7 @@ export function PortfolioCta() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-sm font-bold text-foreground">
-                <a href="tel:+919994723446" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  <Phone className="h-4 w-4 text-primary" />
-                  +91 9994723446
-                </a>
-
-              </div>
+              
             </div>
           </Reveal>
         </div>

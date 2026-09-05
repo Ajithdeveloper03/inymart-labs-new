@@ -12,7 +12,7 @@ export function BlogCard({ post }: BlogCardProps) {
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       {/* Image */}
-      <Link href={`/blogs/post/?slug=${post.slug}`} className="relative h-[220px] sm:h-[240px] overflow-hidden block shrink-0">
+      <Link href={`/blogs/post/?slug=${post.slug}`} className="relative w-full aspect-video overflow-hidden block shrink-0">
         <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
         <img 
           src={post.image} 

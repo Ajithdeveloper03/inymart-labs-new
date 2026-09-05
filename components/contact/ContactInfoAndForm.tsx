@@ -102,9 +102,27 @@ export function ContactInfoAndForm() {
                 </div>
               </Reveal>
 
+              {/* Social Media Icons */}
+              <Reveal delay={200}>
+                <div className="mt-4 flex gap-4 ml-[72px] pl-6">
+                  <a href="https://www.facebook.com/people/Inymart-Labs/61583856676865/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Facebook className="w-5 h-5 fill-current" strokeWidth={0} />
+                  </a>
+                  <a href="https://www.instagram.com/inymart_labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Instagram className="w-5 h-5" strokeWidth={2} />
+                  </a>
+                  <a href="https://www.youtube.com/@InymartLabs" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Youtube className="w-5 h-5" strokeWidth={2} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/inymartlabs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
+                    <Linkedin className="w-5 h-5 fill-current" strokeWidth={0} />
+                  </a>
+                </div>
+              </Reveal>
+
               {/* Email */}
               <Reveal delay={200}>
-                <div className="flex items-start gap-6 group">
+                <div className="flex items-start gap-6 group invisible">
                   <div className="relative flex items-center justify-center w-[72px] h-[72px] shrink-0">
                     <div className="absolute inset-0 border border-dashed border-[#ff6b35] rounded-full animate-[spin_20s_linear_infinite] opacity-50 group-hover:opacity-100 transition-opacity"></div>
                     <div className="w-14 h-14 bg-[#ff6b35] rounded-full flex items-center justify-center relative z-10 text-white shadow-md">
@@ -122,7 +140,7 @@ export function ContactInfoAndForm() {
 
               {/* Phone */}
               <Reveal delay={300}>
-                <div className="flex items-start gap-6 group">
+                <div className="flex items-start gap-6 group invisible">
                   <div className="relative flex items-center justify-center w-[72px] h-[72px] shrink-0">
                     <div className="absolute inset-0 border border-dashed border-[#ff6b35] rounded-full animate-[spin_20s_linear_infinite] opacity-50 group-hover:opacity-100 transition-opacity"></div>
                     <div className="w-14 h-14 bg-[#ff6b35] rounded-full flex items-center justify-center relative z-10 text-white shadow-md">
@@ -132,29 +150,12 @@ export function ContactInfoAndForm() {
                   <div className="flex flex-col pt-1">
                     <h3 className="text-xl font-bold text-[#33353b] mb-2 font-display">Phone</h3>
                     <p className="text-gray-500 leading-relaxed text-[15px]">
-                      <a href="tel:+919994723446" className="hover:text-[#ff6b35] transition-colors">+91 99947 23446</a>
+                      <a href="tel:+918925807468" className="hover:text-[#ff6b35] transition-colors">+91 99947 23446</a>
                     </p>
                   </div>
                 </div>
               </Reveal>
 
-              {/* Social Media Icons */}
-              <Reveal delay={400}>
-                <div className="mt-4 flex gap-4 ml-[72px] pl-6">
-                  <a href="https://www.facebook.com/people/Inymart-Labs/61583856676865/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <Facebook className="w-5 h-5 fill-current" strokeWidth={0} />
-                  </a>
-                  <a href="https://www.instagram.com/inymart_labs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <Instagram className="w-5 h-5" strokeWidth={2} />
-                  </a>
-                  <a href="https://www.youtube.com/@InymartLabs" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <Youtube className="w-5 h-5" strokeWidth={2} />
-                  </a>
-                  <a href="https://www.linkedin.com/company/inymartlabs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 text-[#ff6b35] hover:bg-[#ff6b35] hover:text-white transition-all duration-300 shadow-sm border border-slate-100">
-                    <Linkedin className="w-5 h-5 fill-current" strokeWidth={0} />
-                  </a>
-                </div>
-              </Reveal>
             </div>
           </div>
 

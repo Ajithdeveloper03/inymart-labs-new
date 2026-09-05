@@ -50,13 +50,7 @@ export function WebAnalyticsCta() {
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               
-              <a
-                href="tel:+919994723446"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-8 py-4 text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300 w-full sm:w-auto"
-              >
-                <Phone className="h-4 w-4 text-[#ff6b35]" />
-                Call +91 9994723446
-              </a>
+              
 
               
             </div>
