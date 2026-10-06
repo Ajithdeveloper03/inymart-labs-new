@@ -23,19 +23,22 @@ export function SmoCta() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full bg-[#ff6b35]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#ff6b35] ring-1 ring-[#ff6b35]/20">
               <span className="h-1.5 w-1.5 rounded-full bg-[#ff6b35]" />
-              Social Media Optimization
+              SMO Service
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Build Your <span className="text-gradient">Social Presence</span>?
+  Build a Social Presence <span className="text-gradient">Worth Following</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for a social media optimization company in Tamil Nadu or a trusted social media optimization company in Trichy that treats your brand's voice seriously, Inymart Labs is ready to help. We'll build a content plan around your business, your customers, and the platforms that matter most.
+              Whether you're a startup, a local shop, an ecommerce brand, or an established company, a properly run SMO strategy strengthens how your business shows up online, building recognition, engagement, and stronger connections with customers who are already scrolling, comparing, and deciding.
+            </p>
+            <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed font-bold text-slate-800 text-pretty sm:text-lg">
+              Ready to build a stronger social presence? Reach out to Inymart Labs today.
             </p>
           </Reveal>
 

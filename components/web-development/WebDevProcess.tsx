@@ -7,44 +7,81 @@ import Link from 'next/link';
 export function WebDevProcess() {
   const steps = [
     {
-      title: `Discovery & Planning`,
-      desc: `We understand your business, your customers, and your goals before writing a single line of code.`,
+      title: `Mobile-Ready Design`,
+      desc: `Whether someone opens your site on a small phone screen or a large monitor, the layout reshapes itself automatically so nothing looks broken or cramped.`,
       icon: Activity
     },
     {
-      title: `Website Structure`,
-      desc: `We map out clear, logical pages and navigation so visitors and search engines can easily find what they need.`,
+      title: `Navigation People Actually Understand`,
+      desc: (
+        <>
+          Confusing menus lose visitors fast. We keep things simple:
+          <ul className="list-disc pl-5 mt-2 space-y-1 text-left">
+            <li>Short, clear menu labels</li>
+            <li>A logical order from homepage to contact</li>
+            <li>Buttons that tell visitors exactly what happens next</li>
+          </ul>
+          <p className="mt-2 text-left">Good structure quietly guides people toward booking, calling, or enquiring, without them noticing they're being guided.</p>
+        </>
+      ),
       icon: Search
     },
     {
-      title: `Design`,
-      desc: `We design clean, modern layouts that reflect your brand and build trust with visitors from the first click.`,
+      title: `Built Around What You Actually Need`,
+      desc: (
+        <>
+          We don't force every client into the same template. Depending on your goals, we might add:
+          <ul className="list-disc pl-5 mt-2 space-y-1 text-left">
+            <li>Blog and resource sections</li>
+            <li>Enquiry and quote request forms</li>
+            <li>Catalogues or booking calendars</li>
+            <li>Payment gateways or CRM connections</li>
+          </ul>
+          <p className="mt-2 text-left">Every add-on earns its place because your business needs it, not because it looks impressive.</p>
+        </>
+      ),
       icon: Target
     },
     {
-      title: `Development`,
-      desc: `We build your website using reliable, modern technology that's fast, secure, and easy to maintain.`,
+      title: `Speed That Keeps Visitors From Leaving`,
+      desc: `A page that takes too long to load loses visitors before they even see your services. We compress images, trim unnecessary scripts, and structure code so pages open quickly on any connection.`,
       icon: Settings
     },
     {
-      title: `Mobile Optimization`,
-      desc: `We make sure your website works perfectly on phones and tablets, since most visitors browse on mobile today.`,
+      title: `Groundwork for Search Visibility`,
+      desc: (
+        <>
+          Getting found on Google starts at the build stage, not after launch. We handle:
+          <ul className="list-disc pl-5 mt-2 space-y-1 text-left">
+            <li>Proper heading order for each page</li>
+            <li>Clean, readable URLs</li>
+            <li>Metadata fields ready for your content</li>
+            <li>Internal links that connect related pages</li>
+          </ul>
+          <p className="mt-2 text-left">Want the technical SEO groundwork done right? Ask us for a plan.</p>
+        </>
+      ),
       icon: PenTool
     },
     {
-      title: `SEO-Ready Setup`,
-      desc: `We build your site with clean code, proper structure, and fast loading speed — the foundation every good SEO strategy needs.`,
+      title: `Security Baked Into the Build`,
+      desc: `We don't treat security as an extra. Every site gets SSL encryption, hardened configurations, limited access permissions, and a routine backup schedule, so your data and your visitors stay protected.`,
       icon: Link2
     },
     {
-      title: `Testing & Launch`,
-      desc: `We test every page, button, and form carefully before your website goes live, so there are no surprises.`,
+      title: `A CMS You Can Actually Use`,
+      desc: `Once your site is live, you shouldn't need to call a developer to fix a typo. We hand it over on a beginner-friendly platform, so your team can update text, swap images, or publish a blog post whenever needed.`,
       icon: BarChart
     },
     {
-      title: `Ongoing Support`,
-      desc: `We offer maintenance and updates after launch, so your website stays secure, fast, and up to date.`,
+      title: `Real Testing Before Anything Goes Live`,
+      desc: `We click through every page, submit every form, and open the site on multiple devices and browsers before handing it over. Catching a broken link or a form that doesn't fire is far cheaper before launch than after.`,
       icon: Zap
+    },
+    {
+      title: `Support That Doesn't End at Launch`,
+      desc: `Websites need occasional attention: a plugin update, a new page, a security patch, a seasonal promotion banner. We stay available for these changes so your site keeps working as your business grows.`,
+      icon: Activity
     }
   ];
 
@@ -55,7 +92,7 @@ export function WebDevProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our Web <span className="text-gradient">Development</span> Process
+  What You Get With Our <span className="text-gradient">Web Development</span> Service
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>
@@ -131,7 +168,7 @@ export function WebDevProcess() {
               href="/contact" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
-              See Our Web Development Process in Action
+              Talk to Our Web Development Team
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

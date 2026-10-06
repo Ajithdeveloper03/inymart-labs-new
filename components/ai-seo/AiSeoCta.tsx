@@ -29,13 +29,15 @@ export function AiSeoCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Be Found by AI <span className="text-gradient">Search Tools?</span>
+  Prepare Your Business <span className="text-gradient">for AI Search</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for an AI SEO Service in Tamil Nadu or a trusted AI SEO Service in Trichy that also delivers a real AEO Service, Inymart Labs is ready to help. We'll build a plan to make sure ChatGPT, Gemini, and Perplexity represent your business accurately and favorably.
+              AI-powered discovery is becoming another important path between customers and businesses. Building a presence requires more than adding keywords or producing more content. It requires clear information, useful answers, consistent business facts, structured content, and continuous attention.<br/><br/>
+              Inymart Labs helps your business in Trichy and Tamil Nadu build that foundation through AI SEO, AEO, content restructuring, entity optimization, and monitoring.<br/><br/>
+              Prepare your website today. Contact Inymart Labs to get started with AI SEO.
             </p>
           </Reveal>
 

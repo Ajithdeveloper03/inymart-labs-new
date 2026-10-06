@@ -25,7 +25,7 @@ export function SmmTrust() {
           <Reveal className="order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/why trust 6.jpg" 
+                src="/new/why trust 6.jpg" 
                 alt="Team Meeting" 
                 className="w-full h-[400px] lg:h-[500px] object-fill"
               />

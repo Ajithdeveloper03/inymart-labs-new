@@ -14,7 +14,7 @@ export function SmmWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/what is smm (SMM).png" 
+                src="/new/what is smm (SMM).png" 
                 alt=" Content creator filming an Instagram Reel with a smartphone and ring light while planning social media content on a laptop" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -32,13 +32,11 @@ export function SmmWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What Is Social <span className="text-gradient">Media Marketing</span> (SMM)?
+                  How Is SMM Different From <span className="text-gradient">Regular Social Media Posting?</span>
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  Social Media Marketing (SMM), also called paid social advertising or social media ads, is the practice of running paid ad campaigns on platforms like Facebook, Instagram, and LinkedIn to reach a targeted audience and drive specific business outcomes — calls, website visits, form fills, or direct sales.
-                  <br/><br/>
-                  It is distinct from organic social media management, which focuses on regular posting without paid promotion.
+                  Posting organically only reaches people who already follow you. SMM puts money behind specific posts so they show up in front of people who don't follow you yet, chosen by location, interests, age, online behaviour, and buying intent. That's the core difference: reach beyond your existing audience, on purpose.
                 </p>
               </div>
             </div>

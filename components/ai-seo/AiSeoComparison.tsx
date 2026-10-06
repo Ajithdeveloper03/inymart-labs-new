@@ -9,10 +9,10 @@ export function AiSeoComparison() {
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-              AI SEO (AEO) vs. <span className="text-gradient">Traditional SEO</span>
+              AI SEO vs <span className="text-gradient">Traditional SEO</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Businesses often ask how AI SEO differs from the SEO they already know. Here's the comparison:
+              AI SEO does not replace traditional SEO. Both serve connected purposes, and we combine them so AI improvements also strengthen content quality, relevance, and organic search.
             </p>
           </div>
         </Reveal>
@@ -30,24 +30,14 @@ export function AiSeoComparison() {
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Primary Target</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Google search rankings</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>AI tools like ChatGPT, Gemini, Perplexity</td>
+                    <td className="py-5 px-6 font-semibold text-slate-700">Main focus</td>
+                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Search visibility and rankings</td>
+                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Direct answers and AI understanding</td>
                   </tr>
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Content Style</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Keyword-optimized pages</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Direct-answer, citable, structured content</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Success Measure</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Rankings and organic traffic</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Accurate AI mentions and recommendations</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Relationship to SEO</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>N/A</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Works alongside SEO, not instead of it</td>
+                    <td className="py-5 px-6 font-semibold text-slate-700">Key goals</td>
+                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Organic traffic and website authority</td>
+                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Citations and recommendations</td>
                   </tr>
                 </tbody>
               </table>

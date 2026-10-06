@@ -17,19 +17,19 @@ export function DmaWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  Getting to Know Your <span className="text-gradient">Business First</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
               <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs is a leading <strong className="text-[#0c1f28]">Digital Marketing Agency in Tamil Nadu</strong>, bringing SEO, social media, ads, web development, and analytics together under one strategy instead of scattered, disconnected efforts. As a trusted <strong className="text-[#0c1f28]">Digital Marketing Agency in Trichy</strong>, we help businesses grow online without needing to manage multiple vendors separately.
+                No two businesses share the same customers, competitors, or budget, so we don't start with a template.
               </p>
             </Reveal>
             <Reveal delay={200}>
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you need one service or a complete marketing plan, our team as your Digital Marketing Agency in Tamil Nadu builds everything around your specific business goals.
+                We look at your current site, your active channels, who you're trying to reach, what your competitors are doing, and how things are performing today. That review shapes which channels get priority first.
               </p>
             </Reveal>
 
@@ -49,7 +49,7 @@ export function DmaWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/what we do(DMA).png" 
+                  src="/new/what we do(DMA).png" 
                   alt="Digital marketing workspace featuring a website on a desktop monitor, Meta Ads campaign dashboard on a laptop, Google Search Console analytics on a tablet, and a digital growth strategy notebook." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

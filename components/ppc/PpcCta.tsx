@@ -29,13 +29,14 @@ export function PpcCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Get Immediate <span className="text-gradient">Visibility</span>?
+  Turn Search Traffic <span className="text-gradient">Into Growth</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for a PPC Service in Tamil Nadu or a trusted PPC Service in Trichy that treats your ad budget seriously, Inymart Labs is ready to help. We'll build campaigns around your business goals, your customers, and your budget.
+              PPC gives you instant visibility among people who are already looking for a solution. Strong results still depend on precise targeting, careful spending, and regular fine-tuning. Whether you are starting your first campaign or fixing an existing one, Inymart Labs can help you get more from paid search.<br/><br/>
+              Let's talk about your PPC goals. Get in touch with Inymart Labs today.
             </p>
           </Reveal>
 

@@ -163,11 +163,11 @@ export default function LocalSeoServicePage() {
         <LocalSeoHeroBanner />
         <LocalSeoQuickAnswer />
         <LocalSeoWhatWeDo />
-        <LocalSeoWhyChoose />
         <LocalSeoKeyFacts />
         <LocalSeoProcess />
-        <LocalSeoWhoThisIsFor />
         <LocalSeoExpectations />
+        <LocalSeoWhyChoose />
+        <LocalSeoWhoThisIsFor />
         <LocalSeoFaq />
         <LocalSeoCta />
       </main>

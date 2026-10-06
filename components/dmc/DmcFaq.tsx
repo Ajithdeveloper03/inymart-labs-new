@@ -10,28 +10,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: "What is Digital Marketing Consulting?",
-    a: "Digital Marketing Consulting is expert, outside guidance on a business&apos;s marketing strategy — reviewing what&apos;s working and building a clear, prioritized plan for what to do next."
+    q: "What is digital marketing consulting?",
+    a: "It is expert guidance that reviews your current marketing, studies your goals and competitors, and gives you a prioritised roadmap for improvement."
   },
   {
-    q: "Do you only offer advice, or do you also implement the strategy?",
-    a: "We offer both. Some businesses want consulting only, while others want us to also execute the plan through our SEO, social media, or ads services."
+    q: "Do you offer digital marketing consulting in Trichy and Tamil Nadu?",
+    a: "Yes. Inymart Labs provides a Digital Marketing Consulting Service in Trichy and Tamil Nadu for businesses that want a clearer strategy."
   },
   {
-    q: "How long does a consulting engagement typically last?",
-    a: "This depends on your needs — some businesses want a one-time strategy session, while others prefer ongoing monthly consulting."
+    q: "What does a digital marketing audit include?",
+    a: "We review your website, SEO, social media, paid campaigns, content, and analytics to show what works and where to improve."
   },
   {
-    q: "What makes Inymart Labs the right choice for Digital Marketing Consulting in Tamil Nadu and Trichy?",
-    a: "We give honest, practical advice based on real data, not just recommendations that happen to sell more of our services."
+    q: "Will I get a generic plan?",
+    a: "No. Recommendations depend on your own website, market, audience, and budget."
   },
   {
-    q: "Is this service only for businesses without any marketing in place?",
-    a: "No. We work with businesses starting from scratch as well as those with existing marketing that needs review and direction."
+    q: "Can you help implement the plan?",
+    a: "Yes. We can advise your in-house team or support the work alongside them, depending on your needs."
   },
   {
-    q: "Will you help my team understand the strategy, not just hand over a report?",
-    a: "Yes. We walk you through the plan clearly, so your team understands the reasoning, not just the recommendations."
+    q: "Who should consider marketing consulting?",
+    a: "Businesses starting out, reviewing an existing strategy, or planning their next stage of growth."
+  },
+  {
+    q: "Which marketing areas can you advise on?",
+    a: "SEO, social media, paid advertising, web analytics, and competitor and market analysis."
   }
 ];
 

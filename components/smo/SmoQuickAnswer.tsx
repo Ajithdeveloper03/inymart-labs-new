@@ -18,7 +18,7 @@ export function SmoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/SMO (Quick Answer).png" 
+                  src="/new/SMO (Quick Answer).png" 
                   alt="Social media marketing concept featuring Facebook, Instagram, and LinkedIn icons, a smartphone, engagement symbols, analytics charts, and a rising growth arrow." 
                   className="w-full h-full object-cover"
                 />
@@ -54,21 +54,18 @@ export function SmoQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                  <Lightbulb className="w-8 h-8" />
-                </div>
-                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
-              </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a <strong className="text-[#0c1f28]">social media optimization company in Tamil Nadu</strong> and social media optimization company in Trichy that builds and manages organic social media presence on Facebook, Instagram, and LinkedIn — covering content planning, content creation, posting, and community management. Businesses working with Inymart Labs typically see better engagement within the first month, with stronger brand presence building over 3 months onward.
+                  SMO is the ongoing work of shaping your social profiles and content so more of the right people see them, engage with them, and remember your brand. Inymart Labs provides SMO Service in Trichy and Tamil Nadu, combining strategy, content, and consistent activity to build a stronger social presence over time.
+                </p>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="text-lg text-gray-600 leading-relaxed font-bold text-primary">
+                  Want a social presence that actually reflects your brand? Talk to Inymart Labs.
                 </p>
               </Reveal>
             </div>

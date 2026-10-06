@@ -7,29 +7,24 @@ import Link from 'next/link';
 export function DmaProcess() {
   const steps = [
     {
-      title: `Discovery`,
-      desc: `We learn about your business, your customers, and your current marketing efforts.`,
+      title: null,
+      desc: `Discover your business, audience, and current activity`,
       icon: Activity
     },
     {
-      title: `Strategy`,
-      desc: `We build a plan showing which services matter most for your goals and budget.`,
+      title: null,
+      desc: `Build a strategy and set priorities`,
       icon: Search
     },
     {
-      title: `Execution`,
-      desc: `We implement SEO, social media, ads, or web development, depending on your plan.`,
+      title: null,
+      desc: `Run the chosen services and track results`,
       icon: Target
     },
     {
-      title: `Monitoring`,
-      desc: `We track performance closely, adjusting the approach as we learn what works.`,
+      title: null,
+      desc: `Review, refine, and report regularly`,
       icon: Settings
-    },
-    {
-      title: `Reporting`,
-      desc: `Every month, you get clear reports showing exactly how your marketing is performing.`,
-      icon: PenTool
     }
   ];
 
@@ -40,7 +35,7 @@ export function DmaProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our <span className="text-gradient">Process</span>
+  How <span className="text-gradient">We Work</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>
@@ -100,7 +95,7 @@ export function DmaProcess() {
                   {/* Content (Alternates sides on Desktop, Full width on Mobile) */}
                   <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-0 w-full px-2 sm:px-8 md:px-0`}>
                     <div className="relative z-20 bg-slate-100 rounded-2xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center flex flex-col items-center">
-                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                      {step.title && <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>}
                       <p className="text-gray-600 leading-relaxed text-lg">{step.desc}</p>
                     </div>
                   </div>

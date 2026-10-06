@@ -14,7 +14,7 @@ export function WebAnalyticsWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/What Is a Web (Web Analytics).png" 
+                src="/new/What Is a Web (Web Analytics).png" 
                 alt=" Digital marketing professionals reviewing a website traffic and lead conversion report on a tablet during a business meeting." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -32,11 +32,11 @@ export function WebAnalyticsWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What Is a Web <span className="text-gradient">Analytics Service</span>?
+                  What Does Web Analytics <span className="text-gradient">Actually Mean?</span>
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  A Web Analytics Service is the process of setting up, auditing, and interpreting website tracking data — covering traffic sources, visitor behavior, conversion goals, and reporting — so a business can make marketing decisions based on facts rather than guesswork. It typically uses tools like Google Analytics and Google Search Console, configured correctly and explained in plain language.
+                  It's the practice of collecting, measuring, and making sense of everything happening on your site: who lands there, what they open, what they click, and at what point they leave. Tools like Google Analytics and Google's Search Console turn that activity into numbers you can actually use, instead of guessing what's working.
                 </p>
               </div>
             </div>

@@ -18,7 +18,7 @@ export function WebDevQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer (WB).png" 
+                  src="/new/quick answer (WB).png" 
                   alt=" Web designer reviewing an old and new website design on a tablet alongside a website wireframe sketchbook" 
                   className="w-full h-full object-cover"
                 />
@@ -44,7 +44,10 @@ export function WebDevQuickAnswer() {
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a <strong className="text-[#0c1f28]">Web Development Service in Trichy, Tamil Nadu</strong> that builds fast mobile-friendly, SEO-ready websites — including business websites, ecommerce stores, landing pages, redesigns, and web applications. Most business websites take 3–8 weeks to build, and results like faster load times and better mobile performance are visible immediately after launch, with SEO and conversion benefits building over the following months.
+                  Looking for a website that actually gets visitors to act? Inymart Labs builds custom, fast-loading, mobile-friendly websites for businesses across Trichy and Tamil Nadu, backed by clean code, solid security, and support after launch.
+                </p>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium mt-4">
+                  <span className="text-[#ff6b35] font-semibold">Have a project in mind? Talk to Inymart Labs today.</span>
                 </p>
               </Reveal>
             </div>

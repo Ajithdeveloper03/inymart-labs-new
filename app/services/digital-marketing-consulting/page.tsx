@@ -148,13 +148,13 @@ export default function DigitalMarketingConsultingPage() {
         <DmcQuickAnswer />
         <DmcWhatIs />
         <DmcWhatWeDo />
-        <DmcWhyChoose />
-        <DmcComparison />
-        <DmcKeyFacts />
         <DmcProcess />
+        <DmcComparison />
         <DmcWhoThisIsFor />
         <DmcExpectations />
-        <DmcTrust />
+        <DmcWhyChoose />
+        {/* <DmcKeyFacts /> */}
+        {/* <DmcTrust /> */}
         <DmcFaq />
         <DmcCta />
       </main>

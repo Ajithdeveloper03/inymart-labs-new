@@ -14,7 +14,7 @@ export function DmcWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/what is (DMC).jpeg" 
+                src="/new/what is (DMC).jpeg" 
                 alt=" Digital marketing analytics concept featuring a laptop with performance charts, SEO, social media, digital marketing icons, traffic sources, and business growth metrics" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -36,7 +36,7 @@ export function DmcWhatIs() {
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  Digital Marketing Consulting is expert, outside guidance on a business's marketing strategy — reviewing existing SEO, social media, ads, and analytics efforts, identifying what's working and what isn't, and building a clear, prioritized plan for what to do next. Unlike a full-service marketing agency, consulting can be advice-only, or paired with implementation if the business wants the same team to execute the plan.
+                  It is professional advice on improving your online marketing strategy. A consultant reviews what you already do, learns your goals, studies your performance and competitors, and builds a roadmap. Instead of chasing trends or trying every channel, you focus on what fits your audience, industry, and budget.
                 </p>
               </div>
             </div>

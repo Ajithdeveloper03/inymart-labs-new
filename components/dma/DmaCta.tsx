@@ -29,13 +29,13 @@ export function DmaCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready for a Complete Digital <span className="text-gradient">Marketing Strategy?</span>
+  Ready for a Tidier, More Effective <span className="text-gradient">Online Presence?</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for a Digital Marketing Agency in Tamil Nadu or a trusted Digital Marketing Agency in Trichy that brings everything together, Inymart Labs is ready to help. We'll build a plan around your business, your goals, and your budget.
+              People are already searching, comparing, and deciding online every day, and a coordinated plan helps your business show up right when it matters and say the right thing once it does. Whether you need stronger search rankings, a livelier social presence, sharper ads, a better website, or just a clearer read on your numbers, we build the plan around your business rather than a fixed package.
             </p>
           </Reveal>
 
@@ -46,7 +46,7 @@ export function DmaCta() {
                 
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto whitespace-nowrap"
               >
-                Start Your Digital Marketing Journey
+                Ready to bring your marketing together? Contact Inymart Labs to get started.
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               

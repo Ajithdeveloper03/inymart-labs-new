@@ -29,13 +29,13 @@ export function WebDevCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Build a Website That <span className="text-gradient">Works for You</span>?
+  Let's Build Something That <span className="text-gradient">Works for You</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for a Web Development Service in Tamil Nadu or a trusted Web Development Service in Trichy that builds websites for real business results, Inymart Labs is ready to help. We'll design and build a website around your business, your customers, and your growth plans.
+              A website is often the first impression a potential customer has of your business. Get the structure, speed, and security right, and it becomes a tool that brings in enquiries instead of just sitting online. Get in touch and tell us what you're trying to achieve, we'll take it from there.
             </p>
           </Reveal>
 
@@ -46,7 +46,7 @@ export function WebDevCta() {
                 
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto whitespace-nowrap"
               >
-                Start Your Web Development Project
+                Contact Inymart Labs to start your website project
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               

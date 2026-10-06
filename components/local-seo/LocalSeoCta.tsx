@@ -29,13 +29,13 @@ export function LocalSeoCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Get Found by <span className="text-gradient">Nearby Customers?</span>
+  Ready to get <span className="text-gradient">found locally?</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for a Local SEO agency in Tamil Nadu or a trusted Local SEO agency in Trichy that helps you show up first for nearby customers, Inymart Labs is ready to help. We'll build a plan around your business, your locations, and how customers search for you.
+              Contact Inymart Labs to get started.
             </p>
           </Reveal>
 

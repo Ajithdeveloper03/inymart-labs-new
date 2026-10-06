@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does a Digital Marketing Agency do?',
-    a: 'A Digital Marketing Agency like Inymart Labs manages a business\'s online growth across SEO, social media, ads, web development, and analytics under one coordinated strategy.'
+    q: 'What is the role of a digital marketing agency?',
+    a: 'It plans, runs, and improves several marketing channels together, including search rankings, social, paid ads, your website, and analytics, instead of handling each one separately.'
   },
   {
-    q: 'Do I need to use all your services, or can I choose just one?',
-    a: 'You can start with just one service, such as SEO or web development, and add others as your needs grow.'
+    q: 'Is this service available for businesses in Trichy and Tamil Nadu?',
+    a: 'Yes, we run this Digital Marketing Agency Service for businesses across Trichy and Tamil Nadu, spanning search rankings, social, ads, websites, analytics, and consulting.'
   },
   {
-    q: 'How is this different from hiring separate freelancers for each service?',
-    a: 'Everything is managed under one strategy and one team, so your SEO, ads, and social media actually work together instead of separately.'
+    q: 'Do I have to use every service you offer?',
+    a: 'No, you can start with one service, such as SEO or paid ads, and add others later as your needs grow.'
   },
   {
-    q: 'What makes Inymart Labs the right Digital Marketing Agency in Tamil Nadu and Digital Marketing Agency in Trichy?',
-    a: 'Inymart Labs focuses on coordinated strategy and transparent reporting, so you always know what\'s happening and why.'
+    q: 'How is a coordinated strategy different from hiring separately for each channel?',
+    a: 'When channels are managed together, your messaging stays consistent and decisions are based on a full picture of performance, rather than one channel viewed in isolation.'
   },
   {
-    q: 'How soon will I start seeing results?',
-    a: 'This depends on the services chosen — ads can show results within days, while SEO typically builds over a few months.'
+    q: 'Which businesses can you work with?',
+    a: 'Local shops, startups, online stores, professional firms, schools and colleges, hospitality brands, and growing companies of most sizes.'
   },
   {
-    q: 'Will I get regular updates on performance?',
-    a: 'Yes. You\'ll receive clear monthly reports covering every active service, explained in simple language.'
+    q: 'How will I know if the marketing is working?',
+    a: 'We track traffic, conversions, and channel performance, and share regular reports showing what\'s working and where attention is needed.'
+  },
+  {
+    q: 'Can you help if I already have some marketing running?',
+    a: 'Yes, we review what you currently have in place and build a plan around it rather than starting from scratch.'
   }
 ];
 
@@ -61,7 +65,7 @@ export function DmaFaq() {
               
               {/* Paragraph */}
               <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
-                Find answers to the most common questions about our services.
+                Any more questions? Reach out to the Inymart Labs team.
               </p>
             </div>
           </Reveal>

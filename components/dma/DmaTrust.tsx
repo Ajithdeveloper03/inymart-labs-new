@@ -5,14 +5,10 @@ import { CheckCircle2 } from 'lucide-react';
 
 export function DmaTrust() {
   const points = [
-
-    "10+ years of experience across SEO, social media, ads, web development, and analytics",
-    "50+ brands served across India, UAE, UK, and the USA",
-    "Headquartered in Tiruchirappalli, with hands-on knowledge of Tamil Nadu markets",
-    "One coordinated team managing every channel, instead of disconnected vendors",
-    "Transparent monthly reporting across every active service",
-    "Real humans managing your account — no bots, no generic templates"
-  
+    "Coordinated strategy: Every channel works toward one shared goal, not separate targets",
+    "Full-service team: SEO, social, ads, web, and analytics under one roof",
+    "Transparent results: Clear reporting on what's working and what needs attention",
+    "Flexible plans: Start small or run everything together, your call"
   ];
 
   return (
@@ -25,7 +21,7 @@ export function DmaTrust() {
           <Reveal className="order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/why trust 2.jpg" 
+                src="/new/why trust 2.jpg" 
                 alt="Team Meeting" 
                 className="w-full h-[400px] lg:h-[500px] object-fill"
               />
@@ -37,13 +33,8 @@ export function DmaTrust() {
           <div className="order-1 lg:order-2 flex flex-col justify-center">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Trust Inymart <span className="text-gradient">Labs</span>
+  Why Choose Inymart Labs for Digital Marketing Agency Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="font-sans text-gray-600 text-lg mb-8 leading-relaxed">
-                Handing over your business's marketing to an agency requires trust. Here's why businesses choose Inymart Labs as their Digital Marketing Agency in Tamil Nadu and Digital Marketing Agency in Trichy:
-              </p>
             </Reveal>
 
             <div className="flex flex-col gap-4">

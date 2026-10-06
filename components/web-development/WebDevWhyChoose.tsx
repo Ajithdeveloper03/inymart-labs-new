@@ -24,13 +24,13 @@ export function WebDevWhyChoose() {
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Choose a Web <span className="text-gradient">Development Service</span> in Tamil Nadu
+  Why Businesses Pick <span className="text-gradient">Inymart Labs</span>
 </h2>
             
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto relative">
           
           {/* Card 1 */}
           <Reveal delay={100} className="h-full">
@@ -43,16 +43,14 @@ export function WebDevWhyChoose() {
                 <MousePointerClick className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
+              <h3 className="font-bold text-lg mb-2 text-slate-800 group-hover:text-white transition-colors duration-300">Custom approach</h3>
+
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                A website is often the first real impression a customer has of your business. If it loads slowly, looks outdated, or is hard to use on a phone, customers leave before they even understand what you offer.
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] grow transition-colors duration-300">
+                We begin by understanding what your business needs, not by pulling out a stock design.
               </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
             </div>
           </Reveal>
 
@@ -66,17 +64,15 @@ export function WebDevWhyChoose() {
                 <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Zap className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
+
+              <h3 className="font-bold text-lg mb-2 text-slate-800 group-hover:text-white transition-colors duration-300">Solid foundation</h3>
               
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                A good Web Development Service in Tamil Nadu builds websites with both design and performance in mind. As an experienced Web Development Service in Trichy, Inymart Labs makes sure your website looks professional, loads quickly, and is built in a way that search engines can understand and rank well.
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] grow transition-colors duration-300">
+                Fast, mobile-ready, and secure by default.
               </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
             </div>
           </Reveal>
 
@@ -90,17 +86,37 @@ export function WebDevWhyChoose() {
                 <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Map className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
+
+              <h3 className="font-bold text-lg mb-2 text-slate-800 group-hover:text-white transition-colors duration-300">Built for growth</h3>
               
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                We also build with the future in mind. Your website should be easy to update, simple to expand, and strong enough to support your marketing — whether that's SEO, ads, or social media traffic.
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] grow transition-colors duration-300">
+                Search-friendly structure from day one.
               </p>
+            </div>
+          </Reveal>
 
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
+          {/* Card 4 */}
+          <Reveal delay={400} className="h-full">
+            <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
+              <PixelScatter />
+              
+              <div className="mb-4 mt-2 relative">
+                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <MousePointerClick className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
+              </div>
+
+              <h3 className="font-bold text-lg mb-2 text-slate-800 group-hover:text-white transition-colors duration-300">Ongoing support</h3>
+              
+              {/* Separator */}
+              <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
+
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] grow transition-colors duration-300">
+                We stay on for updates and fixes after launch.
+              </p>
             </div>
           </Reveal>
 

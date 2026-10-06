@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What is a Web Development Service?',
-    a: 'A Web Development Service covers the planning, design, coding, and launch of a website, built to be fast, mobile-friendly, and structured for both visitors and search engines.'
+    q: 'What exactly does a web developer do?',
+    a: 'A web developer plans, builds, tests, and maintains a website, covering everything from layout and features to speed and security.'
   },
   {
-    q: 'How long does it take to build a new website?',
-    a: 'Most business websites take 3–8 weeks depending on the number of pages and features, while ecommerce sites can take longer.'
+    q: 'Do you build websites for businesses in Trichy and Tamil Nadu?',
+    a: 'Yes, Inymart Labs builds websites for businesses across Trichy and Tamil Nadu, from small local businesses to growing companies.'
   },
   {
-    q: 'Can you redesign my existing website instead of building a new one?',
-    a: 'Yes. Inymart Labs often starts by auditing your current website and recommends a redesign or rebuild only where it\'s truly needed.'
+    q: 'Will my site look right on phones?',
+    a: 'Absolutely. Every site we deliver reshapes itself automatically for phones, tablets, and desktops.'
   },
   {
-    q: 'Will my website work well on mobile phones?',
-    a: 'Yes. Every website Inymart Labs builds is fully optimized for mobile devices, since most visitors browse on phones today.'
+    q: 'Can I request specific features for my site?',
+    a: 'Yes, we build around what your business actually needs, whether that\'s forms, booking tools, a blog, or payment integration.'
   },
   {
-    q: 'What makes Inymart Labs the right Web Development Service in Tamil Nadu and Web Development Service in Trichy?',
-    a: 'Inymart Labs builds websites with both design and SEO performance in mind, so your site looks good and is genuinely built to grow your business.'
+    q: 'Will my new website be easy to find on Google?',
+    a: 'We lay the groundwork for search visibility during the build, including clean URLs, proper headings, and metadata, though ongoing SEO work helps further.'
   },
   {
-    q: 'Do you provide support after the website is launched?',
-    a: 'Yes. Inymart Labs offers ongoing maintenance and updates to keep your website secure, fast, and current.'
+    q: 'Can I edit the website myself after it\'s live?',
+    a: 'In most cases yes, we hand it over on a beginner-friendly platform so you can update text and images without calling a developer.'
+  },
+  {
+    q: 'What if I need changes after the site launches?',
+    a: 'We offer ongoing support for updates, fixes, and new features as your business needs change.'
   }
 ];
 

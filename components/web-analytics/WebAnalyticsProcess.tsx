@@ -7,38 +7,49 @@ import Link from 'next/link';
 export function WebAnalyticsProcess() {
   const steps = [
     {
-      title: `Analytics Audit`,
-      desc: `We check your existing Google Analytics, Google Search Console, and tracking setup to find gaps or errors in your data.`,
+      title: `Checking Your Existing Setup`,
+      desc: `Bad tracking gives bad answers. We go through your current analytics configuration looking for missing data, broken events, duplicate tags, and gaps in coverage, then fix the groundwork first so every report after that is trustworthy.`,
       icon: Activity
     },
     {
-      title: `Correct Setup`,
-      desc: `We fix and configure tracking so every visit, click, and form submission is recorded accurately.`,
+      title: `Setting Up Tracking Properly`,
+      desc: `Getting real value from analytics means capturing the actions that matter: enquiry forms, phone calls, orders, file downloads, and button taps. We configure these events so you can see not just how many people visit, but what they actually do once they're there.`,
       icon: Search
     },
     {
-      title: `Goal Mapping`,
-      desc: `We define what actually matters for your business — calls, enquiries, purchases, or sign-ups — and track those specifically.`,
+      title: `Where Your Traffic Comes From`,
+      desc: `Not all visitors arrive the same way. We break down traffic by organic search, paid ads, social platforms, referral sites, and direct visits, so you know which channels bring in people worth pursuing and which ones need a second look.`,
       icon: Target
     },
     {
-      title: `Traffic Analysis`,
-      desc: `We study where your visitors come from — Google search, social media, ads, or direct visits — and how each source performs.`,
+      title: `How Visitors Actually Behave`,
+      desc: `Raw visit counts only tell half the story. We look at popular pages, engagement patterns, click paths, and the exact points where people leave, which points to fixes for your content, navigation, or landing pages.`,
       icon: Settings
     },
     {
-      title: `Behavior Analysis`,
-      desc: `We look at how people move through your website, where they drop off, and what's stopping them from converting.`,
+      title: `Tracking Conversions That Matter`,
+      desc: (
+        <>
+          A conversion looks different for every business, a sale, an enquiry, a call, a booking. We set these up properly and track them, so you can see which pages and channels actually drive results instead of just counting visitors.
+          <br /><br />
+          Want to know which pages are costing you conversions? Let's find out together.
+        </>
+      ),
       icon: PenTool
     },
     {
-      title: `Custom Reporting`,
-      desc: `We build simple, easy-to-read reports that show exactly what's happening, without technical jargon.`,
+      title: `Making Both Google Tools Work for You`,
+      desc: `Used well, these two tools cover different angles. One shows how people behave after arriving on your site; the other reveals how you're showing up in search results, covering queries, click counts, impressions, and indexing status. We pull insight from both to build a fuller picture.`,
       icon: Link2
     },
     {
-      title: `Ongoing Reviews`,
-      desc: `We review your data regularly and recommend clear next steps to improve results over time.`,
+      title: `Reports You Can Actually Use`,
+      desc: `A report full of numbers with no context isn't much help. Ours focus on what changed, why it matters, and what needs attention next, written so anyone running or marketing the business can act on it without needing a data background.`,
+      icon: Activity
+    },
+    {
+      title: `Staying on Top of Performance`,
+      desc: `Search behaviour, competitors, and customer expectations shift constantly. We keep watching your key metrics over time, catching changes early so your marketing and website can adapt before small issues become bigger problems.`,
       icon: BarChart
     }
   ];
@@ -50,7 +61,7 @@ export function WebAnalyticsProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our Web <span className="text-gradient">Analytics</span> Process
+  What's <span className="text-gradient">Included</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>

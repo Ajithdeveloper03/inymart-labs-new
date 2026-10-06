@@ -14,7 +14,7 @@ export function WebDevWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/what is (WB).png" 
+                src="/new/what is (WB).png" 
                 alt=" Responsive web design concept showing a mobile website displayed on a smartphone alongside its desktop version on a laptop." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -32,12 +32,19 @@ export function WebDevWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What Is a Web <span className="text-gradient">Development Service</span>?
+                  What Does Web Development <span className="text-gradient">Actually Involve?</span>
                 </h2>
                 
-                <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  A Web Development Service covers the planning, design, coding, and launch of a website — built to be fast, mobile-friendly, and structured in a way that both visitors and search engines can navigate easily. It typically includes discovery, design, development, mobile optimization, SEO-ready setup, testing, and ongoing support after launch.
-                </p>
+                <div className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium text-left">
+                  <p className="mb-4">Building a proper website means:</p>
+                  <ul className="list-disc pl-5 mb-4 space-y-2">
+                    <li>Planning the pages and features people need</li>
+                    <li>Designing for phones, tablets, and desktops alike</li>
+                    <li>Wiring up forms, tools, and third-party services</li>
+                    <li>Keeping it fast, safe, and easy to manage</li>
+                  </ul>
+                  <p>None of these steps work in isolation. A site that loads fast but confuses visitors fails just as much as one that looks great but crawls slowly.</p>
+                </div>
               </div>
             </div>
 

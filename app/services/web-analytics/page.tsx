@@ -147,16 +147,12 @@ export default function WebAnalyticsServicePage() {
         <WebAnalyticsHeroBanner />
         <WebAnalyticsQuickAnswer />
         <WebAnalyticsWhatIs />
-        <WebAnalyticsWhatWeDo />
         <WebAnalyticsWhyChoose />
-        <WebAnalyticsComparison />
-        <WebAnalyticsKeyFacts />
         <WebAnalyticsProcess />
-        <WebAnalyticsWhoThisIsFor />
         <WebAnalyticsExpectations />
-        <WebAnalyticsTrust />
-        <WebAnalyticsFaq />
+        <WebAnalyticsWhoThisIsFor />
         <WebAnalyticsCta />
+        <WebAnalyticsFaq />
       </main>
       <Footer />
       <ScrollToTop />

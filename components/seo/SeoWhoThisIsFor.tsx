@@ -7,28 +7,44 @@ export function SeoWhoThisIsFor() {
   const points = [
     {
       title: null,
-      text: `Local businesses want more calls, visits, and enquiries`,
+      text: (
+        <>
+          <strong className="text-gray-900">Results-focused:</strong> Targeting search intent that actually leads to business, not just clicks
+        </>
+      ),
       icon: Users,
       iconColor: "text-pink-500", bgColor: "bg-pink-50", borderColor: "border-pink-100",
       
     },
     {
       title: null,
-      text: `Growing brands want to reach new cities or regions`,
+      text: (
+        <>
+          <strong className="text-gray-900">Full-scope service:</strong> Keyword research, technical fixes, content, local SEO, and links under one roof
+        </>
+      ),
       icon: Search,
       iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
       
     },
     {
       title: null,
-      text: `Ecommerce businesses want more product page visibility`,
+      text: (
+        <>
+          <strong className="text-gray-900">Flexible for any business:</strong> Fits local businesses, new startups, ecommerce brands, and established companies alike
+        </>
+      ),
       icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },
     {
       title: null,
-      text: `Any business tired of paying for SEO with no clear results`,
+      text: (
+        <>
+          <strong className="text-gray-900">Clear reporting:</strong> Reports that explain progress in plain language, not just numbers
+        </>
+      ),
       icon: TrendingUp,
       iconColor: "text-blue-500", bgColor: "bg-blue-50", borderColor: "border-blue-100",
       
@@ -47,12 +63,9 @@ export function SeoWhoThisIsFor() {
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Who <span className="text-gradient">This Is For</span>
+  Why Choose Inymart Labs for SEO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
               </div>
-              <p className="text-gray-600 text-lg md:text-xl">
-                As an SEO agency in Tamil Nadu, our service works well for:
-              </p>
             </div>
           </Reveal>
 
@@ -86,13 +99,6 @@ export function SeoWhoThisIsFor() {
             })}
           </div>
 
-          <Reveal delay={400}>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-gray-600 text-lg text-center leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-                Whether you're just start to think about SEO or you've tried it before without results, our team takes the time to understand your business before recommend anything.
-              </p>
-            </div>
-          </Reveal>
           
         </div>
       </div>

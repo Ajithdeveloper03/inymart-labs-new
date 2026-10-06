@@ -7,40 +7,51 @@ import Link from 'next/link';
 export function SmmProcess() {
   const steps = [
     {
-      title: `Goal Setting`,
-      desc: `We start by understanding what success looks like for you — more calls, more orders, more enquiries, or more brand awareness.`,
+      title: `Finding the Right Audience`,
+      desc: `Getting your ad in front of the wrong people wastes budget fast. We build audiences around location, age, interests, past behaviour, and prior interactions. Where it fits, we also use remarketing to reach people who've already visited your site, engaged with your pages, or clicked a previous ad.`,
       icon: Target
     },
     {
-      title: `Audience Targeting`,
-      desc: `We define exactly who should see your ads, based on location, age, interests, and buying behavior.`,
-      icon: Users
-    },
-    {
-      title: `Ad Creative`,
-      desc: `We design scroll-stopping images and videos, and write ad copy that speaks directly to your customer's needs.`,
+      title: `Creative That Actually Stops the Scroll`,
+      desc: `People scroll past most social content without a second glance. Our images, videos, headlines, and captions are built to match your brand and actually communicate something, not just look polished. The goal is prompting real action, not admiring visuals.`,
       icon: ImageIcon
     },
     {
-      title: `Campaign Setup`,
-      desc: `We set up your campaigns correctly across Facebook, Instagram, and LinkedIn, with the right budget and bidding strategy.`,
+      title: `Facebook and Instagram Campaigns`,
+      desc: `These platforms open up several ways to reach your audience, depending on what you're after: leads, site visits, product interest, direct messages, or sales. We tailor each campaign by location, audience type, budget, and what your business specifically needs.`,
+      icon: Users
+    },
+    {
+      title: `Setting Up and Running Campaigns`,
+      desc: `Getting a campaign right before it launches matters more than fixing it after. We configure objectives, audiences, ad placements, budgets, and conversion tracking upfront, then keep watching performance once it's live, adjusting spend, targeting, or creative as the data comes in.`,
       icon: Settings
     },
     {
-      title: `A/B Testing`,
-      desc: `We test different ad versions to find out which images, headlines, and offers perform best.`,
+      title: `Testing What Actually Works`,
+      desc: (
+        <>
+          The same ad rarely performs the same way for every audience. We run side-by-side tests on creatives, messaging, audiences, and offers, then lean into whatever the data shows is working better.
+          <br /><br />
+          Curious which version of your ad performs best? Let's test it and find out.
+        </>
+      ),
       icon: SlidersHorizontal
     },
     {
-      title: `Optimization`,
-      desc: `We monitor campaigns daily and adjust targeting, budget, and creative to improve results over time.`,
+      title: `Turning Clicks Into Real Business`,
+      desc: `An ad that gets clicks but no enquiries isn't doing its job. We build the full path, landing pages, lead forms, or messaging options, around the exact action you want visitors to take, rather than just chasing impressions.`,
       icon: TrendingUp
     },
     {
-      title: `Reporting`,
-      desc: `Every month, you get a simple report showing spend, reach, clicks, and leads — no confusing jargon.`,
+      title: `Keeping Budget Accountable`,
+      desc: `We track where your ad spend is actually producing results, covering how far it reaches, what each click and lead costs, and how conversions compare to spend. Regular check-ins mean money moves toward what's working and away from what isn't.`,
       icon: FileText
-    }
+    },
+    {
+      title: `Campaigns Built for Your Kind of Business`,
+      desc: `A local shop, an online store, and a growing brand all need different approaches. Local campaigns can stay tight to a specific area, while ecommerce campaigns can chase people interested in particular products. The setup adjusts to your business model and customer journey.`,
+      icon: Target
+    },
   ];
 
   return (
@@ -50,7 +61,7 @@ export function SmmProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our Social <span className="text-gradient">Media</span> Ads Process
+  What Our SMM Service <span className="text-gradient">Covers</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>

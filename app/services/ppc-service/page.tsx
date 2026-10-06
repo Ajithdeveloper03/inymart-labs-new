@@ -148,13 +148,13 @@ export default function PpcServicePage() {
         <PpcQuickAnswer />
         <PpcWhatIs />
         <PpcWhatWeDo />
-        <PpcWhyChoose />
-        <PpcComparison />
-        <PpcKeyFacts />
         <PpcProcess />
+        <PpcComparison />
+        {/* <PpcKeyFacts /> */}
         <PpcWhoThisIsFor />
         <PpcExpectations />
         <PpcTrust />
+        <PpcWhyChoose />
         <PpcFaq />
         <PpcCta />
       </main>

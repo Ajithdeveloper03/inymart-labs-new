@@ -7,44 +7,59 @@ import Link from 'next/link';
 export function PpcProcess() {
   const steps = [
     {
-      title: `Goal Setting`,
-      desc: `We start by understanding what success looks like for you — calls, enquiries, purchases, or sign-ups.`,
-      icon: Activity
-    },
-    {
       title: `Keyword Research`,
-      desc: `We find the exact search terms your potential customers are typing into Google.`,
+      desc: (
+        <>
+          <p>We study what people type, why they type it, how competitive each term is, and how likely it is to lead to a sale. Phrases with strong buying intent get priority, while vague or off-topic searches are blocked using negative keywords. That keeps your budget away from casual browsing.</p>
+        </>
+      ),
       icon: Search
     },
     {
       title: `Campaign Setup`,
-      desc: `We build your Google Ads campaigns correctly from the start, with the right structure, targeting, and budget.`,
+      desc: (
+        <>
+          <p>Campaigns are grouped by service, product, location, and buyer intent. Next come keyword match types, budgets, schedules, devices, and target areas, all tuned to each campaign. A tidy structure makes it easy to see what works and what does not.</p>
+        </>
+      ),
       icon: Target
     },
     {
-      title: `Ad Copywriting`,
-      desc: `We write clear, compelling ad copy that speaks directly to what your customer is searching for.`,
-      icon: Settings
-    },
-    {
-      title: `Landing Page Alignment`,
-      desc: `We make sure the page your ad leads to actually matches what was promised, so visitors don't bounce away.`,
+      title: `Ad Copy`,
+      desc: (
+        <>
+          <p>Our headlines and descriptions answer what the searcher wants and spotlight a benefit, service, offer, or clear next step. We run several versions side by side to learn which message people respond to.</p>
+        </>
+      ),
       icon: PenTool
     },
     {
-      title: `Bid Management`,
-      desc: `We manage your budget and bids daily, adjusting to get the most value from every rupee spent.`,
+      title: `Landing Pages`,
+      desc: (
+        <>
+          <p className="mb-2">A click is only the halfway point. We check whether the page:</p>
+          <ul className="list-disc pl-5 mb-2 space-y-1 text-left">
+            <li>Matches the promise made in the ad</li>
+            <li>Has a clear call to action and an easy form</li>
+            <li>Is simple to navigate and pleasant to use</li>
+          </ul>
+          <p>When ad and page work together, the path from search to enquiry or purchase feels natural.</p>
+        </>
+      ),
       icon: Link2
     },
     {
-      title: `A/B Testing`,
-      desc: `We test different ads and keywords to see what brings the best results, and scale up what works.`,
-      icon: BarChart
-    },
-    {
-      title: `Reporting`,
-      desc: `Every month, you get a simple report showing spend, reach, clicks, and leads — no confusing jargon.`,
-      icon: Zap
+      title: `Audience and Location Targeting`,
+      desc: (
+        <>
+          <p className="mb-2">Beyond location, we fine-tune devices, schedules, and audience signals based on your needs.</p>
+          <ul className="list-disc pl-5 mb-2 space-y-1 text-left">
+            <li>Local businesses: Campaigns stay focused on your service area</li>
+            <li>Wider brands: Campaigns grow by location, customer behaviour, and goals</li>
+          </ul>
+        </>
+      ),
+      icon: Target
     }
   ];
 
@@ -55,7 +70,7 @@ export function PpcProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our <span className="text-gradient">PPC Process</span>
+  How Our PPC <span className="text-gradient">Service Works</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>
@@ -116,7 +131,7 @@ export function PpcProcess() {
                   <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-0 w-full px-2 sm:px-8 md:px-0`}>
                     <div className="relative z-20 bg-slate-100 rounded-2xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center flex flex-col items-center">
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                      <p className="text-gray-600 leading-relaxed text-lg">{step.desc}</p>
+                      <div className="text-gray-600 leading-relaxed text-lg text-left">{step.desc}</div>
                     </div>
                   </div>
                 </div>
@@ -131,7 +146,7 @@ export function PpcProcess() {
               href="/contact" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
-              See Our PPC Process in Action
+              Selling in Trichy or anywhere in Tamil Nadu? Ask Inymart Labs for a campaign plan.
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

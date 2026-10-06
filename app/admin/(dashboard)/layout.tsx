@@ -18,7 +18,7 @@ export default function AdminLayout({
       <aside className="w-64 bg-[#1f2937] text-white flex flex-col fixed top-0 left-0 h-screen shrink-0">
         <div className="p-6 flex flex-col items-center border-b border-gray-700">
           <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-3 overflow-hidden border-2 border-white">
-            <img src="/logo.webp" alt="Inymart Labs Logo" className="w-full h-auto p-2" />
+            <img src="/new/logo.webp" alt="Inymart Labs Logo" className="w-full h-auto p-2" />
           </div>
           <h2 className="font-bold tracking-wide text-center">INYMART LABS</h2>
           <p className="text-xs text-gray-400">ADMIN PANEL</p>

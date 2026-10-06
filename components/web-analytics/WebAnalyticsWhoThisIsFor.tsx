@@ -7,31 +7,43 @@ export function WebAnalyticsWhoThisIsFor() {
   const points = [
     {
       title: null,
-      text: `Businesses with a website but no clear understanding of its performance`,
+      text: (
+        <>
+          <strong className="text-gray-900">Clean setup first:</strong> We fix broken data before we analyze anything
+        </>
+      ),
       icon: Users,
       iconColor: "text-pink-500", bgColor: "bg-pink-50", borderColor: "border-pink-100",
-      
     },
     {
       title: null,
-      text: `Businesses running ads or SEO who want to know if it`,
+      text: (
+        <>
+          <strong className="text-gray-900">Goal-focused:</strong> Tracking built around calls, sales, or enquiries, whatever matters to you
+        </>
+      ),
       icon: Search,
       iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
-      
     },
     {
       title: null,
-      text: `Ecommerce businesses wanting to understand buyer behavior`,
+      text: (
+        <>
+          <strong className="text-gray-900">Plain-language reporting:</strong> Reports explain what changed and why, not just raw numbers
+        </>
+      ),
       icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
-      
     },
     {
       title: null,
-      text: `Any business that suspects their tracking data may be incomplete or wrong`,
+      text: (
+        <>
+          <strong className="text-gray-900">Continuous monitoring:</strong> We keep watching your numbers, not just a one-time setup
+        </>
+      ),
       icon: TrendingUp,
       iconColor: "text-blue-500", bgColor: "bg-blue-50", borderColor: "border-blue-100",
-      
     }
   ];
 
@@ -47,26 +59,18 @@ export function WebAnalyticsWhoThisIsFor() {
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Who <span className="text-gradient">This Is For</span>
+  Why Choose Inymart Labs for Web Analytics Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
               </div>
-              <p className="text-gray-600 text-lg md:text-xl">
-                Our Web Analytics Service in Tamil Nadu works well for:
-              </p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {points.map((point, i) => {
               const Icon = point.icon;
               return (
                 <Reveal key={i} delay={i * 100} className="h-full">
                   <div className={`relative flex items-center gap-5 sm:gap-6 p-4 sm:p-5 pr-6 sm:pr-8 rounded-[2.5rem] sm:rounded-[3rem] ${point.bgColor} border ${point.borderColor} shadow-xl hover:-translate-y-1 transition-transform duration-300 overflow-hidden group h-full`}>
-                    
-                    
-                    
-                    
-                    
                     {/* Icon Container */}
                     <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white flex items-center justify-center shadow-md">
                        <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${point.iconColor}`} />
@@ -74,25 +78,15 @@ export function WebAnalyticsWhoThisIsFor() {
                     
                     {/* Content */}
                     <div className="relative z-10 flex-1 py-2">
-                      {point.title && <h3 className="text-gray-900 text-lg font-bold mb-1 font-display">{point.title}</h3>}
                       <p className="text-gray-600 text-sm sm:text-base font-medium leading-relaxed">
                         {point.text}
                       </p>
                     </div>
-                    
                   </div>
                 </Reveal>
               );
             })}
           </div>
-
-          <Reveal delay={400}>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-gray-600 text-lg text-center leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-                Whether you already use Google Analytics or haven't set up tracking at all, our team as your Web Analytics Service in Trichy starts by making sure your data is accurate before we analyze anything.
-              </p>
-            </div>
-          </Reveal>
           
         </div>
       </div>

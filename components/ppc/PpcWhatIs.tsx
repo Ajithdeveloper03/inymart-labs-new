@@ -14,7 +14,7 @@ export function PpcWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/What Is PPC (PPC).png" 
+                src="/new/What Is PPC (PPC).png" 
                 alt=" Google search results for a digital marketing agency in Trichy, showing a sponsored Inymart Labs listing, local business map results, and a negative keywords checklist." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -32,11 +32,11 @@ export function PpcWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What <span className="text-gradient">Is PPC?</span>
+                  Why Paid Search Beats Waiting for <span className="text-gradient">Organic Rankings</span>
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  PPC (Pay-Per-Click) is a form of online advertising where a business pays only when someone clicks their ad, typically shown at the top of Google search results or across partner websites. Unlike SEO, which builds organic visibility over time, PPC delivers immediate visibility for chosen keywords, with performance measured directly through clicks, calls, and conversions.
+                  Organic growth can take months. Paid search puts your business in front of buyers who are already searching, so you get attention right away while long-term SEO builds in the background.
                 </p>
               </div>
             </div>

@@ -15,7 +15,7 @@ const TRUST_POINTS = [
 export function PortfolioWhyTrustUs() {
   return (
     <section className="relative overflow-hidden bg-[#0c1f28] py-16 lg:py-24">
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[url('/new/noise.png')] opacity-20 mix-blend-overlay"></div>
       <div className="container-x relative z-10">
         
         <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -24,7 +24,7 @@ export function PortfolioWhyTrustUs() {
           <Reveal className="order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/why%20trust%20inymart%20labs%20(%20portfolio).png" 
+                src="/new/why%20trust%20inymart%20labs%20(%20portfolio).png" 
                 alt=" Modern IT park website design displayed on a large screen, featuring a futuristic business campus, infrastructure highlights, occupancy metrics, tenant information, and visit or enquiry options." 
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />

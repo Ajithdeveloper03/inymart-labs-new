@@ -17,19 +17,26 @@ export function AiSeoWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  Why Businesses in Trichy and Tamil Nadu Need <span className="text-gradient">AI SEO Services</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs offers a dedicated <strong className="text-[#0c1f28]">AI SEO Service in Tamil Nadu</strong>, helping businesses become visible and accurately represented across AI search tools, not just Google. As an <strong className="text-[#0c1f28]">AEO Service and AI SEO Service in Trichy</strong>, we restructure website content so AI engines can extract clear, correct answers about your business.
-              </p>
+              <div className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
+                <p className="mb-2">
+                  A business can have a well-designed website and still be poorly represented in AI search. An AI platform may:
+                </p>
+                <ul className="list-disc pl-5 mb-4 space-y-1">
+                  <li>Not mention your business at all</li>
+                  <li>Provide incomplete information</li>
+                  <li>Show outdated details</li>
+                </ul>
+              </div>
             </Reveal>
             <Reveal delay={200}>
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether your business is invisible to AI tools today or already appears but with outdated or incorrect information, our team as your AI SEO Service in Tamil Nadu builds a plan to fix and strengthen that visibility.
+                As customers increasingly use AI for recommendations, this is a new visibility opportunity. AI SEO helps you build a stronger digital information foundation so your brand is understood accurately across emerging search experiences.
               </p>
             </Reveal>
 

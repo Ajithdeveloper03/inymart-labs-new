@@ -147,13 +147,11 @@ export default function AiSeoServicePage() {
         <AiSeoQuickAnswer />
         <AiSeoWhatIs />
         <AiSeoWhatWeDo />
-        <AiSeoWhyChoose />
-        <AiSeoComparison />
-        <AiSeoKeyFacts />
         <AiSeoProcess />
+        <AiSeoComparison />
         <AiSeoWhoThisIsFor />
         <AiSeoExpectations />
-        <AiSeoTrust />
+        <AiSeoWhyChoose />
         <AiSeoFaq />
         <AiSeoCta />
       </main>

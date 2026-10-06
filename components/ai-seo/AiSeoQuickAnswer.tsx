@@ -18,7 +18,7 @@ export function AiSeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer ai seo.png" 
+                  src="/new/quick answer ai seo.png" 
                   alt="AI-powered digital marketing concept showing a website connected to multiple AI tools, with a central artificial intelligence brain, verified outputs, and global digital connectivity." 
                   className="w-full h-full object-cover"
                 />
@@ -67,8 +67,14 @@ export function AiSeoQuickAnswer() {
 
             <div className="space-y-6">
               <Reveal delay={100}>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium mb-4">
+                  AI SEO helps your business get understood, described, and recommended by AI platforms such as ChatGPT, Gemini, Perplexity, Copilot, Claude, and Grok. Inymart Labs provides AI SEO Services in Trichy and Tamil Nadu that connect traditional SEO with AI-powered search.
+                </p>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium mb-4">
+                  People no longer depend only on Google to discover businesses, compare services, or find answers. They now ask AI platforms for information and suggestions.
+                </p>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs offers an <strong className="text-[#0c1f28]">AI SEO Service in Trichy, Tamil Nadu</strong> also called an <strong className="text-[#0c1f28]">AEO Service (Answer Engine Optimization)</strong>, that helps businesses get found and recommended by AI tools like ChatGPT, Gemini, Copilot, and Perplexity — not just traditional Google search. This includes structuring content for direct answers, building citable facts and entity clarity, and monitoring how AI engines represent a business, with visibility improvements typically building over 2–4 months as AI platforms recrawl and re-index content.
+                  <span className="text-[#ff6b35] font-semibold">Want to know how AI describes your business? Get your AI Visibility Audit from Inymart Labs.</span>
                 </p>
               </Reveal>
             </div>

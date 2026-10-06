@@ -17,19 +17,24 @@ export function PpcWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  Campaigns Shaped Around Your <span className="text-gradient">Goals</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs offers a results-focused <strong className="text-[#0c1f28]">PPC Service in Tamil Nadu</strong>, helping businesses run Google Ads campaigns that bring in real calls, enquiries, and sales — not just clicks. As a trusted <strong className="text-[#0c1f28]">PPC Service in Trichy</strong>, we manage your ad budget carefully, so every rupee spent works toward a clear business goal.
-              </p>
+              <div className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
+                <p className="mb-4">Different businesses want different outcomes:</p>
+                <ul className="list-disc pl-5 mb-4 space-y-2">
+                  <li>A local service business usually wants phone calls</li>
+                  <li>An online store wants product orders</li>
+                  <li>A growing brand wants to stand out in a crowded market</li>
+                </ul>
+              </div>
             </Reveal>
             <Reveal delay={200}>
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you want more calls to a local business or more online orders for an ecommerce store, our team as your PPC Service in Tamil Nadu builds campaigns around what actually matters to you.
+                Before any ad goes live, we map out your target result, buyers, service area, competitors, budget, and the steps a customer takes before buying. Success is judged by results, not by click and impression counts.
               </p>
             </Reveal>
 
@@ -49,7 +54,7 @@ export function PpcWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/What We Do (PPC).png" 
+                  src="/new/What We Do (PPC).png" 
                   alt="Digital marketer creating Google Ads campaigns and display banner designs on dual monitors, with ad copy ideas, performance notes, and color palettes on the desk" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

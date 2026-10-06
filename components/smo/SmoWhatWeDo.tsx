@@ -17,19 +17,14 @@ export function SmoWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  What Does SMO <span className="text-gradient">Actually Involve?</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
               <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs is a trusted <strong className="text-[#0c1f28]">social media optimization company in Tamil Nadu</strong>, helping businesses build a strong, active presence on Facebook, Instagram, LinkedIn, and other platforms. As a social media optimization company in Tamil Nadu, we don't just post content — we build a plan that turns followers into real enquiries and customers.
-              </p>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you're a local shop in Trichy or a brand reaching customers across the country, our team as your social media optimization company in Tamil Nadu and social media optimization company in Trichy builds strategy around where your customers actually spend their time online.
+                Social Media Optimization covers everything short of paid ads: sharpening your profiles, planning content, researching your audience, publishing consistently, replying to comments, and checking what's actually working. It treats social media as an ongoing channel to manage properly, not just a feed to fill.
               </p>
             </Reveal>
 
@@ -49,7 +44,7 @@ export function SmoWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/SMO (What We Do).png" 
+                  src="/new/SMO (What We Do).png" 
                   alt="Social media marketing concept featuring a smartphone, Facebook, Instagram, and LinkedIn icons, audience engagement, analytics charts, a target, and upward growth arrows." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

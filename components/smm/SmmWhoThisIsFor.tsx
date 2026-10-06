@@ -1,37 +1,49 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { Users, Store, ShoppingCart, TrendingUp, HelpCircle, Lightbulb } from 'lucide-react';
+import { Users, Search, AlertCircle, TrendingUp, Lightbulb } from 'lucide-react';
 
 export function SmmWhoThisIsFor() {
   const points = [
     {
-      title: `Local Businesses`,
-      text: `Local businesses wanting more calls, visits, and enquiries`,
-      icon: Store,
+      title: null,
+      text: (
+        <>
+          <strong className="text-gray-900">Goal-driven:</strong> Every campaign is built around leads, calls, or sales, not vanity metrics
+        </>
+      ),
+      icon: TargetIcon,
       iconColor: "text-pink-500", bgColor: "bg-pink-50", borderColor: "border-pink-100",
-      
     },
     {
-      title: `Ecommerce Brands`,
-      text: `Ecommerce businesses wanting more product sales`,
-      icon: ShoppingCart,
+      title: null,
+      text: (
+        <>
+          <strong className="text-gray-900">Sharp targeting:</strong> Precise audience targeting instead of broad, wasteful reach
+        </>
+      ),
+      icon: Search,
       iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
-      
     },
     {
-      title: `Growing Brands`,
-      text: `Growing brands wanting faster visibility than organic posting alone`,
-      icon: Lightbulb,
+      title: null,
+      text: (
+        <>
+          <strong className="text-gray-900">Always improving:</strong> Continuous testing and adjustment, not a set-and-forget campaign
+        </>
+      ),
+      icon: TrendingUp,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
-      
     },
     {
-      title: `Businesses Seeking Clarity`,
-      text: `Any business that has tried ads before with poor or unclear results`,
-      icon: HelpCircle,
+      title: null,
+      text: (
+        <>
+          <strong className="text-gray-900">Transparent reporting:</strong> Clear reports on spend and results, explained plainly
+        </>
+      ),
+      icon: Lightbulb,
       iconColor: "text-blue-500", bgColor: "bg-blue-50", borderColor: "border-blue-100",
-      
     }
   ];
 
@@ -47,26 +59,18 @@ export function SmmWhoThisIsFor() {
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Who <span className="text-gradient">This Is For</span>
+  Why Choose Inymart Labs for SMM Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
               </div>
-              <p className="text-gray-600 text-lg md:text-xl">
-                As a social media marketing agency in Tamil Nadu, our service works well for:
-              </p>
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {points.map((point, i) => {
               const Icon = point.icon;
               return (
                 <Reveal key={i} delay={i * 100} className="h-full">
                   <div className={`relative flex items-center gap-5 sm:gap-6 p-4 sm:p-5 pr-6 sm:pr-8 rounded-[2.5rem] sm:rounded-[3rem] ${point.bgColor} border ${point.borderColor} shadow-xl hover:-translate-y-1 transition-transform duration-300 overflow-hidden group h-full`}>
-                    
-                    
-                    
-                    
-                    
                     {/* Icon Container */}
                     <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-white flex items-center justify-center shadow-md">
                        <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${point.iconColor}`} />
@@ -74,28 +78,39 @@ export function SmmWhoThisIsFor() {
                     
                     {/* Content */}
                     <div className="relative z-10 flex-1 py-2">
-                      {point.title && <h3 className="text-gray-900 text-lg font-bold mb-1 font-display">{point.title}</h3>}
                       <p className="text-gray-600 text-sm sm:text-base font-medium leading-relaxed">
                         {point.text}
                       </p>
                     </div>
-                    
                   </div>
                 </Reveal>
               );
             })}
           </div>
-
-          <Reveal delay={400}>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-gray-600 text-lg text-center leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-                Whether you're running your first ad campaign or have tried ads before without success, our team builds a strategy specific to your business and budget.
-              </p>
-            </div>
-          </Reveal>
           
         </div>
       </div>
     </section>
+  );
+}
+
+function TargetIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
   );
 }

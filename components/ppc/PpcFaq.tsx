@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What is PPC?',
-    a: 'PPC (Pay-Per-Click) is online advertising where a business pays only when someone clicks their ad, typically shown at the top of Google search results.'
+    q: 'What is PPC advertising?',
+    a: 'PPC, or Pay-Per-Click, is a paid search model where your ad appears in search results and you pay each time someone clicks it.'
   },
   {
-    q: 'How much should I budget for Google Ads?',
-    a: 'This depends on your industry and goals, but Inymart Labs will recommend a starting budget and adjust it based on early performance.'
+    q: 'Where does Inymart Labs offer PPC service?',
+    a: 'We offer PPC service in Trichy and across Tamil Nadu for local businesses, ecommerce companies, and growing brands.'
   },
   {
-    q: 'How soon will I see results from PPC?',
-    a: 'Very soon — campaigns can start driving calls and enquiries within days of going live.'
+    q: 'What can PPC bring to my business?',
+    a: 'Depending on your goal, PPC can bring phone calls, enquiries, bookings, leads, or online sales.'
   },
   {
-    q: 'What makes Inymart Labs the right PPC Service in Tamil Nadu and PPC Service in Trichy?',
-    a: 'Inymart Labs focuses on clear goals and daily optimization, so your ad spend goes toward real business results, not just clicks.'
+    q: 'Is PPC better than SEO?',
+    a: 'They work differently. PPC gives fast visibility, while SEO builds traffic gradually. Many businesses use both.'
   },
   {
-    q: 'Can you run PPC alongside my SEO efforts?',
-    a: 'Yes. Many businesses run PPC for immediate results while SEO builds long-term, organic visibility in parallel.'
+    q: 'How do you keep ad spend under control?',
+    a: 'We review spend, bids, keywords, ads, and conversions regularly, then shift budget toward the campaigns that perform best.'
   },
   {
-    q: 'Will I know exactly where my ad budget is being spent?',
-    a: 'Yes. You\'ll get clear monthly reports showing spend, clicks, calls, and conversions, explained in simple language.'
+    q: 'How do you know a campaign is working?',
+    a: 'We track conversions such as calls, forms, and purchases, not just clicks, and share the numbers in regular reports.'
+  },
+  {
+    q: 'Can you improve a campaign I already run?',
+    a: 'Yes. We can launch a new campaign or review and refine an existing one.'
   }
 ];
 

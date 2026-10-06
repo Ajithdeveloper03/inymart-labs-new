@@ -7,39 +7,70 @@ import Link from 'next/link';
 export function DmcProcess() {
   const steps = [
     {
-      title: `Business & Goal Understanding`,
-      desc: `We start by learning about your business, your customers, and what success actually looks like for you.`,
-      icon: Target
-    },
-    {
-      title: `Marketing Audit`,
-      desc: `We review your website, SEO, social media, ads, and analytics to see what's working and what's not.`,
+      title: `Digital Marketing Audit`,
+      desc: (
+        <>
+          <p>An audit shows your strengths, weaknesses, and gaps. We go through your website, SEO, social media, paid campaigns, content, and analytics, so you can see what works, what needs attention, and where your resources could do more.</p>
+        </>
+      ),
       icon: Activity
     },
     {
-      title: `Competitor Insight`,
-      desc: `We look at how similar businesses are approaching marketing, so your strategy is realistic and competitive.`,
+      title: `SEO Strategy Consulting`,
+      desc: (
+        <>
+          <p className="mb-2">SEO needs steady planning and technical care. We assess where you stand and look for openings in:</p>
+          <ul className="list-disc text-left pl-5 space-y-1 mb-2">
+            <li>Keywords and content</li>
+            <li>Technical performance and on-page optimization</li>
+            <li>Local visibility and authority</li>
+          </ul>
+          <p>Advice is based on your own website and market, never a one-plan-fits-all formula.</p>
+        </>
+      ),
       icon: Search
     },
     {
-      title: `Strategy Roadmap`,
-      desc: `We build a clear, prioritized plan showing what to focus on first, second, and later.`,
-      icon: Map
+      title: `Social Media Consulting`,
+      desc: (
+        <>
+          <p>Social media works best when it supports a clear message and a business purpose. We look at your audience, platforms, content style, engagement, and results, then suggest content directions, platform choices, and campaign ideas for a more consistent presence.</p>
+        </>
+      ),
+      icon: Target
     },
     {
-      title: `Channel Recommendations`,
-      desc: `We advise on which channels — SEO, social media, ads, or a mix — deserve your time and budget.`,
+      title: `Paid Advertising Guidance`,
+      desc: (
+        <>
+          <p className="mb-2">Ads perform when the right audience, message, spend, and target action line up. We evaluate your current campaigns and advise on:</p>
+          <ul className="list-disc text-left pl-5 space-y-1 mb-2">
+            <li>Campaign objectives and audience targeting</li>
+            <li>Creative direction and landing pages</li>
+            <li>Budget allocation and performance measurement</li>
+          </ul>
+          <p>You will see where paid ads fit within your wider marketing plan.</p>
+        </>
+      ),
       icon: Settings
     },
     {
-      title: `Implementation Guidance`,
-      desc: `We explain exactly how to execute the plan, whether your team handles it or we do.`,
-      icon: PenTool
+      title: `Web Analytics and Performance Measurement`,
+      desc: (
+        <>
+          <p>Reliable data leads to stronger decisions. We help you pick which numbers to watch, including goal actions, where visitors come from, and how customers behave. Analytics can show which channels bring valuable visitors and where potential customers drop off.</p>
+        </>
+      ),
+      icon: Activity
     },
     {
-      title: `Ongoing Advisory`,
-      desc: `We stay available for regular check-ins, helping you adjust the strategy as your business grows.`,
-      icon: Link2
+      title: `Competitor and Market Analysis`,
+      desc: (
+        <>
+          <p>Knowing your rivals reveals the shape of your market. We examine their website presence, content, search visibility, social activity, advertising, and customer communication. The findings point to opportunities and gaps while keeping your strategy realistic for your industry.</p>
+        </>
+      ),
+      icon: Map
     }
   ];
 
@@ -50,7 +81,7 @@ export function DmcProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our <span className="text-gradient">Consulting Process</span>
+  What Our Consulting <span className="text-gradient">Covers</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>
@@ -111,7 +142,7 @@ export function DmcProcess() {
                   <div className={`md:w-1/2 ${isEven ? 'md:pr-10 lg:pr-16' : 'md:pl-10 lg:pl-16'} pt-0 w-full px-2 sm:px-8 md:px-0`}>
                     <div className="relative z-20 bg-slate-100 rounded-2xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group text-center flex flex-col items-center">
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                      <p className="text-gray-600 leading-relaxed text-lg">{step.desc}</p>
+                      <div className="text-gray-600 leading-relaxed text-lg text-left">{step.desc}</div>
                     </div>
                   </div>
                 </div>
@@ -126,7 +157,7 @@ export function DmcProcess() {
               href="/contact" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
-              See Our Consulting Approach in Action
+              Want a clear view of your marketing? Request your digital marketing audit.
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

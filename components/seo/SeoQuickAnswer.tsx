@@ -18,7 +18,7 @@ export function SeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/Quick answer (SEO).png" 
+                  src="/new/Quick answer (SEO).png" 
                   alt="Laptop displaying Google search results with a highlighted top result, representing search engine optimization and online visibility." 
                   className="w-full h-full object-cover"
                 />
@@ -54,26 +54,18 @@ export function SeoQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                  <Lightbulb className="w-8 h-8" />
-                </div>
-                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
-              </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is an SEO agency in Trichy, Tamil Nadu in that helps businesses rank higher on Google Search and Google Maps through research-based strategy, technical fixes, and monthly reporting.
+                  Ranking on page one means little if none of those rankings bring customers who actually convert. Inymart Labs delivers SEO Service in Trichy and Tamil Nadu built to pull in visitors who are genuinely close to enquiring, calling, or buying.
                 </p>
               </Reveal>
               <Reveal delay={200}>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  With 10+ years of experience and 50+ brands served across India, UAE, UK, and the USA, Inymart Labs is headquartered in Tiruchirappalli and builds SEO strategy around how people actually search today — on Google, on maps, and increase through AI search tools.
+                <p className="text-lg text-gray-600 leading-relaxed font-bold text-primary">
+                  Curious where your site currently stands? Get an SEO assessment from Inymart Labs.
                 </p>
               </Reveal>
             </div>

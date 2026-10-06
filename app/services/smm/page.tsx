@@ -9,8 +9,9 @@ import { SmmWhyChoose } from '@/components/smm/SmmWhyChoose';
 import { SmmComparison } from '@/components/smm/SmmComparison';
 import { SmmKeyFacts } from '@/components/smm/SmmKeyFacts';
 import { SmmProcess } from '@/components/smm/SmmProcess';
+import { SmmReporting } from '@/components/smm/SmmReporting';
+import { SmmReportingAndExpectations } from '@/components/smm/SmmReportingAndExpectations';
 import { SmmWhoThisIsFor } from '@/components/smm/SmmWhoThisIsFor';
-import { SmmExpectations } from '@/components/smm/SmmExpectations';
 import { SmmFaq } from '@/components/smm/SmmFaq';
 import { SmmTrust } from '@/components/smm/SmmTrust';
 import { SmmCta } from '@/components/smm/SmmCta';
@@ -155,16 +156,12 @@ export default function SmmServicePage() {
         <SmmHeroBanner />
         <SmmQuickAnswer />
         <SmmWhatIs />
-        <SmmWhatWeDo />
         <SmmWhyChoose />
-        <SmmComparison />
-        <SmmKeyFacts />
         <SmmProcess />
-        <SmmWhoThisIsFor />
-        <SmmExpectations />
-        <SmmTrust />
-        <SmmFaq />
+        <SmmReportingAndExpectations />
         <SmmCta />
+        <SmmWhoThisIsFor />
+        <SmmFaq />
       </main>
       <Footer />
       <ScrollToTop />

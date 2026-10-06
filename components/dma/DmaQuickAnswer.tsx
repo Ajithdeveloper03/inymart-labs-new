@@ -18,7 +18,7 @@ export function DmaQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer(DMA).png" 
+                  src="/new/quick answer(DMA).png" 
                   alt=" Digital marketing professional reviewing a unified dashboard showing website, WhatsApp, Google Ads, Meta Ads, Instagram, and SEO leads, with a marketing strategy notebook beside the tablet." 
                   className="w-full h-full object-cover"
                 />
@@ -44,7 +44,7 @@ export function DmaQuickAnswer() {
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a full-service <strong className="text-[#0c1f28]">Digital Marketing Agency in Trichy Tamil Nadu</strong>, offering SEO, Local SEO, social media optimization, social media marketing, web analytics, web development, and consulting under one coordinated strategy. Headquartered in Tiruchirappalli, Inymart Labs has 9+ years of experience and has served 50+ brands across India, UAE, UK, and the USA, with most businesses seeing early improvements within 1–2 months and stronger, compounding growth over 3–6 months.
+                  A digital marketing agency brings SEO, social media, paid ads, your website, and analytics together under one plan, instead of running each channel on its own. Inymart Labs runs this service for Trichy and Tamil Nadu businesses that ties these pieces to a single shared goal.<br/><br/><span className="text-[#ff6b35] font-semibold">Want your marketing channels working together? Talk to Inymart Labs.</span>
                 </p>
               </Reveal>
             </div>

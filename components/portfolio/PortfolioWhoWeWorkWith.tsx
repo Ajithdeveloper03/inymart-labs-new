@@ -6,31 +6,31 @@ import { Users, Code, Factory, GraduationCap, ShoppingCart, Plane, ChevronRight 
 const AUDIENCES = [
   {
     icon: Users,
-    image: '/local%20&%20Regional%20Business%20(who%20we%20work%20with)%201.png',
+    image: '/new/local%20&%20Regional%20Business%20(who%20we%20work%20with)%201.png',
     title: 'Local & Regional Businesses',
     desc: 'Wanting stronger visibility in Tamil Nadu',
   },
   {
     icon: Code,
-    image: '/tech%20companys%20&%20IT%20parks%20(%20who%20we%20work%20with%20)%202.png',
+    image: '/new/tech%20companys%20&%20IT%20parks%20(%20who%20we%20work%20with%20)%202.png',
     title: 'Tech Companies & IT Parks',
     desc: 'Wanting a professional digital presence',
   },
   {
     icon: Factory,
-    image: '/Manufacturing%20&%20industril%20(%20portfolio)%203.png',
+    image: '/new/Manufacturing%20&%20industril%20(%20portfolio)%203.png',
     title: 'Manufacturing & Industrial',
     desc: 'Businesses like roofing, cleaning technology, and interiors',
   },
   {
     icon: GraduationCap,
-    image: '/education%20,%20restaurants%20&%20retail%20(%20portfolio%20)%204.png',
+    image: '/new/education%20,%20restaurants%20&%20retail%20(%20portfolio%20)%204.png',
     title: 'Education, Restaurants & Retail',
     desc: 'Brands wanting more local enquiries',
   },
   {
     icon: ShoppingCart,
-    image: '/E-%20commerce%20&%20international%20(%20portfolio%20)%205.png',
+    image: '/new/E-%20commerce%20&%20international%20(%20portfolio%20)%205.png',
     title: 'E-commerce & International',
     desc: 'Including clients in Australia and beyond',
   },

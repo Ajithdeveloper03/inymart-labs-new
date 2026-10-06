@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does a social media optimization company in Tamil Nadu do?',
-    a: 'A social media optimization company in Tamil Nadu like Inymart Labs plans, creates, and manages organic content on platforms like Facebook, Instagram, and LinkedIn to build brand presence and generate real enquiries.'
+    q: 'What is SMO?',
+    a: 'SMO, short for Social Media Optimization, focuses on strengthening your social profiles and content to build visibility, engagement, and brand recognition.'
   },
   {
-    q: 'How often will you post on my social media pages?',
-    a: 'This depends on your plan, but most businesses see good results with 3–5 posts per week across key platforms.'
+    q: 'Do you offer SMO service in Trichy and Tamil Nadu?',
+    a: 'Yes, Inymart Labs runs SMO Service for businesses across Trichy and Tamil Nadu, spanning strategy, content, profile work, and engagement.'
   },
   {
-    q: 'Do you handle both content creation and posting?',
-    a: 'Yes. Inymart Labs designs the content, writes the captions, and manages posting and scheduling — you don\'t have to do anything.'
+    q: 'How is SMO different from SMM?',
+    a: 'SMO focuses on organic profile and content optimization, while SMM typically refers to paid advertising campaigns on social platforms.'
   },
   {
-    q: 'What makes Inymart Labs the right social media optimization company in Tamil Nadu and social media optimization company in Trichy?',
-    a: 'Inymart Labs combines local audience understanding with a clear content strategy, focusing on real engagement instead of just follower counts.'
+    q: 'Which platforms do you work on?',
+    a: 'Mainly Facebook, Instagram, LinkedIn, and YouTube, depending on where your audience actually spends time.'
   },
   {
-    q: 'Can you manage my Instagram, Facebook, and LinkedIn together?',
-    a: 'Yes. Inymart Labs can manage one platform or all of them together, depending on where your customers are most active.'
+    q: 'How often will you post for my business?',
+    a: 'Posting frequency depends on your strategy and industry, but we build a content calendar to keep publishing consistent.'
   },
   {
-    q: 'Will I get to approve content before it\'s posted?',
-    a: 'Yes. Inymart Labs shares your content calendar in advance so you can review and approve everything before it goes live.'
+    q: 'Will you respond to comments and messages?',
+    a: 'Yes, active engagement with comments and messages is part of the service, since it builds trust and surfaces customer feedback.'
+  },
+  {
+    q: 'How do you measure whether SMO is working?',
+    a: 'We track reach, engagement, follower growth, profile visits, and enquiries to see what\'s performing and where to adjust.'
   }
 ];
 
@@ -61,7 +65,7 @@ export function SmoFaq() {
               
               {/* Paragraph */}
               <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
-                Find answers to the most common questions about our services.
+                Have more questions about SMO? Talk to Inymart Labs.
               </p>
             </div>
           </Reveal>

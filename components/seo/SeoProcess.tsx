@@ -7,38 +7,44 @@ import Link from 'next/link';
 export function SeoProcess() {
   const steps = [
     {
-      title: 'Website Audit',
-      desc: "We will website's speed, structure, content, and technical health to find what's hold your rankings back.",
-      icon: Activity
-    },
-    {
-      title: 'Keyword Research',
-      desc: 'We find the exact words and phrases your customers are typing into Google, including local searches like "near me" and voice searches.',
+      title: 'Finding the Keywords Worth Chasing',
+      desc: 'Not every search term is worth targeting. We dig into commercial, informational, local, and long-tail searches tied to your business, filtering for terms that reflect genuine buying or enquiry intent rather than vague curiosity.',
       icon: Search
     },
     {
-      title: 'On-Page Optimization',
-      desc: 'We fix your titles, headings, images, and page content so search engines and customers will understand your business clearly.',
+      title: "Fixing What's On the Page",
+      desc: 'Each page should make its purpose obvious, both to visitors and to search engines. We tighten up page titles, header tags, meta text, URLs, internal links, image tags, and overall content structure so nothing important gets lost or ignored.',
       icon: Target
     },
     {
-      title: 'Technical SEO',
-      desc: 'We fix backend issues like slow loading, broken links, and mobile display problems that quietly hurt your rankings.',
+      title: 'Sorting Out the Technical Side',
+      desc: 'A site with technical problems fights an uphill battle regardless of content quality. We check crawlability, indexing, mobile performance, page speed, broken links, redirects, sitemaps, and canonical tags, clearing the path for search engines to read your site properly.',
       icon: Settings
     },
     {
-      title: 'Content Optimization',
-      desc: "We rewrite or improve your website content so it's simple, clear, and answers customer questions directly.",
+      title: 'Writing Content People Actually Want',
+      desc: 'Good SEO content answers a real question or solves a real problem. We build or rework service pages, blog posts, location pages, and FAQs around topics your actual audience is searching for, giving them a reason to stay on the page and move forward.',
       icon: PenTool
     },
     {
-      title: 'Link Building',
-      desc: 'We help other trusted websites link back to yours, which builds credibility with Google.',
+      title: 'Local Visibility for Trichy Customers',
+      desc: (
+        <>
+          For businesses drawing customers from Trichy and the surrounding areas, showing up in local search carries real weight. We tune your site and profile around local terms and accurate business details, while sharpening your Google Business Profile, so nearby customers find you first.
+          <br /><br />
+          Serving customers around Trichy? Let's strengthen your local visibility.
+        </>
+      ),
+      icon: Activity
+    },
+    {
+      title: 'Earning Authority the Right Way',
+      desc: 'Credible external references still matter for search visibility. We chase relevant, quality-focused link opportunities rather than piling up random, low-value links that do little for your site\'s standing.',
       icon: Link2
     },
     {
-      title: 'Reporting',
-      desc: 'Every month, you get a simple report showing your rankings, traffic, and leads.',
+      title: 'Keeping Score Over Time',
+      desc: 'Search performance shifts as competitors, algorithms, and customer behaviour change. We track keyword positions, organic traffic, technical health, and conversions, then report in plain terms what\'s improving and what needs a second look.',
       icon: BarChart
     }
   ];
@@ -50,7 +56,7 @@ export function SeoProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our <span className="text-gradient">SEO Process</span>
+  The Core of Our <span className="text-gradient">SEO Work</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>

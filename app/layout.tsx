@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: 'Inymart Labs',
     images: [
       {
-        url: '/logo.webp',
+        url: '/new/logo.webp',
         width: 800,
         height: 600,
         alt: 'Inymart Labs Logo',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
     description:
       'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential.',
-    images: ['/logo.webp'],
+    images: ['/new/logo.webp'],
     creator: '@inymartlabs',
   },
   alternates: {

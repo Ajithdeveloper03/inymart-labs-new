@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What is AEO or AI SEO?',
-    a: 'AEO (Answer Engine Optimization), also called AI SEO, is the practice of structuring content so AI tools like ChatGPT and Perplexity can understand, trust, and cite it when answering user questions.'
+    q: 'What is AI SEO?',
+    a: 'AI SEO, also known as Answer Engine Optimization (AEO), prepares your website information for answer-based search. It focuses on clear answers, trustworthy facts, strong entities, and structured information so AI platforms can understand your business.'
   },
   {
-    q: 'Is AI SEO different from regular SEO?',
-    a: 'Yes. Traditional SEO targets Google search rankings, while AI SEO (AEO) focuses on how AI tools represent and recommend your business — though the two work well together.'
+    q: 'Does Inymart Labs provide AI SEO services in Trichy and Tamil Nadu?',
+    a: 'Yes. Inymart Labs offers AI SEO Services in Trichy and Tamil Nadu, combining digital marketing experience with AI-focused content, entity building, AEO, and monitoring.'
   },
   {
-    q: 'How long does it take to see results from AI SEO?',
-    a: 'Most businesses see meaningful visibility changes over 2–4 months, since AI platforms need time to recrawl and re-index content.'
+    q: 'Why does my business need AI SEO?',
+    a: 'Customers increasingly ask AI platforms for recommendations. Without AI SEO, these platforms may not mention your business, or may show incomplete or outdated details.'
   },
   {
-    q: 'What makes Inymart Labs the right AI SEO Service in Tamil Nadu and AI SEO Service in Trichy?',
-    a: 'Inymart Labs combines early AEO and GEO experience with proven SEO practices, and reports honestly on how your business currently appears across AI tools.'
+    q: 'Does AI SEO replace traditional SEO?',
+    a: 'No. AI SEO works alongside traditional SEO. Traditional SEO focuses on rankings, organic traffic, and website authority, while AI SEO focuses on direct answers, AI understanding, citations, and recommendations.'
   },
   {
-    q: 'Do I still need traditional SEO if I invest in AI SEO?',
-    a: 'Yes. AI SEO works alongside traditional SEO, not instead of it — strong SEO content is often the foundation AI tools pull from.'
+    q: 'How does an AI SEO service begin?',
+    a: 'It begins with an AI Visibility Audit. We check how AI platforms currently understand your business, including brand mentions, service descriptions, locations, and recommendations.'
   },
   {
-    q: 'Can you fix incorrect information AI tools currently show about my business?',
-    a: 'Inymart Labs audits existing AI mentions and works to correct and strengthen them through updated, citation-ready content.'
+    q: 'How is AI SEO progress measured?',
+    a: 'We track visibility signals, business mentions, information accuracy, recommendations, content coverage, and changes in AI representation. Monthly reporting shows your progress.'
+  },
+  {
+    q: 'Which businesses can benefit from AI SEO?',
+    a: 'Local businesses, professional service providers, ecommerce brands, startups, growing companies, and established organizations can all benefit.'
   }
 ];
 

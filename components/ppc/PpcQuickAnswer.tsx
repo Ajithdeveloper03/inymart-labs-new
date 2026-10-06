@@ -18,7 +18,7 @@ export function PpcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/Quick Answer (PPC).png" 
+                  src="/new/Quick Answer (PPC).png" 
                   alt=" Google Ads campaign dashboard showing clicks, leads, conversions, and campaign performance alongside a smartphone displaying a Google Ads call lead screen." 
                   className="w-full h-full object-cover"
                 />
@@ -67,8 +67,11 @@ export function PpcQuickAnswer() {
 
             <div className="space-y-6">
               <Reveal delay={100}>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium mb-4">
+                  PPC service means running search ads that appear the moment someone looks for what you sell, and paying only when they click.
+                </p>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a <strong className="text-[#0c1f28]">PPC Service in Trichy, Tamil Nadu</strong> that plans, sets up, and manages Google Ads campaigns to generate calls, leads, and sales — not just clicks. Unlike SEO, PPC results appear almost immediately, with most businesses seeing traffic and enquiries within days of a campaign going live, and performance improving further through ongoing testing and optimization.
+                  Inymart Labs delivers PPC Service in Trichy and Tamil Nadu designed to bring you calls, enquiries, bookings, leads, and sales.
                 </p>
               </Reveal>
             </div>

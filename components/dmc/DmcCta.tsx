@@ -30,13 +30,13 @@ export function DmcCta() {
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Get Expert Marketing <span className="text-gradient">Direction</span>?
+  Build a Clearer Marketing <span className="text-gradient">Direction</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you&apos;re looking for Digital Marketing Consulting in Tamil Nadu or a trusted Digital Marketing Consulting partner in Trichy, Inymart Labs is ready to help. We&apos;ll bring clarity to your marketing and a plan built around your business goals.
+              Digital marketing feels simpler when every activity has a purpose. With the right strategy, SEO, social media, ads, content, website, and analytics can all work toward shared goals. Whether you are just starting, reviewing an existing plan, or preparing for the next stage of growth, consulting gives you a focused and adaptable path.
             </p>
           </Reveal>
 
@@ -46,7 +46,7 @@ export function DmcCta() {
                 href="/contact"
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 w-full sm:w-auto"
               >
-                Book Your Consulting Session
+                Contact Inymart Labs to start your consultation
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               

@@ -27,19 +27,22 @@ export function SeoCta() {
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent ring-1 ring-accent/20">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              SEO Agency in Tamil Nadu
+              SEO Service
             </span>
           </Reveal>
 
           <Reveal delay={80}>
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to Grow Your <span className="text-gradient">Visibility</span>?
+  Give Your Next Customer a Way to <span className="text-gradient">Find You</span>
 </h2>
           </Reveal>
 
           <Reveal delay={160}>
             <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              If you're looking for an SEO agency in Tamil Nadu or a trusted SEO agency in Trichy that treats SEO as more than just keywords, Inymart Labs is ready to help. We'll build a plan around your business, your customers, and how they search today.
+              Right now, someone out there needs exactly what you offer, and without solid visibility, they will likely land on a competitor's site instead of yours. A properly built SEO strategy closes that gap and keeps paying off well beyond the first few months.
+            </p>
+            <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed font-bold text-slate-800 text-pretty sm:text-lg">
+              Ready to grow your search visibility? Contact Inymart Labs to get started.
             </p>
           </Reveal>
 

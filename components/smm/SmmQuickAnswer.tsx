@@ -18,7 +18,7 @@ export function SmmQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer (SMM).png" 
+                  src="/new/quick answer (SMM).png" 
                   alt=" Instagram ad for a saree business displayed on a smartphone, with WhatsApp new-lead notifications showing customer inquiries about products, prices, and delivery." 
                   className="w-full h-full object-cover"
                 />
@@ -54,26 +54,18 @@ export function SmmQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                  <Lightbulb className="w-8 h-8" />
-                </div>
-                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
-              </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a social media marketing agency in Trichy, Tamil Nadu that plans, creates, and manages paid ad campaigns on Facebook, Instagram, and LinkedIn to generate calls, leads, and sales.
+                  SMM means running paid campaigns on Facebook, Instagram, LinkedIn, and similar platforms so the exact people you want to reach actually see your business. Inymart Labs provides SMM Service in Trichy and Tamil Nadu, building campaigns around goals such as calls, enquiries, site visits, bookings, and sales, rather than chasing likes.
                 </p>
               </Reveal>
               <Reveal delay={200}>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Unlike organic social media management, Inymart Labs' social media marketing service uses paid advertising, audience targeting, and daily budget optimization — with most businesses seeing traffic and enquiries within days of a campaign going live.
+                <p className="text-lg text-gray-600 leading-relaxed font-bold text-primary">
+                  Want your ads reaching the right people? Talk to Inymart Labs about SMM.
                 </p>
               </Reveal>
             </div>

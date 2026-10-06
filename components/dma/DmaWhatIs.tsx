@@ -14,7 +14,7 @@ export function DmaWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/what is digital marketing agency(DMA).png" 
+                src="/new/what is digital marketing agency(DMA).png" 
                 alt=" Digital marketing team discussing a growth funnel, with a strategist presenting local SEO, Instagram Reels, Meta lead ads, and WhatsApp sales strategies on a whiteboard." 
                 className="absolute inset-0 w-full h-full object-fill transition-transform duration-1000 group-hover:scale-105 opacity-100"
               />
@@ -32,11 +32,16 @@ export function DmaWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What Is a Digital <span className="text-gradient">Marketing Agency</span>?
+                  What This Service <span className="text-gradient">Actually Covers</span>
                 </h2>
                 
                 <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  A Digital Marketing Agency is a company that manages a business's online growth across multiple channels — SEO, social media, paid ads, website development, and analytics — under one coordinated strategy instead of separate, disconnected efforts. A good digital marketing agency ties every channel to clear business goals like calls, leads, and sales, and reports on performance in plain language.
+                  Instead of juggling separate vendors or tools for each channel, we plan, run, track, and improve them as one connected system:<br/><br/>
+                  • Getting found in search results<br/>
+                  • Building a following and running ad campaigns<br/>
+                  • Keeping your website in good shape<br/>
+                  • Turning data into decisions<br/><br/>
+                  The point is coordination, not just adding more services.
                 </p>
               </div>
             </div>

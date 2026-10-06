@@ -11,32 +11,28 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does a Local SEO agency in Tamil Nadu do?',
-    a: 'A Local SEO agency in Tamil Nadu like Inymart Labs helps businesses show up first in Google Maps and "near me" search results through Google Business Profile optimization, listings, reviews, and location-based content.'
+    q: 'What makes Local SEO different from regular SEO?',
+    a: 'Local SEO focuses on location-based searches, giving more weight to your business location, listings, reviews, and map presence than typical ranking factors.'
   },
   {
-    q: 'How is Local SEO different from regular SEO?',
-    a: 'Local SEO focuses specifically on getting found by nearby customers through Google Maps and local search results, while regular SEO covers your whole website\'s visibility.'
+    q: 'Do you offer Local SEO service in Trichy and Tamil Nadu?',
+    a: 'Yes, Inymart Labs runs Local SEO Service for businesses across Trichy and Tamil Nadu, covering Google Business Profile, citations, reviews, and local content.'
   },
   {
-    q: 'How long does Local SEO take to show results?',
-    a: 'Many businesses see improvements in local visibility within a few weeks, with stronger results building over 2–3 months.'
+    q: 'How does a Google Business Profile help my local visibility?',
+    a: 'It puts your location, services, hours, photos, and reviews directly in front of searchers, and an optimized profile tends to perform better in local search results.'
   },
   {
-    q: 'What makes Inymart Labs the right Local SEO agency in Tamil Nadu and Local SEO agency in Trichy?',
-    a: 'Inymart Labs combines deep local market knowledge with proven Local SEO practices, focusing on real calls and visits, not just rankings.'
+    q: 'How soon can I expect Local SEO to show results?',
+    a: 'It varies based on your industry, competition, current site condition, and target area, though consistent work and monitoring build visibility over time.'
   },
   {
-    q: 'Do you help with managing customer reviews?',
-    a: 'Yes. Review collection and response are a core part of Inymart Labs\' Local SEO process.'
+    q: 'Can this help my business show up on Google Maps?',
+    a: 'Yes, we work on your Google Business Profile alongside other local signals, citations, reviews, and accurate details, which all feed into your chances of appearing in the map pack.'
   },
   {
-    q: 'Can you help if my business has multiple locations?',
-    a: 'Yes. Inymart Labs manages Local SEO for single-location businesses as well as multi-branch businesses across Tamil Nadu.'
-  },
-  {
-    q: 'Which areas does Inymart Labs\' Local SEO service cover?',
-    a: 'Inymart Labs provides Local SEO for businesses across Trichy, Chennai, Madurai, Coimbatore, and nearby regions in Tamil Nadu.'
+    q: 'Which businesses benefit most from Local SEO?',
+    a: 'Shops, clinics, restaurants, hotels, local service teams, and professional firms that serve a specific area, whether they run one location or several.'
   }
 ];
 

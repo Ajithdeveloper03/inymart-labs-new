@@ -18,7 +18,7 @@ export function LocalSeoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer(L-SEO).png" 
+                  src="/new/quick answer(L-SEO).png" 
                   alt="Tablet displaying a city map with multiple location pins, representing local search and location-based business visibility" 
                   className="w-full h-full object-cover"
                 />
@@ -44,7 +44,8 @@ export function LocalSeoQuickAnswer() {
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs is a <strong className="text-[#0c1f28]">Local SEO agency in Trichy Tamil Nadu</strong> that helps businesses show up first in Google Maps and "near me" searches through Google Business Profile optimization, local citations, review management, and map pack optimization. Inymart Labs serves businesses across Trichy, Chennai, Madurai, and Coimbatore, with most businesses seeing early local visibility improvements within a few weeks and stronger results by month 2–3.
+                  When someone searches for a service near them, they usually pick from whatever shows up first. Inymart Labs runs a Local SEO Service in Trichy and Tamil Nadu built to help nearby customers spot your business on Google Search and on Maps.<br/><br/>
+                  <span className="text-[#ff6b35] font-semibold">Want to show up when nearby customers search? Talk to Inymart Labs.</span>
                 </p>
               </Reveal>
             </div>

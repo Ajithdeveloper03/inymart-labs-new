@@ -24,13 +24,13 @@ export function AiSeoWhyChoose() {
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Choose an AI <span className="text-gradient">SEO Service</span> in Tamil Nadu
+  Why Choose Inymart Labs for <span className="text-gradient">AI SEO Services in Trichy and Tamil Nadu?</span>
 </h2>
             
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto relative">
           
           {/* Card 1 */}
           <Reveal delay={100} className="h-full">
@@ -38,21 +38,16 @@ export function AiSeoWhyChoose() {
               <PixelScatter />
               
               <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <MousePointerClick className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
+              <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 transition-colors duration-300">Practical approach</h3>
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                More customers are now asking ChatGPT, Gemini, Copilot, and Perplexity for recommendations instead of typing into Google alone. If your business isn't structured to be understood by these tools, you may be invisible in this growing channel — or worse, described inaccurately.
+                A practical, transparent approach
               </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
             </div>
           </Reveal>
 
@@ -62,21 +57,16 @@ export function AiSeoWhyChoose() {
               <PixelScatter />
               
               <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Zap className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
+              <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 transition-colors duration-300">Experienced team</h3>
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                A proper AEO Service goes beyond keywords. It restructures content with direct answers, clear entity facts, and citable statements that AI engines can lift accurately. As an experienced AI SEO Service in Trichy, Inymart Labs builds this alongside your existing SEO, not as a replacement for it.
+                Digital marketing experience combined with AI-focused content, entity building, AEO, and monitoring
               </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
             </div>
           </Reveal>
 
@@ -86,21 +76,35 @@ export function AiSeoWhyChoose() {
               <PixelScatter />
               
               <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Map className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
               </div>
               
               {/* Separator */}
               <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
 
+              <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 transition-colors duration-300">Wide experience</h3>
               <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                We also monitor how AI tools currently describe your business, so we can identify and correct outdated, missing, or incorrect information before building new content.
+                We work with businesses across different markets
               </p>
+            </div>
+          </Reveal>
 
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
+          {/* Card 4 */}
+          <Reveal delay={400} className="h-full">
+            <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
+              <PixelScatter />
+              
+              <div className="mb-4 mt-2 relative">
+                <Zap className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
+              </div>
+              
+              {/* Separator */}
+              <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
+
+              <h3 className="text-xl font-bold text-slate-800 group-hover:text-white mb-3 transition-colors duration-300">Works with your SEO</h3>
+              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
+                AI SEO is built alongside your existing SEO efforts, not presented as a replacement
+              </p>
             </div>
           </Reveal>
 

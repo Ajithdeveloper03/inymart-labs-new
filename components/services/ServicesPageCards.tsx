@@ -6,16 +6,16 @@ import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 const SERVICE_IMAGES = [
-  '/SEO%20(home).png',
-  '/Local%20SEO%20(home).png',
-  '/SMO%20(home).png',
-  '/SMM%20(home).png',
-  '/Web%20Analytics%20(home).png',
-  '/Web%20Development(home).png',
-  '/Digital%20Marketing%20Consulting(home).png',
-  '/Digital%20Marketing%20Agency(home).png',
-  '/PPC%20Service%20(home).png',
-  '/AI%20SEO%20Services(home).png'
+  '/new/SEO%20(home).png',
+  '/new/Local%20SEO%20(home).png',
+  '/new/SMO%20(home).png',
+  '/new/SMM%20(home).png',
+  '/new/Web%20Analytics%20(home).png',
+  '/new/Web%20Development(home).png',
+  '/new/Digital%20Marketing%20Consulting(home).png',
+  '/new/Digital%20Marketing%20Agency(home).png',
+  '/new/PPC%20Service%20(home).png',
+  '/new/AI%20SEO%20Services(home).png'
 ];
 
 const SERVICE_ALTS = [

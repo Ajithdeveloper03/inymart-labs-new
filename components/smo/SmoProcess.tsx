@@ -7,38 +7,49 @@ import Link from 'next/link';
 export function SmoProcess() {
   const steps = [
     {
-      title: `Profile Audit`,
-      desc: `We review your existing social media pages to see what's working, what's missing, and what needs fixing first.`,
+      title: `Getting Your Profiles Right`,
+      desc: `A profile is often the first real impression someone gets of your business. We refine the details that matter, bio, profile picture, cover image, contact details, and links, keeping everything consistent across platforms so your brand is instantly recognizable wherever people find you.`,
       icon: Activity
     },
     {
-      title: `Audience Research`,
-      desc: `We study who your customers are, what they care about, and which platforms they actually use.`,
+      title: `Understanding Your Audience and Competitors`,
+      desc: `Good content starts with knowing who you're talking to. We dig into what your audience cares about, asks, and engages with, then study competitors to spot content gaps and openings where your brand can stand out instead of blending in.`,
       icon: Search
     },
     {
-      title: `Content Planning`,
-      desc: `We build a monthly content calendar with a clear mix of posts, reels, and stories — no random, one-off posting.`,
+      title: `Planning Content Around Real Goals`,
+      desc: `Posting for the sake of posting rarely builds anything. We map content to your business goals, audience interests, industry moments, and seasonal opportunities, mixing formats like educational posts, service spotlights, customer stories, reels, and promotional pieces depending on what fits.`,
       icon: Target
     },
     {
-      title: `Content Creation`,
-      desc: `We design graphics, write captions, and create short videos that match your brand's voice and style.`,
+      title: `Visuals and Copy That Hold Attention`,
+      desc: `On social media, people decide in seconds whether something's worth their time. Our visuals and captions aim to communicate clearly while matching your brand's tone, so your business comes across as polished without feeling generic.`,
       icon: Settings
     },
     {
-      title: `Posting & Scheduling`,
-      desc: `We manage regular posting so your pages stay active and consistent, without you needing to log in every day.`,
+      title: `Content Built for Each Platform`,
+      desc: (
+        <>
+          Facebook, Instagram, LinkedIn, and YouTube each behave differently, and copying one post across all of them rarely works well. We shape content to suit each platform's format and audience while keeping your brand identity consistent underneath.
+          <br /><br />
+          Want content that fits each platform properly? Let's plan it out.
+        </>
+      ),
       icon: PenTool
     },
     {
-      title: `Community Management`,
-      desc: `We reply to comments and messages professionally, so customers feel heard and engaged.`,
+      title: `Staying Active in the Conversation`,
+      desc: `Social media isn't a one-way broadcast. We respond to comments, messages, and questions promptly and professionally, which builds trust with your audience and often surfaces useful feedback about what customers actually want.`,
       icon: Link2
     },
     {
-      title: `Reporting`,
-      desc: `Every month, you get a simple report showing followers, engagement, and enquiries — no confusing jargon.`,
+      title: `Keeping a Steady Publishing Rhythm`,
+      desc: `Going quiet for weeks then posting five times in a day doesn't build an audience. We run a proper content calendar so publishing stays consistent, keeping your brand visible instead of fading out of people's feeds.`,
+      icon: Activity
+    },
+    {
+      title: `Tracking What's Actually Working`,
+      desc: `We watch reach, engagement, follower growth, profile visits, and incoming enquiries closely, so we know what content is landing and where the strategy needs adjusting, rather than posting on autopilot.`,
       icon: BarChart
     }
   ];
@@ -50,7 +61,7 @@ export function SmoProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our Social <span className="text-gradient">Media Optimization</span> Process
+  What Our SMO Service <span className="text-gradient">Includes</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>

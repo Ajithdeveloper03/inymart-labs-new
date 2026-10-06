@@ -11,32 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does a social media marketing agency in Tamil Nadu do?',
-    a: 'A social media marketing agency in Tamil Nadu like Inymart Labs plans, sets up, and manages paid ad campaigns on platforms like Facebook, Instagram, and LinkedIn to generate calls, leads, and sales.'
+    q: 'What is SMM?',
+    a: 'SMM, or Social Media Marketing, means running paid campaigns on platforms like Facebook and Instagram to reach a chosen audience beyond your existing followers.'
   },
   {
-    q: 'Is social media marketing the same as social media optimization?',
-    a: 'No. Social media marketing refers to paid ad campaigns, while social media optimization refers to organic, unpaid content and posting.'
+    q: 'Do you offer SMM service in Trichy and Tamil Nadu?',
+    a: 'Yes, Inymart Labs runs SMM campaigns for businesses across Trichy and Tamil Nadu, covering strategy, creative, setup, testing, and reporting.'
   },
   {
-    q: 'How much should I budget for social media ads?',
-    a: 'This depends on your goals and industry, but Inymart Labs will recommend a starting budget and adjust it based on early results.'
+    q: 'How is SMM different from organic social media management?',
+    a: 'Organic posts only reach your existing followers. SMM uses paid ads to reach new people chosen by location, interests, and behaviour.'
   },
   {
-    q: 'How soon will I see results from social media ads?',
-    a: 'Unlike SEO, ads can start driving traffic and enquiries within days of launching a campaign.'
+    q: 'Which platforms do you run ads on?',
+    a: 'Mainly Facebook and Instagram, along with LinkedIn and other platforms when they suit your audience and goals.'
   },
   {
-    q: 'What makes Inymart Labs the right social media marketing agency in Tamil Nadu and social media marketing agency in Trichy?',
-    a: 'Inymart Labs focuses on clear goals and constant optimization, so your ad spend goes toward real results, not just impressions.'
+    q: 'What can SMM realistically bring in for a business?',
+    a: 'It depends on the goal set, but common outcomes include leads, calls, site visits, enquiries, bookings, and online sales.'
   },
   {
-    q: 'Can you run ads for both local and online businesses?',
-    a: 'Yes. Inymart Labs runs location-based campaigns for local businesses and broader campaigns for ecommerce and online brands.'
+    q: 'How do you make sure ad spend isn\'t wasted?',
+    a: 'We keep an eye on what each click and lead costs, how many convert, and how spend compares to return, then shift budget toward what\'s actually performing.'
   },
   {
-    q: 'Will I know exactly where my ad budget is going?',
-    a: "Yes. You'll get clear monthly reports showing spend, reach, clicks, and leads, explained in simple language."
+    q: 'Can you target a specific area for my business?',
+    a: 'Yes, local campaigns can be built to reach people within a specific city or region.'
   }
 ];
 
@@ -60,12 +60,12 @@ export function SmmFaq() {
               </div>
               
               <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-3 sm:mb-6">
-  Frequently <span className="text-gradient">Asked Questions</span>
+  Common <span className="text-gradient">Questions</span>
 </h2>
               
               {/* Paragraph */}
               <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
-                Find answers to the most common questions about our services.
+                Have more questions about SMM? Talk to Inymart Labs.
               </p>
             </div>
           </Reveal>

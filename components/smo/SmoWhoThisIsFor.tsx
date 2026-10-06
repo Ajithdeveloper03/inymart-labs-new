@@ -7,28 +7,44 @@ export function SmoWhoThisIsFor() {
   const points = [
     {
       title: null,
-      text: `Local businesses wanting more brand awareness and enquiries`,
+      text: (
+        <>
+          <strong className="text-gray-900">Consistent branding:</strong> Every profile and post reflects the same brand identity
+        </>
+      ),
       icon: Users,
       iconColor: "text-pink-500", bgColor: "bg-pink-50", borderColor: "border-pink-100",
       
     },
     {
       title: null,
-      text: `Growing brands wanting a consistent, professional online presence`,
+      text: (
+        <>
+          <strong className="text-gray-900">Strategy first:</strong> Content built around your specific audience and goals
+        </>
+      ),
       icon: Search,
       iconColor: "text-emerald-500", bgColor: "bg-emerald-50", borderColor: "border-emerald-100",
       
     },
     {
       title: null,
-      text: `Ecommerce businesses wanting to showcase products regularly`,
+      text: (
+        <>
+          <strong className="text-gray-900">Platform-aware:</strong> Content adapted to how each platform actually works
+        </>
+      ),
       icon: Lightbulb,
       iconColor: "text-amber-500", bgColor: "bg-amber-50", borderColor: "border-amber-100",
       
     },
     {
       title: null,
-      text: `Any business with inactive or inconsistent social pages`,
+      text: (
+        <>
+          <strong className="text-gray-900">Data-informed:</strong> We track what's working and adjust, rather than posting blind
+        </>
+      ),
       icon: TrendingUp,
       iconColor: "text-blue-500", bgColor: "bg-blue-50", borderColor: "border-blue-100",
       
@@ -47,12 +63,9 @@ export function SmoWhoThisIsFor() {
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Who <span className="text-gradient">This Is For</span>
+  Why Choose Inymart Labs for SMO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
               </div>
-              <p className="text-gray-600 text-lg md:text-xl">
-                As a social media optimization company in Tamil Nadu, our service works well for:
-              </p>
             </div>
           </Reveal>
 
@@ -86,13 +99,6 @@ export function SmoWhoThisIsFor() {
             })}
           </div>
 
-          <Reveal delay={400}>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-gray-600 text-lg text-center leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-                Whether you're starting from scratch or already have pages that need a real strategy, our team takes time to understand your business before creating a single post.
-              </p>
-            </div>
-          </Reveal>
           
         </div>
       </div>

@@ -11,32 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does Inymart Labs do?',
-    a: 'Inymart Labs is an SEO agency in Tamil Nadu and SEO agency in Trichy that helps businesses rank higher on Google Search and Google Maps through research-based SEO strategy and transparent monthly reporting.'
+    q: 'What exactly does an SEO service in Trichy include?',
+    a: 'It typically covers keyword research, technical fixes, on-page work, content development, local visibility, and link-building, all aimed at growing your organic presence in the markets you target.'
   },
   {
-    q: 'How long does SEO take to show results?',
-    a: 'Most businesses start seeing early improvements in 2–3 months, with stronger results building over 6 months as rankings grow.'
+    q: 'How long before SEO starts showing results?',
+    a: 'It depends on your competition, current site condition, target keywords, and industry, but steady work and regular monitoring are what drive lasting improvement.'
   },
   {
-    q: 'Do you offer SEO for small businesses?',
-    a: 'Yes. Inymart Labs offers SEO plans built for small and local businesses that want more visibility without a big budget.'
+    q: 'Can SEO bring in more enquiries for a local business?',
+    a: 'Yes, local SEO brings your business into location-based search results, connecting you with nearby customers actively looking for what you offer.'
   },
   {
-    q: 'What makes Inymart Labs the right SEO agency in Tamil Nadu and SEO agency in Trichy?',
-    a: 'Inymart Labs combines deep local market knowledge with proven SEO practices, focusing on real, measurable results instead of vanity metrics.'
+    q: 'Do you handle SEO for businesses outside Trichy?',
+    a: 'Yes, we build SEO plans for businesses reaching customers well beyond Trichy, adjusting the approach based on where your audience is actually located.'
   },
   {
-    q: 'Do I need a new website for SEO to work?',
-    a: "Not always. Inymart Labs first audits your current website and only recommends changes or a rebuild if it's truly needed."
+    q: "What's the first step to starting SEO with Inymart Labs?",
+    a: 'It starts with a conversation about your website and goals, after which we assess where your search presence stands today and sketch out a practical plan suited to your audience and competitors.'
   },
   {
-    q: 'Will I get regular updates on my SEO progress?',
-    a: 'Yes. Inymart Labs provides clear monthly reports showing rankings, traffic, and leads, explained in simple language.'
+    q: 'Will SEO work alongside my other marketing?',
+    a: 'Yes, SEO tends to complement paid ads and social media rather than compete with them, and can even lift how those other channels perform.'
   },
   {
-    q: 'Where is Inymart Labs located?',
-    a: 'Inymart Labs is headquartered in Tiruchirappalli (Trichy), Tamil Nadu, and serves clients across Tamil Nadu, India, UAE, UK, and the USA.'
+    q: 'How do you decide which keywords to target?',
+    a: 'We focus on terms that show real buying or enquiry intent, rather than high-volume terms that bring visitors unlikely to convert.'
   }
 ];
 
@@ -63,12 +63,12 @@ export function SeoFaq() {
               
               {/* Heading */}
               <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-3 sm:mb-6">
-  Frequently <span className="text-gradient">Asked Questions</span>
+  Questions People <span className="text-gradient">Often Ask</span>
 </h2>
               
               {/* Paragraph */}
               <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
-                Find answers to the most common questions about our services.
+                Have more questions about SEO? Talk to Inymart Labs.
               </p>
             </div>
           </Reveal>

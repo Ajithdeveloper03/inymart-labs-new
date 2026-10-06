@@ -17,19 +17,14 @@ export function LocalSeoWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  What Sets Local SEO Apart From <span className="text-gradient">Regular SEO?</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs is a trusted <strong className="text-[#0c1f28]">Local SEO agency in Tamil Nadu</strong>, helping businesses show up first when nearby customers search for their products or services. As a <strong className="text-[#0c1f28]">Local SEO agency in Trichy</strong>, we know exactly how local customers search, and we build strategy around getting your business found on Google Search and Google Maps.
-              </p>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you run a single shop in Trichy or multiple locations across Tamil Nadu, our team as your Local SEO agency in Tamil Nadu builds a plan around how nearby customers actually find businesses like yours.
+              <p className="text-gray-600 text-lg leading-relaxed mb-10 font-medium">
+                Regular SEO chases rankings broadly. Local SEO narrows the focus to a specific area, weighing things like your business location, listed information, customer reviews, and map presence far more heavily than a typical ranking factor. It's built for searches with a location baked in, whether typed outright or implied by the words near me.
               </p>
             </Reveal>
 
@@ -49,7 +44,7 @@ export function LocalSeoWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/what we do (L-SEO).png" 
+                  src="/new/what we do (L-SEO).png" 
                   alt="Digital marketing and local SEO concept featuring a laptop with analytics, a location map and pin, global map, and city landmarks representing local business growth" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

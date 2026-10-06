@@ -19,20 +19,25 @@ export function DmcWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  Start With Your Business <span className="text-gradient">Goals</span>
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs offers expert Digital Marketing Consulting in Tamil Nadu, help to business owners and marketing teams make sense of SEO, social media, ads, and analytics — without needing to become experts themselves. As a trusted provider of Digital Marketing Consulting in Trichy, we help you see the full picture and decide what actually deserves your time and budget.
-              </p>
+              <div className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
+                <p className="mb-4">Every engagement begins with understanding your business, including:</p>
+                <ul className="list-disc pl-5 mb-4 space-y-2">
+                  <li>Products or services</li>
+                  <li>Target audience and market</li>
+                  <li>Competitors and current marketing</li>
+                </ul>
+              </div>
             </Reveal>
             
             <Reveal delay={200}>
               <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you're planning your first marketing strategy or trying to fix one that isn't working, our team as your Digital Marketing Consulting partner in Tamil Nadu gives you clear, honest direction.
+                Whether you want leads, sales, traffic, brand awareness, or better customer engagement, your goal shapes every recommendation. You get advice tied to real business needs, not generic tips.
               </p>
             </Reveal>
 
@@ -52,7 +57,7 @@ export function DmcWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/what we do (DMC).jpeg" 
+                  src="/new/what we do (DMC).jpeg" 
                   alt="Digital marketing analytics concept featuring a laptop with SEO and traffic performance charts, social media icons, global connectivity, and an upward growth arrow." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

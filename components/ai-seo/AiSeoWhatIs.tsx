@@ -14,7 +14,7 @@ export function AiSeoWhatIs() {
             {/* Left Image Section */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
               <img 
-                src="/what is ai seo.png" 
+                src="/new/what is ai seo.png" 
                 alt=" Digital marketing team analyzing a glowing map of India with connected technology icons, representing digital connectivity, local marketing, and business growth in India." 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-100"
               />
@@ -32,12 +32,25 @@ export function AiSeoWhatIs() {
 
               <div className="relative z-10 max-w-3xl">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-[#0c1f28] mb-6">
-                  What Is AEO / <span className="text-gradient">AI SEO?</span>
+                  What Is <span className="text-gradient">AI SEO?</span>
                 </h2>
                 
-                <p className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium">
-                  AEO (Answer Engine Optimization), also called AI SEO, is the practice of structuring website content so AI-powered search tools and answer engines — such as ChatGPT, Gemini, Copilot, and Perplexity — can understand it, trust it, and use it to answer user questions or recommend a business. It differs from traditional SEO, which focuses primarily on ranking in Google's search results, by focusing on direct-answer clarity, structured facts, and content that generative engines can accurately cite.
-                </p>
+                <div className="text-slate-600 leading-relaxed text-base sm:text-[17px] font-medium text-left">
+                  <p className="mb-4">
+                    AI SEO, also known as Answer Engine Optimization (AEO), is the process of preparing website information for answer-based search experiences.
+                  </p>
+                  <p className="mb-2">Instead of focusing only on keyword rankings, it focuses on:</p>
+                  <ul className="list-disc pl-5 mb-4 space-y-1">
+                    <li>Clear answers</li>
+                    <li>Trustworthy facts</li>
+                    <li>Strong entities</li>
+                    <li>Useful context</li>
+                    <li>Structured information</li>
+                  </ul>
+                  <p>
+                    The objective is to help AI systems understand your business, audience, location, and services.
+                  </p>
+                </div>
               </div>
             </div>
 

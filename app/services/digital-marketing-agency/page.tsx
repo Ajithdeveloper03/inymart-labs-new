@@ -11,7 +11,7 @@ import { DmaKeyFacts } from '@/components/dma/DmaKeyFacts';
 import { DmaServices } from '@/components/dma/DmaServices';
 import { DmaProcess } from '@/components/dma/DmaProcess';
 import { DmaWhoThisIsFor } from '@/components/dma/DmaWhoThisIsFor';
-import { DmaExpectations } from '@/components/dma/DmaExpectations';
+
 import { DmaTrust } from '@/components/dma/DmaTrust';
 import { DmaFaq } from '@/components/dma/DmaFaq';
 import { DmaCta } from '@/components/dma/DmaCta';
@@ -155,7 +155,7 @@ export default function DigitalMarketingAgencyPage() {
         <DmaServices />
         <DmaProcess />
         <DmaWhoThisIsFor />
-        <DmaExpectations />
+
         <DmaTrust />
         <DmaFaq />
         <DmaCta />

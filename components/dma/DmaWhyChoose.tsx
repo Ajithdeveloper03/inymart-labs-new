@@ -24,87 +24,19 @@ export function DmaWhyChoose() {
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Choose a Digital <span className="text-gradient">Marketing Agency</span> in Tamil Nadu
+  Why Bring in an Agency Instead of <span className="text-gradient">Managing It Yourself?</span>
 </h2>
             
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto relative">
-          
-          {/* Card 1 */}
-          <Reveal delay={100} className="h-full">
-            <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
-              <PixelScatter />
-              
-              <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <MousePointerClick className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
-              </div>
-              
-              {/* Separator */}
-              <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
-
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                Many businesses end up working with separate vendors for SEO, social media, and ads — and none of them talk to each other. This often leads to mixed messaging, wasted budget, and no clear picture of what's actually working.
-              </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
-            </div>
-          </Reveal>
-
-          {/* Card 2 */}
-          <Reveal delay={200} className="h-full">
-            <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
-              <PixelScatter />
-              
-              <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Zap className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
-              </div>
-              
-              {/* Separator */}
-              <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
-
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                A complete Digital Marketing Agency in Tamil Nadu solves this by bringing every channel under one strategy and one team. As an experienced Digital Marketing Agency in Trichy, Inymart Labs makes sure your SEO, content, ads, and social media all work together toward the same goals.
-              </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
-            </div>
-          </Reveal>
-
-          {/* Card 3 */}
-          <Reveal delay={300} className="h-full">
-            <div className="relative bg-white hover:bg-[#3f3840] rounded-lg p-6 lg:p-8 border border-slate-200 hover:border-[#3f3840] h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group z-0 hover:z-10">
-              <PixelScatter />
-              
-              <div className="mb-4 mt-2 relative">
-                <div className="absolute top-0 right-0 w-8 h-[1px] bg-white/10 -rotate-45 -translate-y-2 translate-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute top-2 right-0 w-6 h-[1px] bg-white/10 -rotate-45 translate-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Map className="w-12 h-12 text-slate-700 group-hover:text-[#ff6b35] stroke-[1.5] transition-colors duration-300" />
-              </div>
-              
-              {/* Separator */}
-              <div className="w-12 h-[2px] bg-transparent group-hover:bg-[#ff6b35] mb-4 transition-colors duration-300" />
-
-              <p className="text-slate-500 group-hover:text-slate-300 leading-relaxed text-[15px] mb-6 grow text-justify transition-colors duration-300">
-                We also believe in transparency. Every service from Inymart Labs comes with clear reporting, so you always know what's being done and how it's performing.
-              </p>
-
-              <Link href="/contact" className="text-[#ff6b35] font-bold text-sm hover:text-[#e55a2b] transition-colors">
-                Learn More
-              </Link>
-            </div>
-          </Reveal>
-
-        </div>
+        <Reveal delay={200}>
+          <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-[2.5rem] border border-slate-200 shadow-xl relative overflow-hidden text-center">
+            <p className="text-gray-700 text-lg sm:text-xl leading-relaxed font-medium">
+              Doing digital marketing properly takes constant research, testing, and measurement across several channels at once. Without that specialist attention, it's easy to lose track of what actually matters or misread what's working. An agency brings that focus and structure, plus reporting that shows exactly where the effort is going and how it's paying off.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

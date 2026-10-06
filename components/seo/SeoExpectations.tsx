@@ -1,78 +1,23 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { TrendingUp, PhoneCall, LineChart, MapPin, FileText } from 'lucide-react';
 
 export function SeoExpectations() {
-  const points = [
-    {
-      title: "Higher Rankings",
-      text: "Higher rankings on Google for the keywords your customers actually search",
-      icon: TrendingUp,
-    },
-    {
-      title: "More Enquiries",
-      text: "More calls, form fills, and enquiries from your website and Google Business Profile",
-      icon: PhoneCall,
-    },
-    {
-      title: "Steady Growth",
-      text: "Steady growth in organic traffic month over month, without trustable only on paid ads",
-      icon: LineChart,
-    },
-    {
-      title: "Better Visibility",
-      text: "Better visibility in local map results for searches from Trichy, Chennai, Madurai, and nearby areas",
-      icon: MapPin,
-    },
-    {
-      title: "Clear Reports",
-      text: "Clear monthly reports so you can see exactly how rankings, traffic, and leads are improving",
-      icon: FileText,
-    }
-  ];
-
   return (
-    <section className="relative pt-8 pb-12 bg-[#0c1f28]">
+    <section className="relative pt-12 pb-16 bg-[#0c1f28]">
       <div className="container-x">
         <Reveal>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-white mb-6">
-  What Results <span className="text-gradient">Can You Expect</span>?
+  Steady Work Beats <span className="text-gradient">Shortcuts</span>
 </h2>
-            <p className="text-zinc-300 text-lg leading-relaxed">
-              Once your SEO agency in Tamil Nadu and SEO agency in Trichy strategy is motion, here's what businesses typically see over time:
-            </p>
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-16">
-          {points.map((point, index) => {
-            const Icon = point.icon;
-            return (
-              <Reveal key={index} delay={index * 100} className="h-full">
-                <div className="bg-[#122b38] rounded-3xl p-8 border border-white/5 h-full hover:border-primary/50 transition-colors flex flex-col items-center justify-center text-center group">
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="flex items-center gap-3">
-                      <div className="shrink-0">
-                        <Icon className="w-10 h-10 text-primary stroke-1" />
-                      </div>
-                      <h3 className="text-lg font-bold text-white leading-snug">{point.title}</h3>
-                    </div>
-                    <p className="text-zinc-400 text-sm leading-relaxed">
-                      {point.text}
-                    </p>
-                  </div>
-                </div>
-              </Reveal>
-            );
-          })}
-        </div>
-
         <Reveal delay={200}>
-          <div className="max-w-4xl mx-auto mt-16 bg-[#122b38] border border-white/5 rounded-2xl p-8 text-center">
-            <p className="text-lg text-zinc-300 leading-relaxed font-medium">
-              Results build gradually with SEO. Most businesses notice early movement in 2–3 months, with stronger, more consistent results by month 6 onward.
+          <div className="max-w-4xl mx-auto bg-[#122b38] border border-white/5 p-8 sm:p-10 rounded-[2.5rem] shadow-xl relative overflow-hidden text-center">
+            <p className="text-zinc-300 text-lg sm:text-xl leading-relaxed font-medium">
+              We keep the roadmap clear, focus effort on what actually moves the needle, and adjust as new data comes in. That approach builds visibility that holds up over time, instead of gains that vanish after the next algorithm update.
             </p>
           </div>
         </Reveal>

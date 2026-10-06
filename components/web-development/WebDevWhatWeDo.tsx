@@ -17,19 +17,14 @@ export function WebDevWhatWeDo() {
           <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  What <span className="text-gradient">We Do</span>
+  Our Process Starts With Your <span className="text-gradient">Business</span>, Not a Template
 </h2>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
             </Reveal>
 
             <Reveal delay={100}>
               <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">
-                Inymart Labs offers a complete <strong className="text-[#0c1f28]">Web Development Service in Tamil Nadu</strong>, helping businesses build fast, professional, and easy-to-use websites that turn visitors into customers. As a <strong className="text-[#0c1f28]">Web Development Service in Trichy</strong>, we don't just design good-looking pages — we build websites that are ready for SEO, mobile users, and long-term growth from day one.
-              </p>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                We work with small businesses, growing brands, and companies across India, UAE, UK, and the USA. Whether you need a brand-new website, a rebuild of an old one, or an online store, our team as your Web Development Service in Tamil Nadu builds it around your business goals and your customers' needs.
+                Before writing a line of code, we ask what your business does, who buys from you, what your competitors offer, and what you want visitors to do once they land on your page. That shapes the layout, the content structure, and every feature we recommend.
               </p>
             </Reveal>
 
@@ -49,7 +44,7 @@ export function WebDevWhatWeDo() {
             <Reveal className="h-full">
               <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/what we do (WB).png" 
+                  src="/new/what we do (WB).png" 
                   alt=" Web development workspace featuring a laptop with coding software, a desktop monitor displaying a responsive website, and a smartphone showing the mobile version." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

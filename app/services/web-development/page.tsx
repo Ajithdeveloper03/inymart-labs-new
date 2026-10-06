@@ -149,14 +149,14 @@ export default function WebDevelopmentServicePage() {
         <WebDevQuickAnswer />
         <WebDevWhatIs />
         <WebDevWhatWeDo />
-        <WebDevWhyChoose />
-        <WebDevComparison />
-        <WebDevKeyFacts />
         <WebDevProcess />
-        <WebDevServices />
-        <WebDevWhoThisIsFor />
-        <WebDevExpectations />
-        <WebDevTrust />
+        <WebDevComparison />
+        <WebDevWhyChoose />
+        {/* <WebDevServices /> */}
+        {/* <WebDevWhoThisIsFor /> */}
+        {/* <WebDevExpectations /> */}
+        {/* <WebDevTrust /> */}
+        {/* <WebDevKeyFacts /> */}
         <WebDevFaq />
         <WebDevCta />
       </main>

@@ -7,50 +7,16 @@ export function DmaComparison() {
     <section className="relative pt-8 pb-12 bg-slate-50 border-t border-slate-100">
       <div className="container-x">
         <Reveal>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-4xl mx-auto">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-              Digital <span className="text-gradient">Marketing Agency</span> vs. Managing Marketing In-House
+              Why Connected Marketing Outperforms <span className="text-gradient">Separate Channels</span>
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Many businesses try to handle marketing internally before realizing the limits of doing it alone. Here's how the two compare:
-            </p>
-          </div>
-        </Reveal>
-
-        <Reveal delay={100}>
-          <div className="max-w-5xl mx-auto bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse min-w-[600px]">
-                <thead>
-                  <tr className="bg-slate-50 border-b border-slate-200">
-                    <th className="py-6 px-6 font-bold text-slate-800 text-lg w-[20%]">Factor</th>
-                    <th className={`py-6 px-6 font-bold text-lg w-[40%] border-l border-slate-200 ${false ? 'text-primary bg-primary/5' : 'text-slate-800'}`}>In-House Marketing</th>
-                    <th className={`py-6 px-6 font-bold text-lg w-[40%] border-l border-slate-200 ${true ? 'text-primary bg-primary/5' : 'text-slate-800'}`}>Digital Marketing Agency (Inymart Labs)</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100">
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Expertise</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Limited to what your team already knows</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Specialists across SEO, ads, social media, and web</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Cost</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Salaries, tools, and training add up</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>One coordinated team and budget</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Speed</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Slower learning curve</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Proven processes from day one</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-5 px-6 font-semibold text-slate-700">Reporting</td>
-                    <td className={`py-5 px-6 font-medium border-l border-slate-100 ${false ? 'text-slate-800 bg-primary/5' : 'text-slate-600'}`}>Often informal or inconsistent</td>
-                    <td className={`py-5 px-6 border-l border-slate-100 ${true ? 'text-slate-800 font-medium bg-primary/5' : 'text-slate-600'}`}>Transparent monthly reporting across every channel</td>
-                  </tr>
-                </tbody>
-              </table>
+            
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 sm:p-10 text-left relative overflow-hidden mt-10">
+              <div className="absolute top-0 left-0 w-2 h-full bg-[#ff6b35]"></div>
+              <p className="text-gray-700 text-lg sm:text-xl leading-relaxed font-medium">
+                Run in isolation, SEO, social, ads, and your website each do their own small job. Connected under one strategy, SEO strengthens what people find, social builds recognition, ads bring in immediate traffic, and analytics shows which of it is actually working, so your messaging stays consistent and decisions rest on the full picture rather than one channel's numbers.
+              </p>
             </div>
           </div>
         </Reveal>

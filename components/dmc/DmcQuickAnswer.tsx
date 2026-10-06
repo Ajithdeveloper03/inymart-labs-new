@@ -18,7 +18,7 @@ export function DmcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/quick answer (DMC).jpeg" 
+                  src="/new/quick answer (DMC).jpeg" 
                   alt=" Digital marketing analytics concept featuring a laptop with website performance charts, traffic sources, social media icons, target and growth graphics, and a rising analytics graph." 
                   className="w-full h-full object-cover"
                 />
@@ -44,12 +44,15 @@ export function DmcQuickAnswer() {
             <div className="space-y-6">
               <Reveal delay={100}>
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium">
-                  Inymart Labs offers Digital Marketing Consulting in Trichy, Tamil Nadu giving businesses an outside, expert view of their SEO, social media, ads, and analytics — and a clear, prioritized action plan for what to focus on next.
+                  Digital marketing consulting is professional advice that shows where your marketing stands, what to fix, and what to tackle first. Inymart Labs offers a Digital Marketing Consulting Service in Trichy and Tamil Nadu that helps businesses turn scattered marketing efforts into a clear, measurable plan.
+                </p>
+                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed font-medium mt-4">
+                  Many businesses run SEO, social media, ads, content, and a website without one strategy tying them together. Our consulting brings those pieces in line with your business goals and helps you spend your marketing budget more wisely.
                 </p>
               </Reveal>
               <Reveal delay={200}>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Consulting engagements can be one-time strategy sessions or ongoing monthly advisory, with clarity and direction typically visible right away and measurable marketing improvements building over the following months.
+                  <span className="text-[#ff6b35] font-semibold">Not sure where your marketing is going wrong? Book a consultation with Inymart Labs.</span>
                 </p>
               </Reveal>
             </div>

@@ -11,28 +11,32 @@ import { Plus, Minus, Circle, ArrowRight } from 'lucide-react';
 
 const faqs = [
   {
-    q: 'What does a Web Analytics Service do?',
-    a: 'A Web Analytics Service audits, fixes, and interprets your website tracking data, showing where traffic comes from, how visitors behave, and why they aren\'t converting.'
+    q: 'What is web analytics?',
+    a: "It's the process of collecting and interpreting website data, covering where visitors come from, what pages they view, and what actions they take."
   },
   {
-    q: 'I already have Google Analytics installed — do I still need this service?',
-    a: 'Often yes. Many businesses have Analytics installed but set up incorrectly, which means the data isn\'t fully trustworthy.'
+    q: 'Do you offer web analytics service in Trichy and Tamil Nadu?',
+    a: 'Yes, Inymart Labs runs a Web Analytics Service for businesses across Trichy and Tamil Nadu, covering everything from tracking setup to ongoing reporting.'
   },
   {
-    q: 'How often will I receive reports?',
-    a: 'Most businesses receive monthly reports, though Inymart Labs can adjust the frequency based on your needs.'
+    q: 'I already have Google Analytics installed, do I still need this?',
+    a: 'Often yes, having the tool installed doesn\'t mean it\'s tracking the right things. We check and fix common setup issues that quietly skew your data.'
   },
   {
-    q: 'What makes Inymart Labs the right Web Analytics Service in Tamil Nadu and Web Analytics Service in Trichy?',
-    a: 'Inymart Labs focuses on explaining your data in plain language and connecting it to real business results, not just showing charts.'
+    q: 'What can analytics actually tell me about my business?',
+    a: 'It can show which marketing channels bring valuable visitors, which pages perform well, and where people drop off before converting.'
   },
   {
-    q: 'Can you help me understand why my website isn\'t converting?',
-    a: 'Yes. Behavior analysis is a core part of Inymart Labs\' process, showing exactly where visitors drop off before taking action.'
+    q: 'What\'s the difference between the two main tracking tools?',
+    a: 'One focuses on visitor behaviour once someone is on your site, while the other shows how you appear in search results, covering queries, clicks, and indexing.'
   },
   {
-    q: 'Do I need to buy any special tools for this?',
-    a: 'Not usually. Inymart Labs primarily works with free tools like Google Analytics and Google Search Console, set up and used correctly.'
+    q: 'How often will I get reports?',
+    a: 'We set up regular reporting so you can track performance over time, though the exact frequency depends on your plan.'
+  },
+  {
+    q: 'Can you set up tracking for calls and form submissions?',
+    a: 'Yes, we configure event and conversion tracking for calls, forms, downloads, purchases, and other actions specific to your business.'
   }
 ];
 
@@ -40,7 +44,7 @@ export function WebAnalyticsFaq() {
   return (
     <section
       id="faqs"
-      className="relative scroll-mt-24 bg-slate-50 pt-8 pb-12 overflow-hidden"
+      className="relative scroll-mt-24 bg-white pt-8 pb-12 overflow-hidden"
     >
       <div className="container-x">
         <div className="mx-auto flex w-full max-w-4xl flex-col">
@@ -56,12 +60,12 @@ export function WebAnalyticsFaq() {
               </div>
               
               <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#0c1f28] leading-[1.2] mb-3 sm:mb-6">
-  Frequently <span className="text-gradient">Asked Questions</span>
+  Common <span className="text-gradient">Questions</span>
 </h2>
               
               {/* Paragraph */}
               <p className="font-sans text-slate-500 text-[12px] sm:text-[15px] leading-relaxed max-w-lg mx-auto text-justify sm:text-center">
-                Find answers to the most common questions about our services.
+                Have more questions about web analytics? Talk to Inymart Labs.
               </p>
             </div>
           </Reveal>

@@ -1,44 +1,49 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ArrowRight, Activity, Search, Target, Settings, PenTool, Link2, BarChart } from 'lucide-react';
+import { ArrowRight, Activity, Search, Target, Settings, PenTool, Link2, BarChart, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 export function LocalSeoProcess() {
   const steps = [
     {
       title: `Google Business Profile Setup`,
-      desc: `We create or optimize your Google Business Profile with accurate details, categories, and photos so customers find the right information instantly.`,
+      desc: `This single listing carries a lot of weight in local search. We fill in accurate business details, pick the right categories, add service information, hours, and photos, then keep everything consistent, so customers can find you, understand what you offer, and reach out without confusion.`,
       icon: Activity
     },
     {
-      title: `Local Keyword Research`,
-      desc: `We find the exact "near me" and location-based phrases your customers are searching for.`,
+      title: `Finding the Keywords Your Customers Actually Use`,
+      desc: `We research how people phrase local searches, service names, area names, and near-me phrasing included, based on real search intent. The aim is connecting your services to the right locations naturally, without cramming keywords in where they don't belong.`,
       icon: Search
     },
     {
-      title: `Listings & Citations`,
-      desc: `We list your business consistently across trusted directories, so Google sees your business as verified and reliable.`,
+      title: `Getting Your Business Listed Consistently`,
+      desc: `Mismatched business details across directories quietly hurt your local visibility. We check major listings and correct your business name, street address, phone, website link, and category wherever they don't match, building a more dependable presence across the web.`,
       icon: Target
     },
     {
-      title: `Review Management`,
-      desc: `We help you collect and respond to customer reviews, which build trust with both Google and new customers.`,
+      title: `Managing Reviews the Right Way`,
+      desc: `Reviews shape a customer's first impression before they even call. We help set up a practical approach to gathering honest feedback, since reviews grounded in real experience do more for credibility than anything manufactured.`,
       icon: Settings
     },
     {
-      title: `Location-Based Content`,
-      desc: `We create website content that speaks directly to customers in your service areas.`,
+      title: `Content Built Around Your Locations`,
+      desc: `We build or refine service pages, area-specific pages, and blog content around topics relevant to where you operate, so search engines and visitors alike get a clearer sense of how your business fits into local search results.`,
       icon: PenTool
     },
     {
-      title: `Map Pack Optimization`,
-      desc: `We work to get your business into Google's local "map pack" results, right at the top of local searches.`,
+      title: `On-Page Fixes for Local Relevance`,
+      desc: `Page titles, meta descriptions, heading tags, URLs, internal links, and image details all get reviewed so your site clearly states what you do and where you serve customers, making it easier for both visitors and search engines to understand your business.`,
       icon: Link2
     },
     {
-      title: `Reporting`,
-      desc: `Every month, you get a simple report showing local rankings, calls, and direction requests — no confusing jargon.`,
+      title: `Getting Into the Map Pack`,
+      desc: `Showing up in Google's map results comes down to a mix of signals, how strong your profile is, how relevant your site is, your citations, your reviews, and how accurate your location details are. We work on strengthening these signals and keep monitoring where further improvement can move the needle.`,
+      icon: MapPin
+    },
+    {
+      title: `Tracking What's Actually Changing`,
+      desc: `Local rankings shift as competitors and search behaviour change, so we don't set it and forget it. We watch rankings, profile activity, site traffic, and incoming enquiries, and report back regularly on what's improving and what needs attention.`,
       icon: BarChart
     }
   ];
@@ -50,7 +55,7 @@ export function LocalSeoProcess() {
           <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Our Local <span className="text-gradient">SEO Process</span>
+  What Our Local SEO <span className="text-gradient">Service Covers</span>
 </h2>
             <div className="w-20 h-1.5 bg-primary rounded-full mx-auto"></div>
           </div>
@@ -126,7 +131,7 @@ export function LocalSeoProcess() {
               href="/contact" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
-              See Our Local SEO Process in Action
+              Not sure how your listings and content stack up locally? Let's find out.
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
