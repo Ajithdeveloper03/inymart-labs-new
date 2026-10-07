@@ -5,7 +5,7 @@ import { Lightbulb } from 'lucide-react';
 
 export function WebAnalyticsQuickAnswer() {
   return (
-    <section id="quick-answer" className="relative pt-8 pb-12 bg-white overflow-hidden">
+    <section id="quick-answer" className="relative pt-8 pb-4 bg-white overflow-hidden">
       {/* Background Decorative Blob */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 -translate-x-1/2" />
       
@@ -30,6 +30,14 @@ export function WebAnalyticsQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+                  Actionable <span className="text-gradient">Insights</span>
+                </h2>
+              </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 

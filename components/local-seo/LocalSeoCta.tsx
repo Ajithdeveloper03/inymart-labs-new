@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ArrowRight, Phone, Mail } from 'lucide-react';
+import { Phone, Mail, Users } from 'lucide-react';
 import Link from 'next/link';
 import { usePopup } from '@/components/providers/PopupProvider';
 
@@ -10,7 +10,7 @@ export function LocalSeoCta() {
   return (
     <section
       id="contact"
-      className="relative scroll-mt-24 overflow-hidden bg-white pt-8 pb-12 text-foreground"
+      className="relative scroll-mt-24 overflow-hidden bg-slate-50 pt-16 pb-20 text-foreground"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-[0.03]" />
       <div
@@ -21,21 +21,21 @@ export function LocalSeoCta() {
       <div className="container-x relative">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#ff6b35]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#ff6b35] ring-1 ring-[#ff6b35]/20">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#ff6b35]" />
-              Local SEO
-            </span>
+            <div className="flex flex-col items-center text-center mb-10">
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center shrink-0">
+                  <Users className="w-8 h-8 text-pink-500" />
+                </div>
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+                  Reach the Customers <span className="text-gradient">Already Searching Nearby</span>
+                </h2>
+              </div>
+            </div>
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mt-6">
-  Ready to get <span className="text-gradient">found locally?</span>
-</h2>
-          </Reveal>
-
-          <Reveal delay={160}>
-            <p className="font-sans mx-auto mt-5 max-w-[60rem] text-base leading-relaxed text-slate-500 text-pretty sm:text-lg">
-              Contact Inymart Labs to get started.
+            <p className="font-sans mx-auto mt-6 max-w-[60rem] text-base leading-relaxed text-slate-600 text-pretty sm:text-lg mb-10">
+              Shops, clinics, eateries, home-service businesses, and professional firms all depend on nearby customers finding them, and that's exactly where Local SEO earns its keep. Whether you run one location or several, the right strategy helps your business get discovered right when someone nearby is looking.
             </p>
           </Reveal>
 
@@ -47,7 +47,7 @@ export function LocalSeoCta() {
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto whitespace-nowrap"
               >
                 Start Your Local SEO Journey
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                
               </Link>
               
               

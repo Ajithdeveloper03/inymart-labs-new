@@ -151,8 +151,8 @@ export default function WebAnalyticsServicePage() {
         <WebAnalyticsProcess />
         <WebAnalyticsExpectations />
         <WebAnalyticsWhoThisIsFor />
-        <WebAnalyticsCta />
         <WebAnalyticsFaq />
+        <WebAnalyticsCta />
       </main>
       <Footer />
       <ScrollToTop />

@@ -8,13 +8,13 @@ import { usePopup } from '@/components/providers/PopupProvider';
 export function SeoWhatWeDo() {
   const { openPopup } = usePopup();
   return (
-    <section className="relative pt-8 pb-12 bg-white overflow-hidden">
+    <section className="relative pt-0 pb-12 bg-white overflow-hidden">
       <div className="container-x">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Left: Content */}
-          <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
+          <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8 h-full justify-center">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
   Visibility Alone Doesn't Pay the <span className="text-gradient">Bills</span>
@@ -40,9 +40,9 @@ export function SeoWhatWeDo() {
           </div>
 
           {/* Right: Visual (Image) */}
-          <div className="order-1 lg:order-2 relative">
-            <Reveal className="h-full">
-              <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
+          <div className="order-1 lg:order-2 relative h-[300px] sm:h-[400px] lg:h-[450px] w-full">
+            <Reveal className="w-full h-full">
+              <div className="relative w-full h-full overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
                   src="/new/what we do (SEO).png" 
                   alt=" Digital marketer researching local search results on a laptop while taking notes in a notebook at a desk." 

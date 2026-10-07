@@ -159,9 +159,9 @@ export default function SmmServicePage() {
         <SmmWhyChoose />
         <SmmProcess />
         <SmmReportingAndExpectations />
-        <SmmCta />
         <SmmWhoThisIsFor />
         <SmmFaq />
+        <SmmCta />
       </main>
       <Footer />
       <ScrollToTop />

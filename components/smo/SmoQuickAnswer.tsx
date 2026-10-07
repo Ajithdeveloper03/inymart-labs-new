@@ -54,6 +54,14 @@ export function SmoQuickAnswer() {
           {/* Right Side: Content */}
           <div className="order-2 flex flex-col items-start lg:pl-12 pt-8 pb-8 sm:pb-12 lg:pb-16 h-full justify-center">
             <Reveal>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
+                  Stronger Social <span className="text-gradient">Presence</span>
+                </h2>
+              </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>
 

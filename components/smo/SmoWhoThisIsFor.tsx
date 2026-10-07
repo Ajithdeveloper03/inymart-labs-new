@@ -57,14 +57,14 @@ export function SmoWhoThisIsFor() {
         <div className="max-w-6xl mx-auto">
           
           <Reveal>
-            <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+            <div className="flex flex-col items-center text-center max-w-5xl mx-auto mb-16">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center shrink-0">
                   <Users className="w-8 h-8 text-pink-500" />
                 </div>
-                <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Why Choose Inymart Labs for SMO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
-</h2>
+                <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground text-center">
+                  Why Choose Inymart Labs for <br className="hidden sm:block" /> SMO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
+                </h2>
               </div>
             </div>
           </Reveal>

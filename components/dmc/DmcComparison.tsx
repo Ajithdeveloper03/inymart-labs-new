@@ -16,18 +16,30 @@ export function DmcComparison() {
 
         <Reveal delay={100}>
           <div className="max-w-5xl mx-auto bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 overflow-hidden">
-            <div className="p-8 md:p-12">
-              <p className="text-lg text-gray-700 leading-relaxed font-medium mb-6 text-center">
-                A good consultation ends with action. We rank recommendations by priority, business impact, available resources, and effort to implement. Your roadmap shows:
-              </p>
-              <ul className="list-disc pl-5 mb-6 space-y-2 text-lg text-gray-700 font-medium max-w-2xl mx-auto">
-                <li>What to do right now</li>
-                <li>What can wait for later</li>
-                <li>What to keep monitoring</li>
-              </ul>
-              <p className="text-lg text-gray-700 leading-relaxed font-medium text-center">
-                Owners and teams get a clear path forward, not a pile of unconnected ideas.
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 items-stretch">
+              {/* Left Content */}
+              <div className="p-8 md:p-12 flex flex-col justify-center">
+                <p className="text-lg text-gray-700 leading-relaxed font-medium mb-6">
+                  A good consultation ends with action. We rank recommendations by priority, business impact, available resources, and effort to implement. Your roadmap shows:
+                </p>
+                <ul className="list-disc pl-5 mb-6 space-y-2 text-lg text-gray-700 font-medium">
+                  <li>What to do right now</li>
+                  <li>What can wait for later</li>
+                  <li>What to keep monitoring</li>
+                </ul>
+                <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                  Owners and teams get a clear path forward, not a pile of unconnected ideas.
+                </p>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative min-h-[300px] w-full bg-slate-100">
+                <img 
+                  src="/new/what we do (DMC).jpeg" 
+                  alt="Marketing roadmap and strategy planning" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </Reveal>

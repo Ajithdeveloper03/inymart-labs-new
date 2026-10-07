@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ArrowRight, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { usePopup } from '@/components/providers/PopupProvider';
 
@@ -34,7 +34,7 @@ export function PortfolioCta() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-bold text-white shadow-[0_8px_20px_rgba(249,115,22,0.3)] transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
               >
                 Talk to Our Team
-                <ArrowRight className="h-4 w-4" />
+                
               </Link>
 
               

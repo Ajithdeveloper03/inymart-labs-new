@@ -1,7 +1,7 @@
 'use client';
 
 import { Reveal } from '@/components/Reveal';
-import { ArrowRight, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { usePopup } from '@/components/providers/PopupProvider';
 
@@ -50,7 +50,7 @@ export function SmoCta() {
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#ff6b35] px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-[#ff6b35]/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff6b35]/90 hover:shadow-[#ff6b35]/50 w-full sm:w-auto whitespace-nowrap"
               >
                 Start Your Social Media Journey
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                
               </Link>
               
               

@@ -5,7 +5,7 @@ import { Lightbulb } from 'lucide-react';
 
 export function DmcQuickAnswer() {
   return (
-    <section id="quick-answer" className="relative pt-8 pb-12 bg-white overflow-hidden">
+    <section id="quick-answer" className="relative pt-8 pb-4 bg-white overflow-hidden">
       {/* Background Decorative Blob */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 -translate-x-1/2" />
       

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Reveal } from '@/components/Reveal';
-import { ArrowRight, Check } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { usePopup } from '@/components/providers/PopupProvider';
 
 const ctaPoints = ['Book Your Free Consultation'];
@@ -59,7 +59,7 @@ export function FinalCta() {
                 className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-accent px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 whitespace-nowrap w-full sm:w-auto"
               >
                 Book Your Free Consultation
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                
               </Link>
               <a
                 href="/#services"

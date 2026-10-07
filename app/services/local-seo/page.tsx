@@ -167,7 +167,6 @@ export default function LocalSeoServicePage() {
         <LocalSeoProcess />
         <LocalSeoExpectations />
         <LocalSeoWhyChoose />
-        <LocalSeoWhoThisIsFor />
         <LocalSeoFaq />
         <LocalSeoCta />
       </main>

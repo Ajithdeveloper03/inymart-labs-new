@@ -152,7 +152,6 @@ export default function PpcServicePage() {
         <PpcComparison />
         {/* <PpcKeyFacts /> */}
         <PpcWhoThisIsFor />
-        <PpcExpectations />
         <PpcTrust />
         <PpcWhyChoose />
         <PpcFaq />

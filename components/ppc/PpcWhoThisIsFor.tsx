@@ -39,22 +39,33 @@ export function PpcWhoThisIsFor() {
     <section className="relative pt-12 pb-16 bg-slate-50">
       <div className="container-x">
         <div className="max-w-6xl mx-auto">
-          
-          <Reveal>
-            <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-10">
-              <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Measuring What Matters: <span className="text-gradient">Conversions</span>
-</h2>
-            </div>
-          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            
+            {/* Left Card: Conversions */}
+            <Reveal delay={100} className="h-full">
+              <div className="h-full bg-white p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex flex-col justify-center text-center hover:-translate-y-1 transition-transform duration-300 group">
+                <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-6">
+                  Measuring What Matters: <span className="text-gradient">Conversions</span>
+                </h3>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
+                  We count real outcomes such as phone calls, enquiry forms, purchases, sign-ups, and any other goal we agree on. Conversion tracking shows which campaigns, keywords, ads, and landing pages drive those results, so your next investment is based on data.
+                </p>
+              </div>
+            </Reveal>
 
-          <Reveal delay={100}>
-            <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 text-center">
-              <p className="text-lg text-gray-700 leading-relaxed font-medium">
-                We count real outcomes such as phone calls, enquiry forms, purchases, sign-ups, and any other goal we agree on. Conversion tracking shows which campaigns, keywords, ads, and landing pages drive those results, so your next investment is based on data.
-              </p>
-            </div>
-          </Reveal>
+            {/* Right Card: Testing */}
+            <Reveal delay={200} className="h-full">
+              <div className="h-full bg-[#122b38] p-8 md:p-12 rounded-[2rem] border border-white/5 shadow-xl flex flex-col justify-center text-center hover:-translate-y-1 transition-transform duration-300 group">
+                <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight text-white mb-6">
+                  Constant Testing and <span className="text-gradient">Improvement</span>
+                </h3>
+                <p className="text-base sm:text-lg text-zinc-300 leading-relaxed font-medium">
+                  Buyer behaviour and competitors keep shifting, so campaigns need steady fine-tuning. We test ad messages, keywords, targeting, landing page ideas, and bidding methods. Winners get more attention, while weak performers are fixed, paused, or replaced.
+                </p>
+              </div>
+            </Reveal>
+
+          </div>
         </div>
       </div>
     </section>

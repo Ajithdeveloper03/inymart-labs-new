@@ -5,7 +5,7 @@ import { Briefcase } from 'lucide-react';
 
 export function DmcWhatIs() {
   return (
-    <section className="relative pt-12 pb-16 bg-white">
+    <section className="relative pt-4 pb-16 bg-white">
       <div className="container-x">
         <Reveal>
           {/* Banner Container */}

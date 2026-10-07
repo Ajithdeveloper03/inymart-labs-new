@@ -5,7 +5,7 @@ import { Search } from 'lucide-react';
 
 export function WebAnalyticsWhatIs() {
   return (
-    <section className="relative pt-12 pb-16 bg-white">
+    <section className="relative pt-0 pb-16 bg-white">
       <div className="container-x">
         <Reveal>
           {/* Banner Container */}

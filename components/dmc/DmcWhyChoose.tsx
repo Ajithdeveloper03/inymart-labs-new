@@ -22,10 +22,10 @@ export function DmcWhyChoose() {
     <section className="relative pt-8 pb-12 bg-white">
       <div className="container-x">
         <Reveal>
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Choose Inymart Labs for <span className="text-gradient">Digital Marketing Consulting</span> in Trichy and Tamil Nadu?
-</h2>
+          <div className="text-center max-w-5xl mx-auto mb-16">
+            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
+              Why Choose Inymart Labs for <span className="text-gradient">Digital Marketing</span> <br className="hidden lg:block" /> <span className="text-gradient">Consulting</span> in Trichy and Tamil Nadu?
+            </h2>
           </div>
         </Reveal>
 
