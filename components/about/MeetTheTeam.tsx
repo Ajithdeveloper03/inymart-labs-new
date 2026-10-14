@@ -8,35 +8,35 @@ const TEAM = [
   { 
     name: 'Mr. Manoj Jeevagan', 
     role: 'Web Traffic Ideator',
-    image: '/new/ceo.webp',
+    image: '/ceo.webp',
     bgColor: 'bg-[#B4BDB3]',
     linkedin: 'https://www.linkedin.com/in/manojjeevagan/'
   },
   { 
     name: 'Mr. Deen Mohamed', 
     role: 'Traffic Team Manager',
-    image: '/new/deen.webp',
+    image: '/deen.webp',
     bgColor: 'bg-[#A8B4C4]',
     linkedin: 'https://www.linkedin.com/in/deen-mohamed-j-'
   },
   { 
     name: 'Ms. Shanthini', 
     role: 'Traffic Team Co-ordinator',
-    image: '/new/shan.webp',
+    image: '/shan.webp',
     bgColor: 'bg-[#988290]',
     linkedin: 'https://www.linkedin.com/in/shanthini-ananthan-2953a2248/'
   },
   { 
     name: 'Mr. Ajith Kumar', 
     role: 'Web Team Lead',
-    image: '/new/ajith.webp',
+    image: '/ajith.webp',
     bgColor: 'bg-[#C1BAB3]',
     linkedin: 'https://www.linkedin.com/in/ajith-kumar-web-developer/'
   },
   { 
     name: 'Ms. Santhiya', 
     role: 'Digital Marketing Executive',
-    image: '/new/santhiyaa.png',
+    image: '/santhiyaa.png',
     bgColor: 'bg-[#D1C8C1]',
     linkedin: 'https://www.linkedin.com/in/santhiya-muthamil-36b43b403/',
     imageClass: 'object-[50%_30%]'
@@ -44,21 +44,21 @@ const TEAM = [
   { 
     name: 'Ms. Swathi', 
     role: 'Digital Marketing Executive',
-    image: '/new/swathi-web.png',
+    image: '/swathi-web.png',
     bgColor: 'bg-[#B5C2B7]',
     linkedin: 'https://www.linkedin.com/in/swathi-sankar-3102492a6'
   },
   { 
     name: 'Ms. Abi', 
     role: 'Digital Marketing Executive',
-    image: '/new/abi.jpg',
+    image: '/abi.jpg',
     bgColor: 'bg-[#D6C5C0]',
     linkedin: 'https://www.linkedin.com/in/abi-chandrasekaran-119218382/'
   },
   { 
     name: 'Mr. Saravanan', 
     role: 'Web Developer',
-    image: '/new/saravanan.png',
+    image: '/saravanan.png',
     bgColor: 'bg-[#C4D4D8]',
     linkedin: 'https://www.linkedin.com/in/saravanan-palaniswamy-57136933a/'
   },

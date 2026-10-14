@@ -64,7 +64,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Web Analytics Services",
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Web Analytics",
       "item": "https://inymartlabs.com/services/web-analytics/"
     }
   ]
@@ -73,53 +79,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/web-analytics/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a Web Analytics Service do?",
+      "name": "What is web analytics?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Web Analytics Service helps businesses track, analyse, and understand website data such as traffic, user behaviour, conversions, engagement, and campaign performance. It helps identify opportunities to improve website performance and marketing results."
+        "text": "It's the process of collecting and interpreting website data, covering where visitors come from, what pages they view, and what actions they take."
       }
     },
     {
       "@type": "Question",
-      "name": "I already have Google Analytics installed - do I still need this service?",
+      "name": "Do you offer web analytics service in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Having Google Analytics installed provides access to data, but a Web Analytics Service helps interpret that data, identify important trends, find conversion issues, track key metrics, and turn website data into actionable marketing insights."
+        "text": "Yes, Inymart Labs runs a Web Analytics Service for businesses across Trichy and Tamil Nadu, covering everything from tracking setup to ongoing reporting."
       }
     },
     {
       "@type": "Question",
-      "name": "How often will I receive reports?",
+      "name": "I already have Google Analytics installed, do I still need this?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reporting frequency can be customised based on your business requirements. Inymart Labs can provide regular analytics reports covering website traffic, user behaviour, conversions, campaign performance, and other important metrics."
+        "text": "Often yes, having the tool installed doesn't mean it's tracking the right things. We check and fix common setup issues that quietly skew your data."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right Web Analytics Service in Tamil Nadu and Web Analytics Service in Trichy?",
+      "name": "What can analytics actually tell me about my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs provides customised web analytics solutions focused on understanding user behaviour, measuring marketing performance, identifying conversion opportunities, and helping businesses make data-driven decisions."
+        "text": "It can show which marketing channels bring valuable visitors, which pages perform well, and where people drop off before converting."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you help me understand why my website isn't converting?",
+      "name": "What's the difference between the two main tracking tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We can analyse website traffic, user journeys, landing pages, engagement metrics, conversion paths, and other available data to identify potential reasons for low conversions and recommend areas for improvement."
+        "text": "One focuses on visitor behaviour once someone is on your site, while the other shows how you appear in search results, covering queries, clicks, and indexing."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need to buy any special tools for this?",
+      "name": "How often will I get reports?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily. Web analytics can often be managed using tools such as Google Analytics and Google Tag Manager. Depending on your business requirements, additional analytics or reporting tools may be recommended."
+        "text": "We set up regular reporting so you can track performance over time, though the exact frequency depends on your plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you set up tracking for calls and form submissions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we configure event and conversion tracking for calls, forms, downloads, purchases, and other actions specific to your business."
       }
     }
   ]

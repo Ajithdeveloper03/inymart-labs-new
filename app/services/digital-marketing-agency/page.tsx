@@ -65,6 +65,12 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Digital Marketing Agency",
       "item": "https://inymartlabs.com/services/digital-marketing-agency/"
     }
@@ -74,53 +80,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/digital-marketing-agency/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a Digital Marketing Agency do?",
+      "name": "What is the role of a digital marketing agency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Digital Marketing Agency helps businesses grow their online presence through services such as SEO, Local SEO, Google Ads, PPC, social media marketing, content marketing, web analytics, and digital marketing strategy."
+        "text": "It plans, runs, and improves several marketing channels together, including search rankings, social, paid ads, your website, and analytics, instead of handling each one separately."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need to use all your services, or can I choose just one?",
+      "name": "Is this service available for businesses in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You do not need to use all our services. Inymart Labs offers individual digital marketing services, allowing you to choose the services that best match your business goals, requirements, and budget."
+        "text": "Yes, we run this Digital Marketing Agency Service for businesses across Trichy and Tamil Nadu, spanning search rankings, social, ads, websites, analytics, and consulting."
       }
     },
     {
       "@type": "Question",
-      "name": "How is this different from hiring separate freelancers for each service?",
+      "name": "Do I have to use every service you offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Working with Inymart Labs provides a coordinated digital marketing approach where different marketing activities can work together under one strategy, helping maintain consistency and simplify campaign management."
+        "text": "No, you can start with one service, such as SEO or paid ads, and add others later as your needs grow."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right Digital Marketing Agency in Tamil Nadu and Digital Marketing Agency in Trichy?",
+      "name": "How is a coordinated strategy different from hiring separately for each channel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs provides customised digital marketing strategies based on your business goals, target audience, industry, competition, and budget. Our approach focuses on measurable performance, continuous optimisation, and long-term online growth."
+        "text": "When channels are managed together, your messaging stays consistent and decisions are based on a full picture of performance, rather than one channel viewed in isolation."
       }
     },
     {
       "@type": "Question",
-      "name": "How soon will I start seeing results?",
+      "name": "Which businesses can you work with?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The time required to see results depends on the services used, competition, industry, budget, website condition, and campaign strategy. Paid advertising may generate results faster, while SEO and organic strategies generally require consistent effort over several months."
+        "text": "Local shops, startups, online stores, professional firms, schools and colleges, hospitality brands, and growing companies of most sizes."
       }
     },
     {
       "@type": "Question",
-      "name": "Will I get regular updates on performance?",
+      "name": "How will I know if the marketing is working?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs provides regular performance updates based on the services and campaign requirements. Reports may include traffic, leads, conversions, keyword rankings, engagement, advertising performance, and other relevant metrics."
+        "text": "We track traffic, conversions, and channel performance, and share regular reports showing what's working and where attention is needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help if I already have some marketing running?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we review what you currently have in place and build a plan around it rather than starting from scratch."
       }
     }
   ]

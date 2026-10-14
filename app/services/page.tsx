@@ -5,7 +5,7 @@ import { ServicesPageCards } from '@/components/services/ServicesPageCards';
 import { ServicesHeroBanner } from '@/components/services/ServicesHeroBanner';
 
 export const metadata = {
-  title: 'Our Digital Marketing Services — Inymart Labs',
+  title: 'Digital Marketing Services in Tamil Nadu — Inymart Labs',
   description: 'Explore our wide range of digital marketing services tailored to grow your business online. From SEO to Web Development, Inymart Labs has you covered.',
   alternates: {
     canonical: '/services/',
@@ -21,7 +21,6 @@ export default function ServicesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
-            "@id": "https://inymartlabs.com/services/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",

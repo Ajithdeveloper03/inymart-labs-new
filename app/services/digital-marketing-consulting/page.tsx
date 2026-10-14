@@ -64,6 +64,12 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "Digital Marketing Consulting",
       "item": "https://inymartlabs.com/services/digital-marketing-consulting/"
     }
@@ -73,53 +79,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/digital-marketing-consulting/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Digital Marketing Consulting?",
+      "name": "What is digital marketing consulting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Digital Marketing Consulting provides expert guidance to help businesses plan, improve, and optimise their online marketing strategies. It can cover SEO, paid advertising, social media, content marketing, analytics, conversion optimisation, and overall digital growth."
+        "text": "It is expert guidance that reviews your current marketing, studies your goals and competitors, and gives you a prioritised roadmap for improvement."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you only offer advice, or do you also implement the strategy?",
+      "name": "Do you offer digital marketing consulting in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs can provide both strategic guidance and implementation support. Depending on your business requirements, we can help develop the strategy and also assist with executing and optimising the recommended digital marketing activities."
+        "text": "Yes. Inymart Labs provides a Digital Marketing Consulting Service in Trichy and Tamil Nadu for businesses that want a clearer strategy."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does a consulting engagement typically last?",
+      "name": "What does a digital marketing audit include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The duration of a digital marketing consulting engagement depends on your business goals, current marketing setup, project scope, and requirements. Consulting can range from short-term strategic sessions to ongoing support and optimisation."
+        "text": "We review your website, SEO, social media, paid campaigns, content, and analytics to show what works and where to improve."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right choice for Digital Marketing Consulting in Tamil Nadu and Trichy?",
+      "name": "Will I get a generic plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs provides customised digital marketing consulting based on your business goals, target audience, industry, competition, and existing marketing activities. Our approach focuses on practical strategies, measurable objectives, and actionable recommendations."
+        "text": "No. Recommendations depend on your own website, market, audience, and budget."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this service only for businesses without any marketing in place?",
+      "name": "Can you help implement the plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Digital Marketing Consulting can benefit businesses at different stages, including businesses that already have marketing campaigns in place. We can review existing strategies, identify gaps, recommend improvements, and help optimise current marketing efforts."
+        "text": "Yes. We can advise your in-house team or support the work alongside them, depending on your needs."
       }
     },
     {
       "@type": "Question",
-      "name": "Will you help my team understand the strategy, not just hand over a report?",
+      "name": "Who should consider marketing consulting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs focuses on helping your team understand the recommended strategy, priorities, processes, and key performance metrics so they can confidently apply the insights to their digital marketing activities."
+        "text": "Businesses starting out, reviewing an existing strategy, or planning their next stage of growth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which marketing areas can you advise on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO, social media, paid advertising, web analytics, and competitor and market analysis."
       }
     }
   ]

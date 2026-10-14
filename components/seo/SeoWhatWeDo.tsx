@@ -44,7 +44,7 @@ export function SeoWhatWeDo() {
             <Reveal className="w-full h-full">
               <div className="relative w-full h-full overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/new/what we do (SEO).png" 
+                  src="/what we do (SEO).png" 
                   alt=" Digital marketer researching local search results on a laptop while taking notes in a notebook at a desk." 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />

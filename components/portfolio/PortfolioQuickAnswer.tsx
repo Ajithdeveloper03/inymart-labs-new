@@ -14,7 +14,7 @@ export function PortfolioQuickAnswer() {
             {/* Image Half */}
             <div className="w-full lg:w-[55%] h-[400px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-lg relative">
               <img 
-                src="/new/quick%20answer%20(%20portfolio).png" 
+                src="/quick%20answer%20(%20portfolio).png" 
                 alt=" Digital growth hub concept featuring a storefront, laptop analytics dashboard, SEO, social media, branding, advertising, traffic sources, conversions, and business growth metrics." 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -27,7 +27,7 @@ export function PortfolioQuickAnswer() {
               
               <div className="flex items-center gap-3 mb-4 text-[#ff6b35]">
                 <Target className="h-6 w-6" />
-                <h3 className="font-display text-2xl lg:text-3xl font-bold">Quick Answer</h3>
+                <h3 className="font-display text-2xl lg:text-3xl font-bold">Industry Expertise</h3>
               </div>
               
               <p className="font-sans text-black leading-relaxed text-[15px] lg:text-base mb-6 text-justify lg:text-left">

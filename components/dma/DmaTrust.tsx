@@ -21,7 +21,7 @@ export function DmaTrust() {
           <Reveal className="order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/new/why trust 2.jpg" 
+                src="/why trust 2.jpg" 
                 alt="Team Meeting" 
                 className="w-full h-[400px] lg:h-[500px] object-fill"
               />

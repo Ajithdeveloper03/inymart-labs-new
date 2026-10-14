@@ -35,7 +35,7 @@ export function DmcComparison() {
               {/* Right Image */}
               <div className="relative min-h-[300px] w-full bg-slate-100">
                 <img 
-                  src="/new/what we do (DMC).jpeg" 
+                  src="/what we do (DMC).jpeg" 
                   alt="Marketing roadmap and strategy planning" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />

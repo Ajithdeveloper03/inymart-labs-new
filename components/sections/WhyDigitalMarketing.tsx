@@ -65,7 +65,7 @@ export function WhyDigitalMarketing() {
         <Reveal className="relative order-1 md:order-2 lg:order-2 h-full min-h-[300px]">
           <div className="relative h-full overflow-hidden rounded-3xl border border-border shadow-2xl shadow-primary/10 min-h-[350px]">
             <img
-              src="/new/Why Digital Marketing Matters.png"
+              src="/Why Digital Marketing Matters.png"
               alt=" Business professional celebrating organic traffic growth, with an upward analytics chart displayed on a laptop and a banner highlighting SEO and AI search optimization."
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"

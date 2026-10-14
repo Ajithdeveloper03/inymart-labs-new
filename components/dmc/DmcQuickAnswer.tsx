@@ -18,7 +18,7 @@ export function DmcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/quick answer (DMC).jpeg" 
+                  src="/quick answer (DMC).jpeg" 
                   alt=" Digital marketing analytics concept featuring a laptop with website performance charts, traffic sources, social media icons, target and growth graphics, and a rising analytics graph." 
                   className="w-full h-full object-cover"
                 />
@@ -35,8 +35,8 @@ export function DmcQuickAnswer() {
                   <Lightbulb className="w-8 h-8" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
+                  Strategic Marketing <span className="text-gradient">Direction</span>
+                </h2>
               </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>

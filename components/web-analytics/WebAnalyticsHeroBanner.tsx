@@ -11,7 +11,7 @@ export function WebAnalyticsHeroBanner() {
     <section className="relative overflow-hidden min-h-screen flex flex-col justify-center pt-32 pb-12 lg:pt-40">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/new/banner (Web Analytics).png')" }}
+        style={{ backgroundImage: "url('/banner (Web Analytics).png')" }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0c1f28]/90 via-[#0c1f28]/70 to-[#0c1f28]/95 backdrop-blur-[2px]" />
 

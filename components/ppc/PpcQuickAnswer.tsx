@@ -18,7 +18,7 @@ export function PpcQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/Quick Answer (PPC).png" 
+                  src="/Quick Answer (PPC).png" 
                   alt=" Google Ads campaign dashboard showing clicks, leads, conversions, and campaign performance alongside a smartphone displaying a Google Ads call lead screen." 
                   className="w-full h-full object-cover"
                 />
@@ -59,8 +59,8 @@ export function PpcQuickAnswer() {
                   <Lightbulb className="w-8 h-8" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
+                  High-Converting <span className="text-gradient">PPC</span>
+                </h2>
               </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>

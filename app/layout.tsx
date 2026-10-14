@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: 'Inymart Labs',
     images: [
       {
-        url: '/new/logo.webp',
+        url: '/logo.webp',
         width: 800,
         height: 600,
         alt: 'Inymart Labs Logo',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
     description:
       'Partner with our digital marketing agency in Tamil Nadu to unlock your business\'s potential.',
-    images: ['/new/logo.webp'],
+    images: ['/logo.webp'],
     creator: '@inymartlabs',
   },
   alternates: {
@@ -130,22 +130,15 @@ export default function RootLayout({
                   "@id": "https://inymartlabs.com/#organization",
                   "name": "Inymart Labs",
                   "url": "https://inymartlabs.com/",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://inymartlabs.com/wp-content/uploads/2026/08/inymart-labs-logo.png"
-                  },
-                  "description": "Inymart Labs is a digital marketing agency in Tamil Nadu and Tiruchirappalli offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, AI SEO and digital marketing services.",
+                  "description": "Inymart Labs is a digital marketing agency in Tiruchirappalli, Tamil Nadu, offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, and AI SEO services.",
                   "foundingDate": "2016",
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur",
                     "addressLocality": "Tiruchirappalli",
                     "addressRegion": "Tamil Nadu",
                     "postalCode": "620017",
                     "addressCountry": "IN"
                   },
-                  "email": "ceo@inymartlabs.com",
-                  "telephone": "+91 8925807468",
                   "areaServed": [
                     {
                       "@type": "State",
@@ -171,6 +164,16 @@ export default function RootLayout({
                       "@type": "Country",
                       "name": "Australia"
                     }
+                  ],
+                  "knowsAbout": [
+                    "Search Engine Optimization",
+                    "Local SEO",
+                    "Answer Engine Optimization",
+                    "Generative Engine Optimization",
+                    "Social Media Marketing",
+                    "Pay Per Click Advertising",
+                    "Web Development",
+                    "AI SEO"
                   ]
                 },
                 {
@@ -178,22 +181,6 @@ export default function RootLayout({
                   "@id": "https://inymartlabs.com/#website",
                   "url": "https://inymartlabs.com/",
                   "name": "Inymart Labs",
-                  "publisher": {
-                    "@id": "https://inymartlabs.com/#organization"
-                  }
-                },
-                {
-                  "@type": "WebPage",
-                  "@id": "https://inymartlabs.com/#webpage",
-                  "url": "https://inymartlabs.com/",
-                  "name": "Digital Marketing Agency – Tamil Nadu | Inymart Labs",
-                  "description": "Inymart Labs is a digital marketing agency in Tamil Nadu and Tiruchirappalli helping businesses improve online visibility, generate quality leads and achieve long-term growth through SEO, Local SEO, social media marketing, web development, PPC and AI SEO.",
-                  "isPartOf": {
-                    "@id": "https://inymartlabs.com/#website"
-                  },
-                  "about": {
-                    "@id": "https://inymartlabs.com/#organization"
-                  },
                   "publisher": {
                     "@id": "https://inymartlabs.com/#organization"
                   }

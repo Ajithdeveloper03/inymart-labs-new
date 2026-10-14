@@ -18,7 +18,7 @@ export function SmoQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/SMO (Quick Answer).png" 
+                  src="/SMO (Quick Answer).png" 
                   alt="Social media marketing concept featuring Facebook, Instagram, and LinkedIn icons, a smartphone, engagement symbols, analytics charts, and a rising growth arrow." 
                   className="w-full h-full object-cover"
                 />

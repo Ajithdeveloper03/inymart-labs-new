@@ -14,7 +14,7 @@ export function DmaWhatWeDo() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           
           {/* Left: Content */}
-          <div className="order-2 lg:order-1 flex flex-col items-start lg:pr-8">
+          <div className="order-2 lg:order-1 flex flex-col items-start justify-center lg:pr-8">
             <Reveal>
               <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
   Getting to Know Your <span className="text-gradient">Business First</span>
@@ -28,7 +28,7 @@ export function DmaWhatWeDo() {
               </p>
             </Reveal>
             <Reveal delay={200}>
-              <p className="text-gray-600 text-lg leading-relaxed mb-10">
+              <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 We look at your current site, your active channels, who you're trying to reach, what your competitors are doing, and how things are performing today. That review shapes which channels get priority first.
               </p>
             </Reveal>
@@ -45,13 +45,13 @@ export function DmaWhatWeDo() {
           </div>
 
           {/* Right: Visual (Image) */}
-          <div className="order-1 lg:order-2 relative">
-            <Reveal className="h-full">
-              <div className="relative w-full h-full min-h-[400px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[120px] sm:rounded-bl-[160px] lg:rounded-bl-[200px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
+          <div className="order-1 lg:order-2 relative w-full h-full min-h-[320px]">
+            <Reveal className="w-full h-full">
+              <div className="relative w-full h-full min-h-[320px] overflow-hidden rounded-t-[32px] rounded-br-[32px] rounded-bl-[100px] sm:rounded-bl-[140px] lg:rounded-bl-[160px] shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
                 <img 
-                  src="/new/what we do(DMA).png" 
+                  src="/what we do(DMA).png" 
                   alt="Digital marketing workspace featuring a website on a desktop monitor, Meta Ads campaign dashboard on a laptop, Google Search Console analytics on a tablet, and a digital growth strategy notebook." 
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none" />
               </div>

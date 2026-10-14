@@ -50,53 +50,62 @@ const serviceSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/smo/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a social media optimization company in Tamil Nadu do?",
+      "name": "What is SMO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A social media optimization company in Tamil Nadu like Inymart Labs plans, creates, and manages organic content on platforms like Facebook, Instagram, and LinkedIn to build brand presence and generate real enquiries."
+        "text": "SMO, short for Social Media Optimization, focuses on strengthening your social profiles and content to build visibility, engagement, and brand recognition."
       }
     },
     {
       "@type": "Question",
-      "name": "How often will you post on my social media pages?",
+      "name": "Do you offer SMO service in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This depends on your plan, but most businesses see good results with 3–5 posts per week across key platforms."
+        "text": "Yes, Inymart Labs runs SMO Service for businesses across Trichy and Tamil Nadu, spanning strategy, content, profile work, and engagement."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you handle both content creation and posting?",
+      "name": "How is SMO different from SMM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs designs the content, writes the captions, and manages posting and scheduling — you don't have to do anything."
+        "text": "SMO focuses on organic profile and content optimization, while SMM typically refers to paid advertising campaigns on social platforms."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right social media optimization company in Tamil Nadu and social media optimization company in Trichy?",
+      "name": "Which platforms do you work on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs combines local audience understanding with a clear content strategy, focusing on real engagement instead of just follower counts."
+        "text": "Mainly Facebook, Instagram, LinkedIn, and YouTube, depending on where your audience actually spends time."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you manage my Instagram, Facebook, and LinkedIn together?",
+      "name": "How often will you post for my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs can manage one platform or all of them together, depending on where your customers are most active."
+        "text": "Posting frequency depends on your strategy and industry, but we build a content calendar to keep publishing consistent."
       }
     },
     {
       "@type": "Question",
-      "name": "Will I get to approve content before it's posted?",
+      "name": "Will you respond to comments and messages?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs shares your content calendar in advance so you can review and approve everything before it goes live."
+        "text": "Yes, active engagement with comments and messages is part of the service, since it builds trust and surfaces customer feedback."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you measure whether SMO is working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We track reach, engagement, follower growth, profile visits, and enquiries to see what's performing and where to adjust."
       }
     }
   ]
@@ -116,7 +125,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "SMO Services",
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Social Media Optimization",
       "item": "https://inymartlabs.com/services/smo/"
     }
   ]

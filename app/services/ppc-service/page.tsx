@@ -64,6 +64,12 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "PPC Services",
       "item": "https://inymartlabs.com/services/ppc-service/"
     }
@@ -73,53 +79,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/ppc-service/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is PPC?",
+      "name": "What is PPC advertising?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "PPC stands for Pay-Per-Click advertising. It is a digital advertising model where businesses pay when someone clicks on their advertisement. PPC can help businesses reach targeted customers, generate leads, increase website traffic, and drive sales."
+        "text": "PPC, or Pay-Per-Click, is a paid search model where your ad appears in search results and you pay each time someone clicks it."
       }
     },
     {
       "@type": "Question",
-      "name": "How much should I budget for Google Ads?",
+      "name": "Where does Inymart Labs offer PPC service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The right Google Ads budget depends on your business goals, industry, target audience, competition, location, and expected results. Inymart Labs can recommend a suitable budget based on your specific business requirements."
+        "text": "We offer PPC service in Trichy and across Tamil Nadu for local businesses, ecommerce companies, and growing brands."
       }
     },
     {
       "@type": "Question",
-      "name": "How soon will I see results from PPC?",
+      "name": "What can PPC bring to my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "PPC campaigns can start generating traffic and performance data soon after they are launched. The time required to achieve consistent results depends on factors such as budget, competition, targeting, ad quality, landing pages, and ongoing campaign optimisation."
+        "text": "Depending on your goal, PPC can bring phone calls, enquiries, bookings, leads, or online sales."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right PPC Service in Tamil Nadu and PPC Service in Trichy?",
+      "name": "Is PPC better than SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs provides customised PPC strategies based on your business goals, target audience, industry, location, and budget. Our approach focuses on targeted campaigns, performance tracking, continuous optimisation, and improving the efficiency of your advertising spend."
+        "text": "They work differently. PPC gives fast visibility, while SEO builds traffic gradually. Many businesses use both."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you run PPC alongside my SEO efforts?",
+      "name": "How do you keep ad spend under control?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. PPC and SEO can work together as part of a complete digital marketing strategy. PPC can provide immediate paid visibility and valuable campaign data, while SEO focuses on building long-term organic search visibility."
+        "text": "We review spend, bids, keywords, ads, and conversions regularly, then shift budget toward the campaigns that perform best."
       }
     },
     {
       "@type": "Question",
-      "name": "Will I know exactly where my ad budget is being spent?",
+      "name": "How do you know a campaign is working?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Campaign reports can provide visibility into advertising spend, impressions, clicks, conversions, cost per click, cost per lead, and other important performance metrics so you can understand how your budget is being used."
+        "text": "We track conversions such as calls, forms, and purchases, not just clicks, and share the numbers in regular reports."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you improve a campaign I already run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We can launch a new campaign or review and refine an existing one."
       }
     }
   ]

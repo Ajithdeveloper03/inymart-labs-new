@@ -58,7 +58,7 @@ export function AboutHero() {
             <Reveal delay={200} className="absolute top-[10%] left-[5%] w-[65%] h-[55%] z-10">
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white animate-slide-up-down">
                 <img 
-                  src="/new/Who We Are 1.png" 
+                  src="/Who We Are 1.png" 
                   alt="Who We Are 1" 
                   className="w-full h-full object-cover"
                 />
@@ -69,7 +69,7 @@ export function AboutHero() {
             <Reveal delay={400} className="absolute bottom-[10%] right-[5%] w-[60%] h-[50%] z-20">
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-white animate-slide-down-up">
                 <img 
-                  src="/new/Who We Are 2.png" 
+                  src="/Who We Are 2.png" 
                   alt="Who We Are 2" 
                   className="w-full h-full object-cover"
                 />

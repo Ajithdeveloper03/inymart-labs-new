@@ -65,7 +65,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "SMM Services",
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Social Media Marketing",
       "item": "https://inymartlabs.com/services/smm/"
     }
   ]
@@ -74,61 +80,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/smm/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a social media marketing agency in Tamil Nadu do?",
+      "name": "What is SMM?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A social media marketing agency in Tamil Nadu helps businesses promote their products and services through platforms such as Facebook, Instagram, LinkedIn, and other relevant social channels. Services may include strategy, content creation, paid advertising, audience targeting, campaign management, and performance tracking."
+        "text": "SMM, or Social Media Marketing, means running paid campaigns on platforms like Facebook and Instagram to reach a chosen audience beyond your existing followers."
       }
     },
     {
       "@type": "Question",
-      "name": "Is social media marketing the same as social media optimization?",
+      "name": "Do you offer SMM service in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Social media marketing focuses on promoting a business through organic content and paid advertising, while social media optimization focuses on improving social profiles, content, engagement, and overall visibility. Both can work together as part of a complete social media strategy."
+        "text": "Yes, Inymart Labs runs SMM campaigns for businesses across Trichy and Tamil Nadu, covering strategy, creative, setup, testing, and reporting."
       }
     },
     {
       "@type": "Question",
-      "name": "How much should I budget for social media ads?",
+      "name": "How is SMM different from organic social media management?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The ideal social media advertising budget depends on your business goals, target audience, industry, location, competition, and campaign objectives. Inymart Labs can recommend a suitable budget based on your marketing goals and expected results."
+        "text": "Organic posts only reach your existing followers. SMM uses paid ads to reach new people chosen by location, interests, and behaviour."
       }
     },
     {
       "@type": "Question",
-      "name": "How soon will I see results from social media ads?",
+      "name": "Which platforms do you run ads on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Social media advertising can generate initial data and engagement soon after a campaign launches, but the time required to achieve consistent results varies based on the audience, creative, offer, budget, campaign objective, and ongoing optimisation."
+        "text": "Mainly Facebook and Instagram, along with LinkedIn and other platforms when they suit your audience and goals."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right social media marketing agency in Tamil Nadu and social media marketing agency in Trichy?",
+      "name": "What can SMM realistically bring in for a business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs creates customised social media marketing strategies based on your business goals, target audience, industry, and budget. We focus on effective campaign planning, audience targeting, creative testing, performance monitoring, and continuous optimisation."
+        "text": "It depends on the goal set, but common outcomes include leads, calls, site visits, enquiries, bookings, and online sales."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you run ads for both local and online businesses?",
+      "name": "How do you make sure ad spend isn't wasted?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Inymart Labs can manage social media advertising campaigns for both local and online businesses. Campaigns can be customised to target specific locations, audiences, interests, behaviours, or online customer segments."
+        "text": "We keep an eye on what each click and lead costs, how many convert, and how spend compares to return, then shift budget toward what's actually performing."
       }
     },
     {
       "@type": "Question",
-      "name": "Will I know exactly where my ad budget is going?",
+      "name": "Can you target a specific area for my business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Campaign performance can be monitored through regular reporting that shows important metrics such as ad spend, impressions, clicks, reach, leads, conversions, cost per result, and overall campaign performance."
+        "text": "Yes, local campaigns can be built to reach people within a specific city or region."
       }
     }
   ]

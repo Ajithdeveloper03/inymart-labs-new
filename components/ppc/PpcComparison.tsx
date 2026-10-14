@@ -35,7 +35,7 @@ export function PpcComparison() {
               {/* Right Image */}
               <div className="relative min-h-[300px] w-full bg-slate-100">
                 <img 
-                  src="/new/What%20We%20Do%20(PPC).png" 
+                  src="/What%20We%20Do%20(PPC).png" 
                   alt="PPC budget control and monitoring" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />

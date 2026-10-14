@@ -18,7 +18,7 @@ export function DmaQuickAnswer() {
               {/* Main Image */}
               <div className="relative h-full w-full rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] border-4 border-white">
                 <img 
-                  src="/new/quick answer(DMA).png" 
+                  src="/quick answer(DMA).png" 
                   alt=" Digital marketing professional reviewing a unified dashboard showing website, WhatsApp, Google Ads, Meta Ads, Instagram, and SEO leads, with a marketing strategy notebook beside the tablet." 
                   className="w-full h-full object-cover"
                 />
@@ -35,8 +35,8 @@ export function DmaQuickAnswer() {
                   <Lightbulb className="w-8 h-8" />
                 </div>
                 <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground">
-  Quick <span className="text-gradient">Answer</span>
-</h2>
+                  Unified Digital <span className="text-gradient">Growth</span>
+                </h2>
               </div>
               <div className="w-20 h-1.5 bg-primary rounded-full mb-10"></div>
             </Reveal>

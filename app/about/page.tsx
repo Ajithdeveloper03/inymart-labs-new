@@ -79,7 +79,6 @@ const faqSchema = {
 const breadcrumbSchemaNew = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "@id": "https://inymartlabs.com/about/#breadcrumb",
   "itemListElement": [
     {
       "@type": "ListItem",

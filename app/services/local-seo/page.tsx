@@ -66,61 +66,54 @@ const serviceSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/local-seo/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does a Local SEO agency in Tamil Nadu do?",
+      "name": "What makes Local SEO different from regular SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Local SEO agency in Tamil Nadu like Inymart Labs helps businesses show up first in Google Maps and \"near me\" search results through Google Business Profile optimization, listings, reviews, and location-based content."
+        "text": "Local SEO focuses on location-based searches, giving more weight to your business location, listings, reviews, and map presence than typical ranking factors."
       }
     },
     {
       "@type": "Question",
-      "name": "How is Local SEO different from regular SEO?",
+      "name": "Do you offer Local SEO service in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Local SEO focuses specifically on getting found by nearby customers through Google Maps and local search results, while regular SEO covers your whole website's visibility."
+        "text": "Yes, Inymart Labs runs Local SEO Service for businesses across Trichy and Tamil Nadu, covering Google Business Profile, citations, reviews, and local content."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does Local SEO take to show results?",
+      "name": "How does a Google Business Profile help my local visibility?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many businesses see improvements in local visibility within a few weeks, with stronger results building over 2–3 months."
+        "text": "It puts your location, services, hours, photos, and reviews directly in front of searchers, and an optimized profile tends to perform better in local search results."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right Local SEO agency in Tamil Nadu and Local SEO agency in Trichy?",
+      "name": "How soon can I expect Local SEO to show results?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs combines deep local market knowledge with proven Local SEO practices, focusing on real calls and visits, not just rankings."
+        "text": "It varies based on your industry, competition, current site condition, and target area, though consistent work and monitoring build visibility over time."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you help with managing customer reviews?",
+      "name": "Can this help my business show up on Google Maps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Review collection and response are a core part of Inymart Labs' Local SEO process."
+        "text": "Yes, we work on your Google Business Profile alongside other local signals, citations, reviews, and accurate details, which all feed into your chances of appearing in the map pack."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you help if my business has multiple locations?",
+      "name": "Which businesses benefit most from Local SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs manages Local SEO for single-location businesses as well as multi-branch businesses across Tamil Nadu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which areas does Inymart Labs' Local SEO service cover?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Inymart Labs provides Local SEO for businesses across Trichy, Chennai, Madurai, Coimbatore, and nearby regions in Tamil Nadu."
+        "text": "Shops, clinics, restaurants, hotels, local service teams, and professional firms that serve a specific area, whether they run one location or several."
       }
     }
   ]
@@ -140,7 +133,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Local SEO Services",
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Local SEO",
       "item": "https://inymartlabs.com/services/local-seo/"
     }
   ]

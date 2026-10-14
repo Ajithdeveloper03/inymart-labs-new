@@ -65,7 +65,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Web Development Services",
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Web Development",
       "item": "https://inymartlabs.com/services/web-development/"
     }
   ]
@@ -74,53 +80,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/web-development/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is a Web Development Service?",
+      "name": "What exactly does a web developer do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Web Development Service involves designing, developing, testing, and maintaining websites to help businesses build a professional online presence. It can include website development, responsive design, functionality, performance optimisation, and ongoing support."
+        "text": "A web developer plans, builds, tests, and maintains a website, covering everything from layout and features to speed and security."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does it take to build a new website?",
+      "name": "Do you build websites for businesses in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The time required to build a website depends on its size, design, functionality, content, and project requirements. A simple business website may take less time, while complex websites with advanced features may require several weeks or more."
+        "text": "Yes, Inymart Labs builds websites for businesses across Trichy and Tamil Nadu, from small local businesses to growing companies."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you redesign my existing website instead of building a new one?",
+      "name": "Will my site look right on phones?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs can redesign existing websites to improve their visual appearance, user experience, mobile responsiveness, performance, navigation, and overall functionality without necessarily building an entirely new website."
+        "text": "Absolutely. Every site we deliver reshapes itself automatically for phones, tablets, and desktops."
       }
     },
     {
       "@type": "Question",
-      "name": "Will my website work well on mobile phones?",
+      "name": "Can I request specific features for my site?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs develops responsive websites designed to provide a smooth and user-friendly experience across mobile phones, tablets, laptops, and desktop devices."
+        "text": "Yes, we build around what your business actually needs, whether that's forms, booking tools, a blog, or payment integration."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right Web Development Service in Tamil Nadu and Web Development Service in Trichy?",
+      "name": "Will my new website be easy to find on Google?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs focuses on building professional, responsive, user-friendly, and performance-oriented websites based on each business's goals, brand identity, target audience, and functional requirements."
+        "text": "We lay the groundwork for search visibility during the build, including clean URLs, proper headings, and metadata, though ongoing SEO work helps further."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you provide support after the website is launched?",
+      "name": "Can I edit the website myself after it's live?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Inymart Labs can provide post-launch website support to help with updates, maintenance, troubleshooting, performance improvements, and other website-related requirements."
+        "text": "In most cases yes, we hand it over on a beginner-friendly platform so you can update text and images without calling a developer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I need changes after the site launches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer ongoing support for updates, fixes, and new features as your business needs change."
       }
     }
   ]

@@ -17,23 +17,24 @@ const jsonLd = {
   "@type": "WebPage",
   "@id": "https://inymartlabs.com/#webpage",
   "url": "https://inymartlabs.com/",
-  "name": "Inymart Labs - Digital Marketing Agency in Tiruchirappalli",
-  "description": "Inymart Labs is a digital marketing agency in Tiruchirappalli, Tamil Nadu, offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, and AI SEO services.",
+  "name": "Digital Marketing Agency in Tamil Nadu | Inymart Labs",
+  "description": "Inymart Labs helps businesses improve online visibility, generate quality leads, and grow through SEO, Local SEO, social media marketing, web development, PPC, AEO, and GEO services.",
   "isPartOf": {
-    "@type": "WebSite",
-    "@id": "https://inymartlabs.com/#website",
-    "url": "https://inymartlabs.com/",
-    "name": "Inymart Labs"
+    "@id": "https://inymartlabs.com/#website"
   },
   "about": {
-    "@id": "https://inymartlabs.com/#localbusiness"
+    "@id": "https://inymartlabs.com/#organization"
   },
   "publisher": {
-    "@id": "https://inymartlabs.com/#localbusiness"
-  }
+    "@id": "https://inymartlabs.com/#organization"
+  },
+  "inLanguage": "en-IN"
 };
 
 export const metadata = {
+  alternates: {
+    canonical: 'https://inymartlabs.com/',
+  },
   title: 'Digital Marketing Agency Tamilnadu: Your Growth Partner',
   description: "Partner with our digital marketing agency in Tamil Nadu to unlock your business's potential. Learn how we can help you achieve your growth objectives!",
 };

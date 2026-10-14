@@ -63,6 +63,12 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Services",
+      "item": "https://inymartlabs.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
       "name": "AI SEO Services",
       "item": "https://inymartlabs.com/services/ai-seo-services/"
     }
@@ -72,53 +78,62 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://inymartlabs.com/services/ai-seo-services/#faq",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is AEO or AI SEO?",
+      "name": "What is AI SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AEO stands for Answer Engine Optimisation, while AI SEO focuses on improving a business's visibility across AI-powered search and answer platforms. These strategies help make content clear, relevant, authoritative, and easier for search engines and AI systems to understand."
+        "text": "AI SEO, also known as Answer Engine Optimization (AEO), prepares your website information for answer-based search. It focuses on clear answers, trustworthy facts, strong entities, and structured information so AI platforms can understand your business."
       }
     },
     {
       "@type": "Question",
-      "name": "Is AI SEO different from regular SEO?",
+      "name": "Does Inymart Labs provide AI SEO services in Trichy and Tamil Nadu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Traditional SEO primarily focuses on improving visibility in search engine results, while AI SEO also considers how content and business information may be discovered, understood, and referenced by AI-powered search and answer systems. Both approaches can work together."
+        "text": "Yes. Inymart Labs offers AI SEO Services in Trichy and Tamil Nadu, combining digital marketing experience with AI-focused content, entity building, AEO, and monitoring."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does it take to see results from AI SEO?",
+      "name": "Why does my business need AI SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The time required to see results from AI SEO varies depending on factors such as website authority, content quality, competition, online presence, and the strategies implemented. Consistent optimisation and quality content may improve visibility over time."
+        "text": "Customers increasingly ask AI platforms for recommendations. Without AI SEO, these platforms may not mention your business, or may show incomplete or outdated details."
       }
     },
     {
       "@type": "Question",
-      "name": "What makes Inymart Labs the right AI SEO Service in Tamil Nadu and AI SEO Service in Trichy?",
+      "name": "Does AI SEO replace traditional SEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inymart Labs provides customised AI SEO strategies based on your business goals, industry, target audience, and online presence. Our approach focuses on creating useful content, improving information clarity, strengthening website visibility, and preparing content for AI-powered search experiences."
+        "text": "No. AI SEO works alongside traditional SEO. Traditional SEO focuses on rankings, organic traffic, and website authority, while AI SEO focuses on direct answers, AI understanding, citations, and recommendations."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I still need traditional SEO if I invest in AI SEO?",
+      "name": "How does an AI SEO service begin?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Traditional SEO remains important because AI SEO and traditional SEO complement each other. A strong technical foundation, quality content, relevant keywords, website optimisation, and authority signals can support visibility across both traditional search engines and AI-powered search experiences."
+        "text": "It begins with an AI Visibility Audit. We check how AI platforms currently understand your business, including brand mentions, service descriptions, locations, and recommendations."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you fix incorrect information AI tools currently show about my business?",
+      "name": "How is AI SEO progress measured?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We can help identify inaccurate or inconsistent business information across online sources and improve the accuracy and consistency of your website and business profiles. However, AI platforms control their own outputs, so specific corrections or changes cannot be guaranteed."
+        "text": "We track visibility signals, business mentions, information accuracy, recommendations, content coverage, and changes in AI representation. Monthly reporting shows your progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which businesses can benefit from AI SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Local businesses, professional service providers, ecommerce brands, startups, growing companies, and established organizations can all benefit."
       }
     }
   ]
