@@ -40,6 +40,7 @@ const PAGE_SERVICES_DATA = [
   {
     title: 'Local SEO',
     shortTitle: 'Local SEO',
+    slug: 'advance-local-seo',
     description: 'Helps your business appear in local Google searches and Google Maps, attracting nearby customers and increasing local visibility.',
   },
   {
@@ -136,7 +137,7 @@ export function ServicesPageCards() {
 
                     <div className="mt-auto pt-2">
                       <Link 
-                        href={`/services/${slugify(pageData.shortTitle)}`}
+                        href={`/services/${pageData.slug || slugify(pageData.shortTitle)}`}
                         className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors"
                       >
                         VIEW SERVICE <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />

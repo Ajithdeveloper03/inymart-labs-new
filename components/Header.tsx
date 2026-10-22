@@ -131,11 +131,12 @@ export function Header() {
                       
                       <ul className="grid grid-cols-3 gap-4">
                         {SERVICES.map((service) => {
-                          const href = `/services/${slugify(service.title)}`;
+                          const href = `/services/${service.slug || slugify(service.title)}`;
                           const getServiceIcon = (title: string) => {
                             const iconProps = { className: "h-6 w-6 text-neutral-500 transition-colors duration-300 group-hover/item:text-orange-600" };
                             switch (title) {
                               case 'SEO': return <Target {...iconProps} />;
+                              case 'Advance Local SEO':
                               case 'Local SEO': return <MapPin {...iconProps} />;
                               case 'SMO': return <Share2 {...iconProps} />;
                               case 'SMM': return <Users {...iconProps} />;

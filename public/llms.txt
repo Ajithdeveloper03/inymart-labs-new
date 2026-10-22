@@ -16,7 +16,7 @@ Inymart Labs serves businesses in Tamil Nadu and works with clients across India
 ## Services
 
 - [SEO Services](https://inymartlabs.com/services/seo/): Organic search visibility, keyword targeting, and website optimization.
-- [Local SEO](https://inymartlabs.com/services/local-seo/): Local search visibility, Google Maps optimization, business listings, and review management.
+- [Local SEO](https://inymartlabs.com/services/advance-local-seo/): Local search visibility, Google Maps optimization, business listings, and review management.
 - [Social Media Optimization](https://inymartlabs.com/services/smo/): Organic social media presence, content planning, and audience engagement.
 - [Social Media Marketing](https://inymartlabs.com/services/smm/): Paid social campaigns and audience targeting to generate enquiries and leads.
 - [Web Analytics](https://inymartlabs.com/services/web-analytics/): Website performance measurement, tracking, and actionable reporting.

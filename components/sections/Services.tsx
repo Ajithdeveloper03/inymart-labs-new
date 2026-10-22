@@ -82,7 +82,7 @@ export function Services() {
 
                     <div className="mt-auto pt-6 w-full">
                       <Link 
-                        href={`/services/${slugify(service.title)}`}
+                        href={`/services/${service.slug || slugify(service.title)}`}
                         className="flex w-full justify-center items-center gap-1.5 sm:gap-2 text-[10px] sm:text-[11px] font-extrabold uppercase tracking-widest text-slate-900 border border-slate-200 bg-white px-3 sm:px-5 py-2.5 sm:py-3 transition-all duration-500 group-hover:text-primary group-hover:border-transparent whitespace-nowrap"
                       >
                         View Service <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />

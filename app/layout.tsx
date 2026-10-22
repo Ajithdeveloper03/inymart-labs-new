@@ -130,16 +130,22 @@ export default function RootLayout({
                   "@id": "https://inymartlabs.com/#organization",
                   "name": "Inymart Labs",
                   "url": "https://inymartlabs.com/",
-                  "description": "Inymart Labs is a digital marketing agency in Tiruchirappalli, Tamil Nadu, offering SEO, Local SEO, AEO, GEO, social media marketing, web development, PPC, and AI SEO services.",
+                  "description": "Inymart Labs is a digital marketing agency headquartered in Tiruchirappalli, Tamil Nadu, India, providing SEO, Local SEO, AI SEO, social media marketing, web development, PPC advertising, and web analytics services.",
                   "foundingDate": "2016",
+                  "telephone": "+91 8925807468",
                   "address": {
                     "@type": "PostalAddress",
+                    "streetAddress": "No.17, C3, 3rd Floor, Ayodhya Complex, Thennur High Road, Srinivasapuram, Tennur",
                     "addressLocality": "Tiruchirappalli",
                     "addressRegion": "Tamil Nadu",
                     "postalCode": "620017",
                     "addressCountry": "IN"
                   },
                   "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "Tiruchirappalli"
+                    },
                     {
                       "@type": "State",
                       "name": "Tamil Nadu"
@@ -170,10 +176,12 @@ export default function RootLayout({
                     "Local SEO",
                     "Answer Engine Optimization",
                     "Generative Engine Optimization",
+                    "Social Media Optimization",
                     "Social Media Marketing",
-                    "Pay Per Click Advertising",
+                    "Pay-Per-Click Advertising",
+                    "Web Analytics",
                     "Web Development",
-                    "AI SEO"
+                    "Digital Marketing Consulting"
                   ]
                 },
                 {

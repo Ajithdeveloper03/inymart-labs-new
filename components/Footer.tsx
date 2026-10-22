@@ -57,13 +57,13 @@ export function Footer() {
               Services
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {serviceLinks.map((service) => (
-                <li key={service}>
+              {SERVICES.slice(0, 6).map((service) => (
+                <li key={service.title}>
                   <Link
-                    href={`/services/${slugify(service)}`}
+                    href={`/services/${service.slug || slugify(service.title)}`}
                     className="text-sm text-white/70 transition-colors hover:text-white"
                   >
-                    {service}
+                    {service.title}
                   </Link>
                 </li>
               ))}

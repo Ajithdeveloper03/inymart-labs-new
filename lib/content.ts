@@ -49,6 +49,7 @@ export const TRUST_BADGES = [
 
 export type Service = {
   title: string;
+  slug?: string;
   description: string;
   icon: LucideIcon;
 };
@@ -62,6 +63,7 @@ export const SERVICES: Service[] = [
   },
   {
     title: 'Local SEO',
+    slug: 'advance-local-seo',
     description:
       'Appear in Google Search and Google Maps where nearby customers are looking for you.',
     icon: MapPin,
@@ -120,6 +122,10 @@ export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; children?: NavLink[] };
 
 export function slugify(value: string): string {
+  const normalized = value.toLowerCase().trim();
+  if (normalized === 'local seo' || normalized === 'local-seo') {
+    return 'advance-local-seo';
+  }
   return value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
@@ -134,7 +140,7 @@ export const NAV_LINKS: NavGroup[] = [
     href: '/services',
     children: SERVICES.map((s) => ({
       label: s.title,
-      href: `/services/${slugify(s.title)}`,
+      href: `/services/${s.slug || slugify(s.title)}`,
     })),
   },
   { label: 'Portfolio', href: '/portfolio' },

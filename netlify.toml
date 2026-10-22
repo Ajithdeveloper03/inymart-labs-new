@@ -4,3 +4,15 @@ publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/services/local-seo/"
+  to = "/services/advance-local-seo/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/local-seo"
+  to = "/services/advance-local-seo/"
+  status = 301
+  force = true
