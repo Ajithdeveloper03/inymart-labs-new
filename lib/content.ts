@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     icon: Search,
   },
   {
-    title: 'Local SEO',
+    title: 'Advance Local SEO',
     slug: 'advance-local-seo',
     description:
       'Appear in Google Search and Google Maps where nearby customers are looking for you.',
@@ -123,7 +123,12 @@ export type NavGroup = { label: string; href: string; children?: NavLink[] };
 
 export function slugify(value: string): string {
   const normalized = value.toLowerCase().trim();
-  if (normalized === 'local seo' || normalized === 'local-seo') {
+  if (
+    normalized === 'local seo' ||
+    normalized === 'local-seo' ||
+    normalized === 'advance local seo' ||
+    normalized === 'advance-local-seo'
+  ) {
     return 'advance-local-seo';
   }
   return value

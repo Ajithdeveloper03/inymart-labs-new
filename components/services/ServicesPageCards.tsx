@@ -38,8 +38,8 @@ const PAGE_SERVICES_DATA = [
     description: 'Improves your website’s visibility on search engines like Google, helping increase organic traffic, rankings, and online presence.',
   },
   {
-    title: 'Local SEO',
-    shortTitle: 'Local SEO',
+    title: 'Advance Local SEO',
+    shortTitle: 'Advance Local SEO',
     slug: 'advance-local-seo',
     description: 'Helps your business appear in local Google searches and Google Maps, attracting nearby customers and increasing local visibility.',
   },

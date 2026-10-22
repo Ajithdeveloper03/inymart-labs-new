@@ -24,7 +24,7 @@ export function LocalSeoWhyChoose() {
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] text-foreground mb-6">
-  Why Choose Inymart Labs for Local SEO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
+  Why Choose Inymart Labs for Advance Local SEO Service in <span className="text-gradient">Trichy and Tamil Nadu?</span>
 </h2>
             
           </div>

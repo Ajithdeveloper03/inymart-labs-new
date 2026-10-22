@@ -25,7 +25,7 @@ export function LocalSeoHeroBanner() {
 
         <Reveal delay={100}>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl max-w-4xl mx-auto mb-8">
-            Local SEO Service in <span className="text-gradient">Trichy and Tamil Nadu</span>
+            Advance Local SEO Service in <span className="text-gradient">Trichy and Tamil Nadu</span>
           </h1>
         </Reveal>
 
@@ -35,7 +35,7 @@ export function LocalSeoHeroBanner() {
               onClick={openPopup}
               className="w-full sm:w-auto px-8 py-4 bg-[#ff6b35] hover:bg-[#e55a2b] text-white rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(255,107,53,0.3)] hover:shadow-[0_0_30px_rgba(255,107,53,0.5)] hover:-translate-y-1 text-center whitespace-nowrap"
             >
-              Talk to Our Local SEO Team
+              Talk to Our Advance Local SEO Team
             </button>
           </div>
         </Reveal>
@@ -50,7 +50,7 @@ export function LocalSeoHeroBanner() {
               Services
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />
-            <span className="text-white">Local SEO</span>
+            <span className="text-white">Advance Local SEO</span>
           </nav>
         </Reveal>
       </div>
