@@ -19,7 +19,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/digital-marketing-consulting/',
   },
-  title: 'Digital Marketing Consulting in Tamil Nadu — Inymart Labs',
+  title: 'Digital Marketing Consulting in Tamil Nadu',
   description: 'Inymart Labs offers expert Digital Marketing Consulting in Trichy, Tamil Nadu, giving businesses a clear, prioritized action plan for SEO, social media, ads, and analytics.',
   keywords: ['Digital Marketing Consulting in Tamil Nadu', 'Digital Marketing Consulting in Trichy'],
 };

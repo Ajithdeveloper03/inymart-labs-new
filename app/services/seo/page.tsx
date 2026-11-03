@@ -16,7 +16,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/seo/',
   },
-  title: 'SEO Agency in Tamil Nadu — Inymart Labs',
+  title: 'SEO Agency in Tamil Nadu',
   description: 'Inymart Labs is an SEO agency in Trichy, Tamil Nadu that helps businesses rank higher on Google Search and Google Maps.',
   keywords: ['SEO agency in Trichy'],
 };

@@ -20,7 +20,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/web-development/',
   },
-  title: 'Web Development Service in Tamil Nadu — Inymart Labs',
+  title: 'Web Development Service in Tamil Nadu',
   description: 'Inymart Labs is a Web Development Service in Trichy, Tamil Nadu that builds fast mobile-friendly, SEO-ready websites.',
   keywords: ['Web development Service in Tamil Nadu', 'Web Development Service in Trichy'],
 };

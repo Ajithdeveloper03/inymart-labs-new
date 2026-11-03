@@ -179,7 +179,7 @@ function AdminEditorContent() {
       {/* Top Header */}
       <div className="flex flex-col md:flex-row justify-between items-center bg-white p-4 rounded-t-xl border-b shadow-sm">
         <div className="flex gap-4 items-center mb-4 md:mb-0">
-          <Link href="/admin/dashboard" className="text-blue-600 font-medium hover:underline flex items-center gap-1">
+          <Link href="/admin/dashboard/" className="text-blue-600 font-medium hover:underline flex items-center gap-1">
              &larr; All Articles
           </Link>
           <span className="text-gray-400">|</span>

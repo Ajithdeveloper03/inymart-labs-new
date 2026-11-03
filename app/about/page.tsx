@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/about/',
   },
-  title: 'About Us | Inymart Labs',
+  title: 'About Us',
   description: 'Learn about Inymart Labs, a leading digital marketing agency in Tamil Nadu offering SEO, Local SEO, AEO, and GEO services.',
 };
 

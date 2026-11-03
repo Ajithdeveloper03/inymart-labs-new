@@ -137,7 +137,7 @@ export function ServicesPageCards() {
 
                     <div className="mt-auto pt-2">
                       <Link 
-                        href={`/services/${pageData.slug || slugify(pageData.shortTitle)}`}
+                        href={`/services/${pageData.slug || slugify(pageData.shortTitle)}/`}
                         className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors"
                       >
                         VIEW SERVICE <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
@@ -155,7 +155,7 @@ export function ServicesPageCards() {
             title="Need Complete Digital Marketing Solutions?"
             points={['Get a Free Website Analysis', 'Talk to Our Experts']}
             ctaLabel="Get a Free Website Analysis"
-            ctaHref="/contact"
+            ctaHref="/contact/"
             variant="accent"
           />
         </div>

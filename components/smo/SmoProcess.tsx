@@ -32,7 +32,7 @@ export function SmoProcess() {
         <>
           Facebook, Instagram, LinkedIn, and YouTube each behave differently, and copying one post across all of them rarely works well. We shape content to suit each platform's format and audience while keeping your brand identity consistent underneath.
           <br /><br />
-          Want content that fits each platform properly? Let's plan it out.
+          Want content that fits each platform properly? Pair organic optimization with targeted reach through our <Link href="/services/smm/" className="text-primary font-semibold hover:underline">Social Media Marketing (SMM)</Link> services.
         </>
       ),
       icon: PenTool
@@ -134,7 +134,7 @@ export function SmoProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               See Our Social Media Process in Action

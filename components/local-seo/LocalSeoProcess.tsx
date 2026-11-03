@@ -33,7 +33,11 @@ export function LocalSeoProcess() {
     },
     {
       title: `On-Page Fixes for Local Relevance`,
-      desc: `Page titles, meta descriptions, heading tags, URLs, internal links, and image details all get reviewed so your site clearly states what you do and where you serve customers, making it easier for both visitors and search engines to understand your business.`,
+      desc: (
+        <>
+          Page titles, meta descriptions, heading tags, URLs, and image details all get reviewed alongside our core <Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO Services</Link> and targeted <Link href="/services/ppc-service/" className="text-primary font-semibold hover:underline">PPC Service</Link> to ensure your business clearly dominates local search intent.
+        </>
+      ),
       icon: Link2
     },
     {
@@ -128,7 +132,7 @@ export function LocalSeoProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               Not sure how your listings and content stack up locally? Let's find out.

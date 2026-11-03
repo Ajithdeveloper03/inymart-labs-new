@@ -53,7 +53,7 @@ export function WhyDigitalMarketing() {
               title="Take the First Step Towards Digital Success"
               points={['Request a Free Digital Marketing Consultation']}
               ctaLabel="Request Free Consultation"
-              ctaHref="/contact"
+              ctaHref="/contact/"
               variant="accent"
               className="bg-accent bg-none"
               stacked={true}

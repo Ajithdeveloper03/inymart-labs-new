@@ -25,7 +25,7 @@ export default function AdminLayout({
         </div>
 
         <nav className="flex-1 py-6 px-4 space-y-2 overflow-y-auto">
-          <Link href="/admin/dashboard" className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/10 text-white">
+          <Link href="/admin/dashboard/" className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/10 text-white">
             <LayoutDashboard size={20} />
             <div className="flex flex-col">
               <span className="font-medium leading-tight">Dashboard</span>
@@ -38,7 +38,7 @@ export default function AdminLayout({
               <ExternalLink size={20} />
               <span className="font-medium">View Live Site</span>
             </Link>
-            <Link href="/admin" className="flex items-center gap-3 px-4 py-3 rounded-lg text-red-400 hover:bg-red-400/10 transition-colors">
+            <Link href="/admin/" className="flex items-center gap-3 px-4 py-3 rounded-lg text-red-400 hover:bg-red-400/10 transition-colors">
               <LogOut size={20} />
               <span className="font-medium">Logout</span>
             </Link>

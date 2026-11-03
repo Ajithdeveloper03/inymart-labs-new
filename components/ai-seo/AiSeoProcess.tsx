@@ -31,7 +31,7 @@ export function AiSeoProcess() {
     {
       title: `Direct Answer Content`,
       desc: (
-        <p>AI users often ask complete questions instead of short keywords. We create and restructure content around those real questions, presenting the important answer first, followed by supporting context. This improves service pages, blogs, FAQs, and informational sections.</p>
+        <p>AI users often ask complete questions instead of short keywords. We create and restructure content around those real questions, presenting the important answer first, followed by supporting context. This works hand-in-hand with our <Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO Services</Link> and <Link href="/services/web-development/" className="text-primary font-semibold hover:underline">Web Development</Link> to build fast, authoritative landing pages.</p>
       ),
       icon: Target
     },
@@ -139,7 +139,7 @@ export function AiSeoProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               Ready to start? Request your AI Visibility Audit today.

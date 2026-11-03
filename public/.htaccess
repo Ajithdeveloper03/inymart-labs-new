@@ -8,6 +8,10 @@
   # 1.1 Force non-www (SEO Fix for Duplicate URLs)
   RewriteCond %{HTTP_HOST} ^www\.inymartlabs\.com [NC]
   RewriteRule ^(.*)$ https://inymartlabs.com/$1 [L,R=301]
+
+  # 1.2 301 Redirects for Legacy / Alternative URLs
+  RewriteRule ^services/local-seo/?$ https://inymartlabs.com/services/advance-local-seo/ [R=301,L]
+  RewriteRule ^blog/?$ https://inymartlabs.com/blogs/ [R=301,L]
 </IfModule>
 
 # 2. Handle Next.js 404 Custom Error Page

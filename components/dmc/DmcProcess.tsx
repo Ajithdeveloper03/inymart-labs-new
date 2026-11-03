@@ -19,7 +19,7 @@ export function DmcProcess() {
       title: `SEO Strategy Consulting`,
       desc: (
         <>
-          <p className="mb-2">SEO needs steady planning and technical care. We assess where you stand and look for openings in:</p>
+          <p className="mb-2">SEO needs steady planning and technical care. We connect strategic direction with our hands-on <Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO Services</Link> and <Link href="/services/advance-local-seo/" className="text-primary font-semibold hover:underline">Local SEO</Link> expertise:</p>
           <ul className="list-disc text-left pl-5 space-y-1 mb-2">
             <li>Keywords and content</li>
             <li>Technical performance and on-page optimization</li>
@@ -34,7 +34,7 @@ export function DmcProcess() {
       title: `Social Media Consulting`,
       desc: (
         <>
-          <p>Social media works best when it supports a clear message and a business purpose. We look at your audience, platforms, content style, engagement, and results, then suggest content directions, platform choices, and campaign ideas for a more consistent presence.</p>
+          <p>Social media works best when it supports a clear message and a business purpose. We integrate organic profile growth with our <Link href="/services/smo/" className="text-primary font-semibold hover:underline">SMO Services</Link> and scalable paid acquisition through <Link href="/services/smm/" className="text-primary font-semibold hover:underline">SMM Campaigns</Link> for a complete, consistent presence.</p>
         </>
       ),
       icon: Target
@@ -154,7 +154,7 @@ export function DmcProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               Want a clear view of your marketing? Request your digital marketing audit.

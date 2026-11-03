@@ -8,7 +8,11 @@ export function SmmProcess() {
   const steps = [
     {
       title: `Finding the Right Audience`,
-      desc: `Getting your ad in front of the wrong people wastes budget fast. We build audiences around location, age, interests, past behaviour, and prior interactions. Where it fits, we also use remarketing to reach people who've already visited your site, engaged with your pages, or clicked a previous ad.`,
+      desc: (
+        <>
+          Getting your ad in front of the wrong people wastes budget fast. We build audiences around location, age, interests, and prior interactions. To maintain organic credibility alongside paid ads, we align campaigns closely with our <Link href="/services/smo/" className="text-primary font-semibold hover:underline">SMO Services</Link>.
+        </>
+      ),
       icon: Target
     },
     {
@@ -39,7 +43,11 @@ export function SmmProcess() {
     },
     {
       title: `Turning Clicks Into Real Business`,
-      desc: `An ad that gets clicks but no enquiries isn't doing its job. We build the full path, landing pages, lead forms, or messaging options, around the exact action you want visitors to take, rather than just chasing impressions.`,
+      desc: (
+        <>
+          An ad that gets clicks but no enquiries isn't doing its job. We build the full path, landing pages, lead forms, or messaging options, backed by conversion-focused <Link href="/services/web-development/" className="text-primary font-semibold hover:underline">Web Development</Link> and accurate <Link href="/services/web-analytics/" className="text-primary font-semibold hover:underline">Web Analytics</Link>, rather than just chasing impressions.
+        </>
+      ),
       icon: TrendingUp
     },
     {
@@ -134,7 +142,7 @@ export function SmmProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               See Our Ad Campaigns in Action

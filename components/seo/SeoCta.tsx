@@ -49,7 +49,7 @@ export function SeoCta() {
           <Reveal delay={320}>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row flex-wrap">
               <Link
-                href="/contact"
+                href="/contact/"
                 
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 w-full sm:w-auto"
               >

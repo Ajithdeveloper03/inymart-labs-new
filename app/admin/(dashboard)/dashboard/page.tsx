@@ -140,7 +140,7 @@ export default function AdminDashboard() {
             ))}
           </select>
           <Link 
-            href="/admin/editor" 
+            href="/admin/editor/" 
             className="flex items-center gap-2 bg-[#10b981] hover:bg-[#059669] text-white px-5 py-2 rounded-lg font-medium transition-colors"
           >
             <Plus size={18} /> Add New Blog

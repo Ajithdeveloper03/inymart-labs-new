@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/portfolio/',
   },
-  title: 'Our Portfolio | Inymart Labs - Digital Marketing Agency',
+  title: 'Our Portfolio',
   description: 'View the portfolio of Inymart Labs, a Digital Marketing Agency in Trichy, Tamil Nadu that has served 50+ brands across diverse industries.',
 };
 

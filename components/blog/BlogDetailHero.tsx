@@ -59,7 +59,7 @@ export function BlogDetailHero({ post }: BlogDetailHeroProps) {
               <Home className="h-4 w-4" /> Home
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />
-            <Link href="/blogs" className="transition-colors hover:text-primary">
+            <Link href="/blogs/" className="transition-colors hover:text-primary">
               Blog
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />

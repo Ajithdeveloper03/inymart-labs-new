@@ -19,7 +19,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/ppc-service/',
   },
-  title: 'PPC Service in Tamil Nadu — Inymart Labs',
+  title: 'PPC Service in Tamil Nadu',
   description: 'Inymart Labs is a PPC Service in Trichy, Tamil Nadu that plans, sets up, and manages Google Ads campaigns to generate calls, leads, and sales.',
   keywords: ['PPC service in Tamil Nadu', 'PPC service in Trichy'],
 };

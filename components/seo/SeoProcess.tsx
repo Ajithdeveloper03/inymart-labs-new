@@ -23,14 +23,18 @@ export function SeoProcess() {
     },
     {
       title: 'Writing Content People Actually Want',
-      desc: 'Good SEO content answers a real question or solves a real problem. We build or rework service pages, blog posts, location pages, and FAQs around topics your actual audience is searching for, giving them a reason to stay on the page and move forward.',
+      desc: (
+        <>
+          Good SEO content answers a real question or solves a real problem. We build or rework service pages, blog posts, and FAQs optimized for both Google search and conversational search engines with our <Link href="/services/ai-seo-services/" className="text-primary font-semibold hover:underline">AI SEO Services</Link>, giving visitors a reason to stay and convert.
+        </>
+      ),
       icon: PenTool
     },
     {
       title: 'Local Visibility for Trichy Customers',
       desc: (
         <>
-          For businesses drawing customers from Trichy and the surrounding areas, showing up in local search carries real weight. We tune your site and profile around local terms and accurate business details, while sharpening your Google Business Profile, so nearby customers find you first.
+          For businesses drawing customers from Trichy and the surrounding areas, showing up in local search carries real weight. We tune your site and profile around local terms and accurate business details through dedicated <Link href="/services/advance-local-seo/" className="text-primary font-semibold hover:underline">Advance Local SEO</Link> strategies, so nearby customers find you first.
           <br /><br />
           Serving customers around Trichy? Let's strengthen your local visibility.
         </>
@@ -129,7 +133,7 @@ export function SeoProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               See Our SEO Process in Action

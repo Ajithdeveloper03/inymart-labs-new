@@ -16,7 +16,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/smo/',
   },
-  title: 'Social Media Optimization Company in Tamil Nadu — Inymart Labs',
+  title: 'Social Media Optimization Company in Tamil Nadu',
   description: 'Inymart Labs is a social media optimization company in Tamil Nadu and social media optimization company in Trichy that builds and manages organic social media presence.',
   keywords: ['Social Media Optimization Company in Trichy'],
 };

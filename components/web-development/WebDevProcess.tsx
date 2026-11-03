@@ -58,7 +58,7 @@ export function WebDevProcess() {
             <li>Metadata fields ready for your content</li>
             <li>Internal links that connect related pages</li>
           </ul>
-          <p className="mt-2 text-left">Want the technical SEO groundwork done right? Ask us for a plan.</p>
+          <p className="mt-2 text-left">Want the technical SEO groundwork done right? Explore our integrated <Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO Services</Link> and <Link href="/services/web-analytics/" className="text-primary font-semibold hover:underline">Web Analytics</Link> tracking.</p>
         </>
       ),
       icon: PenTool
@@ -165,7 +165,7 @@ export function WebDevProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               Talk to Our Web Development Team

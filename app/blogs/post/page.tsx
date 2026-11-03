@@ -77,7 +77,7 @@ function BlogDetailContent() {
       <div className="flex min-h-screen flex-col bg-white">
         <div className="flex-1 flex flex-col items-center justify-center gap-4 py-24">
           <h1 className="text-2xl font-bold">Article not found</h1>
-          <Link href="/blogs" className="text-primary hover:underline">Back to all articles</Link>
+          <Link href="/blogs/" className="text-primary hover:underline">Back to all articles</Link>
         </div>
       </div>
     );

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/contact/',
   },
-  title: 'Contact Us | Inymart Labs - Digital Marketing Agency',
+  title: 'Contact Us',
   description: 'Get in touch with Inymart Labs. We are here to help you with your digital marketing, SEO, web development, and more.',
 };
 

@@ -46,7 +46,7 @@ export function WebDevHeroBanner() {
               <Home className="h-4 w-4" /> Home
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />
-            <Link href="/#services" className="transition-colors hover:text-primary">
+            <Link href="/services/" className="transition-colors hover:text-primary">
               Services
             </Link>
             <ChevronRight className="h-4 w-4 text-zinc-600" />

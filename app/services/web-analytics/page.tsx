@@ -19,7 +19,7 @@ export const metadata = {
   alternates: {
     canonical: '/services/web-analytics/',
   },
-  title: 'Web Analytics Service in Tamil Nadu — Inymart Labs',
+  title: 'Web Analytics Service in Tamil Nadu',
   description: 'Inymart Labs is a Web Analytics Service in Trichy Tamil Nadu that audits, fixes, and interprets website tracking data.',
   keywords: ['Web Analytics Service in Tamil Nadu', 'Web Analytics Service in Trichy'],
 };

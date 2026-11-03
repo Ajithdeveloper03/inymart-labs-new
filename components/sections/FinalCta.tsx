@@ -55,18 +55,18 @@ export function FinalCta() {
           <Reveal delay={320}>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="group inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full bg-accent px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-white shadow-xl shadow-accent/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-accent/50 whitespace-nowrap w-full sm:w-auto"
               >
                 Book Your Free Consultation
                 
               </Link>
-              <a
-                href="/#services"
+              <Link
+                href="/services/"
                 className="inline-flex items-center justify-center gap-1.5 sm:gap-2 rounded-full border border-slate-200 bg-white px-4 sm:px-8 py-3.5 sm:py-4 text-[11px] sm:text-sm font-semibold text-slate-700 transition-all duration-300 hover:bg-slate-50 hover:border-slate-300 whitespace-nowrap w-full sm:w-auto"
               >
                 View Our Services
-              </a>
+              </Link>
             </div>
           </Reveal>
         </div>

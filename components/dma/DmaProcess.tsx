@@ -18,7 +18,11 @@ export function DmaProcess() {
     },
     {
       title: null,
-      desc: `Run the chosen services and track results`,
+      desc: (
+        <>
+          Execute integrated campaigns across <Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO</Link>, <Link href="/services/ppc-service/" className="text-primary font-semibold hover:underline">PPC Ads</Link>, and <Link href="/services/smm/" className="text-primary font-semibold hover:underline">Social Media</Link> while tracking results.
+        </>
+      ),
       icon: Target
     },
     {
@@ -108,7 +112,7 @@ export function DmaProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               See Our Marketing Approach in Action

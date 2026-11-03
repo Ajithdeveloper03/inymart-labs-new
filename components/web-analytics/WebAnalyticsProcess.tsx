@@ -18,7 +18,11 @@ export function WebAnalyticsProcess() {
     },
     {
       title: `Where Your Traffic Comes From`,
-      desc: `Not all visitors arrive the same way. We break down traffic by organic search, paid ads, social platforms, referral sites, and direct visits, so you know which channels bring in people worth pursuing and which ones need a second look.`,
+      desc: (
+        <>
+          Not all visitors arrive the same way. We break down traffic by organic search (<Link href="/services/seo/" className="text-primary font-semibold hover:underline">SEO</Link>), paid ads (<Link href="/services/ppc-service/" className="text-primary font-semibold hover:underline">PPC</Link>), and social platforms (<Link href="/services/smm/" className="text-primary font-semibold hover:underline">SMM</Link>), so you know which marketing channels bring in customers and which ones need adjustments.
+        </>
+      ),
       icon: Target
     },
     {
@@ -134,7 +138,7 @@ export function WebAnalyticsProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               See Our Analytics Process in Action

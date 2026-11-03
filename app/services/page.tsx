@@ -5,7 +5,7 @@ import { ServicesPageCards } from '@/components/services/ServicesPageCards';
 import { ServicesHeroBanner } from '@/components/services/ServicesHeroBanner';
 
 export const metadata = {
-  title: 'Digital Marketing Services in Tamil Nadu — Inymart Labs',
+  title: 'Digital Marketing Services in Tamil Nadu',
   description: 'Explore our wide range of digital marketing services tailored to grow your business online. From SEO to Web Development, Inymart Labs has you covered.',
   alternates: {
     canonical: '/services/',

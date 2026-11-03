@@ -43,7 +43,7 @@ export function PpcProcess() {
             <li>Has a clear call to action and an easy form</li>
             <li>Is simple to navigate and pleasant to use</li>
           </ul>
-          <p>When ad and page work together, the path from search to enquiry or purchase feels natural.</p>
+          <p>When ad and page work together through custom <Link href="/services/web-development/" className="text-primary font-semibold hover:underline">Web Development</Link> and precise <Link href="/services/web-analytics/" className="text-primary font-semibold hover:underline">Web Analytics</Link>, the path from search to enquiry or purchase feels natural.</p>
         </>
       ),
       icon: Link2
@@ -143,7 +143,7 @@ export function PpcProcess() {
         <Reveal delay={200}>
           <div className="mt-16 text-center">
             <Link 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary/80 transition-colors group text-lg"
             >
               Selling in Trichy or anywhere in Tamil Nadu? Ask Inymart Labs for a campaign plan.
