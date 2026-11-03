@@ -1,40 +1,89 @@
+# ----------------------------------------------------------------------
+# 1. DIRECTORY INDEX & OPTIONS (CRITICAL TO PREVENT 403 FORBIDDEN)
+# ----------------------------------------------------------------------
+# Ensure Apache automatically serves index.html for folder requests (e.g., /services/, /about/)
+DirectoryIndex index.html index.php
+DirectorySlash On
+Options +FollowSymLinks -Indexes
+
+# ----------------------------------------------------------------------
+# 2. CRAWLER & SEARCH BOT PERMISSIONS (ENSURE GOOGLEBOT NEVER GETS 403)
+# ----------------------------------------------------------------------
+<IfModule mod_authz_core.c>
+  Require all granted
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order Allow,Deny
+  Allow from all
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteBase /
 
-  # 1. Force HTTPS
+  # ----------------------------------------------------------------------
+  # 3. CANONICAL HTTPS & NON-WWW ENFORCEMENT (301 PERMANENT REDIRECTS)
+  # ----------------------------------------------------------------------
+  # Force HTTPS
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 1.1 Force non-www (SEO Fix for Duplicate URLs)
+  # Force non-www (Eliminate duplicate host indexing)
   RewriteCond %{HTTP_HOST} ^www\.inymartlabs\.com [NC]
   RewriteRule ^(.*)$ https://inymartlabs.com/$1 [L,R=301]
 
-  # 1.2 301 Redirects for Legacy / Alternative URLs
+  # ----------------------------------------------------------------------
+  # 4. LEGACY / MIGRATED URL 301 PERMANENT REDIRECTS
+  # ----------------------------------------------------------------------
   RewriteRule ^services/local-seo/?$ https://inymartlabs.com/services/advance-local-seo/ [R=301,L]
+  RewriteRule ^services/local-seo$ https://inymartlabs.com/services/advance-local-seo/ [R=301,L]
   RewriteRule ^blog/?$ https://inymartlabs.com/blogs/ [R=301,L]
+  RewriteRule ^blog$ https://inymartlabs.com/blogs/ [R=301,L]
+
+  # ----------------------------------------------------------------------
+  # 5. TRAILING SLASH ENFORCEMENT & DIRECTORY REWRITES (NEXT.JS STATIC EXPORT)
+  # ----------------------------------------------------------------------
+  # If request does not have a trailing slash and matches a directory, 301 redirect to trailing slash
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ https://inymartlabs.com/$1/ [L,R=301]
+
+  # If requested directory exists with index.html, serve it directly
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ $1/index.html [L]
+
+  # Clean URL fallback for Next.js static pages
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^([^/]+)/?$ $1/index.html [L]
 </IfModule>
 
-# 2. Handle Next.js 404 Custom Error Page
+# ----------------------------------------------------------------------
+# 6. CUSTOM 404 ERROR HANDLING
+# ----------------------------------------------------------------------
 ErrorDocument 404 /404.html
 
-# 3. Browser Caching Rules for Maximum Performance
+# ----------------------------------------------------------------------
+# 7. PERFORMANCE CACHING HEADERS
+# ----------------------------------------------------------------------
 <IfModule mod_headers.c>
-  # Cache static assets (CSS, JS, Fonts, Images) for 1 year since Next.js hashes them
-  <FilesMatch "\.(js|css|woff|woff2|png|jpe?g|gif|ico|svg|webp)$">
+  # 1-year cache for hashed Next.js static assets
+  <FilesMatch "\.(js|css|woff|woff2|png|jpe?g|gif|ico|svg|webp|avif)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   
-  # Prevent caching of HTML files so your live updates show immediately!
+  # Ensure HTML is revalidated to reflect instant updates
   <FilesMatch "\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires 0
   </FilesMatch>
-</IfModule>
 
-# 4. Security Headers (Optional but recommended)
-<IfModule mod_headers.c>
+  # Modern security headers
   Header set X-XSS-Protection "1; mode=block"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

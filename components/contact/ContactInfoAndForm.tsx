@@ -122,7 +122,7 @@ export function ContactInfoAndForm() {
 
               {/* Email */}
               <Reveal delay={200}>
-                <div className="flex items-start gap-6 group invisible">
+                <div className="flex items-start gap-6 group">
                   <div className="relative flex items-center justify-center w-[72px] h-[72px] shrink-0">
                     <div className="absolute inset-0 border border-dashed border-[#ff6b35] rounded-full animate-[spin_20s_linear_infinite] opacity-50 group-hover:opacity-100 transition-opacity"></div>
                     <div className="w-14 h-14 bg-[#ff6b35] rounded-full flex items-center justify-center relative z-10 text-white shadow-md">
@@ -140,7 +140,7 @@ export function ContactInfoAndForm() {
 
               {/* Phone */}
               <Reveal delay={300}>
-                <div className="flex items-start gap-6 group invisible">
+                <div className="flex items-start gap-6 group">
                   <div className="relative flex items-center justify-center w-[72px] h-[72px] shrink-0">
                     <div className="absolute inset-0 border border-dashed border-[#ff6b35] rounded-full animate-[spin_20s_linear_infinite] opacity-50 group-hover:opacity-100 transition-opacity"></div>
                     <div className="w-14 h-14 bg-[#ff6b35] rounded-full flex items-center justify-center relative z-10 text-white shadow-md">
@@ -150,7 +150,7 @@ export function ContactInfoAndForm() {
                   <div className="flex flex-col pt-1">
                     <h3 className="text-xl font-bold text-[#33353b] mb-2 font-display">Phone</h3>
                     <p className="text-gray-500 leading-relaxed text-[15px]">
-                      <a href="tel:+918925807468" className="hover:text-[#ff6b35] transition-colors">+91 99947 23446</a>
+                      <a href="tel:+918925807468" className="hover:text-[#ff6b35] transition-colors">+91 89258 07468</a>
                     </p>
                   </div>
                 </div>

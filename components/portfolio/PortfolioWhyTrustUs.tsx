@@ -15,7 +15,7 @@ const TRUST_POINTS = [
 export function PortfolioWhyTrustUs() {
   return (
     <section className="relative overflow-hidden bg-[#0c1f28] py-16 lg:py-24">
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent opacity-40"></div>
       <div className="container-x relative z-10">
         
         <div className="grid gap-12 lg:grid-cols-2 items-center">

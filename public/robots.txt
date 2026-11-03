@@ -1,6 +1,25 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /php-backend/
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /php-backend/
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /php-backend/
 
 Sitemap: https://inymartlabs.com/sitemap.xml

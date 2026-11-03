@@ -1,8 +1,10 @@
+'use client';
+
 import { Reveal } from '@/components/Reveal';
 import { SectionHeading } from '@/components/SectionHeading';
 import { CtaBanner } from '@/components/CtaBanner';
 import { SERVICES, slugify } from '@/lib/content';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 const SERVICE_IMAGES = [
@@ -19,69 +21,148 @@ const SERVICE_IMAGES = [
 ];
 
 const SERVICE_ALTS = [
-  'Digital marketing analytics dashboard on laptop showing website traffic growth, SEO performance, and data-driven marketing results.',
-  'Local SEO marketing concept showing a smartphone with a location pin outside a local business, representing Google Maps visibility and local business discovery.',
-  'Digital marketing concept showing a person using a smartphone to manage visual content and social media, representing mobile content creation and digital engagement.',
-  'Digital marketing concept showing a hand tapping a smartphone with a launch icon, representing social media campaigns, audience engagement, and online growth.',
-  'Web analytics dashboard on a desktop monitor showing traffic charts, performance metrics, and data visualizations for digital marketing analysis.',
-  'Web development workspace showing a developer working with code on dual monitors, representing website development, programming, and technical solutions.',
-  'Digital marketing consulting session with professionals discussing a marketing strategy using charts and growth planning documents.',
-  'Digital marketing agency workspace featuring a laptop, smartphone, tablet, analytics data, and marketing planning materials, representing integrated digital marketing services.',
-  'Digital marketing growth concept showing stacked coins beside an upward-trending orange bar chart, representing business growth, increasing revenue, and marketing ROI.',
-  'AI SEO services concept showing a hand interacting with an AI-powered search interface on a laptop, representing AI-driven search optimization and digital visibility.'
+  'SEO services analytics dashboard showing organic search ranking improvements and website traffic growth.',
+  'Advance Local SEO map pin concept highlighting Google Maps 3-Pack visibility and nearby customer discovery.',
+  'Social Media Optimization visual concept showing mobile profile management and brand identity building.',
+  'Social Media Marketing advertising funnel on smartphone driving targeted leads and customer engagement.',
+  'Web analytics dashboard displaying Google Analytics 4 traffic metrics and conversion rate attribution.',
+  'Web development coding workspace demonstrating responsive, fast, and SEO-friendly website architecture.',
+  'Digital marketing consulting session with strategists analyzing competitor insights and growth roadmaps.',
+  'Full-service digital marketing agency workspace featuring omnichannel campaign execution and analytics.',
+  'Pay-per-click advertising performance growth chart representing high ROAS and Google Ads conversions.',
+  'AI SEO services interface illustrating Answer Engine Optimization (AEO) and ChatGPT search recommendations.'
 ];
 
 const PAGE_SERVICES_DATA = [
   {
     title: 'SEO (Search Engine Optimization)',
-    shortTitle: 'SEO',
-    description: 'Improves your website’s visibility on search engines like Google, helping increase organic traffic, rankings, and online presence.',
+    shortTitle: 'Search Engine Optimization',
+    slug: 'seo',
+    tag: 'Organic Growth',
+    description: 'Transform organic search into your most profitable acquisition channel. We combine in-depth technical audits, Core Web Vitals optimization, semantic keyword clustering, and high-authority link acquisition to secure top Google rankings.',
+    deliverables: [
+      'Comprehensive Technical & Speed Audits',
+      'High-Intent Keyword & Content Strategy',
+      'Authority Backlinks & Digital PR'
+    ],
+    bestFor: 'Businesses seeking compounding organic traffic and long-term search dominance.'
   },
   {
     title: 'Advance Local SEO',
     shortTitle: 'Advance Local SEO',
     slug: 'advance-local-seo',
-    description: 'Helps your business appear in local Google searches and Google Maps, attracting nearby customers and increasing local visibility.',
+    tag: 'Local Dominance',
+    description: 'Dominate the Google Maps 3-Pack and capture high-intent nearby customers. We optimize your Google Business Profile, manage local citations, implement geo-tagged structured data, and build local trust across Tamil Nadu.',
+    deliverables: [
+      'Google Business Profile (GBP) Optimization',
+      'Google Maps 3-Pack Ranking Strategy',
+      'Local Geo-Tagged Citations & Reviews'
+    ],
+    bestFor: 'Retailers, clinics, restaurants, and regional businesses serving local customers.'
   },
   {
     title: 'SMO (Social Media Optimization)',
-    shortTitle: 'SMO',
-    description: 'Optimizes your social media profiles and content to improve visibility, engagement, followers, and social reach.',
+    shortTitle: 'Social Media Optimization',
+    slug: 'smo',
+    tag: 'Brand Identity',
+    description: 'Establish a credible, visually cohesive presence across Instagram, Facebook, and LinkedIn. We optimize profile bios, highlight reels, visual aesthetic, and audience engagement loops to build authentic brand trust.',
+    deliverables: [
+      'Profile Architecture & Visual Branding',
+      'Content Calendar & Visual Storytelling',
+      'Audience Engagement & Community Growth'
+    ],
+    bestFor: 'Brands looking to establish strong social proof, trust, and brand credibility.'
   },
   {
     title: 'SMM (Social Media Marketing)',
-    shortTitle: 'SMM',
-    description: 'Promotes your business through social media platforms like Facebook, Instagram, and LinkedIn to build brand awareness and generate leads.',
+    shortTitle: 'Social Media Marketing',
+    slug: 'smm',
+    tag: 'Paid Social & Leads',
+    description: 'Turn social media into a predictable lead machine with targeted Meta (Facebook & Instagram) and LinkedIn ad funnels. We create high-converting creatives, precise audience targeting, and automated retargeting.',
+    deliverables: [
+      'Hyper-Targeted Demographic Ad Campaigns',
+      'High-Converting Creative Design & Copy',
+      'Pixel Tracking & Multi-Touch Retargeting'
+    ],
+    bestFor: 'Companies needing rapid customer acquisition and measurable lead generation.'
   },
   {
     title: 'Web Analytics',
-    shortTitle: 'Web Analytics',
-    description: 'Tracks website traffic, user behavior, and performance to help businesses understand customer activity and make data-driven decisions.',
+    shortTitle: 'Web Analytics & CRO',
+    slug: 'web-analytics',
+    tag: 'Data & Attribution',
+    description: 'Eliminate guesswork with end-to-end data tracking and conversion attribution. We configure Google Analytics 4 (GA4), Google Tag Manager, custom event tracking, and intuitive dashboards to measure true marketing ROI.',
+    deliverables: [
+      'GA4 & Google Tag Manager Architecture',
+      'Custom Funnel & Conversion Tracking',
+      'Automated Weekly & Monthly Dashboards'
+    ],
+    bestFor: 'Leadership teams seeking clear transparency and measurable conversion metrics.'
   },
   {
     title: 'Web Development',
     shortTitle: 'Web Development',
-    description: 'Creates fast, responsive, and user-friendly websites that build a strong online presence and improve customer experience.',
+    slug: 'web-development',
+    tag: 'Speed & Architecture',
+    description: 'Custom, high-speed, SEO-engineered websites built to rank on search engines and convert visitors into clients. Built with modern responsive architecture, perfect mobile usability, clean schema, and rapid load times.',
+    deliverables: [
+      'Modern Responsive Next.js & React Frameworks',
+      'Mobile-First UX & Conversion Optimization',
+      'Built-In Semantic SEO & Schema Markup'
+    ],
+    bestFor: 'Enterprises requiring fast, modern, and high-converting web applications.'
   },
   {
     title: 'Digital Marketing Consulting',
     shortTitle: 'Digital Marketing Consulting',
-    description: 'Provides expert strategies and guidance to improve online marketing performance, choose the right channels, and achieve business growth.',
+    slug: 'digital-marketing-consulting',
+    tag: 'Strategic Roadmap',
+    description: 'Strategic advisory for CEOs, founders, and marketing directors. We analyze your digital ecosystem, identify high-impact growth levers, optimize marketing budgets, and build an actionable growth roadmap.',
+    deliverables: [
+      'Full Digital Marketing Ecosystem Audit',
+      'Competitor Positioning & Market Gap Analysis',
+      'Channel Allocation & Budget Optimization'
+    ],
+    bestFor: 'Growing SMEs, startups, and enterprises scaling their digital footprint.'
   },
   {
     title: 'Digital Marketing Agency',
-    shortTitle: 'Digital Marketing Agency',
-    description: 'Provides complete digital marketing solutions such as SEO, social media, PPC, web development, and other services to grow businesses online.',
+    shortTitle: 'Full-Service Digital Marketing',
+    slug: 'digital-marketing-agency',
+    tag: '360° Solutions',
+    description: 'Complete, integrated digital marketing execution handled by our dedicated team of specialists. We align SEO, paid advertising, content creation, social media, and web development to drive holistic business expansion.',
+    deliverables: [
+      'Dedicated Multi-Disciplinary Growth Team',
+      'Synchronized Omnichannel Execution',
+      'Guaranteed Alignment with Revenue Targets'
+    ],
+    bestFor: 'Businesses wanting an experienced, full-service digital growth partner.'
   },
   {
     title: 'PPC Service (Pay-Per-Click)',
-    shortTitle: 'PPC Service',
-    description: 'Creates targeted paid advertising campaigns on platforms like Google to drive relevant traffic, leads, and conversions quickly.',
+    shortTitle: 'PPC Advertising',
+    slug: 'ppc-service',
+    tag: 'Paid Search & ROAS',
+    description: 'Maximize immediate return on ad spend (ROAS) with precision Google Ads search, display, and remarketing campaigns. We focus on negative keyword pruning, quality score optimization, and high-converting landing pages.',
+    deliverables: [
+      'Intent-Driven Google Search & Display Ads',
+      'Strict Negative Keyword & Budget Protection',
+      'A/B Split Testing & Conversion Rate Optimization'
+    ],
+    bestFor: 'Businesses seeking rapid, scalable lead generation with positive ROAS.'
   },
   {
     title: 'AI SEO Services',
-    shortTitle: 'AI SEO Services',
-    description: 'Uses AI-powered tools and strategies to optimize content, improve search rankings, identify SEO opportunities, and achieve better online performance.',
+    shortTitle: 'AI & Generative SEO',
+    slug: 'ai-seo-services',
+    tag: 'Future of Search',
+    description: 'Future-proof your organic search footprint for the AI era. We optimize your brand knowledge graph, conversational queries, and structured schema so LLMs like ChatGPT, Gemini, and Perplexity quote and recommend your business.',
+    deliverables: [
+      'Answer Engine Optimization (AEO) Structuring',
+      'Generative Engine Optimization (GEO) Citations',
+      'Brand Knowledge Graph & Semantic Authority'
+    ],
+    bestFor: 'Forward-thinking brands preparing for AI-driven conversational discovery.'
   },
 ];
 
@@ -89,60 +170,102 @@ export function ServicesPageCards() {
   return (
     <section
       id="services-list"
-      className="relative scroll-mt-24 bg-secondary/20 py-16"
+      aria-labelledby="services-list-heading"
+      className="relative scroll-mt-24 bg-secondary/20 py-16 lg:py-24"
     >
       <div className="container-x max-w-[1600px]">
         <SectionHeading
-          eyebrow="Our Services"
+          eyebrow="Specialized Capabilities"
           title={
             <>
-              Our <span className="text-gradient">Services</span>
+              Explore Our <span className="text-gradient">Digital Marketing</span> Services
             </>
           }
-          description="Detailed solutions designed to boost your online presence and drive real results."
+          description="Each service is engineered with data-backed methodologies, technical precision, and localized market insights to maximize your business growth."
         />
 
-        {/* 2-Column Grid Layout matching the new design */}
-        <div className="mt-16 grid gap-6 grid-cols-1 lg:grid-cols-2">
+        {/* 2-Column Grid Layout with Rich Content Cards */}
+        <div className="mt-16 grid gap-8 grid-cols-1 lg:grid-cols-2">
           {SERVICES.map((originalService, i) => {
             const pageData = PAGE_SERVICES_DATA[i];
+            const href = `/services/${pageData.slug || slugify(pageData.shortTitle)}/`;
             return (
-              <Reveal key={originalService.title} delay={i * 50}>
-                <article className="group relative flex flex-col sm:flex-row h-full min-h-[260px] bg-white rounded-3xl border border-slate-100 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-xl hover:border-slate-200 transition-all duration-300 overflow-hidden">
+              <Reveal key={originalService.title} delay={i * 40}>
+                <article className="group relative flex flex-col md:flex-row h-full bg-white rounded-3xl border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] hover:shadow-2xl hover:border-orange-500/40 transition-all duration-300 overflow-hidden">
                   
                   {/* Left Image Section */}
-                  <div className="relative w-full sm:w-[40%] sm:min-w-[240px] h-48 sm:h-auto overflow-hidden shrink-0">
+                  <div className="relative w-full md:w-[42%] md:min-w-[260px] h-56 md:h-auto overflow-hidden shrink-0">
                     <img 
                       src={SERVICE_IMAGES[i]} 
                       alt={SERVICE_ALTS[i]} 
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                      width={600}
+                      height={450}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" 
                     />
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent md:bg-black/10 md:group-hover:bg-black/0 transition-colors" />
+                    
+                    {/* Badge over image */}
+                    <div className="absolute top-4 left-4 z-20">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-bold uppercase tracking-wider border border-white/20">
+                        <Sparkles className="w-3 h-3 text-orange-400" />
+                        {pageData.tag}
+                      </span>
+                    </div>
                   </div>
                   
                   {/* Right Content Section */}
-                  <div className="relative flex-1 flex flex-col p-6 sm:p-8 md:p-10 z-10 bg-white">
-                    {/* Overlapping Icon (Positioned on top-right for mobile, left for desktop) */}
-                    <div className="absolute -top-6 right-6 sm:top-1/2 sm:right-auto sm:-left-8 sm:-translate-y-1/2 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-full sm:rounded-none sm:rounded-l-full bg-white text-orange-600 shadow-[0_-4px_10px_-2px_rgba(0,0,0,0.05)] sm:shadow-[-4px_0_10px_-2px_rgba(0,0,0,0.05)] border border-slate-100 sm:border-r-0 z-20">
-                      <originalService.icon className="h-5 w-5 sm:h-7 sm:w-7 sm:ml-2 transition-transform duration-300 group-hover:scale-110" strokeWidth={2} />
+                  <div className="relative flex-1 flex flex-col p-6 sm:p-8 z-10 bg-white justify-between">
+                    <div>
+                      {/* Title & Icon Header */}
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <h3 className="font-display text-xl sm:text-2xl font-extrabold text-slate-900 group-hover:text-orange-600 transition-colors leading-tight">
+                          <Link href={href} className="hover:underline">
+                            {pageData.shortTitle}
+                          </Link>
+                        </h3>
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 border border-orange-100 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+                          <originalService.icon className="h-5 w-5" strokeWidth={2} />
+                        </div>
+                      </div>
+                      
+                      {/* In-Depth Description */}
+                      <p className="text-sm sm:text-[14px] leading-relaxed text-slate-600 mb-5">
+                        {pageData.description}
+                      </p>
+
+                      {/* Key Deliverables Pills */}
+                      <div className="mb-6 space-y-2 pt-3 border-t border-slate-100">
+                        <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">
+                          Key Deliverables:
+                        </p>
+                        <ul className="space-y-1.5">
+                          {pageData.deliverables.map((del, dIdx) => (
+                            <li key={dIdx} className="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                              <CheckCircle2 className="w-3.5 h-3.5 text-orange-500 shrink-0" />
+                              <span>{del}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
 
-                    <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors pr-2">
-                      {pageData.shortTitle}
-                    </h3>
-                    
-                    <p className="text-sm sm:text-[15px] leading-relaxed text-slate-500 mb-6">
-                      {pageData.description}
-                    </p>
-
-                    <div className="mt-auto pt-2">
+                    {/* Bottom CTA & Link */}
+                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-[11px] text-slate-400 font-medium italic hidden sm:inline">
+                        Full technical execution
+                      </span>
                       <Link 
-                        href={`/services/${pageData.slug || slugify(pageData.shortTitle)}/`}
-                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors"
+                        href={href}
+                        aria-label={`Explore ${pageData.shortTitle} Services`}
+                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-orange-600 hover:text-orange-700 transition-colors group/btn"
                       >
-                        VIEW SERVICE <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                        Explore Service 
+                        <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                       </Link>
                     </div>
+
                   </div>
                 </article>
               </Reveal>
@@ -152,9 +275,9 @@ export function ServicesPageCards() {
 
         <div className="mt-20">
           <CtaBanner
-            title="Need Complete Digital Marketing Solutions?"
-            points={['Get a Free Website Analysis', 'Talk to Our Experts']}
-            ctaLabel="Get a Free Website Analysis"
+            title="Ready to Accelerate Your Digital Growth?"
+            points={['Schedule a Free Growth Audit', 'Talk Directly to Our Strategy Team']}
+            ctaLabel="Get a Free Website Audit"
             ctaHref="/contact/"
             variant="accent"
           />

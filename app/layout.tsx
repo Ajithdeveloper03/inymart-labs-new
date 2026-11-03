@@ -73,9 +73,6 @@ export const metadata: Metadata = {
     images: ['/logo.webp'],
     creator: '@inymartlabs',
   },
-  alternates: {
-    canonical: '/',
-  },
   robots: {
     index: true,
     follow: true,

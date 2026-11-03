@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Blog',
   description: 'Read our latest articles and insights on digital marketing, SEO, and web development.',
   alternates: {
-    canonical: '/blogs/',
+    canonical: 'https://inymartlabs.com/blogs/',
   },
 };
 

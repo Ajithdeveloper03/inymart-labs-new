@@ -1,6 +1,7 @@
 import { Reveal } from '@/components/Reveal';
 import { BRANDS } from '@/lib/content';
 import { ArrowRight, MapPin } from 'lucide-react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export function Portfolio() {
@@ -60,6 +61,19 @@ export function Portfolio() {
             <p className="font-sans text-zinc-300 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl text-justify md:text-left">
               We&apos;re proud to partner with businesses that trust Inymart Labs for their digital growth, and customized digital marketing solutions. Our clients come from a wide range of industries, and we&apos;re committed to helping each one achieve measurable online success.
             </p>
+          </Reveal>
+
+          {/* CTA Link to Portfolio */}
+          <Reveal delay={500}>
+            <div className="pt-2">
+              <Link
+                href="/portfolio/"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105"
+              >
+                View Full Portfolio &amp; Case Studies
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </Reveal>
 
 

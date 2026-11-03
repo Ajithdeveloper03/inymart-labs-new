@@ -1,2 +1,4 @@
 /services/local-seo/    /services/advance-local-seo/    301!
 /services/local-seo     /services/advance-local-seo/    301!
+/blog/                  /blogs/                         301!
+/blog                   /blogs/                         301!

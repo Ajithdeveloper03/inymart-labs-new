@@ -11,7 +11,7 @@ import { PortfolioCta } from '@/components/portfolio/PortfolioCta';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/portfolio/',
+    canonical: 'https://inymartlabs.com/portfolio/',
   },
   title: 'Our Portfolio',
   description: 'View the portfolio of Inymart Labs, a Digital Marketing Agency in Trichy, Tamil Nadu that has served 50+ brands across diverse industries.',

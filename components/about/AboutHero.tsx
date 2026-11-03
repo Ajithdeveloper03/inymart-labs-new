@@ -35,7 +35,7 @@ export function AboutHero() {
 
             <Reveal delay={300}>
               <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 text-justify lg:text-left">
-                With 9+ years of experience, we have supported 50+ brands across India, UAE, UK, and the USA with result-driven digital marketing and web design solutions that generate visibility, leads, and business growth.
+                With 10+ years of experience, we have supported 50+ brands across India, UAE, UK, and the USA with result-driven digital marketing and web design solutions that generate visibility, leads, and business growth.
               </p>
             </Reveal>
 

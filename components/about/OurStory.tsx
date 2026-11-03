@@ -54,7 +54,7 @@ export function OurStory() {
 
             <Reveal delay={300}>
               <p className="font-sans text-muted-foreground text-base sm:text-lg leading-relaxed mb-8 text-justify lg:text-left">
-                Before hiring an agency, check their expertise in SEO, Local SEO, AEO, and GEO, plus their track record in attracting organic traffic, including performance marketing. Our clients now span multiple countries, but our roots stay firmly in Tamil Nadu.
+                Today, our multidisciplinary team empowers brands with advanced organic search rankings, conversion-focused web architecture, and scalable performance campaigns. While our client portfolio extends across India, UAE, UK, USA, and Australia, our foundation remains deeply rooted in Tamil Nadu's vibrant business landscape.
               </p>
             </Reveal>
 

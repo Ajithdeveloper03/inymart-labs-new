@@ -7,7 +7,7 @@ import { ContactMap } from '@/components/contact/ContactMap';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/contact/',
+    canonical: 'https://inymartlabs.com/contact/',
   },
   title: 'Contact Us',
   description: 'Get in touch with Inymart Labs. We are here to help you with your digital marketing, SEO, web development, and more.',

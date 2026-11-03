@@ -18,7 +18,7 @@ import { SmmCta } from '@/components/smm/SmmCta';
 
 export const metadata = {
   alternates: {
-    canonical: '/services/smm/',
+    canonical: 'https://inymartlabs.com/services/smm/',
   },
   title: 'Social Media Marketing Agency in Tamil Nadu',
   description: 'Inymart Labs is a social media marketing agency in Trichy, Tamil Nadu that plans, creates, and manages paid ad campaigns on Facebook, Instagram, and LinkedIn.',

@@ -80,13 +80,17 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
                 <span>{SITE.location}</span>
               </li>
-              <li className="flex items-center gap-2.5 hidden">
+              <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <span>{SITE.email}</span>
+                <a href={`mailto:${SITE.email}`} className="transition-colors hover:text-white">
+                  {SITE.email}
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-primary shrink-0" />
-                <span>{SITE.phone}</span>
+                <a href={`tel:${SITE.phone.replace(/\s+/g, '')}`} className="transition-colors hover:text-white">
+                  {SITE.phone}
+                </a>
               </li>
             </ul>
 

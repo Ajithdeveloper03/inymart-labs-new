@@ -18,7 +18,7 @@ import { WebDevCta } from '@/components/web-development/WebDevCta';
 
 export const metadata = {
   alternates: {
-    canonical: '/services/web-development/',
+    canonical: 'https://inymartlabs.com/services/web-development/',
   },
   title: 'Web Development Service in Tamil Nadu',
   description: 'Inymart Labs is a Web Development Service in Trichy, Tamil Nadu that builds fast mobile-friendly, SEO-ready websites.',

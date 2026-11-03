@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: 'How long has Inymart Labs been in business?',
-    a: 'Founded in 2016 in Tiruchirappalli, with 9+ years of marketing expertise serving clients across India, UAE, UK, and the USA.',
+    a: 'Founded in 2016 in Tiruchirappalli, with 10+ years of marketing expertise serving clients across India, UAE, UK, and the USA.',
   },
   {
     q: 'Which areas does Inymart Labs serve?',

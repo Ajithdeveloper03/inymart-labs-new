@@ -9,6 +9,7 @@ import { BlogCard } from '@/components/blog/BlogCard';
 import { BlogPagination } from '@/components/blog/BlogPagination';
 import { Reveal } from '@/components/Reveal';
 import { API_BASE_URL } from '@/lib/api';
+import { blogData } from '@/data/blogData';
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -31,22 +32,22 @@ const breadcrumbSchema = {
 };
 
 export default function BlogPage() {
-  const [posts, setPosts] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState<any[]>(blogData);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/posts.php`, { cache: 'no-store' })
       .then((res) => {
         if (res.ok) return res.json();
-        return [];
+        return null;
       })
       .then((data) => {
-        setPosts(data);
-        setLoading(false);
+        if (Array.isArray(data) && data.length > 0) {
+          setPosts(data);
+        }
       })
       .catch((error) => {
-        console.error('Failed to fetch posts:', error);
-        setLoading(false);
+        console.warn('API posts unavailable, using static fallback:', error);
       });
   }, []);
 

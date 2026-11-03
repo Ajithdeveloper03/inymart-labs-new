@@ -16,3 +16,15 @@ package = "@netlify/plugin-nextjs"
   to = "/services/advance-local-seo/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/"
+  to = "/blogs/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/blogs/"
+  status = 301
+  force = true

@@ -13,7 +13,7 @@ import { AboutCta } from '@/components/about/AboutCta';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/about/',
+    canonical: 'https://inymartlabs.com/about/',
   },
   title: 'About Us',
   description: 'Learn about Inymart Labs, a leading digital marketing agency in Tamil Nadu offering SEO, Local SEO, AEO, and GEO services.',

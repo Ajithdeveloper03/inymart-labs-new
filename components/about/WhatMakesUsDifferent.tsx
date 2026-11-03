@@ -9,12 +9,12 @@ const features = [
   {
     image: '/Visible + Reachable +.png',
     title: 'Visible + Reachable + Clickable + Buyable',
-    description: 'A growth formula built for conversions, not just clicks, including through Google Ads.',
+    description: 'A conversion-first growth formula engineered to turn search traffic into qualified enquiries and revenue.',
   },
   {
     image: "/Built for today's video.png",
-    title: "Built for today's video production search",
-    description: 'Intent, voice, location, and AI-driven discovery optimized for modern platforms.',
+    title: "Optimized for AI & Generative Search",
+    description: 'Targeting conversational intent, semantic context, voice discovery, and LLM answer engines (AEO/GEO).',
   },
   {
     image: '/Data speaks, not.png',
@@ -24,12 +24,12 @@ const features = [
   {
     image: '/Clear reporting.png',
     title: 'Clear reporting',
-    description: 'No fancy words just to look smart. We share clear ideas and outcomes you can act on.',
+    description: 'No vanity metrics or technical confusion. You receive clean analytics, actionable insights, and transparent ROI.',
   },
   {
     image: '/Real humans, real.png',
     title: 'Real humans, real conversations',
-    description: 'A team that understands Tamil Nadu businesses and offers dedicated digital marketing solutions.',
+    description: 'A dedicated team that blends deep Tamil Nadu market understanding with modern international marketing standards.',
   },
 ];
 

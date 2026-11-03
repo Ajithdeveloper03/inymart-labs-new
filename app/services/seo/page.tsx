@@ -14,7 +14,7 @@ import { SeoCta } from '@/components/seo/SeoCta';
 
 export const metadata = {
   alternates: {
-    canonical: '/services/seo/',
+    canonical: 'https://inymartlabs.com/services/seo/',
   },
   title: 'SEO Agency in Tamil Nadu',
   description: 'Inymart Labs is an SEO agency in Trichy, Tamil Nadu that helps businesses rank higher on Google Search and Google Maps.',

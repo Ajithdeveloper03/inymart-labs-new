@@ -117,10 +117,8 @@ export const SERVICES: Service[] = [
     icon: Sparkles,
   },
 ];
-
 export type NavLink = { label: string; href: string };
 export type NavGroup = { label: string; href: string; children?: NavLink[] };
-
 export function slugify(value: string): string {
   const normalized = value.toLowerCase().trim();
   if (
@@ -136,7 +134,6 @@ export function slugify(value: string): string {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 }
-
 export const NAV_LINKS: NavGroup[] = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about/' },
