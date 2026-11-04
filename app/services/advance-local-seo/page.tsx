@@ -11,6 +11,7 @@ import { LocalSeoWhoThisIsFor } from '@/components/local-seo/LocalSeoWhoThisIsFo
 import { LocalSeoExpectations } from '@/components/local-seo/LocalSeoExpectations';
 import { LocalSeoFaq } from '@/components/local-seo/LocalSeoFaq';
 import { LocalSeoCta } from '@/components/local-seo/LocalSeoCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -167,6 +168,7 @@ export default function LocalSeoServicePage() {
         <LocalSeoExpectations />
         <LocalSeoWhyChoose />
         <LocalSeoFaq />
+        <RelatedServices currentSlug="advance-local-seo" />
         <LocalSeoCta />
       </main>
       <Footer />

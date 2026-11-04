@@ -11,6 +11,7 @@ import { SmoWhoThisIsFor } from '@/components/smo/SmoWhoThisIsFor';
 import { SmoExpectations } from '@/components/smo/SmoExpectations';
 import { SmoFaq } from '@/components/smo/SmoFaq';
 import { SmoCta } from '@/components/smo/SmoCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -160,6 +161,7 @@ export default function SmoServicePage() {
         <SmoWhoThisIsFor />
         <SmoExpectations />
         <SmoFaq />
+        <RelatedServices currentSlug="smo" />
         <SmoCta />
       </main>
       <Footer />

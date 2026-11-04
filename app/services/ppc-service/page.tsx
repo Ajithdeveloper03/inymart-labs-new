@@ -14,6 +14,7 @@ import { PpcExpectations } from '@/components/ppc/PpcExpectations';
 import { PpcTrust } from '@/components/ppc/PpcTrust';
 import { PpcFaq } from '@/components/ppc/PpcFaq';
 import { PpcCta } from '@/components/ppc/PpcCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -170,6 +171,7 @@ export default function PpcServicePage() {
         <PpcTrust />
         <PpcWhyChoose />
         <PpcFaq />
+        <RelatedServices currentSlug="ppc-service" />
         <PpcCta />
       </main>
       <Footer />

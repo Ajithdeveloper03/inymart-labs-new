@@ -15,6 +15,7 @@ import { SmmWhoThisIsFor } from '@/components/smm/SmmWhoThisIsFor';
 import { SmmFaq } from '@/components/smm/SmmFaq';
 import { SmmTrust } from '@/components/smm/SmmTrust';
 import { SmmCta } from '@/components/smm/SmmCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -168,6 +169,7 @@ export default function SmmServicePage() {
         <SmmReportingAndExpectations />
         <SmmWhoThisIsFor />
         <SmmFaq />
+        <RelatedServices currentSlug="smm" />
         <SmmCta />
       </main>
       <Footer />

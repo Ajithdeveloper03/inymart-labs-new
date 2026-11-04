@@ -15,6 +15,7 @@ import { DmaWhoThisIsFor } from '@/components/dma/DmaWhoThisIsFor';
 import { DmaTrust } from '@/components/dma/DmaTrust';
 import { DmaFaq } from '@/components/dma/DmaFaq';
 import { DmaCta } from '@/components/dma/DmaCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -173,6 +174,7 @@ export default function DigitalMarketingAgencyPage() {
 
         <DmaTrust />
         <DmaFaq />
+        <RelatedServices currentSlug="digital-marketing-agency" />
         <DmaCta />
       </main>
       <Footer />

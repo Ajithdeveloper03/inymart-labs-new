@@ -14,6 +14,7 @@ import { DmcExpectations } from '@/components/dmc/DmcExpectations';
 import { DmcTrust } from '@/components/dmc/DmcTrust';
 import { DmcFaq } from '@/components/dmc/DmcFaq';
 import { DmcCta } from '@/components/dmc/DmcCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -170,6 +171,7 @@ export default function DigitalMarketingConsultingPage() {
         {/* <DmcKeyFacts /> */}
         {/* <DmcTrust /> */}
         <DmcFaq />
+        <RelatedServices currentSlug="digital-marketing-consulting" />
         <DmcCta />
       </main>
       <Footer />

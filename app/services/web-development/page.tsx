@@ -15,6 +15,7 @@ import { WebDevExpectations } from '@/components/web-development/WebDevExpectati
 import { WebDevTrust } from '@/components/web-development/WebDevTrust';
 import { WebDevFaq } from '@/components/web-development/WebDevFaq';
 import { WebDevCta } from '@/components/web-development/WebDevCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -173,6 +174,7 @@ export default function WebDevelopmentServicePage() {
         {/* <WebDevTrust /> */}
         {/* <WebDevKeyFacts /> */}
         <WebDevFaq />
+        <RelatedServices currentSlug="web-development" />
         <WebDevCta />
       </main>
       <Footer />

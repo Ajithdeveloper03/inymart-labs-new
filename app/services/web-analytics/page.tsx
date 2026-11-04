@@ -14,6 +14,7 @@ import { WebAnalyticsExpectations } from '@/components/web-analytics/WebAnalytic
 import { WebAnalyticsTrust } from '@/components/web-analytics/WebAnalyticsTrust';
 import { WebAnalyticsFaq } from '@/components/web-analytics/WebAnalyticsFaq';
 import { WebAnalyticsCta } from '@/components/web-analytics/WebAnalyticsCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -167,6 +168,7 @@ export default function WebAnalyticsServicePage() {
         <WebAnalyticsExpectations />
         <WebAnalyticsWhoThisIsFor />
         <WebAnalyticsFaq />
+        <RelatedServices currentSlug="web-analytics" />
         <WebAnalyticsCta />
       </main>
       <Footer />

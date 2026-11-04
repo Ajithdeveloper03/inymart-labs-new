@@ -14,6 +14,7 @@ import { AiSeoExpectations } from '@/components/ai-seo/AiSeoExpectations';
 import { AiSeoTrust } from '@/components/ai-seo/AiSeoTrust';
 import { AiSeoFaq } from '@/components/ai-seo/AiSeoFaq';
 import { AiSeoCta } from '@/components/ai-seo/AiSeoCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -168,6 +169,7 @@ export default function AiSeoServicePage() {
         <AiSeoExpectations />
         <AiSeoWhyChoose />
         <AiSeoFaq />
+        <RelatedServices currentSlug="ai-seo-services" />
         <AiSeoCta />
       </main>
       <Footer />

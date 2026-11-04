@@ -4,7 +4,6 @@ import { NAV_LINKS, SITE, SERVICES, slugify } from '@/lib/content';
 
 export function Footer() {
   const year = new Date().getFullYear();
-  const serviceLinks = SERVICES.slice(0, 6).map((s) => s.title);
 
   return (
     <footer 
@@ -13,7 +12,7 @@ export function Footer() {
     >
       <div className="absolute inset-0 bg-black/30 pointer-events-none" />
       <div className="container-x py-14 relative z-10">
-        <div className="grid gap-10 md:gap-6 lg:gap-12 md:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1.9fr_1.2fr] lg:gap-10">
           {/* Brand */}
           <div className="flex flex-col h-full">
             <Link href="/" className="flex items-center gap-2.5">
@@ -51,17 +50,24 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services - All 10 Services Linked Site-Wide */}
           <div>
-            <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">
-              Services
-            </h3>
-            <ul className="mt-5 flex flex-col gap-3">
-              {SERVICES.slice(0, 6).map((service) => (
+            <Link 
+              href="/services/"
+              className="font-display text-sm font-bold uppercase tracking-wider text-white hover:text-primary transition-colors inline-flex items-center gap-2 group"
+            >
+              <span>Services</span>
+              <span className="text-[11px] font-medium tracking-normal text-primary group-hover:underline">
+                (View All)
+              </span>
+            </Link>
+            <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
+              {SERVICES.map((service) => (
                 <li key={service.title}>
                   <Link
                     href={`/services/${service.slug || slugify(service.title)}/`}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
+                    className="text-sm text-white/70 transition-colors hover:text-white hover:underline underline-offset-4 block truncate"
+                    title={service.title}
                   >
                     {service.title}
                   </Link>

@@ -11,6 +11,7 @@ import { SeoWhoThisIsFor } from '@/components/seo/SeoWhoThisIsFor';
 import { SeoExpectations } from '@/components/seo/SeoExpectations';
 import { SeoFaq } from '@/components/seo/SeoFaq';
 import { SeoCta } from '@/components/seo/SeoCta';
+import { RelatedServices } from '@/components/services/RelatedServices';
 
 export const metadata = {
   alternates: {
@@ -160,6 +161,7 @@ export default function SeoServicePage() {
         <SeoWhoThisIsFor />
         <SeoExpectations />
         <SeoFaq />
+        <RelatedServices currentSlug="seo" />
         <SeoCta />
       </main>
       <Footer />
